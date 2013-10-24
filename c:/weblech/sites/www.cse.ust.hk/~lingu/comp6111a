@@ -1,0 +1,223 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+<link rel=Edit-Time-Data href="index.files/editdata.mso">
+<title>COMP 6111A, 2011 Fall</title>
+<!--
+<link rel=Stylesheet type="text/css" media=all href="../2008fall/style.css">
+-->
+</head>
+<body>
+
+<div align=center>
+
+<span lang=EN-US style='font-size:24.0pt;font-family:Arial;color:#335566'>
+COMP 6111A: Cloud Computing Systems</span></p>
+
+<table cellspacing=0 cellpadding=0 width=695
+ style='width:521.25pt;border-collapse:collapse;mso-padding-alt:0pt 0pt 0pt 0pt'
+ id=AutoNumber1>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=716 style='width:537.0pt;padding:0pt 0pt 0pt 0pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-family:Arial;color:#66CCFF'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  lang=EN-US style='font-family:Arial'>
+  <a href="reading.html" style="text-decoration: none"><span
+  style='color:#0066FF'>&nbsp; Course schedule</span></a></span></b><span
+  lang=EN-US style='font-family:Arial'>
+  &nbsp;&nbsp;&nbsp;
+  <span style='color:#66CCFF; font-family:Arial'> | </span>
+  &nbsp;&nbsp;&nbsp;
+  <b>
+  <a href="projects.html" style="text-decoration: none">
+  <span style='color:#0066FF; font-family:Arial'>Projects</span>
+  </a>
+  </b>
+<span style='color:#66CCFF; font-family:Arial'> 
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</span>
+  <a href="http://www.cse.ust.hk/~lingu/azure/index.html"  style="text-decoration: none">
+  <span style='color:#0066FF; text-decoration:none; font-family:Arial'><b>Azure Labs</b> 
+</span></a>
+
+<span style='color:#66CCFF; font-family:Arial'> 
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</span>
+  <a href="resources.html"  style="text-decoration: none">
+  <span style='color:#0066FF; text-decoration:none; font-family:Arial'><b>Resources</b> 
+</span></a>
+<!--
+	<a
+  href="http://course.cs.ust.hk/comp660l/2008Fall/information.html" style="color: #66CCFF; font-family: Arial; text-decoration:none">|</a></span><a
+  href="http://course.cs.ust.hk/comp660l/2008Fall/information.html" style="text-decoration: none"><span style='color:#66CCFF; text-decoration:none; font-family:Arial'>
+  </span></a>
+	<b>
+	<span style='font-family:Arial; color:#0066FF; text-decoration:none'><a href="http://course.cs.ust.hk/comp660l/2008Fall/exam.html">
+	<span
+  style='color:#0066FF; text-decoration:none; font-family:Arial'>Examination </span></a></span>
+	<span style='text-decoration:none; font-family:Arial'><font color="#00FFFF">
+	<span style='font-family:Arial; text-decoration:none'>|</span></font></span><span style='font-family:Arial; color:#0066FF; text-decoration:none'><span style='color:#0066FF; text-decoration:none; font-family:Arial'>
+  </span><a href="http://course.cs.ust.hk/comp660l/2008Fall/assign.html">
+	<span
+  style='color:#0066FF; text-decoration:none; font-family:Arial'>Assignment </span></a></span>
+	<span style='text-decoration:none; font-family:Arial'><font color="#00FFFF">
+	<span style='font-family:Arial; text-decoration:none'>|</span></font></span><span style='font-family:Arial; color:#0066FF; text-decoration:none'> </span>
+	</b><span style='font-family:Arial; color:#0066FF; text-decoration:none'><a href="http://course.cs.ust.hk/comp660l/2008Fall/link.html">
+	<b><span
+  style='color:#0066FF; text-decoration:none; font-family:Arial'>Link</span></b></a></span></p>
+-->
+  </td>
+ </tr>
+</table>
+
+<p align=center style='text-align:center'><span lang=EN-US style='font-family:
+Arial;color:#66CCFF'><img border=0 width=701 height=6 id="_x0000_i1025"
+src="images/border.bmp"></span></p>
+
+<table style='width:500pt;'>
+ <tr style='width:500;height:35pt;'>
+  <td style='width:80pt;'>
+  <p><b><span style='font-family:Arial;color:black'>
+   Lecturer
+  </span>
+  </b></p>
+  </td>
+  <td style='width:480pt;'>
+  <p><b><span lang=EN-US style='font-family:Arial;color:black'><span
+  style='color:black'><a href="http://www.cse.ust.hk/~lingu">GU, Lin</a>
+  &nbsp&nbsp (Office: 3562  Tel: 2358-6991)</span>
+</span>
+  </b></p>
+  </td>
+ </tr>
+
+ <tr>
+  <td>
+  <b><span style='font-family:Arial;color:black'>
+    Class time/venue
+  </span>
+  </b>
+  </td>
+  <td>
+  <p><b><span
+  lang=EN-US style='font-family:Arial;color:black'><span
+  style='color:black'>Mon. and Wed. (12:00-13:20) /   Rm 5583</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+<br/>
+  <p><span lang=EN-US style='font-size:24.0pt;font-family:Arial;color:#8866cc'>Announcements</span>
+  </p>
+  </td>
+ </tr>
+
+ <tr>
+  <td colspan=3 style='font-family:Arial; color:#333333; text-decoration:none'>
+  <span lang=EN-US style='font-family:Arial'>
+     <img border=0 width=15 height=13 id="_x0000_i1027" src="images/pointer.gif">&nbsp; </span>
+  <span><b>
+     Materials for <a href="http://www.cse.ust.hk/~lingu/azure/labs/4/4.html">Lab 4</a> is available online. This lab is optional.
+  </b>
+  </span>
+  </td>
+ </tr>
+
+ <tr>
+  <td colspan=3 style='font-family:Arial; color:#333333; text-decoration:none'>
+  <span lang=EN-US style='font-family:Arial'>
+     <img border=0 width=15 height=13 id="_x0000_i1027" src="images/pointer.gif">&nbsp; </span>
+  <span><b>
+     <a href="http://www.cse.ust.hk/~lingu/azure/labs/3/3.html">Lab 3</a> instructions are available.
+  </b>
+  </span>
+  </td>
+ </tr>
+
+ <tr>
+  <td colspan=3 style='font-family:Arial; color:#333333; text-decoration:none'>
+  <span lang=EN-US style='font-family:Arial'>
+     <img border=0 width=15 height=13 id="_x0000_i1027" src="images/pointer.gif">&nbsp; </span>
+  <span><b>
+     An extra lab is scheduled: Oct. 13, HP Teaching Lab (Rm3654)
+  </b>
+  </span>
+  </td>
+ </tr>
+
+  <tr>
+  <td colspan=3 style='font-family:Arial; color:#333333; text-decoration:none'>
+  <p><span lang=EN-US style='font-family:Arial'>
+     <img border=0 width=15 height=13 id="_x0000_i1027" src="images/pointer.gif">&nbsp; </span>
+  <span><b>
+     The materials for <a href="http://www.cse.ust.hk/~lingu/azure/labs/1/1.html">Lab 1</a> is now available. The class on Sept. <strike>19</strike> 21 and 28 will be at the HP Teaching Lab (Rm3654, lifts 31/32).
+  </b>
+  </span></p>
+  </td>
+ </tr>
+
+  <tr>
+  <td colspan=3>
+  <p><span lang=EN-US style='font-family:Arial'>
+	<img border=0 width=15
+        height=13 id="_x0000_i1027" src="images/pointer.gif">&nbsp; </span>
+	<span style='font-family:Arial; color:#333333; text-decoration:none'><b>
+	The class will start on Sept. 5.</b><br/>
+  </span></p>
+  </td>
+ </tr>
+  <tr style='height:40pt'><td></td> </tr>
+  <td colspan=3>
+  <p><span lang=EN-US style='font-size:24.0pt;font-family:Arial;color:#8866cc'>
+  Course description
+  </span></p>
+  </td>
+  </tr>
+<!--table style='width=500pt;'>
+  <tr style='height:250pt'-->
+<tr><td colspan=3>
+<p>
+Decades of innovations, development, and investment have made Internet connections a commodity product -- Stable, high-bandwidth, and low-latency Internet connections are now affordably available to a large number of users in many parts of the world.
+It is thus viable and preferable to construct and optimize computer systems at  a global scale, integrating gigantic datacenters and geographically distributed user populations.
+Hence, the idea behind cloud computing is to unify vastly distributed data, users, and logic to form a computing system with unprecedented performance and efficiency.
+</p></p>
+In the meantime, cloud computing also requires that we re-design many components of the computing systems, including hardware, operating systems, storage abstractions, data models, programming frameworks, development utilities, user interfaces, and software engineering practice, to deliver computation at such a large scale.
+Many technologies have been constructed to fulfill this mission.
+For example, the Windows Azure platform provides a spectrum of solutions to cloud-based storage, communication, and software development.
+</p><p>
+This seminar course studies the organization of cloud computing systems and survey research problems in this area.
+<!-- We will re-visit a number of components in computing systems, investigate their new design constraints in the cloud-computing environment, and explore the state-of-the-art solutions in this area.-->
+The class meets twice a week for a mixture of lectures and class discussions of assigned readings.
+In addition, labs and a course project based on Windows Azure provide opportunities for hands-on experience with solving some real-world problems.
+</p>
+  </td></tr>
+  <tr style='height:30pt'><td></td> </tr>
+  <td colspan=3>
+  <p><span lang=EN-US style='font-size:24.0pt;font-family:Arial;color:#8866cc'>
+    Grading scheme
+  </span></p>
+  </td>
+  </tr>
+  <tr><td colspan=3>
+Grades will be based on class participation, presentation, reading notes, and a course project. Each student will present a few research papers, lead a class discussion, and write notes on some papers in the reading list.
+  </td></tr>
+<tr><td colspan=2>
+<hr>
+<p>
+The development of the course materials is supported in part by the Microsoft Research Curriculum Development Grant on Windows Core and Cloud Computing.
+The lab platform is supported by the teaching lab sponsored by HP Labs China.
+We would like to also thank Mr. Yau Lam Yiu and other system staff at the CSE department for their technical support in course work.
+</p>
+</td></tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+

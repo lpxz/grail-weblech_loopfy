@@ -1,0 +1,701 @@
+2013-10-25 03:33:26,790 [Main Thread] DEBUG Log4j.java:22 - Log4j configured
+2013-10-25 03:33:26,802 [Main Thread] DEBUG SpiderConfig.java:82 - SpiderConfig(props)
+2013-10-25 03:33:26,803 [Main Thread] DEBUG SpiderConfig.java:100 - Constructing relative file name c:/weblech/sites/mailto.txt
+2013-10-25 03:33:26,803 [Main Thread] DEBUG SpiderConfig.java:321 - parseSet(htm,html,shtm,shtml)
+2013-10-25 03:33:26,803 [Main Thread] DEBUG SpiderConfig.java:321 - parseSet(gif,jpg,jpeg,png,bmp)
+2013-10-25 03:33:26,816 [Main Thread] DEBUG TextSpider.java:50 - depthFirst:	false
+maxDepth:	2
+htmlExtensions:	shtml,html,shtm,htm
+imageExtensions:	bmp,jpg,jpeg,png,gif
+refreshHTMLs:	true
+refreshImages:	false
+refreshOthers:	false
+saveRootDirectory:	c:/weblech/sites
+startLocation:	http://www.cse.ust.hk/~jasonwangm/photos.html
+urlMatch:	cse.ust.hk
+userAgent:	Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+basicAuthUser:	myUser
+basicAuthPassword:	***
+spiderThreads:	1
+checkpointInterval:	30000
+2013-10-25 03:33:26,958 [Main Thread] INFO  TextSpider.java:56 - Starting Spider...
+2013-10-25 03:33:26,960 [Main Thread] INFO  Spider.java:67 - Starting Spider thread
+2013-10-25 03:33:26,971 [Spider-Thread-1] DEBUG URLGetter.java:23 - URLGetter()
+2013-10-25 03:33:26,972 [Spider-Thread-1] DEBUG DumbAuthenticator.java:21 - DumbAuthenticator(myUser, ***)
+2013-10-25 03:33:27,001 [Spider-Thread-1] DEBUG Spider.java:99 - writeCheckpoint()
+2013-10-25 03:33:27,101 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos.html, referer null, depth 0)
+2013-10-25 03:33:27,120 [Spider-Thread-1] INFO  Spider.java:201 - Q: [0 URLs] http://www.cse.ust.hk/~jasonwangm/photos.html, referer null, depth 0
+2013-10-25 03:33:27,122 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/photos.html, referer null, depth 0)
+2013-10-25 03:33:27,122 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:27,160 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:27,161 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:27,421 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:27,421 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:27,422 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:27,423 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 4938
+2013-10-25 03:33:27,423 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:27,423 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=100
+2013-10-25 03:33:27,423 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:27,423 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:27 GMT
+2013-10-25 03:33:27,423 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "748ef-134a-5242d6f7"
+2013-10-25 03:33:27,424 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Wed, 25 Sep 2013 12:28:39 GMT
+2013-10-25 03:33:27,424 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:27,424 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:27,432 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 4938 bytes, 18221 bytes/sec
+2013-10-25 03:33:27,433 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:27,433 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:27,434 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:27,693 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:27,694 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:27,694 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:27,694 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:27,694 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:27,695 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:27,695 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 26 urls extracted from page
+2013-10-25 03:33:27,697 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/lateral_view_HKUST-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,718 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/sea_view_HKUST-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,725 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/overlook.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,726 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/library_corner.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,727 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/zhong_san.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,736 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/view_from_lg1.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,737 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/view_from_towerA.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,738 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/dock.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,748 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/student_hall.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,760 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/main_building-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,761 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/library-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,762 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/from_library_2.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,763 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/from_library_3.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,764 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/stadium-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,765 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/piazza_floorlevel-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,778 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/piazza_aerial-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,778 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/red_bird.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,780 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/boats_sailing-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,782 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/sunset-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,783 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos/HKUST_campus/swimming_pool-small.jpg, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,783 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/index.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,794 [Spider-Thread-1] INFO  Spider.java:201 - Q: [4 URLs] http://www.cse.ust.hk/~jasonwangm/index.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1
+2013-10-25 03:33:27,795 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/index.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:27,795 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/index.html
+2013-10-25 03:33:27,795 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:27,795 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:27,795 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:27,852 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:27,852 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:27,852 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:27,852 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 2562
+2013-10-25 03:33:27,853 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:27,853 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=99
+2013-10-25 03:33:27,853 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:27,853 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:27 GMT
+2013-10-25 03:33:27,853 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "584b8-a02-5242d6c8"
+2013-10-25 03:33:27,853 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Wed, 25 Sep 2013 12:27:52 GMT
+2013-10-25 03:33:27,854 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:27,854 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:27,863 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 2562 bytes, 5124 bytes/sec
+2013-10-25 03:33:27,864 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:27,864 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:27,864 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:28,553 [Spider-Thread-1] DEBUG HTMLParser.java:105 - logMailURL()
+2013-10-25 03:33:28,564 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:28,565 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:28,565 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:28,565 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:28,565 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:28,565 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:28,565 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 14 urls extracted from page
+2013-10-25 03:33:28,566 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/courses.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,580 [Spider-Thread-1] INFO  Spider.java:201 - Q: [7 URLs] http://www.cse.ust.hk/~jasonwangm/courses.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1
+2013-10-25 03:33:28,581 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/courses.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,581 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/courses.html
+2013-10-25 03:33:28,581 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:28,582 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:28,582 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:28,672 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:28,672 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:28,672 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:28,673 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 2494
+2013-10-25 03:33:28,673 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:28,673 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=98
+2013-10-25 03:33:28,673 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:28,673 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:28 GMT
+2013-10-25 03:33:28,673 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "748ee-9be-5242d6ec"
+2013-10-25 03:33:28,674 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Wed, 25 Sep 2013 12:28:28 GMT
+2013-10-25 03:33:28,674 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:28,674 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:28,675 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 2494 bytes, 4988 bytes/sec
+2013-10-25 03:33:28,675 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:28,676 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:28,676 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:28,822 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:28,822 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:28,822 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:28,822 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:28,822 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:28,823 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:28,823 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 10 urls extracted from page
+2013-10-25 03:33:28,823 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/photos.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,823 [Spider-Thread-1] INFO  Spider.java:201 - Q: [10 URLs] http://www.cse.ust.hk/~jasonwangm/photos.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1
+2013-10-25 03:33:28,823 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/photos.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,824 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:28,824 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:28,824 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:28,824 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:28,892 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:28,892 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:28,892 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:28,893 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 4938
+2013-10-25 03:33:28,893 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:28,893 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=97
+2013-10-25 03:33:28,894 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:28,894 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:28 GMT
+2013-10-25 03:33:28,894 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "748ef-134a-5242d6f7"
+2013-10-25 03:33:28,894 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Wed, 25 Sep 2013 12:28:39 GMT
+2013-10-25 03:33:28,894 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:28,895 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:28,906 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 4938 bytes, 9876 bytes/sec
+2013-10-25 03:33:28,907 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:28,907 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:28,908 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:28,908 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:28,908 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:28,908 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:28,908 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:28,908 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:28,909 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:28,909 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 26 urls extracted from page
+2013-10-25 03:33:28,909 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/research.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,909 [Spider-Thread-1] INFO  Spider.java:208 - Q: [9 URLs] http://www.cse.ust.hk/~jasonwangm/research.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1
+2013-10-25 03:33:28,909 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/research.html, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,910 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:28,910 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:28,910 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:28,910 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:28,982 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:28,982 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:28,982 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:28,983 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 2896
+2013-10-25 03:33:28,983 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:28,983 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=96
+2013-10-25 03:33:28,983 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:28,983 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:29 GMT
+2013-10-25 03:33:28,984 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "748ed-b50-5242d708"
+2013-10-25 03:33:28,984 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Wed, 25 Sep 2013 12:28:56 GMT
+2013-10-25 03:33:28,984 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:28,984 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:28,986 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 2896 bytes, 5792 bytes/sec
+2013-10-25 03:33:28,987 [Spider-Thread-1] DEBUG URLObject.java:108 - writeToFile(c:/weblech/sites/www.cse.ust.hk/~jasonwangm/research.html)
+2013-10-25 03:33:28,988 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:28,989 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:28,989 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:28,989 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:28,989 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:28,989 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:28,990 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:28,990 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:28,990 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:28,990 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 13 urls extracted from page
+2013-10-25 03:33:28,991 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(https://home.cse.ust.hk/~jasonwangm/Password_Only/blog/, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,991 [Spider-Thread-1] INFO  Spider.java:208 - Q: [15 URLs] https://home.cse.ust.hk/~jasonwangm/Password_Only/blog/, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1
+2013-10-25 03:33:28,991 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(https://home.cse.ust.hk/~jasonwangm/Password_Only/blog/, referer http://www.cse.ust.hk/~jasonwangm/photos.html, depth 1)
+2013-10-25 03:33:28,991 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to https://home.cse.ust.hk/~jasonwangm/Password_Only/blog/
+2013-10-25 03:33:29,239 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/photos.html
+2013-10-25 03:33:29,240 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:29,240 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:30,053 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:30,244 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:30,422 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:30,602 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:30,772 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:30,972 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:31,182 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:31,352 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:31,512 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:31,695 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:31,889 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:32,073 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:32,369 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:32,652 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:32,822 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:32,992 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:33,152 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:33,332 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:33,492 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:33,652 [Spider-Thread-1] DEBUG DumbAuthenticator.java:27 - getPasswordAuthentication()
+2013-10-25 03:33:33,656 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: Authorization Required
+2013-10-25 03:33:33,656 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 401 Authorization Required
+2013-10-25 03:33:33,657 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:33 GMT
+2013-10-25 03:33:33,657 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:33,657 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header WWW-Authenticate: Basic realm="Jason's Research Blog"
+2013-10-25 03:33:33,657 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: close
+2013-10-25 03:33:33,657 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Transfer-Encoding: chunked
+2013-10-25 03:33:33,657 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html; charset=iso-8859-1
+2013-10-25 03:33:33,658 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:33,662 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Server redirected too many  times (20)
+java.net.ProtocolException: Server redirected too many  times (20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1345)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1339)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:993)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:234)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:74)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.ProtocolException: Server redirected too many  times (20)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseMessage(HttpsURLConnectionImpl.java:362)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	... 3 more
+2013-10-25 03:33:33,666 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/images/photo.jpg, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:33,688 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:33,702 [Spider-Thread-1] INFO  Spider.java:201 - Q: [13 URLs] http://www.cse.ust.hk/, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2
+2013-10-25 03:33:33,702 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:33,702 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/
+2013-10-25 03:33:33,702 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/index.html
+2013-10-25 03:33:33,702 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:33,703 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:33,821 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:33,822 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:33,822 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:33,822 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Transfer-Encoding: chunked
+2013-10-25 03:33:33,822 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:33,822 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=95
+2013-10-25 03:33:33,822 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Cache-Control: private
+2013-10-25 03:33:33,823 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:33 GMT
+2013-10-25 03:33:33,823 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:33,823 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:33,883 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 18384 bytes, 102133 bytes/sec
+2013-10-25 03:33:33,884 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:33,884 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:33,885 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:35,632 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:35,632 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:35,632 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:35,632 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:35,633 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:35,633 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:35,633 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 108 urls extracted from page
+2013-10-25 03:33:35,633 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~csbb/, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:35,656 [Spider-Thread-1] INFO  Spider.java:201 - Q: [12 URLs] http://www.cse.ust.hk/~csbb/, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2
+2013-10-25 03:33:35,656 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~csbb/, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:35,656 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~csbb/
+2013-10-25 03:33:35,656 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/index.html
+2013-10-25 03:33:35,656 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:35,657 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:35,812 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:35,812 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:35,812 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:35,812 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 11768
+2013-10-25 03:33:35,812 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:35,813 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=94
+2013-10-25 03:33:35,813 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:35,813 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:35 GMT
+2013-10-25 03:33:35,813 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "17d604-2df8-504dac96"
+2013-10-25 03:33:35,813 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Mon, 10 Sep 2012 09:02:14 GMT
+2013-10-25 03:33:35,813 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:35,814 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:35,878 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 11768 bytes, 53248 bytes/sec
+2013-10-25 03:33:35,879 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:35,879 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:35,972 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:42,172 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:42,172 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:42,172 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:42,173 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:42,173 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:42,173 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:42,173 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 20 urls extracted from page
+2013-10-25 03:33:42,173 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~csbb, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:42,174 [Spider-Thread-1] INFO  Spider.java:208 - Q: [11 URLs] http://www.cse.ust.hk/~csbb, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2
+2013-10-25 03:33:42,174 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~csbb, referer http://www.cse.ust.hk/~jasonwangm/index.html, depth 2)
+2013-10-25 03:33:42,174 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~csbb
+2013-10-25 03:33:42,174 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/index.html
+2013-10-25 03:33:42,174 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,174 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,571 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: OK
+2013-10-25 03:33:42,572 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 200 OK
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Length: 11768
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=5, max=100
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Accept-Ranges: bytes
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:42 GMT
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header ETag: "17d604-2df8-504dac96"
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Last-Modified: Mon, 10 Sep 2012 09:02:14 GMT
+2013-10-25 03:33:42,572 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:42,573 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:42,614 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 11768 bytes, 26806 bytes/sec
+2013-10-25 03:33:42,614 [Spider-Thread-1] DEBUG URLObject.java:108 - writeToFile(c:/weblech/sites/www.cse.ust.hk/~csbb)
+2013-10-25 03:33:42,615 [Spider-Thread-1] WARN  URLObject.java:117 - IO Exception writing to c:/weblech/sites/www.cse.ust.hk/~csbb
+java.io.FileNotFoundException: c:/weblech/sites/www.cse.ust.hk/~csbb (Is a directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:70)
+	at weblech.spider.URLObject.writeToFile(URLObject.java:112)
+	at weblech.spider.URLObject.writeToFile(URLObject.java:104)
+	at weblech.spider.Spider.downloadURL(Spider.java:215)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:42,615 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 20 urls extracted from page
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Computer Networks: an Internet Perspective</a>, Fall 2012.</p>
+</li>
+<li><p>COMP5621 &ndash; <a href=, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,616 [Spider-Thread-1] INFO  Spider.java:208 - Q: [10 URLs] http://www.cse.ust.hk/~jasonwangm/">Computer Networks: an Internet Perspective</a>, Fall 2012.</p>
+</li>
+<li><p>COMP5621 &ndash; <a href=, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Computer Networks: an Internet Perspective</a>, Fall 2012.</p>
+</li>
+<li><p>COMP5621 &ndash; <a href=, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Computer Networks: an Internet Perspective</a>, Fall 2012.</p>
+</li>
+<li><p>COMP5621 &ndash; <a href=
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/courses.html
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,616 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,617 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:42,617 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://course.cse.ust.hk/comp5621/, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,638 [Spider-Thread-1] INFO  Spider.java:201 - Q: [9 URLs] http://course.cse.ust.hk/comp5621/, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2
+2013-10-25 03:33:42,638 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://course.cse.ust.hk/comp5621/, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,638 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://course.cse.ust.hk/comp5621/
+2013-10-25 03:33:42,638 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/courses.html
+2013-10-25 03:33:42,638 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,638 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,749 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: Found
+2013-10-25 03:33:42,749 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 302 Found
+2013-10-25 03:33:42,749 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html; charset=iso-8859-1
+2013-10-25 03:33:42,749 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Transfer-Encoding: chunked
+2013-10-25 03:33:42,749 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:42,749 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=15, max=99
+2013-10-25 03:33:42,750 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:42 GMT
+2013-10-25 03:33:42,750 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Location: https://course.cse.ust.hk/comp5621/
+2013-10-25 03:33:42,750 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:42,750 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:42,750 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 289 bytes, 2603 bytes/sec
+2013-10-25 03:33:42,750 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:42,750 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:42,751 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 1 urls extracted from page
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://course.cse.ust.hk/comp2611/, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,752 [Spider-Thread-1] INFO  Spider.java:208 - Q: [8 URLs] http://course.cse.ust.hk/comp2611/, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://course.cse.ust.hk/comp2611/, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://course.cse.ust.hk/comp2611/
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/courses.html
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,752 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,813 [Spider-Thread-1] DEBUG URLGetter.java:57 - Remote server response: Found
+2013-10-25 03:33:42,814 [Spider-Thread-1] INFO  URLGetter.java:59 - Server response: HTTP/1.1 302 Found
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Content-Type: text/html; charset=iso-8859-1
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Transfer-Encoding: chunked
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Connection: Keep-Alive
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Keep-Alive: timeout=15, max=98
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Date: Thu, 24 Oct 2013 19:33:42 GMT
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Location: https://course.cse.ust.hk/comp2611/
+2013-10-25 03:33:42,814 [Spider-Thread-1] DEBUG URLGetter.java:69 - Received header Server: Apache
+2013-10-25 03:33:42,815 [Spider-Thread-1] DEBUG URLGetter.java:73 - Getting buffered input stream from remote connection
+2013-10-25 03:33:42,815 [Spider-Thread-1] INFO  URLGetter.java:91 - Downloaded 289 bytes, 578 bytes/sec
+2013-10-25 03:33:42,815 [Spider-Thread-1] DEBUG URLObject.java:108 - writeToFile(c:/weblech/sites/course.cse.ust.hk/comp2611/index.html)
+2013-10-25 03:33:42,817 [Spider-Thread-1] DEBUG HTMLParser.java:35 - parseAsHTML()
+2013-10-25 03:33:42,817 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(img, src, ...)
+2013-10-25 03:33:42,817 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(a, href, ...)
+2013-10-25 03:33:42,817 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(body, background, ...)
+2013-10-25 03:33:42,817 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(frame, src, ...)
+2013-10-25 03:33:42,817 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(IMG, SRC, ...)
+2013-10-25 03:33:42,818 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(A, HREF, ...)
+2013-10-25 03:33:42,818 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(BODY, BACKGROUND, ...)
+2013-10-25 03:33:42,818 [Spider-Thread-1] DEBUG HTMLParser.java:54 - extractAttributesFromTags(FRAME, SRC, ...)
+2013-10-25 03:33:42,818 [Spider-Thread-1] DEBUG HTMLParser.java:49 - Returning 1 urls extracted from page
+2013-10-25 03:33:42,818 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Design and Analysis of Computer Systems</a>, Fall 2010</p>
+</li>
+</ul>
+<div id=, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,818 [Spider-Thread-1] INFO  Spider.java:208 - Q: [7 URLs] http://www.cse.ust.hk/~jasonwangm/">Design and Analysis of Computer Systems</a>, Fall 2010</p>
+</li>
+</ul>
+<div id=, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2
+2013-10-25 03:33:42,818 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Design and Analysis of Computer Systems</a>, Fall 2010</p>
+</li>
+</ul>
+<div id=, referer http://www.cse.ust.hk/~jasonwangm/courses.html, depth 2)
+2013-10-25 03:33:42,819 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Design and Analysis of Computer Systems</a>, Fall 2010</p>
+</li>
+</ul>
+<div id=
+2013-10-25 03:33:42,819 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/courses.html
+2013-10-25 03:33:42,819 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,819 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,851 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:42,852 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Intra-AS Cooperative Caching for Content-Centric Networks</a>. <i>SIGCOMM Workshop ICN&rsquo;13</i> <br /> <b>Jason Min Wang</b>, Jun Zhang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:42,852 [Spider-Thread-1] INFO  Spider.java:208 - Q: [6 URLs] http://www.cse.ust.hk/~jasonwangm/">Intra-AS Cooperative Caching for Content-Centric Networks</a>. <i>SIGCOMM Workshop ICN&rsquo;13</i> <br /> <b>Jason Min Wang</b>, Jun Zhang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:42,853 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Intra-AS Cooperative Caching for Content-Centric Networks</a>. <i>SIGCOMM Workshop ICN&rsquo;13</i> <br /> <b>Jason Min Wang</b>, Jun Zhang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:42,853 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Intra-AS Cooperative Caching for Content-Centric Networks</a>. <i>SIGCOMM Workshop ICN&rsquo;13</i> <br /> <b>Jason Min Wang</b>, Jun Zhang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=
+2013-10-25 03:33:42,853 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:42,853 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,853 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,891 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:42,892 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Joint Association Control, Airtime Sharing and Content Resolution in Multi-Cell WLANs with Directional Antennas</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:42,892 [Spider-Thread-1] INFO  Spider.java:208 - Q: [5 URLs] http://www.cse.ust.hk/~jasonwangm/">Joint Association Control, Airtime Sharing and Content Resolution in Multi-Cell WLANs with Directional Antennas</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:42,892 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Joint Association Control, Airtime Sharing and Content Resolution in Multi-Cell WLANs with Directional Antennas</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:42,892 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Joint Association Control, Airtime Sharing and Content Resolution in Multi-Cell WLANs with Directional Antennas</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=
+2013-10-25 03:33:42,893 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:42,893 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,893 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:42,970 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:42,970 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Optimal Resource Sharing in Multi-Cell Wireless LANs: a Joint Channel Assignment, Association Control, Airtime Sharing and Content Resolution Approach</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:42,971 [Spider-Thread-1] INFO  Spider.java:208 - Q: [4 URLs] http://www.cse.ust.hk/~jasonwangm/">Optimal Resource Sharing in Multi-Cell Wireless LANs: a Joint Channel Assignment, Association Control, Airtime Sharing and Content Resolution Approach</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:42,971 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Optimal Resource Sharing in Multi-Cell Wireless LANs: a Joint Channel Assignment, Association Control, Airtime Sharing and Content Resolution Approach</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:42,971 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Optimal Resource Sharing in Multi-Cell Wireless LANs: a Joint Channel Assignment, Association Control, Airtime Sharing and Content Resolution Approach</a>. <i>IWCMC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=
+2013-10-25 03:33:42,971 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:42,971 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:42,971 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:43,045 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:43,045 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Optimal Client Association, Airtime Sharing and Content Resolution in Throughput Fair Multi-Cell WLANs with Hidden APs</a>. <i>ICC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,046 [Spider-Thread-1] INFO  Spider.java:208 - Q: [3 URLs] http://www.cse.ust.hk/~jasonwangm/">Optimal Client Association, Airtime Sharing and Content Resolution in Throughput Fair Multi-Cell WLANs with Hidden APs</a>. <i>ICC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:43,046 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Optimal Client Association, Airtime Sharing and Content Resolution in Throughput Fair Multi-Cell WLANs with Hidden APs</a>. <i>ICC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,046 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Optimal Client Association, Airtime Sharing and Content Resolution in Throughput Fair Multi-Cell WLANs with Hidden APs</a>. <i>ICC&rsquo;13</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=
+2013-10-25 03:33:43,046 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:43,046 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:43,046 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:43,095 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:43,095 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Progressive Caching in CCN</a>. <i>GLOBECOM&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,095 [Spider-Thread-1] INFO  Spider.java:208 - Q: [2 URLs] http://www.cse.ust.hk/~jasonwangm/">Progressive Caching in CCN</a>. <i>GLOBECOM&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:43,096 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Progressive Caching in CCN</a>. <i>GLOBECOM&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,096 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Progressive Caching in CCN</a>. <i>GLOBECOM&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=
+2013-10-25 03:33:43,096 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:43,096 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:43,096 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:43,131 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:43,132 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Improving Content-centric Networks Performance with Progressive, diversity-load driven Caching</a>. <i>ICCC&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,132 [Spider-Thread-1] INFO  Spider.java:208 - Q: [1 URLs] http://www.cse.ust.hk/~jasonwangm/">Improving Content-centric Networks Performance with Progressive, diversity-load driven Caching</a>. <i>ICCC&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:43,132 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Improving Content-centric Networks Performance with Progressive, diversity-load driven Caching</a>. <i>ICCC&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,132 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Improving Content-centric Networks Performance with Progressive, diversity-load driven Caching</a>. <i>ICCC&rsquo;12</i><br /> <b>Jason Min Wang</b> and Brahim Bensaou.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href=
+2013-10-25 03:33:43,132 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:43,132 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:43,132 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:43,205 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:43,206 [Spider-Thread-1] DEBUG Spider.java:197 - downloadURL(http://www.cse.ust.hk/~jasonwangm/">Fair Throughput Assignment in Multi-Cell WLANs with Hidden Terminals</a>. <i>ICCC&rsquo;12</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<div id=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,206 [Spider-Thread-1] INFO  Spider.java:208 - Q: [0 URLs] http://www.cse.ust.hk/~jasonwangm/">Fair Throughput Assignment in Multi-Cell WLANs with Hidden Terminals</a>. <i>ICCC&rsquo;12</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<div id=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2
+2013-10-25 03:33:43,206 [Spider-Thread-1] DEBUG URLGetter.java:29 - getURL(http://www.cse.ust.hk/~jasonwangm/">Fair Throughput Assignment in Multi-Cell WLANs with Hidden Terminals</a>. <i>ICCC&rsquo;12</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<div id=, referer http://www.cse.ust.hk/~jasonwangm/research.html, depth 2)
+2013-10-25 03:33:43,206 [Spider-Thread-1] DEBUG URLGetter.java:42 - Creating HTTP connection to http://www.cse.ust.hk/~jasonwangm/">Fair Throughput Assignment in Multi-Cell WLANs with Hidden Terminals</a>. <i>ICCC&rsquo;12</i><br /> Jun Zhang, <b>Jason Min Wang</b>, Ying Wang, and Brahim Bensaou.</p>
+</li>
+</ul>
+<div id=
+2013-10-25 03:33:43,206 [Spider-Thread-1] DEBUG URLGetter.java:45 - Setting Referer header to http://www.cse.ust.hk/~jasonwangm/research.html
+2013-10-25 03:33:43,206 [Spider-Thread-1] DEBUG URLGetter.java:49 - Setting User-Agent to Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+2013-10-25 03:33:43,207 [Spider-Thread-1] DEBUG URLGetter.java:53 - Opening URL
+2013-10-25 03:33:43,304 [Spider-Thread-1] WARN  URLGetter.java:102 - Caught IO Exception: Illegal character in URL
+java.net.MalformedURLException: Illegal character in URL
+	at sun.net.www.http.HttpClient.getURLFile(HttpClient.java:592)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:348)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1047)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:373)
+	at java.net.HttpURLConnection.getResponseMessage(HttpURLConnection.java:439)
+	at weblech.spider.URLGetter.getURL(URLGetter.java:56)
+	at weblech.spider.Spider.downloadURL(Spider.java:209)
+	at weblech.spider.Spider.run(Spider.java:154)
+	at java.lang.Thread.run(Thread.java:619)
+2013-10-25 03:33:43,305 [Spider-Thread-1] INFO  Spider.java:178 - Spider thread stopping

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>J. Nam</title> 
+	<meta name="author" content="JC"> 
+	<style> 
+		body{
+			font-family: AppleGothic,Helvetica;
+		}
+		#generalInfo{
+			margin-left: 280px;
+		}
+		a{
+			color: #648239;
+		}
+		#profileImg{
+			float: left;
+		}
+		#personalInfo li{
+			list-style: none;
+			margin-left: -20px;
+		}
+ 
+		.icon{
+			margin-right: 5px;
+		}
+		
+		#ref{
+			font-size:small;
+			text-align:right;
+		}
+		
+		#travel{
+			text-align:center;
+		}
+ 
+	</style> 
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2126123-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		
+		var minutes=1000*60;
+		var hours=minutes*60;
+		var days=hours*24;
+		var years=days*365;
+		var d=new Date();
+		var t=d.getTime();
+		
+		// change startTime in a new place and put dayIncrement in the new place
+		var startTime = 1325999001896; // 2012/01/08
+		var dayIncrement = Math.round(t/days - startTime/days);
+				
+		google.load('visualization', '1', {'packages': ['geochart']});
+		google.setOnLoadCallback(drawRegionsMap);
+
+		function drawRegionsMap() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Country');
+		data.addColumn('number', '#Days (approximated)');
+		data.addRows([
+		['South Korea', 10227],
+		['United States', 15],
+		['Sweden', 500],
+		['Denmark', 4],
+		['China', 840+dayIncrement],
+		['Germany',94],
+		['Norway', 4],
+		['Poland', 1],
+		['France', 5],
+		['Luxembourg', 1],
+		['GB', 1]
+	      ]);
+
+		var options = {width: 900, height: 561, colors:['green','blue']};
+
+		var container = document.getElementById('travel');
+		var geochart = new google.visualization.GeoChart(container);
+		geochart.draw(data, options);
+		};
+	</script>
+</head> 
+<body> 
+	<h1> Nam, Jaechang (JC, 남재창, 南載昌)</h1> 
+	<img src='img/me2.jpg' id="profileImg" width="250"/> 
+	<div id="generalInfo"> 
+		<div id="scholarInfo"> 
+			<h3>PhD Student (Sep. 2009 ~)</h3> 
+			<h4> 
+				<a href="http://www.cse.ust.hk/~hunkim/" target=_NEW>Prof. Sunghun Kim's Group</a> (Program Analysis and Mining)<br/> 
+				<a href="http://www.cse.ust.hk" target=_NEW>	
+					Dept. of Computer Science and Engineering</a><br/> 
+				<a href="http://www.ust.hk" target=_NEW> 
+					The Hong Kong University of Science and Technology</a></h4> 
+		</div> 
+		<h3>Contacts</h3> 
+		<ul id="personalInfo"> 
+			<li><img class="icon" src="/~handk/icon/gmail.png" width="15"/>Mail : jcnam [at] cse. ust. hk</a></li> 
+			<!--<li><img class="icon" src="/~handk/icon/textcube.png" width="15"/>Blog : <a href="http://blog.dklab.net">http://blog.dklab.net</a> (in Korean)</li> 
+			<li><img class="icon" src="/~handk/icon/me2day.png" width="15"/>me2day : <a href="http://me2day.net/handk85">http://me2day.net/handk85</a> (in Korean)</li>	
+			<li><img class="icon" src="/~handk/icon/facebook.jpg" width="15"/>Facebook : <a href="http://www.facebook.com/handk85">http://facebook.com/handk85</a></li> 
+			<li><img class="icon" src="/~handk/icon/twitter.png" width="15"/>Twitter : <a href="http://twitter.com/handk85">http://twitter.com/handk85</a></li> -->
+		</ul> 
+		<h3>Research Interests</h3> 
+			<ul> 
+				<li>Software Defect Prediction</li> 
+				<li>Empirical Software Engineering</li> 
+				<li>Mining Software Repository</li> 
+				<li>Mobile Application Development</li> 
+			</ul> 
+	</div> 
+	<hr/> 
+	<h3>Publications</h3> 
+		<ul> 
+			<li>Taek Lee, Jaechang Nam, Donggyun Han, Sunghun Kim and Hoh Peter In, Micro Interaction Metrics for Defect Prediction, <i>in Proceedings of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2011)</i>, Szeged, Hungary, September 5-9, 2011. [<a href="mim/">LINK</a>]</li> 
+			<li>Jaechang Nam, David Schuler, and Andreas Zeller, Calibrated Mutation Testing, <i>in Proceedings of the 4th International Workshop on Mutation Analysis (Mutation 2011)</i>, Berlin, 2011. [<a href=http://www.st.cs.uni-saarland.de/publications/details/nam-mutation-2011/ target=_NEW>PDF</a>]</li> 
+			<li>Jaechang Nam, Trust Framework of Ubiquitous Healthcare with Advanced Petri Net Model, <i>in Proceeding of First International ICST Conference on Electronic Healthcare for the 21st century (eHealth 2008)</i>, London, 2008. [<a href=http://www.springerlink.com/content/k26822l03x264627/ target=_NEW>PDF</a>]</li>
+		</ul> 
+		<h3>Dissertation</h3> 
+		<ul> 
+			<li>Jaechang Nam, <i>Component Reusability Analysis for Exchanging Electronic Health Records</i>, Master's Thesis, 2009. [<a href=http://www.bth.se/fou/cuppsats.nsf/774564d376efaa0cc1256cec0031533e/b6be8b94010c2138c1257634005463e0!OpenDocument target=_NEW>PDF</a>]</li>
+		</ul> 
+	<h3>Education</h3> 
+		<ul> 
+			<li>2007 ~ 2009 : <a href="http://www.bth.se">Blekinge Institute of Technology</a>, Sweden - Master of Science (MSc) in Computer Science </li> 
+			<li>1998 ~ 2002 : <a href="http://www.handong.edu">Handong Global University</a>, Korea - Bachelor of Management / Engineering in  Computer Science </li> 
+		</ul> 
+	<h3>Work Experiences</h3> 
+		<ul> 
+			<li><a href="https://iist.unu.edu/people/jcnam" target=_NEW>Fellow</a> @<a  href="http://iist.unu.edu/" target=_NEW>Iternational Institute for Software Techinlogy</a> at United Nations University, Macau, Jun. 2012 ~.</li>
+			<li>Internship @<a href="http://www.st.cs.uni-saarland.de" target=_NEW>Software Engineering Chair</a> at Saarland University, Germany, Jun. 2010 ~ Aug. 2010.</li> 
+			<li>Freelancer Software Engineer, Korea, Oct. 2005 ~ Jun. 2007.</li> 
+			<li>Program Development Officer (First lieutenant) @The 2nd Logistics Support Command in R.O.K. Army, Oct. 2003 ~ Jun. 2005.</li> 
+			<li>Head of Computer Center (Second lieutenant) @The 16th Supply Battalion in R.O.K. Army, Sep. 2002 ~ Sep. 2003.</li> 
+			<li>Research Assistant @GIS institute at Handong Global University, Korea, Jun. 1999 ~ Dec. 2001.</li> 
+		</ul> 
+	<h3>Applications</h3> 
+		<ul> 
+			<li><a href="https://market.android.com/details?id=org.lifovebible.android.lifovebible" target=_NEW>Lifove Bible</a> (Multi-language Bible Viewer for Android), 2010.
+				<ul>
+					<li>Introduced and interviewed in one of Korean newpapers: [<a href="http://news.kukinews.com/article/view.asp?page=1&gCode=kmi&arcid=0004128826&cp=nv" target=_NEW>1</a>]
+					[<a href="http://news.kukinews.com/article/view.asp?page=1&gCode=kmi&arcid=0004128027&cp=nv" target=_NEW>2</a>]
+					[<a href="http://news.kukinews.com/article/view.asp?page=1&gCode=kmi&arcid=0004559494&cp=nv" target=_NEW>3</a>]
+					</li>
+				</ul>
+			</li> 
+			<li><a href="https://market.android.com/details?id=org.lifovebible.android.lifovehymns" target=_NEW>Lifove Hymns</a> (Korean Hymns Lyrics Viewer for Android), 2010. (Initial version developer. Now published by Holysoft)</li>
+			<li><a href="http://www.bbbbtc.or.kr/nes/" target=_NEW>NLTC Evaluation System</a> (Education Information System), 2006.</li>
+			<li>Article Archive(Cache) Sever (for PUST), 2006.</li>
+			<li>Army Vehicle Insurance Management System (Confidential), 2004.</li>
+			<li>Operation Map Information System (Web(SVG)-based Map Application for The 2nd Logistics Support Command, Secret), 2003.</li> 
+			<li><a href="http://www.dicer.org/08_About/02_Notice_View.asp?txtIdx=79" target=_NEW>EDWGIS</a> (Environmental Data Web GIS System, not available), 2001.</li> 
+			<li>Cyber Image Information System for KICT (Web-based Satellite Image Trading Market, prototype), 2001.</li> 
+			<li>GIS815 Cyber Research Community</a> (Web-based Research Community, not available), 1999.</li> 
+		</ul> 
+	<h3>Family</h3> 
+		<ul>
+			<li>Lovely wife: Dr. Park, Jihyoun (working at ASTRI as a consultant, Postdoctoral at CUHK)<!--(She teaches <a href="http://www.ie.cuhk.edu.hk/msc/" target=_NEW>MSIE</a> students at <a href="http://www.cuhk.edu.hk/english/index.html" target=_NEW>CUHK</a>. <a href="https://course.ie.cuhk.edu.hk/~iems5709/" target=_NEW>Information Technology Cost Analysis</a>, 2012 Spring)--></li>
+		</ul>
+	<h3>Visited Countries</h3>
+	<div id='travel'></div>	
+	<div id='ref'>
+		<a href="http://code.google.com/apis/chart/interactive/docs/gallery/geochart.html" target=_NEW>Google Geo Chart</a>
+	</div>
+	<hr/> 
+	<script language="JavaScript">
+	<!-- Hide JavaScript...
+	var LastUpdated = document.lastModified;
+	document.writeln ("Last updated on " + LastUpdated  + "GMT.");
+	// End Hiding -->
+	</script>
+	This page is inspired by handk's (<a href="http://www.cse.ust.hk/~handk" target=_NEW>http://www.cse.ust.hk/~handk</a>).
+</body> 
+</html> 

@@ -1,0 +1,175 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.13.2" />
+		<meta name="keywords" content="Research" />
+			<title>Research</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "skins/common/shared.css?164";
+			@import "skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="skins/common/commonPrint.css?164" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+	</head>
+<body class="mediawiki ns-0 ltr page-Research">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+		<!-- HUNKIM
+		<h1 class="firstHeading">Research</h1>
+-->
+		<div id="bodyContent">
+			<h3 id="siteSub">From Sung Kim</h3>
+			<div id="contentSub"></div>
+										<!-- start content -->
+			<a name="Sung.27s_Research"></a><h1> <span class="mw-headline"> Sung's Research </span></h1>
+<p>My core research area is Software Engineering, focusing on software evolution, program analysis, and
+empirical studies. My chief research interest is programmer productivity, in particular, identifying faults
+in program development or in deployed programs by mining software repositories, source code (static
+analysis), and program execution (dynamic analysis).
+</p><p>A common theme in my research is analysis of software faults. The consequences of faulty software
+can include enormous loss of money or even lives. Providing a less fault-prone software development
+environment and effective algorithms to find faults is a thrilling and challenging research topic and
+goal. Towards this goal, I have been developing techniques that learn from successes and failures in
+software evolution, static source code, and program execution.
+</p><p>For example, BugCache learns from cached history and predicts future faults. ChangeClassification
+learns from previous bugs and indicates whether a new change includes a bug. ReCrash learns
+the status of method calls from program crashes and reproduces the crashes. Currently, I am
+participating in an ongoing project called Application Communities, which learns invariants from normal
+and abnormal program executions, and dynamically prevents abnormal execution. 
+</p>
+<div style="border:1px solid #ccc; background:#f9f9f9; padding:0.5em 1em;">
+<div style="background:#faecc8; padding:0.2em 0.5em; text-align:center; font-size:125%; font-weight:bold;">
+Mining Software Repositories</div>
+<div style="padding-top:0.5em;">
+<div class="mainpage_boxcontents_small">
+<p>Identifying the most fault-prone software modules and changes provides several benefits. It permits
+available resources to be focused on the modules or changes that have the most faults. Additionally,
+such a list of identified faults makes it possible to selectively use time-intensive techniques, such as
+manual inspection, formal methods, and various kinds of static code analysis. I have developed two
+successful fault prediction algorithms, BugCache and ChangeClassification.
+</p>
+<dl><dt>BugCache  - "If a file had a fault recently, it will tend to have other faults soon."
+</dt><dd>BugCache maintains a cache of locations that are likely to have faults. When a fault occurs, BugCache caches the location itself as well as any locations changed together with the fault, recently added locations, and recently changed locations. In the evaluation of seven open source projects with more than 200,000 revisions, a cache containing 10% of the source code files accounts for 73%-95% of faults – a significant advance beyond the state of the art.
+</dd></dl>
+<dl><dt>ChangeClassification - "I can tell whether your change includes bugs as soon as you submit it."
+</dt><dd>ChangeClassification uses a machine learning classifier to determine whether a new software change is more similar to prior buggy changes, or to clean changes. In this manner, ChangeClassification predicts when bugs are introduced by software changes. The classifier is trained using features (in the machine learning sense) extracted from the revision history of a software project. Our trained classifier can classify buggy changes with 78% accuracy and identify 65% of all bugs on average.
+</dd></dl>
+</div>
+</div>
+</div>
+<p><br />
+</p>
+<div style="border:1px solid #ccc; background:#f9f9f9; padding:0.5em 1em;">
+<div style="background:#faecc8; padding:0.2em 0.5em; text-align:center; font-size:125%; font-weight:bold;">
+Program Analysis</div>
+<div style="padding-top:0.5em;">
+<div class="mainpage_boxcontents_small">
+<p><br />
+</p>
+<dl><dt>ReCrash - "Making crashes reproducible."
+</dt><dd>It is difficult to fix a problem without being able to reproduce it. However, reproducing a problem is often difficult and time-consuming. I implemented ReCrash, which generates multiple unit tests that reproduce a given program crash. ReCrash dynamically monitors method calls during every execution of the target program. If the program crashes, ReCrash stores the information learned about the relevant method calls and uses the saved information to create unit tests reproducing the crash. ReCrash reproduces all real crashes from javac, SVNKit, Eclipse JDT, and BST. ReCrash is efficient, incurring only 13%-64% performance overhead. If this overhead is unacceptable, then ReCrash has another mode that has negligible overhead until a crash occurs, and 0%-1.7% overhead until a second crash occurs, at which point the test cases are generated. 
+</dd></dl>
+<dl><dt>Application Communities - "the zero-day patch"
+</dt><dd>I have participated in the Application Communities project and developed an infrastructure that monitors program execution and prevents program failure. The infrastructure learns invariants that distinguish normal program executions from abnormal executions. The infrastructure generates dynamic patches for the abnormal program executions (faults). Created patches are automatically tested and successful patches are automatically deployed – a zero-day patch.
+</dd></dl>
+</div>
+</div>
+</div>
+<p><br />
+</p>
+<div style="border:1px solid #ccc; background:#f9f9f9; padding:0.5em 1em;">
+<div style="background:#faecc8; padding:0.2em 0.5em; text-align:center; font-size:125%; font-weight:bold;">
+Current research projects</div>
+<div style="padding-top:0.5em;">
+<div class="mainpage_boxcontents_small">
+<dl><dt>Mining semantic fault patterns
+</dt><dd>By mining software history, BugCache and ChangeClassification successfully predict fault locations. However, these approaches do not provide reasons why predicted locations are faulty. Mining semantic patterns and reasons for faults helps developers to understand the faults and prevent them in advance. Preliminary research on mining important factors to find faults reveals that, surprisingly, source code that includes ’if,’ ’&lt;=’, or ’0’ is more fault-prone . Conducting research on mining semantic fault patterns is a future research topic.
+</dd></dl>
+<dl><dt>Combining multiple approaches
+</dt><dd> Combining analysis and mining approaches opens a new research area in which these complement each other to identify important faults. For example, I use static analysis and mining software history to prioritize the output of static analysis. The result is promising in that mining software history significantly improves the static analysis results. My experience in both dynamic and static analysis will lead to more research on combining these approaches, including mining software repositories, static analysis, and dynamic analysis to improve software developer productivity.
+</dd></dl>
+<dl><dt>Making production-level tools with industrial support 
+</dt><dd> Proposed algorithms such as BugCache, ChangeClassification, and ReCrash are useful in real software development or deployment processes. Developing production-level tools from proposed algorithms benefits developers. The tools can prevent developers creating faults and help debugging. Some companies, including Coverity, Apple, and Yahoo, are interested in such tools and I will work closely with industry.
+</dd></dl>
+<p><br />
+</p>
+</div>
+</div>
+</div>
+
+
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+<!-- edited by HUNKIM -->
+        			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+<!-- HUNKIM -->
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(images/cse_logo.png);" href="/" title="Visit the Main Page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-Menu'>
+			<p/>
+			<div class='pBody'>
+	                       <ul>
+	                               <li id="n-mainpage-description"><a href="index.html">Main Page</a></li>
+	                               <li id="n-Research"><a href="Research.html">Research</a></li>
+	                               <li id="n-Publications"><a href="Publications.html">Publications</a></li>
+	                               <li id="n-Software"><a href="Software.html">Software</a></li>
+	                               <li id="n-Teaching"><a href="Teaching.html">Teaching</a></li>
+	                               <li id="n-Students"><a href="Students.html">Students</a></li>
+	                               <li id="n-Service"><a href="Service.html">Service</a></li>
+	                               <li id="n-Bio"><a href="Bio.html">Bio</a></li>
+	                               <li id="n-Contact"><a href="Contact.html">Contact</a></li>
+	                       </ul>
+	               </div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+</div>
+
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.330 secs. -->
+</body>
+<!-- By HUNKIM -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1253595-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- End of the google analytics -->
+
+</html>
+

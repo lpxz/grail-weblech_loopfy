@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<title>Peng</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="mm_spa.css" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	background-image: url();
+}
+body,td,th {
+	color: #000000;
+	font-family: Courier New, Courier, monospace;
+	font-size: 14px;
+}
+
+A:link {color: #003333; }
+A:visited {color: #003333; }
+A:active {color: #003333;}
+A:hover {color: #003333;}
+
+
+.STYLE2 {color: #000000}
+.STYLE5 {font-size: 18px}
+.STYLE6 {color: #0000FF}
+-->
+</style></head>
+<body>
+<table border="0" cellspacing="0" cellpadding="0">
+  
+
+ <tr bgcolor="#FF080E">
+   <td width="74" bgcolor="#FFFFFF">　</td>
+ 	<td rowspan="3" bgcolor="#FFFFFF">&nbsp;
+      <div align="left"><br />
+        &nbsp;<br />
+        <table border="0" cellspacing="0" cellpadding="2" width="873">
+          
+          <tr>
+            <td width="252" height="250" rowspan="2" align="center" class="subHeader"><div align="left">
+				<img src="peng.jpg" alt="large product photo" width="135" height="155" border="0" /></div></td>
+            <td width="330" class="subHeader STYLE5"><p><span class="STYLE2">Liu, 
+			Peng</span></p></td>
+            <td width="279" class="subHeader STYLE5 STYLE2"><p align="left"> </p></td>
+          </tr>
+          
+          <tr>
+            <td valign="top" class="bodyText"><p class="STYLE2">Room 4208 </p>
+              <p class="STYLE2">Department of Computer Science and   Engineering</p>
+               <p class="STYLE2">Hong Kong University of Science and   Technology</p>
+              <p class="STYLE2">Clear Water Bay, Hong Kong</p>
+			<p class="STYLE2"><span class="STYLE2">Emai</span>l: <a href="mailto:lpxz@cse.ust.hk" style="text-decoration:none">lpxzATcse.ust.hk</a></p></td>
+            
+          </tr>
+        </table>
+      </div>
+	<p align="left"><strong>General information</strong></p>
+	<p align="left"><ul>I am a graduate student supervised by <a href="http://www.cs.ust.hk/~charlesz/" style="text-decoration:none">Dr. Charles Zhang</a>, since my
+	receiving the B.S. degree from <a href="http://www.ustc.edu.cn/" style="text-decoration:none">USTC</a>, at 2008.</ul>  
+	</p></td>
+ 	<td width="74" bgcolor="#FFFFFF">　</td>
+ </tr>
+
+ <tr bgcolor="#FF9900">
+   <td bgcolor="#FFFFFF">　</td>
+ 	<td bgcolor="#FFFFFF">　</td>
+ </tr>
+
+ <tr>
+   <td valign="top"><p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>&nbsp; </p>
+    <p>&nbsp; </p></td>
+    <td valign="top">　</td>
+ </tr>
+  <tr>
+    <td>　</td>
+    <td>
+	<p><strong>Research interests</strong></p>
+	<ul><li><p> Guaranteeing the safety and preserving the concurrency for <u>automatic concurrent bug fixing</u> (with the discrete control theory)</p></li></ul>
+	<ul><li><p> Identifying a balance point between the expressiveness and simplicity of <u>atomicity specification</u></p></li></ul>
+	<ul><li><p> Optimizing the <u>object persistence</u> by guiding it in an intelligent way</p></li></ul>
+	<ul><li><p> <u>Record and Replay</u></p></td></li></ul>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td style="color: #000000; font-family: 'Courier New', Courier, monospace; font-size: 14px">　</td>
+    <td style="color: #000000; font-family: 'Courier New', Courier, monospace; font-size: 14px">
+    <p><strong>Research work</strong></p>
+    <ul><li><p><font face="times new roman">
+  <a href="http://www.cse.ust.hk/~lpxz/" style="text-decoration:none"><b>Peng Liu</b></a>, 
+   <a href="http://www.eecs.umich.edu/~yinw/" style="text-decoration:none">Yin Wang</a>, 
+   <a href="http://www.hpl.hp.com/people/terence_p_kelly/" style="text-decoration:none"> Terence Kelly</a>, 
+   <a href="http://www.cs.ust.hk/~charlesz/" style="text-decoration:none">Charles Zhang</a>. 
+    	<u> GRAIL: General Restoration of Atomicity, Isolation, and Liveness</u>.  
+    	 In submission
+	  </font></p></li></ul>
+	  
+	 <ul> <li> 
+	    	<p><font face="times new roman"><b><a href="http://www.cse.ust.hk/~lpxz/" style="text-decoration:none">Peng Liu</a></b>, 
+	    <a href="http://www.cs.ust.hk/~charlesz/" style="text-decoration:none"> Charles Zhang</a>. 
+    	<u>AXIS: Automatically Fixing Atomicity Violations Through Solving Control Constraints</u>. 
+    		[<a href="axis.pdf">pdf</a>, <a href="talk.pptx">talk</a>]In <b><i><a href="http://www.ifi.uzh.ch/icse2012/" style="text-decoration:none">ICSE 2012</i></b> 
+	  </font></p></li></ul>
+	  
+	 <ul> <li>
+	<p><font face="times new roman"><b><a href="http://www.cse.ust.hk/~lpxz/" style="text-decoration:none">Peng Liu</a></b>, 
+	<a href="http://www.cs.ust.hk/~charlesz/" style="text-decoration:none"> Charles Zhang</a>. 
+	<u>PERT: 
+	The Application Specific Tailoring of Object Persistence.</u> 
+	In <b><i><a href="http://www.computer.org/portal/web/tse" style="text-decoration:none">TSE</a></i></b> </font></p>
+	</li></ul>
+	
+	<ul> <li>
+	<p><font face="times new roman">
+	<a href="http://www.cse.ust.hk/~smhuang/" style="text-decoration:none">  Shaoming 	Huang</a>, 
+	<b><a href="http://www.cse.ust.hk/~lpxz/" style="text-decoration:none">Peng Liu</a></b>, 
+	<a href="http://www.cs.ust.hk/~charlesz/" style="text-decoration:none"> Charles Zhang</a>. 
+	<u>LEAP: Lightweight deterministic 
+	multiprocessor replay for concurrent Java programs</u>. 
+	In <b><i><a href="http://fse18.cse.wustl.edu/" style="text-decoration:none">FSE 2010</i></b> </font></p></ul>
+	</li>
+	</td>
+    <td>　</td>
+  </tr>
+   <tr>
+    <td>　</td>
+    <td>
+    <p><strong>Hobbies</strong>: Reading, Music, Basketball</p>
+   <p>&nbsp; </p></td>
+    <td>　</td>
+  </tr>
+</table>
+</body>
+</html>

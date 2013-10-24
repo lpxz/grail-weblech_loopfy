@@ -1,0 +1,22 @@
+Results:
+
+Rank	Name			Solved	Time ellasped(min)
+
+
+1st 	Law Wing Hei	
+	Ho Yiu Sing		2+3	61+140	
+
+2nd	Ip Ivan Chi Ho	
+	Cheng Wu Albert	
+	Wong Tsz Wai Alvin		3	58
+
+3rd	Chan Kin Kong	
+	Lau Shun Cheong	
+	Lai Tsz Chung		2	115
+
+Observers*:
+	Liu Zhenming		3	37
+	Huang Jinxin		2	111
+
+(Current ACM Team members join the contest as observers.
+They are not counted for the prizes.)

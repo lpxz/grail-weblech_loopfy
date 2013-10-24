@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Filip Pizlo's Projects</title>
+</head>
+<body>
+<h1>Filip Pizlo's Projects</h1>
+<p>
+On this page you will find an outdated list of the projects that
+I've working on in the past.  If you'd like any additional information about
+any of these, feel free to <a href="mailto:pizlo@mac.com">e-mail me</a>.
+</p>
+<ul>
+<li>Fiji VM</li>
+<p>I decided that it would be fun to write my own VM from scratch.
+So that's what I did.  It's a hard real-time embedded VM for safety-critical applications,
+and its development is currently funded by the National Science Foundation, the Indiana
+Economic Development Corporation, and the Air Force.
+Currently it's only AOT, but I'm working on fixing that.
+And speaking of AOT - the Fiji VM compiler is fully parallel; you can compile typical
+programs in around 15 seconds on a quad-core machine.
+The performance of the generated executables is better than Ovm and within 10% of
+HotSpot 1.6 server, it's got
+great multicore support, and it uses an Immix-like on-the-fly concurrent garbage
+collector with strong real-time guarantees.  This collector has the world's first
+wait-free concurrent copying algorithm with strong coherence and throughput
+guarantees.  It also features my usual tricks, like high performance native threading
+and the best locking implementation out there.  Perhaps most awesome is that in
+addition to being able to run on POSIX-like platforms, the Fiji VM can boot from
+bare hardware.  One of our demos is that we give people a CD with some Java
+programs; you can pop the CD into your x86 computer, boot from the CD, and the
+Java programs will run directly on the bare metal.
+<a href="http://www.fiji-systems.com/">See here for updates about this technology.</a></p>
+
+<li>High-performance Robust Biased Locking for <a href="http://www.jikesrvm.org/">Jikes RVM</a> and
+<a href="http://www.fiji-systems.com/">Fiji VM</a></li>
+<p>Locking is essential for object-oriented programming, especially for multithreaded
+and parallel programs.  But sometimes locks are used unnecessarily, and are <i>never</i>
+contended.  This can occur especially of locks are used declaratively.  Ideally, there
+should be no cost to declaring a critical section as such - the VM should be able to
+identify dynamically if this is a real critical section (i.e. it's providing protection
+against simultaneous execution by multiple threads) or if it's superfluous.  Biased
+locking is one way of enabling the VM to dynamically deactivate critical sections that
+aren't being contended.  My implementation in Fiji VM and Jikes RVM leads to tremendous
+speedups even in multi-threaded programs, does not require any fancy heuristics, and
+has a clear worst-case bound, making it suitable in real-time programs when combined with
+PIP locking.</p>
+
+<li>Native Threads for <a href="http://www.jikesrvm.org/">Jikes RVM</a></li>
+<p>Jikes RVM has traditionally used green threads.  But this is unsustainable.  Real Java programs expect native thread semantics.  Since April 2008, I was working on implementing native threads; this work is now in RVM trunk and has been released as part of Jikes RVM 3.1.0.</p>
+
+<li>Highly Scalable Real-time Garbage Collection</li>
+<p>RTGC works great - if you don't have too many processors.  The next step is
+to make it scale.  We are exploring ways of scaling to 32+ processors by using
+a combination of reference counting, heaplets, and concurrent GC techniques.</p>
+
+<li><a href="smcas/index.html">Stochastic Multi-CAS</a></li>
+<p>Hardware gives us at best double-word atomic lock-free compare-and-swap (CAS).
+But we want to be able to do multi-word CAS.  Previous techniques for emulating
+multi-CAS in software required stealing bits; I have a stochastic algorithm that
+requires no bit stealing.  <a href="smcas/index.html">See here</a> for more info.
+
+  <li>On-the-fly Lock-free Concurrent Copying Real-time Garbage Collection</li>
+  <p>While at Microsoft Research, working with David Tarditi, Bjarne Steensgaard,
+  and Erez Petrank, we implemented a number of on-the-fly lock-free concurrent
+  copying
+  collector with strong real-time guarantees.  This work was done in the Bartok research compiler.  So far we
+  have an ISMM'07, ISMM'08, and PLDI'08 paper from this work.</p>
+
+  <li>Real-time Garbage Collection in <a href="http://www.ovmj.org/">OVM</a></li>
+  <p>I just recently added a high-performance real-time garbage collector to OVM.
+  It was quite fun.  I was able to reproduce the claims of Metronome.  Right
+  now I've got an RTSS'06 paper from it as well as a LCTES'07 paper.  The results
+  were also used in my VEE'07 paper, and the collector continues to get used in
+  our group for research.  This includes a more recent RTSS paper, which used this
+    collector infrastructure for studying the effectiveness of various scheduling
+    techniques. <a href="rtss-presentation.pdf">See here</a>
+for the presentation from RTSS.  <a href="hrtgc.pdf">And here</a> for the
+  LCTES'07 presentation.  Also <a href="rtgc-thesis-poster.pdf">see here</a>
+  for a poster I've presented about it.</p>
+  
+  <li>Accurate Garbage Collection in Uncooperative Environments</li>
+  <p>We wrote a CC paper about a new way of doing accurate garbage collection
+  when generating C++ code.  See the
+  poster <a href="lazy-ptr-stacks-poster.pdf">here</a> and the presentation
+  <a href="stuff/accurategc2.pdf">here</a>.</p>
+
+  <li>Asynchronous I/O in <a href="http://www.ovmj.org/">OVM</a></li>
+  <p>The goal is to explore the performance
+    and configurability characteristics of asynchronous I/O inside a real time
+    JVM.  In this work, asynchronous I/O is used to implement all user-level
+    (and some kernel-level) I/O facilities.  The best description of this
+    is in the TCES paper, for which I made a <a href="ovm-avionics-poster.pdf">poster</a>.</p>
+
+  <li><a href="http://veritas.sao.arizona.edu/">VERITAS</a>
+    (Very Energetic Radiation Imaging Telescope Array System)</li>
+  <p>I have done a variety of work for VERITAS.  My main contributions include
+    the Harvester, which serves as the back-end DACQ; Quicklook and QLtools,
+    which serve as a first-approximation analysis used by the observer; VBF,
+    which is the standard data format; and all of the software for the
+    Purdue volt-gain and afterpulsing PMT test stand.</p>
+</ul>
+<hr>
+<p><a href="mailto:pizlo@mac.com">pizlo@mac.com</a></p>
+<p><a href="research.html">Back to Homepage</a></p>
+</body>
+</html>
