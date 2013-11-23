@@ -22,14 +22,12 @@ public class TextSpider implements Constants {
             System.exit(0);
         }
         String propsFile = null;
-        boolean resume = false;
         if (args.length == 1) {
             propsFile = args[0];
         } else if (!args[0].equals("-resume")) {
             usage();
             System.exit(0);
         } else {
-            resume = true;
             propsFile = args[1];
         }
         Properties props = null;
@@ -49,18 +47,11 @@ public class TextSpider implements Constants {
         SpiderConfig config = new SpiderConfig(props);
         _logClass.debug(config);
         Spider spider = new Spider(config);
-        if (resume) {
-            _logClass.info("Reading checkpoint...");
-            spider.readCheckpoint();
-        }
-        _logClass.info("Starting Spider...");
-        spider.start();
+        spider.start0(); // start0 invokes the thread.start() again, see the code for details.
         System.out.println("\nHit any key to stop Spider\n");
         try {
-            edu.hkust.clap.monitor.Monitor.loopBegin(10);
-while (spider.isRunning()) { 
-edu.hkust.clap.monitor.Monitor.loopInc(10);
-{
+        	while (spider.isRunning()) { 
+        		{
                 if (System.in.available() != 0) {
                     System.out.println("\nStopping Spider...\n");
                     spider.stop();
@@ -68,7 +59,6 @@ edu.hkust.clap.monitor.Monitor.loopInc(10);
                 }
                 pause(SPIDER_STOP_PAUSE);
             }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(10);
 
         } catch (IOException ioe) {
             _logClass.error("Unexpected exception caught: " + ioe.getMessage(), ioe);

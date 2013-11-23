@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CS System</title>
+	<script src="/Scripts/jquery-1.8.1.min.js"></script>
+	<script src="/Scripts/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		var is_csd = 0;
+		var is_hkust = 1;
+	</script>
+	<script src="/Scripts/main.js"></script>
+	<script src="/Scripts/json2.js"></script>
+	<link rel="stylesheet" href="/Styles/main.css" />
+	<link rel="stylesheet" href="/Styles/common.css" />
+	<link rel="stylesheet" href="/Styles/jquery-ui-1.8.23.custom.css" />
+</head>
+<body>
+<div id="bodyContainer">
+	<header>
+		<div class="logo">
+			<img id="homeLogo" src="/images/cssystem.png" alt="CS SYSTEM HOMEPAGE" />
+		</div>
+		<div class="linksContainer">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Computing Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+			</nav>
+			<nav>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="searchBar">
+			<form action="#">
+				<div>
+					<span id="keywordClose">x</span>
+					<input id="keyword" size="20" type="text" autocomplete="off" placeholder="Search" />
+					<select id="searchCat">
+						<option>All</option>
+						<option>Faculty/Staff</option>
+						<option>Postgraduate</option>
+						<option>Undergraduate</option>
+						<option>Guest</option>
+					</select>
+				</div>
+				<div id="matches" class="floating">
+				</div>
+			</form>
+		</div>
+	</header>
+	<article class="main-content">
+<!--[][143.89.166.147][1][0]-->
+<h2>Computing Facilities</h2>
+<hr>
+<h3>Computing Facilities Usage Policies</h3>
+<ul>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/Facilities.php">General Usage Policy (Applicable to ALL CSD Users)</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/PG_Facilities.php">Usage Policy for Postgraduate Students</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/UG_Facilities.php">Usage Policy for Undergraduate Students</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/Special_Facilities.php">Usage Policy for Special Accounts</a>
+    <li><a href="/UServices/hkust_only/printerusage.html">Printing Policy and Statistics for PG offices</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/Ethics.php">Code of Ethics in CSD</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/FileSystem.php">Ownership for filesystems in CSD</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/RemoteDesktop.php">Remote Desktop Services in Windows XP for PGs</a>
+    <li><a href="https://www.cse.ust.hk/admin/facilities/committee/hkust_only/POLICY/patches.php">System patches/hotfixes/service packs in CSD</a>
+</ul>
+<br />
+
+<h3>Faculty</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/ts_fac.html">Faculty Terminal service - software list</a>
+    <li><a href="/Facilities/hkust_only/labsetup/fac.html">CSD FAC General PC Software List</a>
+    <li><a href="/Facilities/csd_only/gen_software.html">General List of Desktop Software</a>
+</ul>
+<br />
+
+<h3>Postgraduate</h3>
+<ul>
+    <li><a href="/UGuides/PG/hkust_only/machine.html">Info on all the PG workstations of the CSD</a>
+</ul>
+<br />
+
+<h3>Undergraduate Laboratories</h3>
+<p>The core configuration of the machines in the teaching labs will be frozen during the semester, any special requests like software installation, parameters tuning, virtual PC image distribution, etc, should be made before semester commences. All late requests will be handled individually, and may not work perfectly as expected. For instance, distribution of softwares/images requires the TAs to help verify if it works properly at each machines.<p />
+<ul>
+    <li><a href="/Facilities/hkust_only/labsetup/lab1.html">CSD Teaching Lab 1 (Rm. 4221) Configuration</a>
+    <li><a href="/Facilities/hkust_only/labsetup/lab2.html">CSD Teaching Lab 2 (Rm. 4214) Configuration</a>
+    <li><a href="/Facilities/hkust_only/labsetup/lab3.html">CSD Teaching Lab 3 (Rm. 4213) Configuration</a>
+    <li><a href="/Facilities/hkust_only/labsetup/lab4.html">CSD Teaching Lab 4 (Rm. 4210) Configuration</a>
+    <li><a href="/UServices/vmview/index.html">CSD Virtual Lab</a>
+    <li><a href="/Facilities/csd_only/4210/index.html">CSD Teaching Lab 4 (Rm. 4210) remodeling status</a>
+</ul>
+<br />
+
+<h3>Facilities for Final Year Projects (FYP)</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/FYP/index.html">Facilities and Resources for Final Year Projects (FYP)</a>
+</ul>
+<br />
+
+<h3>Postgraduate Laboratories</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/labsetup/pg.html">CSD PG General PC Software List</a>
+    <li><a href="/Facilities/hkust_only/ts_pg.html">PG Terminal service - software list</a>
+</ul>
+<br />
+
+<h3>General Equipments</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/equipsloan.html">General Equipments for Loan in the CS Admin./CSSYSTEM Office</a>
+</ul>
+<br />
+
+<h3>Remote Access Terminals in CSD</h3>
+<ul>
+    <li><a href="Facilities/ras.html">General remote access workstations</a></li>
+</ul>
+<br />
+
+<h3>CPU Servers in CSD</h3>
+<ul>
+    <li><a href="/Facilities/linux_cluster/index.html">Departmental Linux GRID CPU Cluster</a></li>
+    <li><a href="/Facilities/amdlinux.html">AMD-Opteron based Linux CPU Server for Faculties/Staff/PG</a></li>
+    <li><a href="/Facilities/intelx64linux.html">Intel x64-based Linux CPU Server for Faculties/Staff/PG</a></li>
+</ul>
+<br />
+
+<h3>Printers in CSD</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/ugprinters.html">Undergraduate</a></li>
+    <li><a href="/Facilities/hkust_only/printers.html">Faculty/Postgraduate/Staff</a></li>
+    <li><a href="/UServices/printers.html">Color Printing</a></li>
+    <li><a href="/UServices/ipp.html">Internet Printing</a></li>
+</ul>
+<br />
+
+<h3>CSD Anti-spam and anti-virus</h3>
+<ul>
+    <li><a href="/UServices/anti-spam/index.html">Anti-spam statistics in CSD</a></li>
+    <li><a href="/UServices/antivirus.html">Virus Information Center</a></li>
+</ul>
+<br />
+
+<h3>CSD Network/Firewall Information</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/Guidelines/Network_Guideline.html">Network Information</a></li>
+</ul>
+<br />
+
+<h3>CSD Mail and News Clients</h3>
+<ul>
+    <li><a href="/Facilities/hkust_only/mail_news.html">Mail and News Clients Configurations</a></li>
+</ul>
+	</article>
+	<footer>
+		<div class="bottom-links">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="contact">
+			<p class="red bold">Your browser is too old, please use Internet Explorer 9+, Firefox, Chrome, Safari or Opera to visit our site.</p>
+			<address>
+				<div>Please send comments and suggestions to <a class="mail"
+					href="javascript:msend('cssystem');">cssystem</a></div>
+				<div><a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering</a></div>
+				<div><a href="http://www.ust.hk/">The Hong Kong University of Science and Technology</a></div>
+				<div>All rights reserved</div>
+			</address>
+			<img id="officialLogo" src="/images/logo.gif" alt="logo" />
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="Welcome from Head of Department" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, Welcome from Head of Department" /-->
+<title>Welcome from Head of Department</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang">(此页只设英文版本) <a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">招聘计算机科学及工程学系系主任</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="关於我们" href="/admin/sitemap/?map=About">简介</a>
+<ul>
+<li class="x2"><a title="系主任欢迎词" href="/admin/welcome/">欢迎词</a></li>
+<li class="x2"><a href="/admin/about/">关於我们</a></li>
+<li class="x2"><a href="/admin/factsheet/">学系资料</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">新闻及成就</a></li>
+<li class="x2"><a href="/News/?type=event">活动</a></li>
+<li class="x2"><a title="安全管理" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">安全</a></li>
+<li class="x2"><a href="/admin/contact/">联络我们</a></li>
+<li class="x2"><a href="http://www.ust.hk/gb/about/campus_gethere.htm">如何到达科大</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="学系成员" href="/admin/sitemap/?map=People">学系成员</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">教员</a></li>
+<li class="x2"><a href="/admin/people/staff/">职员</a></li>
+<li class="x2"><a title="语言指导" href="/ct/">语言指导</a></li>
+<li class="x2"><a href="/admin/people/pg/">研究生</a></li>
+<li class="x2"><a href="/admin/recruitment/">招聘</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="本科生课程" href="/admin/sitemap/?map=Undergraduate">本科生</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">三年制本科生课程</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">三年制本科生内联网</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">四年制本科生课程</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">四年制本科生内联网</a></li>
+<li class="x2"><a href="/ug/admissions/">本科生招生</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="研究生课程" href="/admin/sitemap/?map=Postgraduate">研究生</a>
+<ul>
+<li class="x2"><a href="/pg/">研究生课程</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">研究生内联网</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">研究生招生</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">研究生去向</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="研究领域及范畴" href="/pg/research/">研究领域</a></li>
+<li class="x1"><a accesskey="C" title="学系就业中心" href="/admin/sitemap/?map=Career">就业</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">学生实习计划</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">雇主资讯</a></li>
+<li class="x2"><a href="/ug/internship/links/">相关连结</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="电脑设备" href="/admin/facilities/">设备</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">设施委员会及政策</a></li>
+<li class="x2"><a href="/admin/lab/">实验室时间表</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">用户指南</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">学系系统部</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="连结" href="/admin/sitemap/?map=Links">连结</a>
+<ul>
+<li class="x2"><a title="学系电邮系统" href="https://imail.cse.ust.hk/sqmail/">电邮系统</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">教职员内联网</a></li>
+<li class="x2"><a title="科大 MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="科大程式设计队" href="/acm/">程式设计队</a></li>
+<li class="x2"><a title="计算机科学及工程学学生会" href="http://ihome.ust.hk/~su_csess/">学生会</a></li>
+<!---->
+<li class="x2"><a title="计算机科学校友会" href="https://www.facebook.com/cseaa.hkust">校友会</a></li>
+<li class="x2"><a href="/admin/sitemap/">网站索引</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang">(此页只设英文版本) <a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a></span>
+-->
+<h1>Welcome from Head of Department</h1>
+
+<div class="imagebox right" style="width:245px">
+<a href="/~scheng/"><img src="pSiuwing.jpg" width="245" height="320"
+ alt="Prof. Siu-Wing Cheng, Acting Head of Department" /></a>
+<p>Prof. Siu-Wing Cheng, Acting Head of Department</p>
+</div>
+
+<p>We welcome you on behalf of the faculty, staff, and students of the 
+Department of Computer Science and Engineering (CSE) at the Hong Kong 
+University of Science and Technology (HKUST).  These are exciting times 
+for computer scientists as the discipline is now widely recognized as an 
+essential source of tools and techniques for advancements in nearly all 
+spheres of human endeavor.</p>
+
+<p>Our Department was founded in 1991. Now it has grown to <!--48-->42 faculties, 
+<!--154-->roughly 180 PhD students,
+<!--35-->30 MPhil students
+<!--114 MSc students,--> and
+<!--617-->500 undergraduate students,
+and numerous research and support staff. We have 
+three undergraduate programs - Computer Science, Computer Science 
+(Information Engineering), and Computer Engineering (jointly administered 
+with the ECE Department) - provide students with a broad range of choices. 
+All three programs are accredited by the Hong Kong Institute of 
+Engineers. There is a popular MSc-IT program.</p>
+
+<p>Our CSE at HKUST is research-oriented, student-centered Department. 
+Some of the driving principles and goals of our Department are embodied in 
+the following statements:</p>
+
+<h3>Mission Statement</h3>
+
+<p>To prepare undergraduate and post-graduate students for productive 
+careers in industry, academia, and government by providing an excellent 
+environment for teaching, learning, and research in the theory and 
+applications of computing and information technology. In particular, we 
+aim:</p>
+
+<ul>
+  <li>To produce highly qualified and well-rounded graduates possessing
+  fundamental knowledge of computing and information technology who can provide
+  leadership and service to Hong Kong, China, and the world.</li>
+  <li>To pursue creative research and new technologies in Computer Science and
+  Engineering and across disciplines in order to serve the needs of industry,
+  government, society, and the scientific community by expanding and
+  contributing to the body of knowledge in the field.</li>
+  <li>To develop strong partnerships with industrial and government agencies,
+  professional societies, and local communities.</li>
+</ul>
+
+<h3>Vision Statements</h3>
+
+<p>To be a recognized leader in Computer Science and Engineering education 
+and research:</p>
+
+<ul>
+  <li><strong>International</strong>: To have a strong impact in our 
+  targeted areas of research and to attract excellent faculty and students 
+  worldwide</li>
+  <li><strong>Regional</strong>: To be the catalyst in the region, and in 
+  particular China, in Computer Science and Engineering in terms of 
+  research, education, and technology transfer.</li>
+  <li><strong>Hong Kong</strong>: To contribute to Hong Kong as a 
+  knowledge-based hub in the areas of Computer Science and Information 
+  Technology by graduating some of the best students in these areas and by 
+  assisting relevant industry and governmental organizations.</li>
+</ul>
+
+<h3>Educational Objectives</h3>
+
+<p>The academic objectives of the Department of Computer Science and 
+Engineering is to provide outstanding education and research programs 
+that:</p>
+
+<ul>
+  <li>Promote a philosophy of learning that develops a diverse computer
+  science/engineering student body that can be prepared for their specific
+  profession, for advanced studies and careers in research, or for
+  multidisciplinary knowledge</li>
+  <li>Provide a stimulating academic research environment for individuals who,
+  in both industry and academia, will be leaders in the pioneering of computer
+  applications and of the development of new technology for the benefit of
+  society</li>
+  <li>Demonstrate technical competence in computer science and engineering
+  design and analysis consistent with the practice of a specialist and with the
+  broad perspective of the generalist</li>
+  <li>Provide, at various courses, individual and group projects in design and
+  research which, combined with classroom study, will prepare our students for
+  the professional practice of computer science and engineering and team
+  work</li>
+  <li>Develop the hallmarks of professional conduct, including a knowledge of
+  ethical choices, together with the confidence and strong communication skills
+  to lead, to follow, and to transmit ideas effectively</li>
+  <li>Instill learning as a lifelong activity and as a means to the creative
+  discovery, development, and implementation of technology as well as to keep
+  up with the dynamic nature of the Computer Science and Engineering
+  discipline</li>
+</ul>
+
+<p>We welcome you to browse through the departmental web site. Whether you 
+are a student, a parent, alumni, an employer, or a colleague, we want to 
+hear from you. Your comments and suggestions will help us move to the next 
+level and provide us with encouragement to maintain excellence.</p>
+
+<p><strong>Siu-Wing Cheng<br />
+Professor and Acting Head of the Department</strong></p>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>最后更新日期：2013-09-04<br />
+ 香港科技大学计算机科学及工程学系，保留所有版权。</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.020418882369995</div-->

@@ -3,22 +3,21 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. -->
-<project basedir="." default="build" name="weblech">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="weblech_loopfy">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
-    <path id="weblech.classpath">
+    <path id="weblech_loopfy.classpath">
         <pathelement location="bin"/>
-        <pathelement location="lib/log4j-1.1.3.jar"/>
+        <pathelement location="lib/log4j-1.2.14.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.g"/>
+                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -33,7 +32,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="weblech.classpath"/>
+            <classpath refid="weblech_loopfy.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -53,7 +52,34 @@
     <target name="TextSpider">
         <java classname="weblech.ui.TextSpider" failonerror="true" fork="yes">
             <arg line="config/Spider.properties"/>
-            <classpath refid="weblech.classpath"/>
+            <classpath refid="weblech_loopfy.classpath"/>
+        </java>
+    </target>
+    <target name="WeblechPerformanceTest">
+    	 <java classname="driverPerf.PerformanceTest" failonerror="true" fork="yes">
+    	            <arg line="config/Spider.properties 1"/>
+    	            <classpath refid="weblech_loopfy.classpath"/>
+    	        </java>
+    	 <java classname="driverPerf.PerformanceTest" failonerror="true" fork="yes">
+    	            <arg line="config/Spider.properties 2"/>
+    	            <classpath refid="weblech_loopfy.classpath"/>
+    	        </java>
+    	 <java classname="driverPerf.PerformanceTest" failonerror="true" fork="yes">
+    	            <arg line="config/Spider.properties 4"/>
+    	            <classpath refid="weblech_loopfy.classpath"/>
+    	        </java>
+    	 <java classname="driverPerf.PerformanceTest" failonerror="true" fork="yes">
+    	            <arg line="config/Spider.properties 8"/>
+    	            <classpath refid="weblech_loopfy.classpath"/>
+    	        </java>
+    	 <java classname="driverPerf.PerformanceTest" failonerror="true" fork="yes">
+    	            <arg line="config/Spider.properties 12"/>
+    	            <classpath refid="weblech_loopfy.classpath"/>
+    	        </java>
+    	
+        <java classname="driverPerf.PerformanceTest" failonerror="true" fork="yes">
+            <arg line="config/Spider.properties 16"/>
+            <classpath refid="weblech_loopfy.classpath"/>
         </java>
     </target>
 </project>

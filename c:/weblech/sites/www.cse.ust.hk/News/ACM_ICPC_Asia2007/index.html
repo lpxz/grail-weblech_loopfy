@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="ACM International Collegiate Programming Contest 2008" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, ACM International Collegiate Programming Contest 2008" /-->
+<title>ACM International Collegiate Programming Contest 2008</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn">中文简体</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">Search for Head of Computer Science &amp; Engineering</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="About Us" href="/admin/sitemap/?map=About">About</a>
+<ul>
+<li class="x2"><a title="Welcome Message" href="/admin/welcome/">Welcome</a></li>
+<li class="x2"><a href="/admin/about/">About Us</a></li>
+<li class="x2"><a href="/admin/factsheet/">Fact Sheet</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">News &amp; Achievements</a></li>
+<li class="x2"><a href="/News/?type=event">Events</a></li>
+<li class="x2"><a title="Safety Management" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">Safety</a></li>
+<li class="x2"><a href="/admin/contact/">Contact Us</a></li>
+<li class="x2"><a href="http://www.ust.hk/eng/about/campus_gethere.htm">Directions to HKUST</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="People" href="/admin/sitemap/?map=People">People</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">Faculty</a></li>
+<li class="x2"><a href="/admin/people/staff/">Staff</a></li>
+<li class="x2"><a title="Communication Tutors" href="/ct/">Communication Tutors</a></li>
+<li class="x2"><a href="/admin/people/pg/">Postgraduate Students</a></li>
+<li class="x2"><a href="/admin/recruitment/">Recruitment</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="Undergraduate Programs" href="/admin/sitemap/?map=Undergraduate">Undergraduate</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">3-Year UG Programs</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">3-Year UG Intranet</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">4-Year UG Programs</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">4-Year UG Intranet</a></li>
+<li class="x2"><a href="/ug/admissions/">UG Admissions</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="Postgraduate Programs" href="/admin/sitemap/?map=Postgraduate">Postgraduate</a>
+<ul>
+<li class="x2"><a href="/pg/">PG Programs</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">PG Intranet</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">PG Admissions</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">Student Destinations</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="Research Groups &amp; Areas" href="/pg/research/">Research</a></li>
+<li class="x1"><a accesskey="C" title="Career Corner" href="/admin/sitemap/?map=Career">Career</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">Internship Opportunities</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">Info for Employers</a></li>
+<li class="x2"><a href="/ug/internship/links/">Useful Links</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="Computing Facilities" href="/admin/facilities/">Facilities</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">Facility Committee &amp; Policies</a></li>
+<li class="x2"><a href="/admin/lab/">Lab Schedules</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">User Guides</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">CS System</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="Links" href="/admin/sitemap/?map=Links">Links</a>
+<ul>
+<li class="x2"><a title="CSE Webmail" href="https://imail.cse.ust.hk/sqmail/">WebMail</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">Faculty Intranet</a></li>
+<li class="x2"><a title="UST MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="HKUST Programming Team" href="/acm/">Programming Team</a></li>
+<li class="x2"><a title="CSE Students' Society" href="http://ihome.ust.hk/~su_csess/">Students' Society</a></li>
+<!---->
+<li class="x2"><a title="CS Alumni Association" href="https://www.facebook.com/cseaa.hkust">Alumni Association</a></li>
+<li class="x2"><a href="/admin/sitemap/">Site Map</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn">中文简体</a></span>
+-->
+<h1>ACM International Collegiate Programming Contest 2008</h1>
+
+<h2>Asia Regional Contests</h2>
+
+<!--p>The Department of Computer Science and Engineering has sent out 3 teams 
+to join the Regional Contests of ACM International Collegiate Programming 
+Contest 2007. We are delighted that they have got very good results in 
+various contest sites:</p>
+
+<p><strong>
+Asia Regional Contest - Seoul (November 1 - 2, 2007)<br />
+4<sup>th</sup> Place: Hu Hao, Chen Chen, Cheung Yun Kuen
+</strong></p>
+
+<p>The team comprised of Hu Hao (Year 1 COMP PhD), Chen Chen and Cheung 
+Yun Kuen was ranked the 4th Place in the Asia Regional Contest in Seoul 
+which was held on Nov 1 - 2, 2007.</p>
+
+<p><strong>
+Asia Regional Contest - Taipei (November 24 - November 25, 2007)<br />
+3rd Place: Chui Sung Him, YAN Zhepeng, WU You<br />
+4th Place: Chu Li Yu, YEUNG Yuen Chuen, LAM Chi Kit
+</strong></p>
+
+<p>The other 2 teams comprised of Chui Sung Him, YAN Zhepeng and WU You; 
+as well as Chu Li Yu, YEUNG Yuen Chuen and LAM Chi Kit respectively won 
+the 3rd Place and 4th Place in the Taipei Site.</p-->
+
+<p>The Department of Computer Science and Engineering has sent out 5 teams 
+to join the Regional Contests of ACM International Collegiate Programming 
+Contest 2008. We are delighted that they have got very good results in 
+various contest sites:</p>
+
+<ul>
+<li>Seoul Site: 4th Place</li>
+<li>Danang Site: 4th Place (First Prize)</li>
+<li>Taipei Site: 3rd Place &amp; 4th Place</li>
+<li>Chengdu Site: 14th Place (Silver Medal) &amp; Honorable Mention</li>
+</ul>
+
+<p>The team comprised of Hu Hao, Chen Chen and Cheung Yun Kuen was ranked 
+the 4th Place in the Asia Regional Contests in both Seoul site and Danang 
+site which was held on Nov 1 - 2, 2007 and Nov 10 - 11, 2007 respectively.  
+They also got the First Prize at Danang.</p>
+
+<p>The two teams comprised of Chui Sung Him, Yan Zhepeng and Wu You; as 
+well as Chu Li Yu, Yeung Yuen Chuen and Lam Chi Kit respectively won the 
+3rd Place and 4th Place in the Taipei Site contest held on Nov 24 - 25.  
+At the same time, another two teams, sent to the Chengdu Site, with team 
+members Yan Zhepeng, Li Qingxi, Guo Junfeng ; as well as Wu You, Qiu 
+Qianhao and Zhu Yin got 14th Place (Silver Medal) and Honorable Mention 
+respectively.</p>
+
+<p><a href="/~yike/">Dr. Ke Yi</a> and Li Rui was the Coach and PG Coach 
+of the teams respectively.</p>
+
+<p>Congratulations!</p>
+
+<div class="tcenter">
+<div class="imagebox" style="width:480px">
+<img src="DSCF0273.jpg" width="480" height="360"
+ alt="(From left to right) Dr. Ke Yi, Hu Hao, Cheung Yun Kuen, Chen Chen and Li Rui" />
+<p>(From left to right) Dr. Ke Yi, Hu Hao, Cheung Yun Kuen, Chen Chen and 
+Li Rui</p>
+</div>
+</div>
+
+<div class="tcenter">
+<div class="imagebox" style="width:480px">
+<img src="IMG_4937.jpg" width="480" height="334"
+ alt="(Front row, from left to right) Chui Sung Him, Yan Zhepeng, Wu You (Back row, from left to right) Lam Chi Kit, Li Rui, Chu Li Yu, Yeung Yuen" />
+<p>(Front row, from left to right) Chui Sung Him, Yan Zhepeng, Wu You<br />
+(Back row, from left to right) Lam Chi Kit, Li Rui, Chu Li Yu, Yeung Yuen 
+Chuen</p>
+</div>
+</div>
+
+<h3>More about ACM-ICPC</h3>
+
+<p>ACM-ICPC is an annual event organized by the Association for Computing 
+Machinery in US. It is known to be a prestigious competition in the 
+international computer world, due to its long establishment. The contest 
+provides a platform for university students to develop their analytical 
+skills and problem solving skills, and is recognized as the one with the 
+largest scale and highest level of similar kind.</p>
+
+<p>Within the limited time, participants are being challenged for their 
+creativity, teamwork, and innovation in building new software 
+programs.</p>
+
+<p>The contest is comprised of several levels of competitions:</p>
+
+<dl>
+<dt>Local Contests</dt>
+<dd>Universities choose teams or hold local contests to select one or more 
+teams to represent them at the next level of competition. Selection takes 
+place from a field of over 300,000 students in computing disciplines 
+worldwide.</dd>
+
+<dt>Regional Contests (September to December 2007)</dt>
+<dd>Last year, participation increased by 10% from 5,606 to 6,099 teams 
+representing 1,756 universities from 82 countries on six continents, not 
+counting 725 teams competing in preliminaries.</dd>
+
+<dt>World Finals (April 8-12, 2008, Fairmont Banff Springs, Alberta)</dt>
+<dd>Ninety (90) world finalist teams will compete for awards, prizes and 
+bragging rights. These teams represent the best of the finest universities 
+on six continents - the cream of the crop. The World Finals is hosted by 
+the University of Alberta that is celebrating its 100th year.</dd>
+</dl>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>Last updated on 2007-12-06<br />
+ Department of Computer Science and Engineering, HKUST. All rights reserved.</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.012861013412476</div-->

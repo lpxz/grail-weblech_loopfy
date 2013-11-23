@@ -57,9 +57,7 @@ public class URLGetter {
             _logClass.debug("Remote server response: " + resp);
             String respStr = conn.getHeaderField(0);
             _logClass.info("Server response: " + respStr);
-            edu.hkust.clap.monitor.Monitor.loopBegin(11);
 for (int i = 1; ; i++) { 
-edu.hkust.clap.monitor.Monitor.loopInc(11);
 {
                 String key = conn.getHeaderFieldKey(i);
                 if (key == null) {
@@ -68,21 +66,17 @@ edu.hkust.clap.monitor.Monitor.loopInc(11);
                 String value = conn.getHeaderField(key);
                 _logClass.debug("Received header " + key + ": " + value);
             }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(11);
 
             _logClass.debug("Getting buffered input stream from remote connection");
             BufferedInputStream remoteBIS = new BufferedInputStream(conn.getInputStream());
             ByteArrayOutputStream baos = new ByteArrayOutputStream(10240);
             byte[] buf = new byte[1024];
             int bytesRead = 0;
-            edu.hkust.clap.monitor.Monitor.loopBegin(12);
 while (bytesRead >= 0) { 
-edu.hkust.clap.monitor.Monitor.loopInc(12);
 {
                 baos.write(buf, 0, bytesRead);
                 bytesRead = remoteBIS.read(buf);
             }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(12);
 
             byte[] content = baos.toByteArray();
             long timeTaken = System.currentTimeMillis() - startTime;
@@ -96,10 +90,10 @@ edu.hkust.clap.monitor.Monitor.loopEnd(12);
             }
             return new URLObject(requestedURL, conn.getContentType(), content, config);
         } catch (FileNotFoundException fnfe) {
-            _logClass.warn("File not found: " + fnfe.getMessage());
+            _logClass.warn("File not found " );
             return null;
         } catch (IOException ioe) {
-            _logClass.warn("Caught IO Exception: " + ioe.getMessage(), ioe);
+            _logClass.warn("Caught IO Exception " );
             failureCount++;
             return null;
         }

@@ -1,0 +1,1217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<title>Welcome to Prof.Hamdi's Homepage</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/slidingdoors.css" />
+
+
+
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery-func.js" type="text/javascript"></script>
+
+
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript" src="Scripts/dropdowntabs.js"></script>
+
+
+
+<script type="text/javascript"> 
+
+
+
+var bannerAD=new Array(); 
+
+
+
+var bannerADlink=new Array(); 
+
+
+
+var adNum=0; 
+
+
+
+
+
+
+
+bannerAD[0]="index_images/aerial_view_HKUST-small.jpg"; 
+
+
+
+bannerADlink[0]="#"
+
+
+
+bannerAD[1]="index_images/boats_sailing-small.jpg"; 
+
+
+
+bannerADlink[1]="#"
+
+
+
+bannerAD[2]="index_images/library_at_night-small.jpg"; 
+
+
+
+bannerADlink[2]="#"
+
+
+
+bannerAD[3]="index_images/hkust-dorms.jpg"; 
+
+
+
+bannerADlink[3]="#"
+
+
+
+bannerAD[4]="index_images/swimming_pool-small.jpg"; 
+
+
+
+bannerADlink[4]="#"
+
+
+
+bannerAD[5]="index_images/library-small.jpg"; 
+
+
+
+bannerADlink[5]="#"
+
+
+
+bannerAD[6]="index_images/student_halls-small.jpg"; 
+
+
+
+bannerADlink[6]="#"
+
+
+
+bannerAD[7]="index_images/piazza_aerial-small.jpg"; 
+
+
+
+bannerADlink[7]="#"
+
+
+
+bannerAD[8]="index_images/stadium-small.jpg"; 
+
+
+
+bannerADlink[8]="#"
+
+
+
+bannerAD[9]="index_images/main_building-small.jpg"; 
+
+
+
+bannerADlink[9]="#"
+
+
+
+bannerAD[10]="index_images/sunset-small.jpg"; 
+
+
+
+bannerADlink[10]="#"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Slider -->
+
+
+
+/*图片可以增加*/
+
+
+
+
+
+
+
+var preloadedimages=new Array(); 
+
+
+
+for (i=1;i<bannerAD.length;i++){ 
+
+
+
+preloadedimages[i]=new Image(); 
+
+
+
+preloadedimages[i].src=bannerAD[i]; 
+
+
+
+} 
+
+
+
+
+
+
+
+function setTransition(){ 
+
+
+
+if (document.all){ 
+
+
+
+bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+
+
+
+bannerADrotator.filters.revealTrans.apply(); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+function playTransition(){ 
+
+
+
+if (document.all) 
+
+
+
+bannerADrotator.filters.revealTrans.play() 
+
+
+
+} 
+
+
+
+
+
+
+
+function nextAd(){ 
+
+
+
+if(adNum<bannerAD.length-1)adNum++ ; 
+
+
+
+else adNum=0; 
+
+
+
+setTransition(); 
+
+
+
+document.images.bannerADrotator.src=bannerAD[adNum]; 
+
+
+
+playTransition(); 
+
+
+
+theTimer=setTimeout("nextAd()", 3000); 
+
+
+
+} 
+
+
+
+
+
+
+
+function jump2url(){ 
+
+
+
+jumpUrl=bannerADlink[adNum]; 
+
+
+
+jumpTarget='_blank'; 
+
+
+
+if (jumpUrl != ''){ 
+
+
+
+if (jumpTarget != '')window.open(jumpUrl,jumpTarget); 
+
+
+
+else location.href=jumpUrl; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function displayStatusMsg() { 
+
+
+
+status=bannerADlink[adNum]; 
+
+
+
+document.returnValue = true; 
+
+
+
+} 
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<div class="outershell">
+
+
+
+<!-- Logo -->
+
+
+
+<div id="top">
+
+
+
+<div class="shell">
+
+
+
+    <p>
+
+
+
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="208" id="FlashID" title="test">
+
+
+
+        <param name="movie" value="css/images/top.swf" />
+
+
+
+        <param name="quality" value="high" />
+
+
+
+        <param name="wmode" value="opaque" />
+
+
+
+        <param name="swfversion" value="6.0.65.0" />
+
+
+
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+
+
+
+        </object>
+
+
+
+        </p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Logo -->
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+<div class="shell">
+
+
+
+<!-- Menu -->
+
+
+
+  <div id="slidemenu" class="slidetabsmenu">
+
+
+
+<ul>
+
+
+
+<li><a href="index.html" title="Home"><span>Home</span></a></li>
+
+
+
+<li><a href="#" title="Profile" rel="dropmenu1_c"><span>Profile</span></a></li>
+
+
+
+<li><a href="#" title="Research" rel="dropmenu2_c"><span>Research</span></a></li>
+
+
+
+<li><a href="#" title="University Service" rel="dropmenu3_c"><span>University Service</span></a></li>	
+
+
+
+<li><a href="#" title="International Service" rel="dropmenu4_c"><span>International Service</span></a></li>
+
+
+
+<li><a href="#" title="Teaching" rel="dropmenu5_c"><span>Teaching</span></a></li>
+
+
+
+<li><a href="#" title="Links"><span>Links</span></a></li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br style="clear: left;" />
+
+
+
+<br class="IEonlybr" />
+
+
+
+
+
+
+
+<!--1st drop down menu -->                                                   
+
+
+
+<div id="dropmenu1_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="e.html">Education</a>
+
+
+
+<a href="tre.html">Teaching and Research Experience</a>
+
+
+
+<a href="lpiar.html">Leadership Positions in Administration and Research &nbsp;</a>
+
+
+
+<a href="vhph.html">Visiting and Honorary Positions Held</a>
+
+
+
+<a href="cis.html">Consultancy and Industrial Service</a>
+
+
+
+<a href="ha.html">Honors and Awards</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd drop down menu -->                                                
+
+
+<div id="dropmenu2_c" class="dropmenudiv_c" style="width:auto;">
+<a href="ri.html">Research Interest</a>
+<a href="rp3.html">Research Publications Grouped In Chronological Order &nbsp</a>
+<a href="rp.html">Research Publications Grouped By Type</a>
+<a href="rp2.html">Research Publications Grouped By Research Topic</a>
+<a href="rg.html">Research Group</a>
+<a href="rfc.html">Research Funding and Contracts</a>
+<a href="rss.html">Research Student Supervision</a>
+</div>
+
+<!--3rd drop down menu -->                                                
+
+
+
+<div id="dropmenu3_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ufe.html">University-Founding Experience</a>
+
+
+
+<a href="igb.html">International Governmental Bodies &nbsp;</a>
+
+
+
+<a href="hkwe.html">Hong Kong Wide-Level Experience</a>
+
+
+
+<a href="ule.html">University-Level Experience</a>
+
+
+
+<a href="se.html">School-Level Experience</a>
+
+
+
+<a href="de.html">Department-Level Experience</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--4th drop down menu -->                                                
+
+
+
+<div id="dropmenu4_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="eo.html">Elected Office</a>
+
+
+
+<a href="mpto.html">Membership in Professional and Technical Organization &nbsp;</a>
+
+
+
+<a href="jes.html">Journal's Editorial Service</a>
+
+
+
+<a href="icws.html">International Conferences/Workshops Service</a>
+
+
+
+<a href="ir.html">International Referee</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--5th drop down menu -->                                                
+
+
+
+<div id="dropmenu5_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ta.html">Teaching Awards</a>
+
+
+
+<a href="Class/CSIT560-S13/index.htm">Spring 2013 Teaching</a>
+
+
+
+<a href="ct.html">Courses Taught</a>
+
+
+
+<a href="fyps.html">Final Year Project Supervision &nbsp;</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- End Menu -->
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Main -->
+
+
+
+<div id="main">
+
+
+
+<hr />
+
+
+
+  <div class="innershell">
+
+
+
+  <span id="top"></span>
+
+
+
+  <h2><strong>Conference Service</strong></h2>
+
+
+
+  <p><strong>Conference Organization</strong></p>
+
+
+
+  <ul>
+
+
+
+    <li><p>Co-Chair, <em>IEEE International  Conference on High-Performance Switching and Routing</em>, 2011</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE Globecom 2011</em> <em>Optical Networking Symposium</em>, Dallas, 2011</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE ICC’10</em> <em>Optical Networking Symposium, South Africa, 2010</em></p></li>
+
+
+
+    <li><p>Co-Char, <em>OFC Packet Switching  Symposium</em>, Los Angeles,   USA, March 2011</p></li>
+
+
+
+    <li><p>Co-Chair, UGC Symposium  on Outcome-based Approaches in Student Learning : &quot; Outcome Based  Approaches: Where are We Now and Where are We Going &quot;, 2009</p></li>
+
+
+
+    <li><p>Track Chair, <em>The International  Conference on Information Science, Technology and Applications</em> (<em>ISTA) </em>2009</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE ICC’08</em> <em>Optical Networking Symposium</em>, Beijing, China,  2008.</p></li>
+
+
+
+    <li><p>Co-Chair,<strong> </strong>UGC  Symposium on Outcome-based Approaches in Student Learning : &quot;Quality  Education, Quality Outcomes : The Way Forward for Hong   Kong&quot;, 2008. </p></li>
+
+
+
+    <li><p>General Co-Chair, <em>International  workshop on embedded single and multicore systems on chips</em> (MCSoC-07), China – 2007.</p></li>
+
+
+
+    <li><p>Honorary Chair, <em>International  Workshop on SoC and MCSoC Design</em><strong>, </strong>2006.</p></li>
+
+
+
+    <li><p>Track Chair, <em>The International  Conference on Innovations in Information Technology</em>, 2006</p></li>
+
+
+
+    <li><p>Track Chair, GCC - 2007</p></li>
+
+
+
+    <li><p>Chair, <em>IEEE International Conference  on High-Performance Switching and Routing</em> (HPSR), 2005.</p></li>
+
+
+
+    <li><p>Chair, <em>IEEE ICC’01 High-Speed Access  Symposium</em>, Helsinki, Finland, June 2001.</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE ICC’05 Optical  Networking Symposium</em>, Seoul,   Korea, May  2005.</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE ICC’03 Optical  Networking Symposium</em>, Anchorage,   Alaska, May 2003.</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE Globecom’02 Optical  Networking Symposium</em>, Taipei,   Taiwan,  November 2002.</p></li>
+
+
+
+    <li><p>Co-Chair, <em>International Conference on  Artificial and Computational Intelligence For Decision, Control and Automation  In Engineering and Industrial Applications</em> (ACIDCA 2005)</p></li>
+
+
+
+    <li><p>Vice-Chair, <em>IEEE ICC’04 Optical  Networking Symposium</em>, Paris,   France, June  2004.</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE IPPS International  Workshop on High-Speed Network Computing</em>, 1996.</p></li>
+
+
+
+    <li><p>Co-Chair, <em>IEEE IPPS International  Workshop on High-Speed Network Computing</em>, 1995.</p></li>
+
+
+
+    <li><p>International Liaison Chair, <em>the 16th  International Conference on Distributed Computing Systems</em>, 1996</p></li>
+
+
+
+    <li><p>Session Chairman/organizer at numerous International Conferences and  Workshops (e.g., HPSR, Globecom, ICC)</p></li>
+
+
+
+  </ul>
+
+
+
+  <p><strong>Technical Program  Committees</strong></p>
+
+
+
+  <p>I have  been in the Technical Program Committees of more than <strong>200</strong> International Conferences and Workshops (<em>too many to list individually and to keep track of</em>). These include:</p>
+
+
+
+  <ul>
+
+
+
+    <li><p>IEEE Globecom (99, 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10,  11)</p></li>
+
+
+
+    <li><p>IEEE International Conference on Communications (01, 02, 03,  04, 05, 06, 07, 08, 09, 10, 11)</p></li>
+
+
+
+    <li><p>IEEE ICC Optical Networking Symposium (01, 02, 03, 04, 05, 08,  09, 10, 11)</p></li>
+
+
+
+    <li><p>IEEE ICC High-Speed Networking Symposium (02, 03, 05)</p></li>
+
+
+
+    <li><p>IEEE ICC Wireless Networking Symposium 2003</p></li>
+
+
+
+    <li><p>ICC '08 ANI (ICC'08 -  Advances in Networks &amp; Internet Symposium).</p></li>
+
+
+
+    <li><p>IEEE Vehicular Technology Conference (02, 03, 06)</p></li>
+
+
+
+    <li><p>Industrial Conference on Multi-Provider QoS/SLA Internetworking<strong> </strong>2005 </p></li>
+
+
+
+    <li><p>Industrial Conference on Convergent Services and Next Generation Networks  2005 </p></li>
+
+
+
+    <li><p>The International Symposium on Parallel Architectures, Algorithms, and  Networks (I-SPAN 2004) </p></li>
+
+
+
+    <li><p>The International Workshop on Optical Networks Control and Management (03,  04, 05) </p></li>
+
+
+
+    <li><p>Broadband Optical Networking Symposium 2004, 2008, 2009 </p></li>
+
+
+
+    <li><p>International Conference on Information Technology:  Research and Education  (ITRE), 2004, 2005</p></li>
+
+
+
+    <li><p>IEEE International Workshop on IP Operations  &amp; Management (IPOM 2004)</p></li>
+
+
+
+    <li><p>International Conference on Photonics and Switching 2003<strong></strong></p></li>
+
+
+
+    <li><p> IEEE Local  Communication Networks (LCN 04, LCN 09, LCN 10)</p></li>
+
+
+
+    <li><p>Second International Workshop on QoS in Multiservice IP Networks QoS-IP 03, 05</p></li>
+
+
+
+    <li><p>IEEE/SPIE Optical Networking and Communications Conference –  Opticomm (02, 03, 04)</p></li>
+
+
+
+    <li><p>IEEE High-Speed Switching and Routing Conference – HPSR (02,  03, 04, 05, 06)</p></li>
+
+
+
+    <li><p>IEEE High-Speed Interconnects Symposium (Hot-Interconnects) -  2003</p></li>
+
+
+
+    <li><p>The International Symposium on Photonics, Networking and Computing - PNC  (01, 02, 03) </p></li>
+
+
+
+    <li><p>IEEE Workshop on Computer Communications - 2003 </p></li>
+
+
+
+    <li><p>The International Conference on Multimedia and Expo (ICME) – 2002 </p></li>
+
+
+
+    <li><p>International Conference on GRID Networks and Services, 2005 </p></li>
+
+
+
+    <li><p>The IEEE International Performance, Computing, and Communications  Conference (IPCCC 02, 03) </p></li>
+
+
+
+    <li><p>The International Conference on Information Networking (ICOIN) - 2003</p></li>
+
+
+
+    <li><p>The International Workshop on Optics and Computer Science (00, 01) </p></li>
+
+
+
+    <li><p>The IEEE Workshop on Computer Architectures for Machine Perception (CAMP) -  1995 </p></li>
+
+
+
+    <li><p>The International Conference on High Performance Computing - HiPC,  (96, 97) </p></li>
+
+
+
+    <li><p>IEEE International Workshop on Broadband Switching Systems (BSS) - 1997 </p></li>
+
+
+
+    <li><p>The International Conference on Parallel and Distributed Systems – ICPADS  (95, 96, 97) </p></li>
+
+
+
+    <li><p>SPIE ITCom Symposium - 2001 </p></li>
+
+
+
+    <li><p>International Conference on E-business and Telecommunication Networks&quot;  (ICETE) - 2004 </p></li>
+
+
+
+    <li><p>IEEE International Conference on Parallel Interconnect - 2000 </p></li>
+
+
+
+    <li><p>Workshop on Optical Communications for Computing Systems (99, 00)</p></li>
+
+
+
+    <li><p>International Workshop on Verification and Evaluation of Computer and  Communication Systems  (VECoS'07) - 2007. </p></li>
+
+
+
+    <li><p>International Conference on Computer Communications and Networks (ICCCN), 2007</p></li>
+
+
+
+    <li><p>Optical Symposium on Broadnets 2007</p></li>
+
+
+
+    <li><p>The International Conference on Access Networks - AccessNets 2007</p></li>
+
+
+
+    <li><p>International Conferences on Information, Communications and Signal  Processing (ICICS),  2007 </p></li>
+
+
+
+    <li><p>International Conference  on Communications and Networking  (China-Com),   2006, 2007, 2008</p></li>
+
+
+
+    <li><p>The 2007 IEEE  International Conference on Signal Processing and Communications (ICSPC 07)</p></li>
+
+
+
+    <li><p>International Conference  on Advanced Communication Technology  - ICACT  2006- 2007, 2008</p></li>
+
+
+
+    <li><p>The 4th International  Conference on Innovations in Information Technology IIT2007</p></li>
+
+
+
+    <li><p>International Conference  on Networking and Services (ICNS), 2008</p></li>
+
+
+
+    <li><p>IEEE International  Conference: Sciences of Electronic, Technologies of Information and  Telecommunications (SETIIT),  2007, 2009</p></li>
+
+
+
+    <li><p>The International  Wireless Communications and Mobile  Computing Conference (WCMC) '08 </p></li>
+
+
+
+    <li><p>IEEE Mobile WiMAX, 2007</p></li>
+
+
+
+    <li><p>IWCMC'08 Wireless LANs and Wireless PANs Symposium </p></li>
+
+
+
+    <li><p>4G WiMAX System, 2008</p></li>
+
+
+
+    <li><p>International  Conference on Heterogeneous Networking for Quality, Reliability, Security and  Robustness (QShine), 2008</p></li>
+
+
+
+    <li><p>International Workshop on Guaranteed Optical Service Provisioning<strong>  (</strong>GOSP- 2008) </p></li>
+
+
+
+    <li><p>The International  Symposium on Wireless Personal Multimedia Communications (WPMC) ’08 </p></li>
+
+
+
+    <li><p>International Symposium  on Wireless and Personal Communications (WPMC’09)</p></li>
+
+
+
+    <li><p>International Conference  in Telecommunications 2010</p></li>
+
+
+
+    <li><p>IEEE International  Conference on Wireless Local Networks   (WLN 09)</p></li>
+
+
+
+    <li><p>IT-NEWS (QOS-IP) 2008 </p></li>
+
+
+
+    <li><p>The  International Conference on Information Science, Technology and Applications (ISTA), 2009 </p></li>
+
+
+
+    <li><p>IEEE Globecom Symposium - GC'08 SAC </p></li>
+
+
+
+    <li><p>IEEE Globecom Symposium - GC'07 WN, GC'08 WN, GC'09 WN, GC10 WN </p></li>
+
+
+
+    <li><p>IEEE Globecom Symposium - GC'10 ON </p></li>
+
+
+
+    <li><p>IEEE Globecom Symposium - GC'08 AHSN </p></li>
+
+
+
+    <li><p>EMERGING 2009</p></li>
+
+
+
+    <li><p>IEEE MWS'09 (IEEE Mobile WiMAX Symposium 2009)</p></li>
+
+
+
+    <li><p>IEEE&nbsp; Workshop on  Performance evaluation of communications in distributed systems (2009)</p></li>
+
+
+
+    <li><p>The  First International Conferences on Access Networks, Services and Technologies  ACCESS 2010 </p></li>
+
+
+
+  </ul>
+
+
+
+  <p><strong>Advisory/Steering Committee</strong></p>
+
+
+
+  <ul>
+
+
+
+    <li><p>HKIE Accreditation Chair for HKU Computer Science Programs  , 2010 </p></li>
+
+
+
+    <li><p>HKIE Accreditation Chair for PUHK Computer Science Programs  , 2010 </p></li>
+
+
+
+    <li><p>HKIE Accreditation Chair for CUHK Computer Engineering ,  2009 </p></li>
+
+
+
+    <li><p>10th International Conference on Advanced Communication  Technology, 2008 </p></li>
+
+
+
+    <li><p>International Conference on GRID Networks and Services, 2005 </p></li>
+
+
+
+    <li><p>International Conference on Information, Communications and Signal  Processing (ICICS 2007) </p></li>
+
+
+
+    <li><p>IEEE High-Performance Switching and Routing Workshop (HPSR) </p></li>
+
+
+
+  </ul>
+
+
+
+  
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Main -->
+
+
+
+<hr />
+
+
+
+<!-- Footer -->
+
+
+
+<div id="footer">
+
+
+
+    <h1><a href="#top">Top of Page</a></h1>
+
+
+
+ </div>
+
+
+
+<!-- End Footer -->
+
+
+
+ </div>
+
+
+
+<script type="text/javascript">
+
+
+
+swfobject.registerObject("FlashID");
+
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+
+
+
+tabdropdown.init("slidemenu")
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+

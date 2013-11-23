@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="./afchecker_files/template-2c-lr-sn.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./afchecker_files/vertical-menu.css" /><title>AFChecker Homepage</title>
+
+<meta name="Keywords" content="2 column,left rail,side navigation,standards compliant,free template" />
+<meta name="Description" content="This 2 column left rail side navigation standards compliant template is free to use and is released under the Creative Commons Attribution Licence." />
+<meta name="robots" content="index, follow" />
+<meta name="robots" content="all" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="no" />
+</head>
+<body>
+<div id="supercontainer">
+<div id="topcontainer">
+<div id="logo"><a href="http://www.ust.hk"><img src="./images/hkust-logo.gif" alt="hkust logo" border="0" height="57" width="311" /></a></div>
+<div id="contact"><strong>AFChecker Research Project
+Home</strong><br />
+<a href="mailto:andrewust@cse.ust.hk">Contact:
+andrewust@cse.ust.hk</a></div>
+</div>
+<div id="middlecontainer">
+<div id="columncontainer">
+<div id="sidenav">
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+<li><a href="index.html" title="AFChecker Homepage" target="_self">Project Home</a></li>
+<li><a href="tool.html" title="AFChecker Download page" target="_self">Tool
+Download</a></li>
+<li><a href="tutorial.html" title="tool tutorial" target="_self">Tutorial</a>
+</li>
+<li><a href="./javadoc/index.html" title="java doc" target="_self">Documentation</a></li>
+<li><a href="relatedprojects.html" title="related projects" target="_self">Related
+Projects</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="column">
+<h2>&nbsp; &nbsp;Researchers&nbsp;</h2>
+<ul>
+<li><a href="http://www.cse.ust.hk/%7Eandrewust">Yepang
+Liu</a></li>
+<li><a href="http://cs.nju.edu.cn/changxu">Chang
+Xu</a></li>
+<li><a href="http://www.cse.ust.hk/%7Escc">S.C.
+Cheung</a></li>
+</ul>
+</div>
+</div>
+<div id="middle">
+<h1>Effective
+Model Checking for Context-Aware
+Pervasive Applications</h1>
+<p style="text-align: justify;">Many smartphone
+applications leverage the phones' sensors to continously
+sense and adapt to the users' environment. These
+context-aware applications typically rely on user-configured rules to
+customize
+their behavior. However, evidences [2][3] show that these applications
+are vulnerable to abnormal adaptations caused by rule
+misconfigurations. Consider a very simple application that can help
+users switch their phones between the "<span style="font-style: italic;">silent</span><span style="font-style: italic;"></span>" and "<span style="font-style: italic;">ring</span><span style="font-style: italic;"></span>" mode. Users can
+configure
+the following two rules:</p>
+<ul>
+<li><span style="font-weight: bold;">Rule 1:</span>
+Enable silent mode when a Bluetooth device "OfficePC" is discovered
+nearby.</li>
+<li><span style="font-weight: bold;">Rule 2:</span>
+Enable ring mode when the phone's GPS module reports its current
+location as "Home".</li>
+</ul>
+<div style="text-align: justify;">If the user takes his
+office PC home for work, the application will discover that both of the
+two rules are satisfied. If the rules have the same priority level,
+they would be non-deterministically selected for execution, resulting
+in an unexpected adaptation. In reality, rule misconfigurations are
+very common since it is unrealistic to ask users to perform careful
+rule validation especially when rules are correlated with each other.
+To automate the rule validation process, researchers [2] have proposed
+a
+useful technique (A-FSM). The technique extracts a finite state machine
+from the user-configured rules, and exhastively searches the state
+machine's state space to find commonly occurred&nbsp;adaptation
+faults: (1) underministic adaptation, (2) dead rule predicate, (3) dead
+state, (4) adaptation race, and (5) unreachable states.</div>
+<h3><span style="text-decoration: underline;">Our
+Motivation</span>&nbsp;</h3>
+<p style="text-align: justify;">Despite that the A-FSM
+technique will not miss any fault, it could report many false alarms,
+which seriously affects the technique's usefulness. The goal of our
+project is to improve the effectiveness of the A-FSM
+technique. We address the false alarm issue by inferring a domain model
+and an environment model for a rule-base context-aware application. The
+models capture the hidden features inside the user-configured rules as
+well as the application's running environment. We formulate such
+derived features as detereministic constraints and probabilistic
+constraints to prune the false alarms and effectively prioritize the
+fault reports. Therefore, the fault reports generated by our technique
+would mostly contain true faults or have most true faults
+&nbsp;ranked at the very top. By this, the users can quickly
+realize the misconfigurations in their rules after applying our
+technique.&nbsp;&nbsp;</p>
+<h3><span style="text-decoration: underline;">AFChecker
+Tool</span></h3>
+<div style="text-align: justify;">We built our technique
+as a publically available tool called "AFChecker". AFChecker can work
+in two modes: non-interactive mode and interactive mode. In
+non-interactive mode, AFChecker verifies the input finite state machine
+and reports all detected faults to users. In interactive mode, users
+can
+check faults one by one and provide the information that whether the
+fault is a true fault or not. Based on users' feedbacks, AFChecker
+would adjust the prioritization of the remaining faults, and report the
+faults that are most likely to be true to users in the next. Currently,
+our AFChecker can help verify the applications with rules expressed in
+a typical form supported by many real-world applications: <br />
+</div>
+<div style="text-align: left;">
+<ul>
+<li>Rule := &lt;current state, predicate, new state,
+actions, and priority level&gt;</li>
+</ul>
+</div>
+The predicate can be expressed in a disjunctive normal form with the
+following syntax:<br />
+<ul>
+<li>Predicate := Clause | Clause v Predicate</li>
+</ul>
+<ul>
+<li>Clause := Atom | ¬Atom | (Atom ^ Clause)</li>
+</ul>
+<ul>
+<li>Atom := proposition(context variable)</li>
+</ul>
+<p style="text-align: justify;">For details about the
+capability of our technique, please
+refer to our reseach paper [1]. We also provide a <a href="tutorial.html">tutorial page</a> to
+demonstrate how to use our AFChecker tool.&nbsp;</p>
+<h3><span style="text-decoration: underline;">References</span></h3>
+<ol style="text-align: justify;">
+<li>Liu Y., Xu, C., and Cheung, S.C. AFChecker: Effective Model
+Checking
+for Context-aware Pervasive Applications. The Journal of Systems and
+Software.</li>
+<li>Sama, M., Elbaum, S., Raimondi, F., Rosenblum, D.S., and
+Wang, Z. 2010a. Context-aware Adaptive Applications: Fault Patterns and
+Their Automated Identification. IEEE Transactions on Software
+Engineering 36, 5&nbsp;, 644-661.&nbsp;</li>
+<li>Tasker Limitations. URL:
+http://tasker.dinglisch.net/bugs.html</li>
+</ol>
+</div>
+<br class="clearfloat" />
+</div>
+<div id="footercontainer">
+<div id="footer">
+<div align="center"><a href="http://www.cse.ust.hk">CSE
+Department</a> | <a href="http://www.ust.hk">HKUST</a>
+|<a href="http://www.e-crm.co.uk/free-templates/free-templates.html" target="_blank"> Template design by E-CRM</a><a href="#">&nbsp;|
+Page
+Last Update on April 26, 2013.</a>
+</div>
+</div>
+</div>
+</div>
+</body></html>

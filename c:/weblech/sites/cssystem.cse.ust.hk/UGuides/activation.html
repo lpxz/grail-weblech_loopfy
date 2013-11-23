@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CS System</title>
+	<script src="/Scripts/jquery-1.8.1.min.js"></script>
+	<script src="/Scripts/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		var is_csd = 0;
+		var is_hkust = 1;
+	</script>
+	<script src="/Scripts/main.js"></script>
+	<script src="/Scripts/json2.js"></script>
+	<link rel="stylesheet" href="/Styles/main.css" />
+	<link rel="stylesheet" href="/Styles/common.css" />
+	<link rel="stylesheet" href="/Styles/jquery-ui-1.8.23.custom.css" />
+</head>
+<body>
+<div id="bodyContainer">
+	<header>
+		<div class="logo">
+			<img id="homeLogo" src="/images/cssystem.png" alt="CS SYSTEM HOMEPAGE" />
+		</div>
+		<div class="linksContainer">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Computing Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+			</nav>
+			<nav>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="searchBar">
+			<form action="#">
+				<div>
+					<span id="keywordClose">x</span>
+					<input id="keyword" size="20" type="text" autocomplete="off" placeholder="Search" />
+					<select id="searchCat">
+						<option>All</option>
+						<option>Faculty/Staff</option>
+						<option>Postgraduate</option>
+						<option>Undergraduate</option>
+						<option>Guest</option>
+					</select>
+				</div>
+				<div id="matches" class="floating">
+				</div>
+			</form>
+		</div>
+	</header>
+	<article class="main-content">
+<!--[][143.89.166.147][1][0]-->
+<h1>CSD Computer Accounts Activation</h1>
+<hr />
+<ul>
+    <li>
+        <p>
+            By default, every UG doing CS courses will get a CSD PC account. For those
+UGs doing CS courses which require UNIX will also be assigned a UNIX account.
+Both accounts will have the same username as your ITSC account.
+        </p>
+    </li>
+    <li>
+        <p>
+            New CSD accounts (PC and UNIX) are not activated by default. To activate
+your CSD account, go to an ITSC Computer Barn, login (with your ITSC login name
+and password), start a web browser (Microsoft Internet Explorer or Netscape),
+and access the following URL:
+        </p>
+        <h3 class="center"><a href="https://password.cse.ust.hk:8443/pass.html">https://password.cse.ust.hk:8443/pass.html</a></h3>
+        <p>
+            The following are the detailed steps (using Microsoft IE as the
+example browser):
+        </p>
+        <p>
+            You will first be redirected to the CAS authentication service provided by
+ITSC, you may logon the page with your ITSC username and password.
+        </p>
+        <p>Then following form will be shown:</p>
+        <div class="center">
+            <img src="UGuides/CSSU3/activation1.jpg">
+        </div>
+        <ul>
+            <li>
+                <p>
+                    Type in your <span class="bold">CSD Login Name</span> (which is the same as your <span class="bold">ITSC
+Login Name</span>). Type in a password of your choice at the <span class="bold">New Password</span>
+                    line. Retype the same password at the <span class="bold">Retype Password</span> line. At the
+                        <span class="bold">Setting Password of</span> line, click to select:
+                </p>
+                <ul>
+                    <li><span class="bold">UNIX A/C for UG domain</span>.</li>
+                    <li><span class="bold">PC A/C at domain CSD</span>.</li>
+                </ul>
+                <p>
+                    <span class="bold">PS:</span> The password you enter above will now be the password you will use to
+login to CSD PCs and UNIX workstations. It will stay until the next time you use
+this page to change the password again. Click on <span class="bold">GO UPDATE</span> button.
+                </p>
+                <div class="center">
+                    <img src="UGuides/CSSU3/activation_3.jpg">
+                </div>
+            </li>
+            <li>
+                <p>
+                    If everything goes well, then your passwords will be set. The above shows
+the output of a successful password setting session.
+                </p>
+                <p>
+                    <span class="bold">Note</span>: you <span class="bold">MUST</span> kill off the browser window when you see the above
+message. If you don't, other people can still the window, and change <span class="bold">YOUR</span>
+                    password.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If the above window shows that the password changing session has <span class="bold">FAILED</span>,
+you can try again in 5 minutes, or notify your TA and <a class="mail"
+    href="javascript:msend('cssystem');">cssystem</a> immediately. You should try to copy down the failure message before
+you contact your TA or CSsystem.
+                </p>
+            </li>
+        </ul>
+    </li>
+</ul>	</article>
+	<footer>
+		<div class="bottom-links">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="contact">
+			<p class="red bold">Your browser is too old, please use Internet Explorer 9+, Firefox, Chrome, Safari or Opera to visit our site.</p>
+			<address>
+				<div>Please send comments and suggestions to <a class="mail"
+					href="javascript:msend('cssystem');">cssystem</a></div>
+				<div><a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering</a></div>
+				<div><a href="http://www.ust.hk/">The Hong Kong University of Science and Technology</a></div>
+				<div>All rights reserved</div>
+			</address>
+			<img id="officialLogo" src="/images/logo.gif" alt="logo" />
+		</div>
+	</footer>
+</div>
+</body>
+</html>

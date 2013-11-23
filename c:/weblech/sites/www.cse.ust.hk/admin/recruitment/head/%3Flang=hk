@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="Head of the Department of Computer Science and Engineering" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, Head of the Department of Computer Science and Engineering" /-->
+<title>Head of the Department of Computer Science and Engineering</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang">(此頁只設英文版本) <a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn">中文简体</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">招聘計算機科學及工程學系系主任</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="關於我們" href="/admin/sitemap/?map=About">簡介</a>
+<ul>
+<li class="x2"><a title="系主任歡迎詞" href="/admin/welcome/">歡迎詞</a></li>
+<li class="x2"><a href="/admin/about/">關於我們</a></li>
+<li class="x2"><a href="/admin/factsheet/">學系資料</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">新聞及成就</a></li>
+<li class="x2"><a href="/News/?type=event">活動</a></li>
+<li class="x2"><a title="安全管理" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">安全</a></li>
+<li class="x2"><a href="/admin/contact/">聯絡我們</a></li>
+<li class="x2"><a href="http://www.ust.hk/chi/about/campus_gethere.htm">如何到達科大</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="學系成員" href="/admin/sitemap/?map=People">學系成員</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">教員</a></li>
+<li class="x2"><a href="/admin/people/staff/">職員</a></li>
+<li class="x2"><a title="語言指導" href="/ct/">語言指導</a></li>
+<li class="x2"><a href="/admin/people/pg/">研究生</a></li>
+<li class="x2"><a href="/admin/recruitment/">招聘</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="本科生課程" href="/admin/sitemap/?map=Undergraduate">本科生</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">三年制本科生課程</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">三年制本科生內聯網</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">四年制本科生課程</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">四年制本科生內聯網</a></li>
+<li class="x2"><a href="/ug/admissions/">本科生招生</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="研究生課程" href="/admin/sitemap/?map=Postgraduate">研究生</a>
+<ul>
+<li class="x2"><a href="/pg/">研究生課程</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">研究生內聯網</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">研究生招生</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">研究生去向</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="研究領域及範疇" href="/pg/research/">研究領域</a></li>
+<li class="x1"><a accesskey="C" title="學系就業中心" href="/admin/sitemap/?map=Career">就業</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">學生實習計劃</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">僱主資訊</a></li>
+<li class="x2"><a href="/ug/internship/links/">相關連結</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="電腦設備" href="/admin/facilities/">設備</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">設施委員會及政策</a></li>
+<li class="x2"><a href="/admin/lab/">實驗室時間表</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">用戶指南</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">學系系統部</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="連結" href="/admin/sitemap/?map=Links">連結</a>
+<ul>
+<li class="x2"><a title="學系電郵系統" href="https://imail.cse.ust.hk/sqmail/">電郵系統</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">教職員內聯網</a></li>
+<li class="x2"><a title="科大 MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="科大程式設計隊" href="/acm/">程式設計隊</a></li>
+<li class="x2"><a title="計算機科學及工程學學生會" href="http://ihome.ust.hk/~su_csess/">學生會</a></li>
+<!---->
+<li class="x2"><a title="計算機科學校友會" href="https://www.facebook.com/cseaa.hkust">校友會</a></li>
+<li class="x2"><a href="/admin/sitemap/">網站索引</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang">(此頁只設英文版本) <a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn">中文简体</a></span>
+-->
+<h1>Head of the Department of Computer Science and Engineering</h1>
+
+<h2>The Hong Kong University of Science and Technology</h2>
+
+<p>The Hong Kong University of Science and Technology (HKUST), opened in 
+October 1991, comprises four Schools: Science, Engineering, Business &amp; 
+Management, and Humanities &amp; Social Science. The University's mission 
+is to advance learning and scholarship; to promote research, development, 
+and entrepreneurship, and to contribute to the region's economic and 
+social development.</p>
+
+<p>The School of Engineering, the largest School of the University, 
+currently enrolls about 38% of the University's total undergraduate and 
+postgraduate students of approximately 12,600. It comprises six 
+departments: Chemical &amp; Biomolecular Engineering, Civil &amp; 
+Environmental Engineering, Computer Science &amp; Engineering, Electronic 
+&amp; Computer Engineering, Industrial Engineering &amp; Logistics 
+Management, and Mechanical Engineering.</p>
+
+<p>The Department of Computer Science and Engineering &amp; Engineering (CSE) currently 
+has 44 faculty members, teaching about 560 undergraduate students and 180 
+postgraduate research students. The Department conducts comprehensive 
+teaching and research programs in both basic and applied aspects of 
+Computer Science &amp; Engineering. The academic degrees offered by the 
+Department are: BEng, MSc, MPhil and PhD. Research activities in the 
+department are broadly categorized into artificial intelligence; data, 
+knowledge and information management; networking and computer systems; 
+software technologies; theoretical computer science; vision and graphics. 
+For more information, please visit the University and Department websites 
+available on <a href="http://www.ust.hk/">http://www.ust.hk/</a> and <a 
+href="http://www.cse.ust.hk/">http://www.cse.ust.hk/</a> respectively.</p>
+
+<p>Applications/nominations are invited from well-qualified and 
+accomplished scholars for the position. In addition to extensive teaching 
+and research experience, the successful candidate must have demonstrated 
+leadership qualities necessary to lead and manage the Department in its 
+diverse academic and administrative functions and to interact effectively 
+with industry and commerce.</p>
+
+<p>Salary will be highly competitive with generous benefits. 
+Applications/nominations together with detailed curriculum vitae and the 
+names and addresses/fax numbers/email addresses of three referees should 
+be sent to Professor Chung Yee Lee, Chair of Search Committee for Headship 
+of CSE, c/o School of Engineering, HKUST, Clearwater Bay, Kowloon, Hong 
+Kong [Fax No.: (852) 2358-1458, e-mail: <script type="text/javascript"><!--
+  mmsend('dhcse','ust.hk'); //--></script>] before <strong>1 
+October 2013</strong>.</p>
+
+<p>HKUST is committed to increasing the diversity of its faculty and has a 
+range of family-friendly policies in place.</p>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>最後更新日期：2013-06-03<br />
+ 香港科技大學計算機科學及工程學系，保留所有版權。</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.021569013595581</div-->

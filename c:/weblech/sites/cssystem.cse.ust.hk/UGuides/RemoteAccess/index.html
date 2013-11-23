@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CS System</title>
+	<script src="/Scripts/jquery-1.8.1.min.js"></script>
+	<script src="/Scripts/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		var is_csd = 0;
+		var is_hkust = 1;
+	</script>
+	<script src="/Scripts/main.js"></script>
+	<script src="/Scripts/json2.js"></script>
+	<link rel="stylesheet" href="/Styles/main.css" />
+	<link rel="stylesheet" href="/Styles/common.css" />
+	<link rel="stylesheet" href="/Styles/jquery-ui-1.8.23.custom.css" />
+</head>
+<body>
+<div id="bodyContainer">
+	<header>
+		<div class="logo">
+			<img id="homeLogo" src="/images/cssystem.png" alt="CS SYSTEM HOMEPAGE" />
+		</div>
+		<div class="linksContainer">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Computing Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+			</nav>
+			<nav>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="searchBar">
+			<form action="#">
+				<div>
+					<span id="keywordClose">x</span>
+					<input id="keyword" size="20" type="text" autocomplete="off" placeholder="Search" />
+					<select id="searchCat">
+						<option>All</option>
+						<option>Faculty/Staff</option>
+						<option>Postgraduate</option>
+						<option>Undergraduate</option>
+						<option>Guest</option>
+					</select>
+				</div>
+				<div id="matches" class="floating">
+				</div>
+			</form>
+		</div>
+	</header>
+	<article class="main-content">
+<!--[][143.89.166.147][1][0]-->
+<h2>Remote Access to facilitate CSD resources</h2>
+<p>
+From time to time, users may wish to access the resources provided by 
+CSD when they are working at home or being on a trip. The most frequently
+needed resources being the data files access. In this guideline page, we
+are trying to offer different solutions for this goal.</p>
+<p>
+The most basic data files which can easily be accessed remotely are the
+files stored on UNIX file servers. E.g. User home directory, project 
+directory. Users can SSH to anyone of the departmental UNIX
+workstations and access the files directly or easily copy the files around.</p>
+<ul>
+<li><a href="/Facilities/ras.html">General remote access workstations</a></li>
+<li><a href="/FAQ/hkust_only/displayx.html">Displaying X application to PC runing X-Win32</a></li>
+<li><a href="/UGuides/RemoteAccess/ssh.html">Quick Start on SSH/SCP/SFTP</a></li>
+</ul>
+<p>
+SSH can be download either from <a href="http://www.ssh.com">SSH.com</a> or
+you may get it from <a href="https://www.cse.ust.hk/cssystem/Software/Password_Only/SSHSecureShellClient-3.2.9.exe">here locally</a>. This requires your CSD UNIX username/password.</p>
+<br />
+
+<p>
+However, if users store some of their files on their local PC at office and 
+wish to retrieve any of them off-campus, this may not be that trivial and 
+this is the main objective of having this guideline page.</p>
+<ul>
+<li><a href="UGuides/RemoteAccess/win7remote.html">Using Windows 7 Remote Desktop</a></li>
+<li><a href="UGuides/RemoteAccess/winxp.html">Using Windows XP Remote Desktop</a></li>
+<li><a href="UGuides/RemoteAccess/ts.html">Using Windows Terminal Service Client</a></li>
+<li><a href="UGuides/RemoteAccess/tsfaq.html">FAQ for using Terminal Servers</a></li>
+</ul>
+	</article>
+	<footer>
+		<div class="bottom-links">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="contact">
+			<p class="red bold">Your browser is too old, please use Internet Explorer 9+, Firefox, Chrome, Safari or Opera to visit our site.</p>
+			<address>
+				<div>Please send comments and suggestions to <a class="mail"
+					href="javascript:msend('cssystem');">cssystem</a></div>
+				<div><a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering</a></div>
+				<div><a href="http://www.ust.hk/">The Hong Kong University of Science and Technology</a></div>
+				<div>All rights reserved</div>
+			</address>
+			<img id="officialLogo" src="/images/logo.gif" alt="logo" />
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="所有消息" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, 所有消息" /-->
+<title>所有消息</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang"><a xml:lang="en" lang="en" href="?lang=en&amp;amp;type=event">English</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn&amp;amp;type=event">中文简体</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">招聘計算機科學及工程學系系主任</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="關於我們" href="/admin/sitemap/?map=About">簡介</a>
+<ul>
+<li class="x2"><a title="系主任歡迎詞" href="/admin/welcome/">歡迎詞</a></li>
+<li class="x2"><a href="/admin/about/">關於我們</a></li>
+<li class="x2"><a href="/admin/factsheet/">學系資料</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">新聞及成就</a></li>
+<li class="x2"><a href="/News/?type=event">活動</a></li>
+<li class="x2"><a title="安全管理" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">安全</a></li>
+<li class="x2"><a href="/admin/contact/">聯絡我們</a></li>
+<li class="x2"><a href="http://www.ust.hk/chi/about/campus_gethere.htm">如何到達科大</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="學系成員" href="/admin/sitemap/?map=People">學系成員</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">教員</a></li>
+<li class="x2"><a href="/admin/people/staff/">職員</a></li>
+<li class="x2"><a title="語言指導" href="/ct/">語言指導</a></li>
+<li class="x2"><a href="/admin/people/pg/">研究生</a></li>
+<li class="x2"><a href="/admin/recruitment/">招聘</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="本科生課程" href="/admin/sitemap/?map=Undergraduate">本科生</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">三年制本科生課程</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">三年制本科生內聯網</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">四年制本科生課程</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">四年制本科生內聯網</a></li>
+<li class="x2"><a href="/ug/admissions/">本科生招生</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="研究生課程" href="/admin/sitemap/?map=Postgraduate">研究生</a>
+<ul>
+<li class="x2"><a href="/pg/">研究生課程</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">研究生內聯網</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">研究生招生</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">研究生去向</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="研究領域及範疇" href="/pg/research/">研究領域</a></li>
+<li class="x1"><a accesskey="C" title="學系就業中心" href="/admin/sitemap/?map=Career">就業</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">學生實習計劃</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">僱主資訊</a></li>
+<li class="x2"><a href="/ug/internship/links/">相關連結</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="電腦設備" href="/admin/facilities/">設備</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">設施委員會及政策</a></li>
+<li class="x2"><a href="/admin/lab/">實驗室時間表</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">用戶指南</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">學系系統部</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="連結" href="/admin/sitemap/?map=Links">連結</a>
+<ul>
+<li class="x2"><a title="學系電郵系統" href="https://imail.cse.ust.hk/sqmail/">電郵系統</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">教職員內聯網</a></li>
+<li class="x2"><a title="科大 MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="科大程式設計隊" href="/acm/">程式設計隊</a></li>
+<li class="x2"><a title="計算機科學及工程學學生會" href="http://ihome.ust.hk/~su_csess/">學生會</a></li>
+<!---->
+<li class="x2"><a title="計算機科學校友會" href="https://www.facebook.com/cseaa.hkust">校友會</a></li>
+<li class="x2"><a href="/admin/sitemap/">網站索引</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="en" lang="en" href="?lang=en&amp;amp;type=event">English</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn&amp;amp;type=event">中文简体</a></span>
+-->
+<h1>所有消息</h1>
+
+<ul class="hnav">
+<li id="selected"><a href="?type=all">所有消息</a></li>
+<li><a href="?type=news|achievement">新聞及成就</a></li>
+<li><a href="?type=news">新聞</a></li>
+<li><a href="?type=achievement">教員及學生成就</a></li>
+<li><a href="?type=event">活動</a></li>
+</ul>
+
+<h2>2013</h2>
+<ul class=''>
+<li class=""><a href="/News/EPFL2013/">The 1st EPFL-HKUST Workshop on Computer and Communication Sciences</a></li>
+<li class=""><a href="/AADC/2013/">Android 程式設計大賽 2013</a></li>
+<li class=""><a href="/News/BigDataWorkshop2013/">The 1st HKUST-USC Joint Workshop on Big Data Applications</a></li>
+<li class=""><a href="http://symlab.ust.hk/conf/epfl13.htm">The 1st EPFL-HKUST Workshop on Computer and Communication Sciences</a></li>
+<li class=""><a href="/News/GoogleTalk2013/registration/">Google 招聘講座 2013</a></li>
+<li class=""><a href="/News/GCCPC2013/">科大舉行兩岸清華暨科大程式設計比賽 2013</a></li>
+<li class=""><a href="/bigdataworkshop/">Workshop on Big Data Applications</a></li>
+<li class=""><a href="/ug/ambassadors/2013/">學生大使計劃 2013</a></li>
+<li class=""><a href="/News/Congregation2013/">三位計算機科學及工程學系本科生獲頒發 2013 學業成就獎</a></li>
+<li class=""><a href="/News/ARWU2013/">香港科技大學計算機科學 ARWU 2013 排名大中華地區第一</a></li>
+<li class=""><a href="/News/NSRE2013/">張黔教授獲頒發湖北省自然科學一等獎</a></li>
+<li class=""><a href="http://www.seng.ust.hk/web/eng/news_detail.php?id=768">HKUST Received €500,000 from Deutsche Telekom to Set Up 
+  HKUST-DT System and Media Lab</a></li>
+<li class=""><a href="/News/Pan_PRD2013/China/">中國泛珠三角大學生計算機畢業作品賽：銀獎</a></li>
+<li class=""><a href="/News/ACMHK2013/">科大程式隊奪 2013 ACM-HK 編程比賽獎</a></li>
+<li class=""><a href="/News/Google_Fellowship2013">計算機科學及工程學系博士生獲 Google 獎學金</a></li>
+<li class=""><a href="http://www.sigmaxi.org/about/news/MYFC/junfengpan.shtml">PhD Graduate Junfeng PAN being Featured by Sigma Xi</a></li>
+<li class=""><a href="/News/ACM_SIGPLAN_PLDI2013/">博士生 Jeff HUANG 獲 2013 SIGPLAN PLDI 傑出論文獎</a></li>
+<li class=""><a href="/News/SPRAward2013/">畢業生 Nan CAO 博士獲工學院博士生卓越研究獎 2012/13</a></li>
+<li class=""><a href="/News/Pan_PRD2013/">2013 泛珠三角大學生計算機畢業作品賽：第二名</a></li>
+<li class=""><a href="/News/SIGSOFT2013/dissertation/">2013 SIGSOFT 博士論文組論文獎</a></li>
+<li class=""><a href="/News/AAAI_Fellowship2013/">楊強教授獲選成為大中華首位人工智能促進會會士</a></li>
+<li class=""><a href="/News/AADW2013/">梅伯樂博士舉辦 Android 應用程式開發工作坊 2013</a></li>
+<li class=""><a href="/News/QSWUR2013/">香港科技大學工程科技及計算機科學排名</a></li>
+<li class=""><a href="/News/ComputingReviews2012/">CSE Graphics paper selected as Notable Paper by ACM Computing Reviews 2012</a></li>
+<li class=""><a href="/News/SIGSOFT2013/">CSE 獲 SIGSOFT 傑出論文獎</a></li>
+<li class=""><a href="/News/AADW2013/registration/">Android 應用程式開發工作坊 2013</a></li>
+<li class=""><a href="http://www.seng.ust.hk/web/eng/news_detail.php?id=749">計算機科學及工程學系本科生獲香港資訊及通訊科技獎 2013 四項榮譽</a></li>
+<li class=""><a href="/News/TeachingAward2012/">羅大偉博士獲頒工學院傑出教學獎 2011-12</a></li>
+<li class=""><a href="/News/ICPADS2012/">計算機科學及工程學系研究生及畢業生獲 ICPADS 2012 最佳論文獎</a></li>
+<li class=""><a href="/News/UGRAward2013/">2013 柯吉祖先生暨柯潘景儀夫人本科生研究獎</a></li>
+<li class=""><a href="/News/IBM_DB2Contest2013/">科大程式隊奪 IBM DB2 DB 比賽第三名</a></li>
+<li class=""><a href="/News/DASFAA2013/">計算機科學及工程學系博士生姜迪獲 DASFAA 2011 最佳學生論文獎亞軍</a></li>
+<li class=""><a href="/News/SS_Scholarship2013/">晶門科技獎學金 2012/13</a></li>
+<li class=""><a href="/News/SREAward2013/">白德善教授獲香港科技大學工學院卓越研究獎</a></li>
+<li class=""><a href="http://www.sengpp.ust.hk/programs/it/en/">資訊科技理學碩士課程資訊日</a></li>
+<li class=""><a href="/News/Best10Lecturers2012/">十大講師選舉 2012</a></li>
+<li class=""><a href="/News/AADC2012/final/">Android 程式設計大賽決賽 2012</a></li>
+<li class=""><a href="/News/CPCS2013/registration/">國泰航空飲食服務職業講座</a></li>
+<li class=""><a href="/News/Levis2013/registration/">Levis 職業講座</a></li>
+<li class=""><a href="/News/RIPSHK2013/">科大、加州大學洛杉磯分校聯合暑期本科生研究計劃 2013</a></li>
+<li class=""><a href="/News/SSTA2013/">張黔教授獲頒發國家科學技術獎</a></li>
+<li class=""><a href="http://www.sengpp.ust.hk/programs/it/images/news_201301.jpg">SCMP Article on the Master of Science in Information Technology (MSc-IT) Program</a></li>
+<li class=""><a href="/News/ISCSLP2012/">計算機科學及工程學系博士生在 ISCSLP-2012 獲最佳學生論文獎</a></li>
+<li class=""><a href="/News/MS_Fellowship2012/">微軟亞洲研究院獎學金 2012</a></li>
+<li class=""><a href="/News/IWSLT2012/">第九屆國際口語翻譯研討會</a></li>
+</ul>
+
+<h2>2012</h2>
+<ul class=''>
+<li class=""><a href="/News/AAAS_Fellowship2012/">楊強教授當選美國科學促進會會士</a></li>
+<li class=""><a href="/News/UTV2012/">全港首個流動電視服務</a></li>
+<li class=""><a href="/News/APICTA2012/">無線簡捷網獲亞太資訊及通訊科技大獎 2012</a></li>
+<li class=""><a href="/News/IEEEGlobecom2012/">電機及電子工程師學會 Globecom 2012 最佳論文獎</a></li>
+<li class=""><a href="/News/IEEEIUCC2012/">計算機科學及工程學系畢業生劉方明博士與李波教授獲第十一屈 IEEE 普適計算及通訊國際會議最佳論文獎</a></li>
+<li class=""><a href="/News/TPAMI2012/">TPAMI-12 Paper Highlighted by A*Star Research, Singapore</a></li>
+<li class=""><a href="http://ias.ust.hk/chi/events_detail.html?id=207">Blended Program Analysis for Improving Reliability of Real-world Applications</a></li>
+<li class=""><a href="/News/IAPR_Fellow2012/">楊強教授當選國際圖形識別學會會士</a></li>
+<li class=""><a href="/News/HKIS_YoungScientist2012/">香港青年科學家獎 2012</a></li>
+<li class=""><a href="/News/HLHL2012/">張黔教授獲何梁何利基金科學與技術創新獎</a></li>
+<li class=""><a href="/~csclchan/AADC/">Android 程式設計大賽 2012</a></li>
+<li class=""><a href="/News/AADC2012/">Android 程式設計大賽 2012</a></li>
+<li class=""><a href="/News/Frenzoo2012/registration/">Frenzoo 職業講座</a></li>
+<li class=""><a href="/News/JaneStreet2012/registration/">Jane Street Asia Ltd 科技講座</a></li>
+<li class=""><a href="/ug/pcs/">CSE Programming Commons</a></li>
+<li class=""><a href="/News/SIGSOFT2012/">本系博士生 Hyunmin SEO 及金成勳教授獲 SIGSOFT 傑出論文獎</a></li>
+<li class=""><a href="/News/SCSA2012/">陳天雄教授獎學基金 (2011-12 年度)</a></li>
+<li class=""><a href="/News/GoogleCodeJam2012/final">計算機科學及工程學系本科生在 Google 程式設計挑戰賽 2012 
+  決賽中打破香港紀錄</a></li>
+<li class=""><a href="/ug/ambassadors/2012/">學生大使計劃 2012</a></li>
+<li class=""><a href="/News/ARWU2012/">香港科技大學計算機科學 ARWU 2012 排名大中華地區第一</a></li>
+<li class=""><a href="/News/QSWUR2012/">香港科技大學工程科技及計算機科學排名全港第一</a></li>
+<li class=""><a href="/News/NokiaMDC2012">Two Championships in Nokia Mobile Data Challenge 2012</a></li>
+<li class=""><a href="/News/Google_Fellowship2012">計算機科學及工程學系博士生獲 Google 獎學金</a></li>
+<li class=""><a href="/News/ACM_SIGPLAN_PLDI2012/">計算機科學及工程學系博士生在 ACM SIGPLAN PLDI 會議中研究比賽獲首位</a></li>
+<li class=""><a href="/News/GoogleCodeJam2012/">計算機科學及工程學系本科生進入 Google 程式設計挑戰賽 2012 
+  決賽</a></li>
+<li class=""><a href="/News/CIE_Award2012/">張黔教授獲中國電子學會電子信息科學技術一等獎</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20120329-949.html">香港科技大學獲頒三項國家教育部高等學校科研優秀成就獎</a></li>
+<li class=""><a href="/News/MSF2012/">計算機科學及工程學系學生及梅伯樂博士為無國界醫生開發 Android 應用程式</a></li>
+<li class=""><a href="/News/AADW2012/">梅伯樂博士舉辦 Android 應用程式開發工作坊</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20120504-957.html">HP 與香港科技大學取得科研突破</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20120505-958.html">香港科技大學工學院卓越研究獎 嘉許教員傑出工程成就</a></li>
+<li class=""><a href="/News/UGRAward2012/">2012 柯吉祖先生暨柯潘景儀夫人本科生研究獎</a></li>
+<li class=""><a href="/News/ICT2012/special/">計算機科學及工程學系本科生獲香港資訊及通訊科技獎 2012：最佳創新及研究獎（社會責任）</a></li>
+<li class=""><a href="/News/ICT2012/">科大無線簡捷網團隊獲香港資訊及通訊科技獎 2012：最佳創新及研究獎</a></li>
+<li class=""><a href="/News/RIPSHK2012/">科大、加州大學洛杉磯分校聯合暑期本科生研究計劃</a></li>
+<li class=""><a href="/News/ROSAEC2012/">ROSAEC 與計算機科學及工程學系聯合舉辦無差錯計算軟件分析工作坊</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20120214-939.html">香港科技大學獲國務院頒發多項國家科學技術獎 榮膺本年度獲獎最多的香港高等院校 帶領科研發展</a></li>
+<li class=""><a href="/News/ACM_ICPC_Final2012/">科大程式隊進入 2012 ACM 國際大學電腦程式設計競賽世界總決賽</a></li>
+</ul>
+
+<h2>2011</h2>
+<ul class=''>
+<li class=""><a href="/News/HKGTUG2011/">梅伯樂博士為 HK GTUG 2011 作演講嘉賓</a></li>
+<li class=""><a href="/News/IEEEGlobecom2011/">計算機科學及工程學系博士生戴杰與李波教授獲電機及電子工程師學會 Globecom 2011 最佳論文獎</a></li>
+<li class=""><a href="/News/SIGGRAPH2011/">本系視覺及圖像組參與展出 SIGGRAPH 亞洲 2011</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20111219-933.html">科大教授獲世界知名計算語言學學會選為首屆院士</a></li>
+<li class=""><a href="/News/IEEE_Fellow2011/">張黔教授獲選為電機及電子工程師學會院士</a></li>
+<li class=""><a href="/News/SPRAward2011/">計算機科學及工程學系博士後張宇獲工學院博士生卓越研究獎 </a></li>
+<li class=""><a href="/News/Chinese_YoungScientist2011/">張黔教授獲中國青年科技獎</a></li>
+<li class=""><a href="/News/LITE2011/award/">計算機科學及工程學系畢業生獲 2011 
+  聯想創新設計大賽創新精神獎</a></li>
+<li class=""><a href="/News/LAviNet2011/">科大創戶外 Wi-Fi 新技術</a></li>
+<li class=""><a href="/News/ACM_CIKM2011/">計算機科學及工程學系博士生獲 ACM CIKM 2011 最佳論文獎</a></li>
+<li class=""><a href="/News/ACM_KDDCUP2011/">本系研究生獲 2011 ACM KDDCUP 第三名</a></li>
+<li class=""><a href="/News/NSFC_RGC2011/">本系科研項目獲批 2011 年度國家自然科學基金委員會與香港研究資助局聯合科研基金</a></li>
+<li class=""><a href="/News/ICT2011/">香港資訊及通訊科技獎 2011</a></li>
+<li class=""><a href="http://www.cse.ust.hk/News/CATalk2011/">中國科學院院士講座</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20110919-900.html">香港科技大學學生《亞太廣播聯盟機械人大賽》勇奪兩大國際獎項為港爭光</a></li>
+<li class=""><a href="/News/NASTP2011/">張成志教授獲 2011 國家科學技術進步獎二等獎</a></li>
+<li class=""><a href="/News/ACMHK2011/">科大程式隊奪 2011 ACM-HK 編程比賽獎</a></li>
+<li class=""><a href="/News/HOWiPhone2011/">梅伯樂博士及陳博士為計算機科學及工程學系學生舉辦 iPhone 應用程式開發工作坊</a></li>
+<li class=""><a href="/News/SCSA2011/">陳天雄教授獎學基金 (2010-11 年度)</a></li>
+<li class=""><a href="/News/LITE2011/">聯想創新設計大賽 (LITE 2011)</a></li>
+<li class=""><a href="/News/ARWU2011/">香港科技大學計算機科學 ARWU 2011 排名大中華地區第一</a></li>
+<li class=""><a href="/News/ROV2011/">科大學生在美國太空總署舉行的國際水底機械人比賽勇奪最佳設計獎揚威海外</a></li>
+<li class=""><a href="/News/SEPA2011/">計算機科學及工程學系學生獲 2010-2011 學生增益課程獎學金</a></li>
+<li class=""><a href="/News/AADW2011/">梅伯樂博士為計算機科學及工程學系學生舉辦 Android 應用程式開發工作坊</a></li>
+<li class=""><a href="/News/UGRAward2011/">計算機科學及工程學系學生獲 2011 柯吉祖先生暨柯潘景儀夫人本科生研究獎</a></li>
+<li class=""><a href="/News/DASFAA2011/">計算機科學及工程學系博士生嚴達獲 DASFAA 2011 最佳論文獎</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20110320-857.html">科大教授指導高中生製作科大校園全景圖</a></li>
+<li class=""><a href="http://ias.ust.hk/chi/events_detail.html?id=72">New Wave of Computing</a></li>
+<li class=""><a href="/News/IBM_DB2Contest2011/">科大程式隊奪 IBM DB2 UDB 大專編程比賽大學獎</a></li>
+<li class=""><a href="http://ias.ust.hk/chi/events_detail.html?id=56">Bing Dialog Model: Intent, Knowledge and User Interaction</a></li>
+<li class=""><a href="/ug/ambassadors/2011/">學生大使計劃 2011</a></li>
+</ul>
+
+<h2>2010</h2>
+<ul class=''>
+<li class=""><a href="/News/ACM_ICPC_Final2010/">科大程式隊進入 ACM 國際大學電腦程式設計競賽世界總決賽</a></li>
+<li class=""><a href="/News/GoogleResearchAward2010/">計算機科學及工程學系三位教授獲 Google 研究獎</a></li>
+<li class=""><a href="/News/HKIS_YoungScientist2010/">香港青年科學家獎 2010</a></li>
+<li class=""><a href="/News/Best10Lecturers2010/">十大講師選舉 2010</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20101213-829.html">計算機科學及工程學系講座教授倪明選教授、同系的劉云浩教授及其博士生李默獲高等學校科研優秀成果獎</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20101208-828.html">科大創製全球最高像素照片</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20101202-826.html">科大計算機科學及工程學系兩教授獲選 IEEE 院士</a></li>
+<li class=""><a href="http://ias.ust.hk/chi/events_detail.html?id=46">騰尚華教授於 2010 年 11 月 24 日傑出學人講座出席演講</a></li>
+<li class=""><a href="/News/MS_Fellowship2010/">微軟亞洲研究院獎學金計劃 2010</a></li>
+<li class=""><a href="/derickwood/">紀念伍德瑞教授</a></li>
+<li class=""><a href="/News/Pi2010/">本系畢業生將圓周率精確到小數點後 2 千萬億位</a></li>
+<li class=""><a href="http://cacm.acm.org/magazines/2010/9/98026-acm-china-nearing-launch/fulltext">ACM 中國快將成立</a></li>
+<li class=""><a href="/News/UAI2010/">本系博士生張宇及楊瓞仁教授獲最佳論文獎</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20100818-797.html">科大研究智能無線電及頻譜管理取得突破：有效提高頻譜使用率，促進電訊業發展</a></li>
+<li class=""><a href="/News/GCCPC2010/">科大舉行兩岸清華暨科大程式設計比賽</a></li>
+<li class=""><a href="/News/Ranking2010/">科大在計算機科學排名大中華第一</a></li>
+<li class=""><a href="/News/SIGART2010/">楊強教授獲委任為 ACM SIGART 副主席</a></li>
+<li class=""><a href="/News/CPC2010/">本系本科生獲深港大學生創意計劃大獎賽銀獎</a></li>
+<li class=""><a href="/News/SCSA2010/">陳天雄教授獎學基金 (2009-10 年度)</a></li>
+<li class=""><a href="/News/IEEEICC2010/">本系博士生姜弋獲最佳論文獎</a></li>
+<li class=""><a href="/News/IBM_Fellowship2010/">IBM 博士生獎學金計劃 2010/2011</a></li>
+<li class=""><a href="/News/Wclipper2010/">Wclipper 於 2010 年 5 月啟用</a></li>
+<li class=""><a href="/News/SPPF2010/">本碩士研究生獲第四屆訊號處理研究生論壇第二名</a></li>
+<li class=""><a href="/ug/ambassadors/2010/">學生大使計劃 2010</a></li>
+<li class=""><a href="/News/MS_SEIF2010/">金成勳博士獲軟件工程創新基金獎</a></li>
+<li class=""><a href="/News/HKIEC2010/">本科生汪博獲國際英語大賽一等獎</a></li>
+<li class=""><a href="/News/ComSocDL2010/">本系張黔博士獲選為傑出講師</a></li>
+<li class=""><a href="/News/CKSP2010/">本系李波教授獲長江學者獎勵</a></li>
+</ul>
+
+<h2>2009</h2>
+<ul class=''>
+<li class=""><a href="/News/CIKM2009/">本系黃智榮博士獲 CIKM 2009 傑出服務獎</a></li>
+<li class=""><a href="/News/MMC_Award2009/">本系李波教授獲電機及電子工程師學會通訊學會 MMC 頒發最佳論文獎</a></li>
+<li class=""><a href="/News/ICPADS2009/">劉云浩博士獲最佳論文獎</a></li>
+<li class=""><a href="/News/Best10Lecturers2009/">十大講師選舉 2009</a></li>
+<li class=""><a href="/News/IEEE_Fellow2009/">權龍教授獲選為電機及電子工程師學會院士</a></li>
+<li class=""><a href="/News/ACM_ICPC_Asia2009/">科大程式隊奪 2009 ACM 亞洲賽一等獎</a></li>
+<li class=""><a href="/News/CCF_Award2009/">倪明選教授獲頒海外傑出貢獻獎</a></li>
+<li class=""><a href="/News/Ranking2009/">科大工學院再次揚威世界大學排行榜</a></li>
+<li class=""><a href="/News/MS_Fellowship2009/">微軟亞洲研究院獎學金計劃 2009</a></li>
+<li class=""><a href="/News/IEEE_FYP2009/">科大生奪電機及電子工程師學會畢業專題研究比賽第一名</a></li>
+<li class=""><a href="/News/YER2009/">HKIE Young Engineers/Researchers 2009：科大研究生奪傑出論文獎</a></li>
+<li class=""><a href="/News/SRCDay2009/">ACM Hong Kong Research and Career Day 2009：科大研究生奪最佳研究獎</a></li>
+<li class=""><a href="/News/IBM_Award2009/">科大計算機科學及工程學系教授獲頒 IBM 教授獎 2009</a></li>
+<li class=""><a href="/News/HKTIIT_Scholarship2009/">科大計算機科學及工程學系研究生獲頒 HKTIIT 研究生傑出獎學金</a></li>
+<li class=""><a href="/News/Pan_PRD2009/">本科生獲泛珠三角安利杯大學生計算機作品賽金獎</a></li>
+<li class=""><a href="/News/BestPaper2009/">2009 電機及電子工程師學會通訊國際會議：最佳論文獎</a></li>
+<li class=""><a href="/News/SCSA2009/presentation/">陳天雄教授獎學基金頒獎禮</a></li>
+<li class=""><a href="/News/SCSA2009/">陳天雄教授獎學基金 (2008-09 年度)</a></li>
+<li class=""><a href="/News/ACM_ICPC_HK2009/">科大主辦 ACM 大專編程比賽 2009</a></li>
+<li class=""><a href="http://www.teacher.org.hk/itcamp2009/">青少年 I.T. 夏令營 2009</a></li>
+<li class=""><a href="/News/RCJ2009/">2009 青少年機械人世界盃 - 香港區公開選拔賽</a></li>
+<li class=""><a href="/News/HuaweiLab2009/">華為 - 科大創新實驗室開幕典禮</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20090403-680.html">本系教授研搜尋器數據庫奪獎</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20090403-680.html">科大與波音公司合作研發無線電通訊系統以提高維修效率</a></li>
+<li class=""><a href="/ug/ambassadors/2009/">學生大使計劃 2009</a></li>
+<li class=""><a href="/News/IBM_DB2Contest2009/">科大程式隊奪 IBM DB2 UDB 大專編程比賽大學獎</a></li>
+</ul>
+
+<h2>2008</h2>
+<ul class=''>
+<li class=""><a href="/News/RFIDLab2008/RFID.hk.pdf">射頻識別 (RFID) 聯合實驗室掛牌儀式</a></li>
+<li class=""><a href="/News/ACM_ICPC_Asia2008/">科大程式隊奪 ACM 亞洲賽一等獎</a></li>
+<li class=""><a href="/News/TeachingAward2008/">高可齡教授獲頒祈敖卓越教學服務獎章 (2008)</a></li>
+<li class=""><a href="/News/IEEE_Fellow2008/">楊強教授獲選為電機及電子工程師學會院士</a></li>
+<li class=""><a href="/News/IBM_EXITE2008/">IBM 科技異彩夏令營 2008</a></li>
+<li class=""><a href="/News/OutreachDay2008/">預科同學日 2008</a></li>
+<li class=""><a href="/News/SIGGRAPH2008/">視覺及圖像組本年發表共 10 篇 SIGGRAPH 論文</a></li>
+<li class=""><a href="/News/Pan_PRD2008/">2008 泛珠三角安利盃大學生計算機作品賽：第四名</a></li>
+<li class=""><a href="/News/RFIDAward2008/">科大計算機科學及工程學系發明「智能龍門架」獲獎</a></li>
+<li class=""><a href="/News/ICDCS2008/">科大兩研究論文獲國際會議頒發獎項</a></li>
+<li class=""><a href="http://www.teacher.org.hk/itcamp2008/">青少年 I.T. 夏令營 2008</a></li>
+<li class=""><a href="/News/Headship2008/">計算機科學及工程學系系主任之委任</a></li>
+<li class=""><a href="http://www.rcj-hk.org/index/2008suzhou.php">青少年機械人世界盃香港區選拔賽 2008</a></li>
+<li class=""><a href="/News/SCSA2008/presentation/">陳天雄教授獎學基金頒獎禮</a></li>
+<li class=""><a href="/News/SCSA2008/">陳天雄教授獎學基金 (2007-08 年度)</a></li>
+<li class=""><a href="/ug/ambassadors/2008/">學生大使計劃 2008</a></li>
+<li class=""><a href="/News/ITEPC2008/">資訊科技增益課程 2008</a></li>
+<li class=""><a href="http://www2.seng.ust.hk/WebNews/Sites/SENGNews/ShowNews.aspx?AdminId=9&amp;NewsId=555">計算機科學及工程學系研究生獲美國史丹福大學博士課程取錄並獲頒海外獎學金</a></li>
+<li class=""><a href="/News/RFID2008/">第一屆中國無線射頻識別基準測試論壇暨備忘協議簽訂儀式</a></li>
+<li class=""><a href="/News/ICT2007/">科大師生揚威香港資訊及通訊科技獎 2007</a></li>
+<li class=""><a href="/News/ACM_ICPC_Final2008/">ACM 國際大學電腦程式設計競賽 2008 世界總決賽</a></li>
+</ul>
+
+<h2>2007</h2>
+<ul class=''>
+<li class=""><a href="/News/NSFC_RGC2007/">本系三科研項目獲批 2007 年度國家自然科學基金委員會與香港研究資助局聯合科研基金</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20071211-563.html">計算機科學及工程學系梅伯樂教授、羅大偉教授獲頒創新教學獎</a></li>
+<li class=""><a href="/News/IEEEGlobecom2007/">電機及電子工程師學會 Globecom 2007 最佳論文獎 (ASNA 座談會)</a></li>
+<li class=""><a href="/News/ACM_ICPC_Asia2007/">ACM 國際大學電腦程式設計競賽 2008</a></li>
+<li class=""><a href="/News/CSDF10/">第十屆全國高校計算機系主任論壇</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20071017-542.html">科大為波音客機研發無線電通訊系統</a></li>
+<li class=""><a href="/News/MS_Fellowship2007/">微軟亞洲研究院獎學金計劃 2007</a></li>
+<li class=""><a href="/News/OutreachDay2007/">預科同學日 2007</a></li>
+<li class=""><a href="/News/HKCIC2007/">電機及電子工程師學會 (香港) 計算機智慧分會：研究生論文比賽</a></li>
+<li class=""><a href="/News/Boeing2007/">與中國波音公司達成合作協議：科大、清華、東南大學與 Phantom Works 合作無線電通訊研究</a></li>
+<li class=""><a href="/News/Pan_PRD2007/">2007 泛珠三角安利盃大學生計算機作品賽：三等獎</a></li>
+<li class=""><a href="/News/ACM_SIGMOD2007/">ACM SIGMOD 2007 本科生獎學金</a></li>
+<li class=""><a href="http://www.seng.ust.hk/web/eng/news_detail.php?id=605">兩岸清華暨科大程式設計比賽 2007</a></li>
+<li class=""><a href="/News/SCSA2007/">陳天雄教授獎學基金 (2006 - 2007 年度)</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/press_20070628.htm">學生電腦資助計劃</a></li>
+<li class=""><a href="/News/Scholarships2007/">計算機科學及工程學系本科生獲美大學獎學金</a></li>
+<li class=""><a href="/News/SIGGRAPH2007/">SIGGRAPH 2007：第 34 屆計算機圖形學及交互技術國際會議</a></li>
+<li class=""><a href="/News/GRFLA2007/">Global RF Lab Alliance (GRFLA)</a></li>
+<li class=""><a href="http://ias.ust.hk/bcm/">傑出講座系列：The Beauty of Computing & Mathematics</a></li>
+<li class="">青少年 I.T. 夏令營 2007</li>
+<li class=""><a href="http://www.rcj-hk.org/index/2007_timetable.php">青少年機械人世界盃香港區選拔賽 2007</a></li>
+<li class=""><a href="/News/ITEPC2007/">資訊科技增益課程 2007</a></li>
+<li class=""><a href="/News/IBM_Fellowship2007/">IBM 博士生獎學金計劃 2007/2008</a></li>
+<li class=""><a href="/ug/ambassadors/2007/">學生大使計劃 2007</a></li>
+</ul>
+
+<h2>2006</h2>
+<ul class=''>
+<li class=""><a href="/News/OOYSA2006/">國家傑出青年科學基金獎 2006</a></li>
+<li class=""><a href="/News/ICT2006/">香港資訊及通訊科技獎 2006：數碼青年優異獎</a></li>
+<li class=""><a href="/News/TCCC2006/">TopCoder 錦標賽 (TCCC) 2006</a></li>
+<li class=""><a href="/News/TeachingAward2006/">工學院傑出教學獎 2005-06</a></li>
+<li class=""><a href="/News/Podcasting2006/">播客輔助教學</a></li>
+<li class=""><a href="/News/MS_Fellowship2006/">微軟研究生獎學金 2006</a></li>
+<li class=""><a href="/News/IEEECIS2006/">電機及電子工程師學會期刊：神經網絡傑出論文獎 2004 (2006 年頒授)</a></li>
+<li class=""><a href="/ug/scholarships/?year=2006">2005/2006 年度各項獎學金獲獎名單</a></li>
+<li class=""><a href="http://genesis.ust.hk/apr_2006/cn/infocus/infocus2.html">畢業生職場初體驗</a></li>
+<li class=""><a href="/acm/contest/">科大程式設計比賽</a></li>
+<li class=""><a href="/News/QShine2006/">第三屆異構有線／無線網絡服務質量國際會議：最佳論文獎</a></li>
+<li class=""><a href="/News/KR2006/">Ray Reiter 最佳論文獎</a></li>
+<li class=""><a href="/News/DeptName2006/">學系改名為「計算機科學及工程學系」</a></li>
+<li class=""><a href="/News/BestPaper2006/">第二屆電機及電子工程師學會 (香港分會) 訊號處理研究生論壇：最佳論文獎</a></li>
+<li class=""><a href="http://www.few.hk/itcamp06s/">青少年 I.T. 夏令營 2006</a></li>
+<li class=""><a href="/News/ServerChamp2006/">微軟伺服器錦標賽 2006</a></li>
+<li class=""><a href="/News/ITEPC2006/">資訊科技增益課程 2006</a></li>
+<li class=""><a href="/News/BestPhDPresent2006/">第七屆 ACM Postgraduate Research Day：最佳論文演繹獎</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/archive/c_pa060328-1574.pdf">人工智能專家獲裘槎優秀科研者獎</a></li>
+<li class=""><a href="http://www.rcj-hk.org/index/2006_timetable.php">青少年機械人世界盃香港區選拔賽 2006</a></li>
+<li class=""><a href="http://www.ust.hk/chi/news/archive/c_pa060224-1567.pdf">南沙科技論壇：生活及商業之數位化專題論壇</a></li>
+<li class=""><a href="/News/SS_Scholarship2006/">晶門科技獎學金 2006</a></li>
+<li class=""><a href="/ug/ambassadors/2006/">計算機科學學生大使計劃 2006</a></li>
+<li class=""><a href="/News/SEYM_Fellowship2006/">尤德爵士紀念研究生獎學金 2005/06</a></li>
+<li class=""><a href="/News/ImagineCup2006/">Microsoft Imagine Cup 2006</a></li>
+<li class=""><a href="/News/YDC2006/">YDC E-Challenge 2006 Business Plan Competition 簡報會</a></li>
+</ul>
+
+<h2>2005</h2>
+<ul class=''>
+<li class=""><a href="/News/BestPaper2005/">The Best Paper Award: IEEE International Conference on e-Business Engineering</a></li>
+<li class=""><a href="/News/GoldenPenguin2005/">2005 The Golden Penguin Greater China Open Source Software Competition</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa051105-1556.pdf">HKUST, Microsoft Launch PhD Joint Scheme</a></li>
+<li class=""><a href="http://www.msra.cn/labevents/21stcomputing/2005/hk.htm">Computing in the 21st Century: Data Centric Computing</a></li>
+<li class=""><a href="http://www.cgvisual.com/headlines/Moxi/CGVheadlines_Moxi_p1.htm">MoXi: Real-Time Ink Simulation: Nelson Chu's interview by Cgvisual.com</a></li>
+<li class=""><a href="/News/IBM_Fellowship2005/">IBM PhD Fellowship Program 2005/06</a></li>
+<li class=""><a href="/News/ACM_KDDCUP2005/">ACM KDD-CUP 2005 Data Mining Contest: Champion</a></li>
+<li class=""><a href="/chanson/">In memory of Professor Samuel Chanson</a></li>
+<li class=""><a href="/ug/scholarships/?year=2005">2004/2005 年度各項獎學金獲獎名單</a></li>
+<li class=""><a href="/News/ACM_ICPC_HK2005/">Continue Success in the ACM HK Collegiate Programming Contest</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa050402-1534.pdf">Information Technology Enhancement Program: Fun Learning for IT Talent</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa050310-1531.pdf">HKUST-WebEx IT Institute: Enhancement of online collaboration across the world</a></li>
+<li class=""><a href="/luhongjun/">In Memory of Professor Hongjun Lu</a></li>
+<li class=""><a href="http://www.seng.ust.hk/news/news-seng_rank_globalleader.html">SENG Ranked Among Global Leaders in Engineering and IT</a></li>
+</ul>
+
+<h2>2004</h2>
+<ul class=''>
+<li class=""><a href="http://genesis.ust.hk/news/news_15Dec04.html">HKUST among World's Best for Engineering/IT and Science</a></li>
+<li class=""><a href="/News/BestPaper2004/">The Best Paper Award: IEEE Signal Processing Society</a></li>
+<li class=""><a href="/News/ACM_ICPC_SH2004/">ACM ICPC 2004: Regional Contest, Shanghai: Bronze Prize</a></li>
+<li class=""><a href="/News/ACM_ICPC_MA2004/">ACM ICPC 2004: Regional Contest, Manila: 4th Place</a></li>
+<li class=""><a href="/News/WEC2004/">World Engineer Congress 2004: Second Prize</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa041123-1513.pdf">The First MOE IT Key Lab at HKUST</a></li>
+<li class=""><a href="/News/MS_Fellowship2004/">Microsoft Fellowship 2004</a></li>
+<li class=""><a href="/News/ACM_KDDCUP2004/">ACM KDD-CUP 2004 Data Mining Contest: Champion</a></li>
+<li class=""><a href="/News/YDC2004/">YDC Entrepreneurs Challenge 2004: 2nd Runner-up</a></li>
+<li class=""><a href="/News/IiTEC2004/">IiTEC 2004: The Best Project Idea Award</a></li>
+<li class=""><a href="/News/ACM_ICPC_HK2004/">ACM(HK) Local Programming Contest 2004: Champion</a></li>
+<li class=""><a href="/News/HSIDC2004/">Hang Seng Innovative Design Competition 2004: Champion</a></li>
+<li class=""><a href="/News/ImagineCup2004/">Microsoft Imagine Cup 2004: 4th Runner-up</a></li>
+<li class=""><a href="/News/CSAA_Guangzhou_Tour2004/">CSAA: Guangzhou Observation Tour</a></li>
+<li class=""><a href="/News/SIGGRAPH2004/">SIGGRAPH 2004: HKUST Makes Her Debut</a></li>
+<li class=""><a href="/News/Best10Lecturers2003/">The Best 10 Lecturers Election 2003</a></li>
+<li class=""><a href="/News/BestPhDPaper2004/">The Best PhD Paper Award: The 5th ACM Postgraduate Research Day</a></li>
+</ul>
+
+<h2>2003</h2>
+<ul class=''>
+<li class=""><a href="/News/MS_Fellowship2003/">Microsoft Fellowship Program 2003</a></li>
+<li class=""><a href="/News/HKIS_YoungScientist2003/">Hong Kong Young Scientist Award 2003</a></li>
+<li class=""><a href="/News/ACM_ICPC_GM2003/">ACM International Collegiate Programming Contest 2004</a></li>
+<li class=""><a href="/News/Congregation2003/">Academic Achievement Award 2003</a></li>
+<li class=""><a href="/News/MMCSC2003/">MMCDC 2003: Gold Award</a></li>
+<li class=""><a href="/News/IDEAS2003/">IDEAS: The First Time to Meet in HK</a></li>
+<li class=""><a href="/News/IiTEC2003/">IiTEC 2003: Best Internet Application Award</a></li>
+<li class=""><a href="/News/BestPhDPaper2003/">The Best PhD Paper Award: The 4th ACM Postgraduate Research Day</a></li>
+<li class=""><a href="/News/Best10Lecturers2002/">The Best 10 Lecturers Election 2002</a></li>
+</ul>
+
+<h2>2002</h2>
+<ul class=''>
+<li class=""><a href="/News/HKIS_YoungScientist2002/">HKIS Young Scientist Award 2002</a></li>
+<li class=""><a href="/News/EnggTeachingAward2002/">Michael Brown Receives Engineering Teaching Appreciation Award</a></li>
+<li class=""><a href="/News/MS_Fellowship2002/">HKUST Students Won Microsoft Fellowship</a></li>
+<li class=""><a href="http://www.sengpp.ust.hk/programs/it/en/">New MSc Program in Information Technology</a></li>
+<li class=""><a href="/News/EETimes2002/">EEE/CS Faculty on News</a></li>
+<li class=""><a href="/News/BMVA2002/">BMVA Sullivan Thesis Award</a></li>
+<li class=""><a href="/News/RGC2002/">RGC Awards</a></li>
+<li class=""><a href="/News/Headship2002/">New Head Announcement</a></li>
+</ul>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>最後更新日期：2013-10-29<br />
+ 香港科技大學計算機科學及工程學系，保留所有版權。</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.073220014572144</div-->

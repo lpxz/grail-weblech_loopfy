@@ -1,0 +1,675 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Azure Labs</TITLE>
+<META http-equiv=Content-Type content="text/html;">
+
+<p align=center>
+<b>
+<SPAN style="FONT-SIZE: 18pt; COLOR: #000066">
+Calculating k-means with Windows Azure<br/>
+</SPAN>
+<br/><br/>
+<SPAN style="FONT-SIZE: 18pt;">
+COMP6111A Lab 4
+</SPAN></B></P>
+<h2>Objective</h2>
+<p> From this lab, you will
+<UL style="MARGIN-BOTTOM: 0in" type=disc>
+	<li>learn how to program the worker role in Windows Azure.</li>
+	<li>get familiar with the Azure blob storage and queue service.</li>
+</UL>
+</p>
+
+<h2>Pre-request</h2>
+Before continuing this lab, you need to download and install the Cerebrata Cloud Storage Studio from <a href="https://www.cerebrata.com/Products/CloudStorageStudio/Download.aspx">https://www.cerebrata.com/Products/CloudStorageStudio/Download.aspx</a>, which is a third-part toolkit for accessing Azure Table, Azure Blob and Azure Queue services.
+This toolkit allows you to directly upload/download data to/from the Azure Blob service and view/delete the messages in the Azure Queue service.
+
+<h2>Overview</h2>
+<p>In the previous labs, you have created a calendar for Windows Azure and deployed it on the Azure cloud.
+You have learnt how to create an Azure project, how to program a web role and how to use the Azure Table service.
+However, for some background processing tasks, such as number-crunching progra ms, the challenge is not spawning numerous HTTP servers (Web roles) but collecting the computational power of many compute servers to complete a CPU-intensive computation as fast as possible.
+Sometimes, the former is called &quot;high-throughput computing&quot; and the latter &quot;high-perofmrance computing (HPC)&quot;.
+</p><p>
+The worker role in Azure can be used for this kind of CPU-intensive back-end processing tasks.
+In this lab, you will learn to program worker roles for data processing, and examine how roles cooperate with each other.
+We will take computing k-means as an example to show such features of Windows Azure.
+If you are not familiar with k-means, you may find some brief introduction <a href="http://home.dei.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html">here</a>.
+
+<H2>Details</H2>
+<h3>Task 1 - Create a worker role and set up the environment</h3>
+The previous lab has shown how to create a new Azure project.
+In this lab, you will create a new Azure project called <b>k-means</b>.
+We define two kinds of worker roles in this project--master and slave.
+We have one master which partitions the input dataset, assigns jobs to the slaves, and collects the results.
+We have multiple slaves, which receive jobs from the master and cluster data points into their nearest centers.
+Now let us create the two worker roles.
+<p>
+1. In the <b>Solution Explorer</b>, right click the <b>k-means</b> project and select <b>New Worker Role Project...</b>. In the dialog, name the new project <b>master</b>.
+<p>
+2. Create another worker role called <b>slave</b> in the same way.
+<p>
+3. Set the data connection string for the two worker roles according to the steps in Task 4, Lab 2.
+We still name the connection string as <b>DataConnectionString</b>
+<p>
+4. Set up the environment for the configuration publisher.
+It is quite similar to the Step 10, Task 5, Lab 2.
+Double click the <b>WorkerRole.cs</b> file under project <b>master</b> in the <b>Solution Explorer</b>.
+Insert the following code to the <b>OnStart()</b> function
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+Microsoft.WindowsAzure.CloudStorageAccount.SetConfigurationSettingPublisher((configName, configSetter)
+<br>
+=>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;configSetter(RoleEnvironment.GetConfigurationSettingValue(configName));
+
+<br>
+});
+			</font>
+		</td>
+	</tr>
+</table>
+<br>
+Similarly, add this piece of code to the same function in the <b>WorkerRole.cs</b> of the <b>slave</b> project.
+<p>
+
+<h3>Task 2 - Programming the master worker role</h3>
+The master takes charge of partitioning the input dataset, assigning jobs to the multiple slaves, and collecting the results produced by the slaves.
+<p>
+The input dataset is stored on the blob storage before processing.
+The master and slaves need to communicate with each other and share data.
+Windows Azure provides a general-purpose inter-task communication mechanism called the <a href="http://msdn.microsoft.com/en-us/library/dd179363.aspx">queue service</a>.
+<p>
+1. To read the input dataset from the blob storage and assign jobs to the slaves, the master need to access the blob and queue. The following code declares the classes used for accessing blob and queue.
+We insert them in the definition area of the class members.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=grey>public class WorkerRole : RoleEntryPoint
+<br>
+{</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>private static</font> <font color="green">CloudBlobClient</font> blobStorage;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>private</font> <font color="green">CloudBlobContainer</font> blobContainer;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>private static</font> <font color="green">CloudQueueClient</font> queueStorage;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>private</font> <font color="green">CloudQueue</font> jobQueue;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>private</font> <font color="green">CloudQueue</font> readyQueue;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">...</font>
+<br>
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+The slave also needs to access the blob and queue, so you also add the same code to the <b>slave</b> project.
+<p>
+2. We need to define some basic configurations for the k-means algorithm.
+<br>
+1). <b>clusterCounter</b> : the number of clusters (<i>k</i>).
+<br>
+2). <b>datasetUri</b> : the blob name of the dataset file.
+<br>
+3). <b>partitionSize</b> : the size of each partition.
+<br>
+4). <b>iteration</b> : the number of iterations.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=blue>string</font> datasetUri = "input_dataset"; 
+<br>
+<font color=blue>int</font> clusterCounter = 20; 
+<br>
+<font color=blue>int</font> partitionSize = 10000; 
+<br>
+<font color=blue>int</font> iteration = 20; 
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+
+3. In the <b>Run()</b> function, we first configure the blob and queue.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=green> // read account configuration settings</font>
+<br>
+<font color=blue>var</font> storageAccount = CloudStorageAccount.FromConfigurationSetting("DataConnectionString");
+<br>
+<br>
+<font color=green> // create blob container for datasets</font>
+<br>
+blobStorage = storageAccount.CreateCloudBlobClient();
+<br>
+<font color=green> // set the time out of blob access to a large value (e.g., 1 hour)</font>
+<br>
+<font color=green> // because we need to read large dataset from blob</font>
+<br>
+blobStorage.Timeout = <font color=blue>new</font> System.TimeSpan(1, 0, 0);
+<br>
+<font color=green> // parallel accesse the blob (8 threads)</font>
+<br>
+blobStorage.ParallelOperationThreadCount = 8;
+<br>
+<font color=green> // use the blob container named <b>dataset</b></font>
+<br>
+blobContainer = blobStorage.GetContainerReference(<font color=red>"datasetblobcontainer"</font>);
+<br>
+<font color=green> // create the container if it does not exist</font>
+<br>
+blobContainer.CreateIfNotExist();
+<br>
+<font color=green> // configure container for public access</font>
+<br>
+<font color=blue>var</font> permissions = blobContainer.GetPermissions();
+<br>
+permissions.PublicAccess = BlobContainerPublicAccessType.Container;
+<br>
+blobContainer.SetPermissions(permissions);
+<br>
+<font color=green> // Reference the blob to the dataset</font>
+<br>
+CloudBlob dataset;
+<br>
+<br>
+<font color=green> // create queues to communicate with slaves</font>
+<br>
+queueStorage = storageAccount.CreateCloudQueueClient();
+<br>
+queueStorage.Timeout = <font color=blue>new</font> System.TimeSpan(1, 0, 0);
+<br>
+jobQueue = queueStorage.GetQueueReference(<font color=red>"jobqueue"</font>);
+<br>
+jobQueue.CreateIfNotExist();
+<br>
+readyQueue = queueStorage.GetQueueReference(<font color=red>"readyqueue"</font>);
+<br>
+readyQueue.CreateIfNotExist();
+
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+We also need to initialize the queues and blob for the slave worker role, so we can add the above piece of code to the <b>slave</b> project.
+<p>
+4. Declare the vectors to store the <b>clusterCounter</b> centers and the clustering result of each slave.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=blue>long</font>[,] centers = <font color=blue>new long</font>[clusterCounter, 4]; 
+<br>
+<font color=blue>long</font>[,] clusterSum = <font color=blue>new long</font>[clusterCounter, 4]; 
+<br>
+<font color=blue>long</font>[] pointCounter = <font color=blue>new long</font>[clusterCounter]; 
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+The points in our input datasets are 4-dimensional. 
+The current centers of the clusters are recorded in <b>centers</b>.
+The <b>clusterSum</b> records the sum of the points belongs to the clusters and the <b>pointCounter</b> records the number of points belongs the clusters.
+<p>
+5. We have multiple slaves for parellel processing.
+Each slave should process a subset of the whole dataset.
+This is often accomplished by partitioning data for the concurrent tasks.
+For example, <a href="http://baijia.info/showthread.php?tid=2">MapReduce</a> splits input data for map tasks, 
+<a href="http://baijia.info/showthread.php?tid=126">Yahoo! PNUTS</a> partitions database space to scale with locality control, 
+and <a href="http://baijia.info/showthread.php?tid=133">Google's search infrastructure</a> emphasizes "sharing" data for distributed processing.
+In our k-means program, the master partitions the dataset before assigning jobs to slaves.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=green>// partition data</font>
+<br>
+dataset = blobContainer.GetBlobReference(datasetUri);
+<br>
+<font color=blue>BlobStream</font> datasetStream = dataset.OpenRead();
+<br>
+<font color=blue>int</font> lineCounter = 0;
+<br>
+<font color=blue>int</font> partitionCounter = 0;
+<br>
+<font color=blue>string</font> dataLine;
+<br>
+System.IO.StreamReader datasetStreamReader =  <font color=blue>new</font> System.IO.StreamReader(datasetStream);
+<br>
+<font color=blue>string</font> dataPartition="";
+<br>
+while ((dataLine = datasetStreamReader.ReadLine()) != null)
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; if (dataLine == "") continue;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; if (lineCounter % partitionSize == (partitionSize -1))
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if (dataPartition != "")
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; CloudBlob datasetPartition = blobContainer.GetBlobReference("dataset_partition_" + (lineCounter/partitionSize).ToString());
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; partitionCounter = lineCounter / partitionSize + 1;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; datasetPartition.UploadText(dataPartition);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; dataPartition = "";
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; dataPartition = dataPartition + dataLine + "\n";
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; if (lineCounter < clusterCounter)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font>[] point = dataLine.Split(<font color=blue>new char</font>[] { ' ','\t' });
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// 0 ~ k-1 (clusterCounter starting centers)</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> i = 0; i < 4; ++i)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[lineCounter,i] = Convert.ToInt64(point[i]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; lineCounter++;
+<br>
+}
+<br>
+if (dataPartition != "")
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>CloudBlob</font> datasetPartition = blobContainer.GetBlobReference("dataset_partition_" + (lineCounter / partitionSize).ToString());
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; partitionCounter = lineCounter / partitionSize + 1;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; datasetPartition.UploadText(dataPartition);
+<br>
+}
+<br>
+datasetStreamReader.Close();
+<br>
+<font color=green>// partition done</font>
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+6. After partitioning the dataset and uploading the partitions to the blob storage for temporary storage, the master can assign jobs to the slaves.
+The master and the slaves communicate via Azure Queue Service.
+In each iteration, the master generates messages containing the job information, including the partition to be processed, the current centers, and the number of clusters, and inserts it into the job queue.
+The slaves fetch jobs from the job queue and process their own data partitions.
+After processing, a slave places a message containing the results into the ready queue.
+The master reads the ready queue and collects the results from the slaves until all the slaves are completed.
+After collecting all the results in this iteration, the master computes the new centers and begins a new iteration.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=green>// begin iterations</font>
+<br>
+for (<font color=blue>int</font> i = 0; i < iteration; ++i)
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> j=0; j < partitionCounter; ++j)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// create job messages for the <b>partitionCounter</b> jobs and put them into queue</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font> jobMessage = j.ToString() + "," + clusterCounter.ToString();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for(<font color=blue>int</font> k = 0; k < clusterCounter; ++k)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// the message contains the partition information and the centers</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; jobMessage = jobMessage + "," + centers[k,0].ToString() + "," + centers[k,1].ToString() + "," + centers[k,2].ToString() + "," + centers[k,3].ToString() ;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>var</font> message = <font color=blue>new</font> CloudQueueMessage(jobMessage);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=green> // push the message into jobQueue</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; jobQueue.AddMessage(message);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// Wait until all the slaves complete their jobs</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>int</font> readyCounter = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; while(readyCounter < partitionCounter)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>CloudQueueMessage</font> readyMessage = readyQueue.GetMessage();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if (readyMessage != null)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font>[] messageParts = readyMessage.AsString.Split(<font color=blue>new char</font>[] { ',' });
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> j = 0; j < clusterCounter; ++j)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 0] += Convert.ToInt64(messageParts[j * 5]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 1] += Convert.ToInt64(messageParts[j * 5 + 1]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 2] += Convert.ToInt64(messageParts[j * 5 + 2]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 3] += Convert.ToInt64(messageParts[j * 5 + 3]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; pointCounter[j] += Convert.ToInt64(messageParts[j * 5 + 4]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ++readyCounter;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// Delete the message from readyQueue after processing</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; readyQueue.DeleteMessage(readyMessage);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> j = 0; j < clusterCounter; ++j)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 0] = clusterSum[j, 0] / pointCounter[j];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 1] = clusterSum[j, 1] / pointCounter[j];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 2] = clusterSum[j, 2] / pointCounter[j];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 3] = clusterSum[j, 3] / pointCounter[j];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+}
+<br>
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+7. Save the results in the blob.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+<font color=blue>string</font> result = "";
+<br>
+for (<font color=blue>int</font> z = 0; z < clusterCounter; ++z)
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; result = result +"Center " + z.ToString() + " :\t" + centers[z, 0].ToString() + "\t" + centers[z, 1].ToString() + "\t" + centers[z, 2].ToString() + "\t" + centers[z, 3].ToString() + "\n";
+<br>
+}
+<br>
+<font color=blue>CloudBlob</font> kmeans_result = blobContainer.GetBlobReference("result");
+<br>
+kmeans_result.UploadText(result);
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+8. Clean the temporary files.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+for (<font color=blue>int</font> j = 0; j < partitionCounter; ++j)
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>CloudBlob</font> datasetPartition = blobContainer.GetBlobReference("dataset_partition_" + j.ToString());
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; datasetPartition.DeleteIfExists();
+<br>
+}
+
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+<h3>Task 3 - Programming the slave worker role</h3>
+The slaves retrieve jobs from the job queue and cluster the points into clusters.
+We have initialized the queues and blob for the slave worker role in Step 1 and 3, Task 2.
+Now we make the slave keep on retrieving jobs from the jobQueue.
+<br>
+<table>
+	<tr>
+		<td width="50">
+		</td>
+		<td>
+			<font face="Calibri">
+while (true)
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// get a job from  the job queue </font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>CloudQueueMessage</font> jobMessage = jobQueue.GetMessage();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; if (jobMessage != null)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font>[] messageParts = jobMessage.AsString.Split(<font color=blue>new char</font>[] { ',' });
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>int</font> partitionId = Convert.ToInt32(messageParts[0]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>int</font> clusterCounter = Convert.ToInt32(messageParts[1]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; dataset = blobContainer.GetBlobReference("dataset_partition_" + partitionId.ToString());
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>long</font>[,] centers = <font color=blue>new long</font>[clusterCounter, 4];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>long</font>[,] clusterSum = <font color=blue>new long</font>[clusterCounter, 4];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>long</font>[] pointCounter = <font color=blue>new long</font>[clusterCounter];
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> j = 0; j < clusterCounter; ++j)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 0] = Convert.ToInt64(messageParts[j * 4 + 2]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 1] = Convert.ToInt64(messageParts[j * 4 + 3]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 2] = Convert.ToInt64(messageParts[j * 4 + 4]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; centers[j, 3] = Convert.ToInt64(messageParts[j * 4 + 5]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 0] = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 1] = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 2] = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[j, 3] = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; pointCounter[j] = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; jobQueue.DeleteMessage(jobMessage);
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=green>// read record from blob to compute the clusters</font>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>BlobStream</font> datasetStream = dataset.OpenRead();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font> dataLine;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>System.IO.StreamReader</font> datasetStreamReader = <font color=blue>new</font> System.IO.StreamReader(datasetStream);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; while ((dataLine = datasetStreamReader.ReadLine()) != null)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if (dataLine == "") continue;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font>[] dimensionStr = dataLine.Split(<font color=blue>new char</font>[] { ' ', '\t' });
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>long</font> minCluster,minDistance;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>long</font>[] dimension = <font color=blue>new long</font>[4];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> i = 0; i < 4; ++i)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; dimension[i] = Convert.ToInt64(dimensionStr[i]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; minCluster = 0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; minDistance = (dimension[0] - centers[0, 0]) * (dimension[0] - centers[0, 0]) + (dimension[1] - centers[0, 1]) * (dimension[1] - centers[0, 1]) + (dimension[2] - centers[0, 2]) * (dimension[2] - centers[0, 2]) + (dimension[3] - centers[0, 3]) * (dimension[3] - centers[0, 3]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> i = 0; i < clusterCounter; ++i)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if (minDistance > (dimension[0] - centers[i, 0]) * (dimension[0] - centers[i, 0]) + (dimension[1] - centers[i, 1]) * (dimension[1] - centers[i, 1]) + (dimension[2] - centers[i, 2]) * (dimension[2] - centers[i, 2]) + (dimension[3] - centers[i, 3]) * (dimension[3] - centers[i, 3]))
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; minCluster = i;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; minDistance = (dimension[0] - centers[i, 0]) * (dimension[0] - centers[i, 0]) + (dimension[1] - centers[i, 1]) * (dimension[1] - centers[i, 1]) + (dimension[2] - centers[i, 2]) * (dimension[2] - centers[i, 2]) + (dimension[3] - centers[i, 3]) * (dimension[3] - centers[i, 3]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[minCluster, 0] += dimension[0];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[minCluster, 1] += dimension[1];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[minCluster, 2] += dimension[2];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; clusterSum[minCluster, 3] += dimension[3];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ++pointCounter[minCluster];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>string</font> readyMessage = "";
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; for (<font color=blue>int</font> k = 0; k < clusterCounter; ++k)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; readyMessage = readyMessage + clusterSum[k, 0].ToString() + "," + clusterSum[k, 1].ToString() + "," + clusterSum[k, 2].ToString() + "," + clusterSum[k, 3].ToString() + "," + pointCounter[k].ToString() + ",";
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=blue>var</font> message = new CloudQueueMessage(readyMessage);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; readyQueue.AddMessage(message);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }
+<br>
+}
+
+			</font>
+		</td>
+	</tr>
+</table>
+<p>
+Till now, the two kinds of worker roles for calculating k-means have all been programmed. 
+We can upload the dataset to the Azure storage emulator and deploy the worker roles in the compute emulator to show the computing result.
+<p>
+<h3>Task 4 - Deploy worker roles</h3>
+1. We need to upload the dataset to blob storage in the Azure storage emulator.
+<p>
+Start the <b>Cloud Storage Studio</b> and create a container named <b>dataset</b> under the <b>Azure Storage | devstoreaccount | Containers</b>.
+<p>
+2. Drag and drop the dataset file to the newly created container. The <b>Cloud Storage Studio</b> will upload the file for you.
+<p>
+<center><img src="4-1.jpg"></center>
+<p>
+3. As we want to deploy multiple slaves to process the jobs, we set the number of worker roles before deployment.
+<p>
+Right click the <b>slave</b> tag under <b>k-means | Roles </b> in the <b>Solution Explorer</b> and select the <b>Properties</b>. Configure the <b>Instance count</b> to the number of instances you want (e.g., 5).
+<p>
+<center><img src="4-2.jpg"></center>
+<p>
+Now you can run and debug the project to see the results.
+</p>
+<hr>
+<p>
+This lab series is developed by Zhonghua Sheng and the ESCA group at HKUST.
+It is supported in part by Microsoft Research Asia grant R1215-5104.
+We would like to thank Mr. Yau Lam Yiu and other system staff at the CSE department for their technical support in ths construction of the development platform.
+</p>
+
+</BODY></HTML>

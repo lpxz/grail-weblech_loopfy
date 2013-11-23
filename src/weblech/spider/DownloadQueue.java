@@ -52,14 +52,11 @@ public class DownloadQueue implements Serializable {
     }
 
     public void queueURLs(Collection urls) {
-        edu.hkust.clap.monitor.Monitor.loopBegin(13);
 for (Iterator i = urls.iterator(); i.hasNext(); ) { 
-edu.hkust.clap.monitor.Monitor.loopInc(13);
 {
             URLToDownload u2d = (URLToDownload) i.next();
             queueURL(u2d);
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(13);
 
     }
 

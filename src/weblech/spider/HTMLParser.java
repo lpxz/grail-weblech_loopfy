@@ -55,9 +55,7 @@ public class HTMLParser {
         int startPos = 0;
         String startTag = "<" + tag + " ";
         String attrStr = attr + "=\"";
-        edu.hkust.clap.monitor.Monitor.loopBegin(5);
 while (true) { 
-edu.hkust.clap.monitor.Monitor.loopInc(5);
 {
             int tagPos = input.indexOf(startTag, startPos);
             if (tagPos < 0) {

@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="学系资料" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, 学系资料" /-->
+<title>学系资料</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang"><a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">招聘计算机科学及工程学系系主任</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="关於我们" href="/admin/sitemap/?map=About">简介</a>
+<ul>
+<li class="x2"><a title="系主任欢迎词" href="/admin/welcome/">欢迎词</a></li>
+<li class="x2"><a href="/admin/about/">关於我们</a></li>
+<li class="x2"><a href="/admin/factsheet/">学系资料</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">新闻及成就</a></li>
+<li class="x2"><a href="/News/?type=event">活动</a></li>
+<li class="x2"><a title="安全管理" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">安全</a></li>
+<li class="x2"><a href="/admin/contact/">联络我们</a></li>
+<li class="x2"><a href="http://www.ust.hk/gb/about/campus_gethere.htm">如何到达科大</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="学系成员" href="/admin/sitemap/?map=People">学系成员</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">教员</a></li>
+<li class="x2"><a href="/admin/people/staff/">职员</a></li>
+<li class="x2"><a title="语言指导" href="/ct/">语言指导</a></li>
+<li class="x2"><a href="/admin/people/pg/">研究生</a></li>
+<li class="x2"><a href="/admin/recruitment/">招聘</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="本科生课程" href="/admin/sitemap/?map=Undergraduate">本科生</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">三年制本科生课程</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">三年制本科生内联网</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">四年制本科生课程</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">四年制本科生内联网</a></li>
+<li class="x2"><a href="/ug/admissions/">本科生招生</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="研究生课程" href="/admin/sitemap/?map=Postgraduate">研究生</a>
+<ul>
+<li class="x2"><a href="/pg/">研究生课程</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">研究生内联网</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">研究生招生</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">研究生去向</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="研究领域及范畴" href="/pg/research/">研究领域</a></li>
+<li class="x1"><a accesskey="C" title="学系就业中心" href="/admin/sitemap/?map=Career">就业</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">学生实习计划</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">雇主资讯</a></li>
+<li class="x2"><a href="/ug/internship/links/">相关连结</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="电脑设备" href="/admin/facilities/">设备</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">设施委员会及政策</a></li>
+<li class="x2"><a href="/admin/lab/">实验室时间表</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">用户指南</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">学系系统部</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="连结" href="/admin/sitemap/?map=Links">连结</a>
+<ul>
+<li class="x2"><a title="学系电邮系统" href="https://imail.cse.ust.hk/sqmail/">电邮系统</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">教职员内联网</a></li>
+<li class="x2"><a title="科大 MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="科大程式设计队" href="/acm/">程式设计队</a></li>
+<li class="x2"><a title="计算机科学及工程学学生会" href="http://ihome.ust.hk/~su_csess/">学生会</a></li>
+<!---->
+<li class="x2"><a title="计算机科学校友会" href="https://www.facebook.com/cseaa.hkust">校友会</a></li>
+<li class="x2"><a href="/admin/sitemap/">网站索引</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a></span>
+-->
+<h1>学系资料</h1>
+
+<h2>学生人数 (2012-2013)</h2>
+
+<div class="imagebox right" style="width:258px;height:180px">
+<img src="pLib2.jpg" width="258" height="180"
+ alt="科大图书馆" />
+<p>科大图书馆</p>
+</div>
+
+<h3>本科生课程</h3>
+
+<ul>
+ <li>工学士 (计算机科学)、工学士 (计算机科学 - 资讯工程)、理学士
+  (计算机科学)、双学位课程学生人数：<strong>473</strong></li>
+ <li>工学士 (计算机工程) 学生人数：<strong>144</strong>
+  (另有 <strong>144</strong> 人归入电子及计算机工程学系)。</li>
+</ul>
+
+<h3>研究生课程</h3>
+
+<ul>
+ <li>资讯科技理学硕士生人数：<strong>114</strong></li>
+ <li>哲学硕士生人数：<strong>35</strong></li>
+ <li>博士生人数：<strong>154</strong></li>
+</ul>
+
+<h2>世界水平的教员</h2>
+
+<!--
+<div class="imagebox right">
+<img src="pLT.jpg" width="160" height="120" alt="世界水平的教员" />
+<img src="pConferenceRoom.jpg" width="160" height="120" alt="世界水平的教员" />
+<p>世界水平的教员</p>
+</div>
+-->
+
+<p>我系目前共有 48 位教员，其中资深的教授、
+副教授和年资较浅的助理教授的比例呈合理分布。
+此外，我系还有少许客席教席，他们在此工作的时间较短，
+从一学期到两个学期不等。</p>
+
+<p>我们的全体教员都具有全球性的教学和研究经验，
+他们的专长包括：数据库、网络、计算机科学理论、人工智能、视觉与图像等。
+我们的所有教员均从世界著名大学取得博士学位，而且都得到本领域同行的好评。</p>
+
+<!--p><a href="/~ni/">倪教授</a>於 1973 年在国立台湾大学获得电机工程学士学位，
+於 1977 年在密歇根州立韦恩大学获得电机及计算机工程科学硕士学位，
+於 1981 年在普渡大学获得电机及计算机工程博士学位。</p-->
+
+<!--p>计算机科学及工程系系主任，<a href="/~hamdi/">韩隶教授</a>於 1985
+年在路易斯安那州大学取得电机工程 (计算机工程) 学士学位，
+并於 1987 及 1991 年在匹兹堡大学分别获得电机工程硕士及博士学位。</p-->
+
+<p>计算机科学及工程系代系主任，<a href="/~scheng/">郑绍荣教授</a>於 
+1987 年在香港大学取得计算机学学士学位，并於 1992 
+年在明尼苏达大学获得计算机科学博士学位。</p>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>最后更新日期：2013-09-04<br />
+ 香港科技大学计算机科学及工程学系，保留所有版权。</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.0190749168396</div-->

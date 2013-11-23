@@ -1,0 +1,1383 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="Faculty" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, Faculty" /-->
+<title>Faculty</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk&amp;display=profiles">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn&amp;display=profiles">中文简体</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">Search for Head of Computer Science &amp; Engineering</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="About Us" href="/admin/sitemap/?map=About">About</a>
+<ul>
+<li class="x2"><a title="Welcome Message" href="/admin/welcome/">Welcome</a></li>
+<li class="x2"><a href="/admin/about/">About Us</a></li>
+<li class="x2"><a href="/admin/factsheet/">Fact Sheet</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">News &amp; Achievements</a></li>
+<li class="x2"><a href="/News/?type=event">Events</a></li>
+<li class="x2"><a title="Safety Management" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">Safety</a></li>
+<li class="x2"><a href="/admin/contact/">Contact Us</a></li>
+<li class="x2"><a href="http://www.ust.hk/eng/about/campus_gethere.htm">Directions to HKUST</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="People" href="/admin/sitemap/?map=People">People</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">Faculty</a></li>
+<li class="x2"><a href="/admin/people/staff/">Staff</a></li>
+<li class="x2"><a title="Communication Tutors" href="/ct/">Communication Tutors</a></li>
+<li class="x2"><a href="/admin/people/pg/">Postgraduate Students</a></li>
+<li class="x2"><a href="/admin/recruitment/">Recruitment</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="Undergraduate Programs" href="/admin/sitemap/?map=Undergraduate">Undergraduate</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">3-Year UG Programs</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">3-Year UG Intranet</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">4-Year UG Programs</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">4-Year UG Intranet</a></li>
+<li class="x2"><a href="/ug/admissions/">UG Admissions</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="Postgraduate Programs" href="/admin/sitemap/?map=Postgraduate">Postgraduate</a>
+<ul>
+<li class="x2"><a href="/pg/">PG Programs</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">PG Intranet</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">PG Admissions</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">Student Destinations</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="Research Groups &amp; Areas" href="/pg/research/">Research</a></li>
+<li class="x1"><a accesskey="C" title="Career Corner" href="/admin/sitemap/?map=Career">Career</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">Internship Opportunities</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">Info for Employers</a></li>
+<li class="x2"><a href="/ug/internship/links/">Useful Links</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="Computing Facilities" href="/admin/facilities/">Facilities</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">Facility Committee &amp; Policies</a></li>
+<li class="x2"><a href="/admin/lab/">Lab Schedules</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">User Guides</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">CS System</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="Links" href="/admin/sitemap/?map=Links">Links</a>
+<ul>
+<li class="x2"><a title="CSE Webmail" href="https://imail.cse.ust.hk/sqmail/">WebMail</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">Faculty Intranet</a></li>
+<li class="x2"><a title="UST MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="HKUST Programming Team" href="/acm/">Programming Team</a></li>
+<li class="x2"><a title="CSE Students' Society" href="http://ihome.ust.hk/~su_csess/">Students' Society</a></li>
+<!---->
+<li class="x2"><a title="CS Alumni Association" href="https://www.facebook.com/cseaa.hkust">Alumni Association</a></li>
+<li class="x2"><a href="/admin/sitemap/">Site Map</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk&amp;display=profiles">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn&amp;display=profiles">中文简体</a></span>
+-->
+<h1>Faculty</h1>
+
+<ul class="hnav">
+<li><a href="/admin/people/faculty/">By Position</a></li>
+<li><a href="?display=area">By Research Area</a></li>
+<li><a href="?display=alphabetical">By Alphabetical Order</a></li>
+<li id="selected"><a href="?display=profiles">Profiles</a></li>
+</ul>
+
+<h2>Faculty Profiles</h2>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/scheng.jpg" width="90" height="120" alt="Siu-Wing CHENG" />
+ </div>
+ <div class="faculty_info">
+ Siu-Wing CHENG (鄭紹榮)<br />
+ BSc Hong Kong; PhD Minnesota<br />
+ Professor, and Acting Head of Department<br />
+ <br />
+ Research Interests:<br />
+ Computational geometry; design and analysis of algorithms; data
+ structures.<br />
+ <br />
+ Homepage: <a href="/faculty/scheng/">http://www.cse.ust.hk/faculty/scheng/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('scheng'); //--></script></span><br />
+ Room: <span>3531</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/scc.jpg" width="90" height="120" alt="Shing-Chi CHEUNG" />
+ </div>
+ <div class="faculty_info">
+ Shing-Chi CHEUNG (張成志)<br />
+ BSc(Eng) Hong Kong; MSc, PhD London<br />
+ Professor, and Associate Head of Department<br />
+ <br />
+ Research Interests:<br />
+ Ubitiquitous and service computing; software testing and verification;
+ wireless sensor networks; RFID applications; embedded software; design
+ patterns; aspect-oriented programming; exception handling.<br />
+ <br />
+ Homepage: <a href="/faculty/scc/">http://www.cse.ust.hk/faculty/scc/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('scc'); //--></script></span><br />
+ Room: <span>3543</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/tfchan.jpg" width="90" height="120" alt="Tony F. CHAN" />
+ </div>
+ <div class="faculty_info">
+ Tony F. CHAN (陳繁昌)<br />
+ BS, MS California Inst of Tech; PhD Stanford<br />
+ Chair Professor, and President of the University<br />
+ <br />
+ Research Interests:<br />
+ Computational mathematics (matrix computation, PDEs, optimization), 
+ image processing, computer vision, computational differential 
+ geometry with applications to brain mapping and computer graphics, 
+ VLSI physical design optimization.<br />
+ <br />
+ Homepage: <a href="http://president.ust.hk/">http://president.ust.hk/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('tonyfchan','ust.hk'); //--></script></span><br />
+ Room: <span>6349</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/hamdi.jpg" width="90" height="120" alt="Mounir HAMDI" />
+ </div>
+ <div class="faculty_info">
+ Mounir HAMDI (韓隸)<br />
+ BS Southwestern Louisiana; MS, PhD Pittsburgh<br />
+ Chair Professor<br />
+ <br />
+ Research Interests:<br />
+ Architecture, analysis and design of high performance switches and
+ Internet routers, scheduling algorithms, congestion control, routing
+ protocols and network processors; resource allocation and network
+ management of optical networks; wireless networking.<br />
+ <br />
+ Homepage: <a href="/~hamdi/">http://www.cse.ust.hk/~hamdi/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('hamdi'); //--></script></span><br />
+ Room: <span>3545</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/ni.jpg" width="90" height="120" alt="Lionel M. NI" />
+ </div>
+ <div class="faculty_info">
+ Lionel M. NI (倪明選)<br />
+ BS National Taiwan; MS Wayne State Univ; PhD Purdue<br />
+ Chair Professor, Dean of HKUST Fok Ying Tung Graduate School, and Director of MoE/MSRA IT Key Lab<br />
+ <br />
+ Research Interests:<br />
+ Pervasive computing, wireless networking, sensor networks,
+ high-performance computer architecture, mobile commerce, grid
+ computing, multimedia computing, distributed systems.<br />
+ <br />
+ Homepage: <a href="/~ni/">http://www.cse.ust.hk/~ni/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('ni'); //--></script></span><br />
+ Room: <span>3503</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/gchan.jpg" width="90" height="120" alt="Shueng-Han Gary CHAN" />
+ </div>
+ <div class="faculty_info">
+ Shueng-Han Gary CHAN (陳雙幸)<br />
+ BSE Princeton; MS, PhD Stanford<br />
+ Professor, UG Programs Coordinator, and Director of Sino Software Research Institute<br />
+ <br />
+ Research Interests:<br />
+ Multimedia and wireless networking; peer-to-peer networks; design of
+ network protocols; Internet technologies.<br />
+ <br />
+ Homepage: <a href="/~gchan/">http://www.cse.ust.hk/~gchan/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('gchan'); //--></script></span><br />
+ Room: <span>3507</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/cding.jpg" width="90" height="120" alt="Cunsheng DING" />
+ </div>
+ <div class="faculty_info">
+ Cunsheng DING (丁存生)<br />
+ MSc Xidian; PhD Turku<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Cryptography; information and system security; electronic commerce,
+ coding theory.<br />
+ <br />
+ Homepage: <a href="/faculty/cding/">http://www.cse.ust.hk/faculty/cding/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('cding'); //--></script></span><br />
+ Room: <span>3518</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/golin.jpg" width="90" height="120" alt="Mordecai J. GOLIN" />
+ </div>
+ <div class="faculty_info">
+ Mordecai J. GOLIN (高可齡)<br />
+ BSc Hebrew Univ of Jerusalem; MA, PhD 
+  Princeton<br />
+ Professor, and Associate Vice-President for Postgraduate Studies<br />
+ <br />
+ Research Interests:<br />
+ The theory, design and application of algorithms; computational
+ geometry; combinatorics; mathematical tools for the analysis of
+ algorithms; information theory.<br />
+ <br />
+ Homepage: <a href="/faculty/golin/">http://www.cse.ust.hk/faculty/golin/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('golin'); //--></script></span><br />
+ Room: <span>3559</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/horner.jpg" width="90" height="120" alt="Andrew B. HORNER" />
+ </div>
+ <div class="faculty_info">
+ Andrew B. HORNER (康立德)<br />
+ BMusic Boston; MS Univ of Tennessee, Knoxville; PhD Univ 
+  of Illinois, Urbana-Champaign<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer music and sound synthesis; audio engineering; multimedia
+ (music and sound); musical acoustics; psychoacoustics; genetic
+ algorithms.<br />
+ <br />
+ Homepage: <a href="/faculty/horner/">http://www.cse.ust.hk/faculty/horner/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('horner'); //--></script></span><br />
+ Room: <span>3549</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/jamesk.jpg" width="90" height="120" alt="James Tin-Yau KWOK" />
+ </div>
+ <div class="faculty_info">
+ James Tin-Yau KWOK (郭天佑)<br />
+ BSc Hong Kong; PhD Hong Kong Univ of Sc &amp; 
+  Tech<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Kernel methods, artificial neural networks, machine learning, pattern
+ recognition.<br />
+ <br />
+ Homepage: <a href="/~jamesk/">http://www.cse.ust.hk/~jamesk/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('jamesk'); //--></script></span><br />
+ Room: <span>3519</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/dlee.jpg" width="90" height="120" alt="Dik-Lun LEE" />
+ </div>
+ <div class="faculty_info">
+ Dik-Lun LEE (李迪麟)<br />
+ BSc Chinese Univ of Hong Kong; MSc, PhD 
+  Toronto<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Search engines; mobile and pervasive computing.<br />
+ <br />
+ Homepage: <a href="/faculty/dlee/">http://www.cse.ust.hk/faculty/dlee/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('dlee'); //--></script></span><br />
+ Room: <span>3534</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/bli.jpg" width="90" height="120" alt="Bo LI" />
+ </div>
+ <div class="faculty_info">
+ Bo LI (李波)<br />
+ BS, MS Tsinghua; PhD Massachusetts<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Mobile computing and communications; all-optical networks; multimedia
+ wireless networks; internetworking of ATM and IP; and video
+ technology.<br />
+ <br />
+ Homepage: <a href="/faculty/bli/">http://www.cse.ust.hk/faculty/bli/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('bli'); //--></script></span><br />
+ Room: <span>3524</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/flin.jpg" width="90" height="120" alt="Fangzhen LIN" />
+ </div>
+ <div class="faculty_info">
+ Fangzhen LIN (林方真)<br />
+ BS Fuzhou; MS Peking; PhD Stanford<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Artificial intelligence; knowledge representation and reasoning;
+ reasoning about actions; planning; robotics.<br />
+ <br />
+ Homepage: <a href="/~flin/">http://www.cse.ust.hk/~flin/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('flin'); //--></script></span><br />
+ Room: <span>3511</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/fred.jpg" width="90" height="120" alt="Frederick H. LOCHOVSKY" />
+ </div>
+ <div class="faculty_info">
+ Frederick H. LOCHOVSKY (樂創基)<br />
+ BASc, MSc, PhD Toronto<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Web technologies; information systems; data and knowledge base
+ systems.<br />
+ <br />
+ Homepage: <a href="/faculty/fred/">http://www.cse.ust.hk/faculty/fred/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('fred'); //--></script></span><br />
+ Room: <span>3527</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/dimitris.jpg" width="90" height="120" alt="Dimitris PAPADIAS" />
+ </div>
+ <div class="faculty_info">
+ Dimitris PAPADIAS (白德善)<br />
+ B Comp &amp; Inf Engr Patras; MSc Queen's Univ, Kingston; PhD National Tech Univ of Athens<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Data and knowledge base systems; spatio-temporal databases; geographic
+ information systems.<br />
+ <br />
+ Homepage: <a href="/faculty/dimitris/">http://www.cse.ust.hk/faculty/dimitris/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('dimitris'); //--></script></span><br />
+ Room: <span>3555</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/tcpong.jpg" width="90" height="120" alt="Ting-Chuen PONG" />
+ </div>
+ <div class="faculty_info">
+ Ting-Chuen PONG (龐鼎全)<br />
+ BS Univ of Wisconsin, Eau Claire; MS, PhD Virginia Polytech Inst &amp; State Univ<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer vision and image processing; artificial intelligence; pattern
+ recognition; image and video databases; distance learning.<br />
+ <br />
+ Homepage: <a href="/faculty/tcpong/">http://www.cse.ust.hk/faculty/tcpong/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('tcpong'); //--></script></span><br />
+ Room: <span>3544</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/quan.jpg" width="90" height="120" alt="Long QUAN" />
+ </div>
+ <div class="faculty_info">
+ Long QUAN (權龍)<br />
+ BS Northern Jiaotong; MS Univ de Nancy I - CNRS - INRIA; PhD INPL - CNRS - INRIA<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer vision; 3D reconstruction, motion analysis, image-based
+ modeling and rendering, computer graphics.<br />
+ <br />
+ Homepage: <a href="/~quan/">http://www.cse.ust.hk/~quan/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('quan'); //--></script></span><br />
+ Room: <span>3506</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/taicl.jpg" width="90" height="120" alt="Chiew-Lan TAI" />
+ </div>
+ <div class="faculty_info">
+ Chiew-Lan TAI (戴秋蘭)<br />
+ BSc, MSc Malaya; MSc National Univ of Singapore; DSc Tokyo<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Geometric modeling and processing; computer graphics; interactive
+ techniques.<br />
+ <br />
+ Homepage: <a href="/faculty/taicl/">http://www.cse.ust.hk/faculty/taicl/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('taicl'); //--></script></span><br />
+ Room: <span>3515</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/cktang.jpg" width="90" height="120" alt="Chi-Keung TANG" />
+ </div>
+ <div class="faculty_info">
+ Chi-Keung TANG (鄧智強)<br />
+ BS Chinese Univ of Hong Kong; MPhil Hong Kong Univ of Sc &amp; Tech; MS, PhD Southern California<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer vision, computer graphics, human-computer interaction.<br />
+ <br />
+ Homepage: <a href="/~cktang/">http://www.cse.ust.hk/~cktang/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('cktang'); //--></script></span><br />
+ Room: <span>3561</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/qyang.jpg" width="90" height="120" alt="Qiang YANG" />
+ </div>
+ <div class="faculty_info">
+ Qiang YANG (楊強)<br />
+ BS Peking; MSc, MSc, PhD Univ of Maryland, College 
+  Park<br />
+ Professor, and Associate Director of Applied Genomics Center<br />
+ <br />
+ Research Interests:<br />
+ Data mining and artificial intelligence (machine learning, planning,
+ case-based reasoning), with applications in web and wireless areas.<br />
+ <br />
+ Homepage: <a href="/~qyang/">http://www.cse.ust.hk/~qyang/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('qyang'); //--></script></span><br />
+ Room: <span>3563</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/dyyeung.jpg" width="90" height="120" alt="Dit-Yan YEUNG" />
+ </div>
+ <div class="faculty_info">
+ Dit-Yan YEUNG (楊瓞仁)<br />
+ BSc(Eng), MPhil Hong Kong; MS, PhD Southern California<br />
+ Professor, and Director of Cyberspace Center<br />
+ <br />
+ Research Interests:<br />
+ Models and algorithms for machine learning and pattern recognition;
+ applications to biometrics, computer security, handwriting
+ recognition, and image processing.<br />
+ <br />
+ Homepage: <a href="/faculty/dyyeung/">http://www.cse.ust.hk/faculty/dyyeung/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('dyyeung'); //--></script></span><br />
+ Room: <span>3541</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/lzhang.jpg" width="90" height="120" alt="Nevin Lianwen ZHANG" />
+ </div>
+ <div class="faculty_info">
+ Nevin Lianwen ZHANG (張連文)<br />
+ BS China Univ of Electrical Sc &amp; Tech; MS, PhD Beijing Normal and British Columbia<br />
+ Professor<br />
+ <br />
+ Research Interests:<br />
+ Latent variable models; statistical foundation for traditional Chinese
+ medicine; Bayesian networks; decision networks; and Markov decision
+ processes; and their applications to planning, learning, data mining.<br />
+ <br />
+ Homepage: <a href="/faculty/lzhang/">http://www.cse.ust.hk/faculty/lzhang/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('lzhang'); //--></script></span><br />
+ Room: <span>3504</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/qianzh.jpg" width="90" height="120" alt="Qian ZHANG" />
+ </div>
+ <div class="faculty_info">
+ Qian ZHANG (張黔)<br />
+ BS, MS, PhD Wuhan<br />
+ Professor, Associate Director of Cyberspace Center, and Director of Digital Life Research Center<br />
+ <br />
+ Research Interests:<br />
+ Wireless communications and networking; pervasive computing and mobile
+ computing; peer-to-peer computing; multimedia networking; embedded
+ system.<br />
+ <br />
+ Homepage: <a href="/~qianzh/">http://www.cse.ust.hk/~qianzh/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('qianzh'); //--></script></span><br />
+ Room: <span>3533</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/timothymchan.jpg" width="90" height="120" alt="Timothy CHAN" />
+ </div>
+ <div class="faculty_info">
+ Timothy CHAN (陳夢遙)<br />
+ Visiting Professor<br />
+ <br />
+ Homepage: <a href="https://cs.uwaterloo.ca/~tmchan/">http://www.cse.ust.hkhttps://cs.uwaterloo.ca/~tmchan/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('timothymchan'); //--></script></span><br />
+ Room: <span>3538</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/eyuchang.jpg" width="90" height="120" alt="Edward Y. CHANG" />
+ </div>
+ <div class="faculty_info">
+ Edward Y. CHANG (張智威)<br />
+ MS, PhD Stanford<br />
+ Adjunct Professor<br />
+ <br />
+ Research Interests:<br />
+ distributed data mining and their applications to rich-media data 
+ management and social-network collaborative filtering<br />
+ <br />
+ Homepage: <a href="http://infolab.stanford.edu/~echang/">http://infolab.stanford.edu/~echang/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('eyuchang','gmail.com'); //--></script></span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/hshum.jpg" width="90" height="120" alt="Harry Heung-Yeung SHUM" />
+ </div>
+ <div class="faculty_info">
+ Harry Heung-Yeung SHUM (沈向洋)<br />
+ BEng Nanjing Inst of Tech; MPhil Hong Kong; PhD Carnegie Mellon<br />
+ Adjunct Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer vision; computer graphics; multimedia; human-computer
+ interface; robotics.<br />
+ <br />
+ Homepage: <a href="http://research.microsoft.com/~hshum/">http://research.microsoft.com/~hshum/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('hshum','microsoft.com'); //--></script></span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/yzhang.jpg" width="90" height="120" alt="Ya-Qin ZHANG" />
+ </div>
+ <div class="faculty_info">
+ Ya-Qin ZHANG (張亞勤)<br />
+ BS, MS Univ of Sc &amp; Tech of China; PhD George Washington<br />
+ Adjunct Professor<br />
+ <br />
+ Research Interests:<br />
+ Digital video compression and communications; multimedia networking;
+ natural user interface.<br />
+ <br />
+ Homepage: <a href="http://research.microsoft.com/~yzhang/">http://research.microsoft.com/~yzhang/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('yzhang','microsoft.com'); //--></script></span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/arya.jpg" width="90" height="120" alt="Sunil ARYA" />
+ </div>
+ <div class="faculty_info">
+ Sunil ARYA (安雅信)<br />
+ BTech Indian Inst of Tech, Kanpur; MS, PhD Univ of Maryland, College Park<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Data structures and algorithms; computational geometry; combinatorics.<br />
+ <br />
+ Homepage: <a href="/faculty/arya/">http://www.cse.ust.hk/faculty/arya/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('arya'); //--></script></span><br />
+ Room: <span>3514</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/csbb.jpg" width="90" height="120" alt="Brahim BENSAOU" />
+ </div>
+ <div class="faculty_info">
+ Brahim BENSAOU (彭&#x5372;邦)<br />
+ Engineer Univ of Sc &amp; Tech, Algeria; DEA Univ Paris 
+  XI; PhD Univ Paris VI<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Packet networks and Internet; wireless networks; ad-hoc and sensor 
+ networks; traffic control, congestion control and resource 
+ allocation.<br />
+ <br />
+ Homepage: <a href="/~csbb/">http://www.cse.ust.hk/~csbb/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('csbb'); //--></script></span><br />
+ Room: <span>3537</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/leichen.jpg" width="90" height="120" alt="Lei CHEN" />
+ </div>
+ <div class="faculty_info">
+ Lei CHEN (陳雷)<br />
+ BS Tianjin; MS Asian Inst of Tech; PhD 
+  Waterloo<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Multimedia databases, distributed databases systems, scientific and
+ graph databases, data management over sensor network and p2p network;
+ stream data management.<br />
+ <br />
+ Homepage: <a href="/~leichen/">http://www.cse.ust.hk/~leichen/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('leichen'); //--></script></span><br />
+ Room: <span>3509</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/achung.jpg" width="90" height="120" alt="Albert Chi-Shing CHUNG" />
+ </div>
+ <div class="faculty_info">
+ Albert Chi-Shing CHUNG (鍾志成)<br />
+ BEng Hong Kong; MPhil Hong Kong Univ of Sc &amp; Tech; 
+  DPhil Oxford<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Medical image analysis; image processing; medical and computer vision;
+ pattern recognition.<br />
+ <br />
+ Homepage: <a href="/~achung/">http://www.cse.ust.hk/~achung/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('achung'); //--></script></span><br />
+ Room: <span>3516</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/luo.jpg" width="90" height="120" alt="Qiong LUO" />
+ </div>
+ <div class="faculty_info">
+ Qiong LUO (羅&#x743C;)<br />
+ BS, MS Peking; PhD Univ of Wisconsin, Madison<br />
+ Associate Professor, and PG Programs Coordinator<br />
+ <br />
+ Research Interests:<br />
+ Database systems; data management on new hardware, query processing 
+ in sensor networks, web-information management.<br />
+ <br />
+ Homepage: <a href="/~luo/">http://www.cse.ust.hk/~luo/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('luo'); //--></script></span><br />
+ Room: <span>3554</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/mak.jpg" width="90" height="120" alt="Brian Kan-Wing MAK" />
+ </div>
+ <div class="faculty_info">
+ Brian Kan-Wing MAK (麥鑑榮)<br />
+ BS, CertEd Hong Kong; MS Univ of California, Santa Barbara; PhD Oregon Graduate Inst of Sc &amp; Tech<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Speech recognition; spoken language understanding; acoustic modeling;
+ machine learning; computer-aided language learning.<br />
+ <br />
+ Homepage: <a href="/faculty/mak/">http://www.cse.ust.hk/faculty/mak/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('mak'); //--></script></span><br />
+ Room: <span>3513</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/muppala.jpg" width="90" height="120" alt="Jogesh K. MUPPALA" />
+ </div>
+ <div class="faculty_info">
+ Jogesh K. MUPPALA (梅伯樂)<br />
+ BE Osmania; MS Southwestern Louisiana; PhD Duke<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Embedded systems; high speed networks; stochastic Petri nets.<br />
+ <br />
+ Homepage: <a href="/faculty/muppala/">http://www.cse.ust.hk/faculty/muppala/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('muppala'); //--></script></span><br />
+ Room: <span>3510</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/wilfred.jpg" width="90" height="120" alt="Wilfred Siu-Hung NG" />
+ </div>
+ <div class="faculty_info">
+ Wilfred Siu-Hung NG (吳兆鴻)<br />
+ BSc, CertEd Hong Kong; MSc, PhD London<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Semantic data modeling, database query languages, data mining;
+ managing XML data and web searching.<br />
+ <br />
+ Homepage: <a href="/faculty/wilfred/">http://www.cse.ust.hk/faculty/wilfred/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('wilfred'); //--></script></span><br />
+ Room: <span>3505</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/huamin.jpg" width="90" height="120" alt="Huamin QU" />
+ </div>
+ <div class="faculty_info">
+ Huamin QU (屈華民)<br />
+ BS Xi'an Jiaotong; MS, PhD State Univ of New York, Stony Brook<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer graphics; visualization; medical imaging; virtual reality;
+ volume rendering; image-based rendering; scientific computing.<br />
+ <br />
+ Homepage: <a href="/~huamin/">http://www.cse.ust.hk/~huamin/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('huamin'); //--></script></span><br />
+ Room: <span>3508</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/psander.jpg" width="90" height="120" alt="Pedro SANDER" />
+ </div>
+ <div class="faculty_info">
+ Pedro SANDER (辛達德)<br />
+ BSc State Univ of New York, Stony Brook; SM, PhD Harvard<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Computer graphics: efficient rendering and geometry processing; 
+ general purpose processing on graphics hardware.<br />
+ <br />
+ Homepage: <a href="/~psander/">http://www.cse.ust.hk/~psander/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('psander'); //--></script></span><br />
+ Room: <span>3525</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/helens.jpg" width="90" height="120" alt="Helen C. SHEN" />
+ </div>
+ <div class="faculty_info">
+ Helen C. SHEN (沈志汶)<br />
+ BMath, PhD Waterloo; MSc Toronto<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Biometrics; data fusion and integration; data analysis.<br />
+ <br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('helens'); //--></script></span><br />
+ Room: <span>3557</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/dekai.jpg" width="90" height="120" alt="Dekai WU" />
+ </div>
+ <div class="faculty_info">
+ Dekai WU (吳德愷)<br />
+ BS Univ of California, San Diego; PhD Univ of California, Berkeley<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Statistical/corpus-based natural language processing; machine
+ translation; language modeling; speech recognition; multilingual
+ technologies; machine learning; language acquisition; knowledge
+ management.<br />
+ <br />
+ Homepage: <a href="/faculty/dekai/">http://www.cse.ust.hk/faculty/dekai/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('dekai'); //--></script></span><br />
+ Room: <span>3539</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/yike.jpg" width="90" height="120" alt="Ke YI" />
+ </div>
+ <div class="faculty_info">
+ Ke YI (易珂)<br />
+ BE Tsinghua; PhD Duke<br />
+ Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Algorithms and data structures, in particular external memory 
+ algorithms; database algorithms; data streams; distributed 
+ algorithms; computational geometry.<br />
+ <br />
+ Homepage: <a href="/~yike/">http://www.cse.ust.hk/~yike/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('yike'); //--></script></span><br />
+ Room: <span>3552</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/cdshum.jpg" width="90" height="120" alt="Chung-Dak SHUM" />
+ </div>
+ <div class="faculty_info">
+ Chung-Dak SHUM (岑松德)<br />
+ BS, MS Washington Univ; PhD Univ of California, Los Angeles<br />
+ Adjunct Associate Professor<br />
+ <br />
+ Research Interests:<br />
+ Computational finance; financial data modeling; risk management
+ systems; video surveillance systems; video indexing.<br />
+ <br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('cdshum','ust.hk'); //--></script></span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/kaichen.jpg" width="90" height="120" alt="Kai CHEN" />
+ </div>
+ <div class="faculty_info">
+ Kai CHEN (陳凱)<br />
+ BS, MS Univ of Sc &amp; Tech of China; PhD Northwestern<br />
+ Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Data center networking, cloud computing; networked systems; Internet 
+ routing, measurement, reliability; wireless sensor networks.<br />
+ <br />
+ Homepage: <a href="/~kaichen/">http://www.cse.ust.hk/~kaichen/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('kaichen'); //--></script></span><br />
+ Room: <span>3546</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/lingu.jpg" width="90" height="120" alt="Lin GU" />
+ </div>
+ <div class="faculty_info">
+ Lin GU (顧磷)<br />
+ BS Fudan; MS Peking; PhD Virginia<br />
+ Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Ubiquitous computing, wireless sensor networks, operating systems, 
+ computer networks, energy-efficient computing.<br />
+ <br />
+ Homepage: <a href="/~lingu/">http://www.cse.ust.hk/~lingu/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('lingu'); //--></script></span><br />
+ Room: <span>3562</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/panhui.jpg" width="90" height="120" alt="Pan HUI" />
+ </div>
+ <div class="faculty_info">
+ Pan HUI (許彬)<br />
+ BSc, MPhil Hong Kong; PhD Univ of Cambridge<br />
+ Assistant Professor<br />
+ <br />
+ Homepage: <a href="/~panhui/">http://www.cse.ust.hk/~panhui/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('panhui'); //--></script></span><br />
+ Room: <span>3517</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/hunkim.jpg" width="90" height="120" alt="Sunghun KIM" />
+ </div>
+ <div class="faculty_info">
+ Sunghun KIM (金成勳)<br />
+ BS Daegu; MS, PhD Univ of California, Santa 
+  Cruz<br />
+ Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Software engineering, focusing on software evolution, program 
+ analysis, and empirical studies.<br />
+ <br />
+ Homepage: <a href="/~hunkim/">http://www.cse.ust.hk/~hunkim/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('hunkim'); //--></script></span><br />
+ Room: <span>3536</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/raywong.jpg" width="90" height="120" alt="Raymond Chi-Wing WONG" />
+ </div>
+ <div class="faculty_info">
+ Raymond Chi-Wing WONG (黃智榮)<br />
+ BSc, MPhil, PhD Chinese Univ of Hong Kong<br />
+ Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Database, data mining, security, data mining for business 
+ applications, customer-centric data analysis, data warehouse, 
+ decision making, data streams, video compression and computer music.<br />
+ <br />
+ Homepage: <a href="/~raywong/">http://www.cse.ust.hk/~raywong/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('raywong'); //--></script></span><br />
+ Room: <span>3542</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/charlesz.jpg" width="90" height="120" alt="Charles ZHANG" />
+ </div>
+ <div class="faculty_info">
+ Charles ZHANG (張川)<br />
+ BSc, MSc, PhD Toronto<br />
+ Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ General: Software engineering, middleware systems, operating 
+ systems. Current focus: Areas related to software customization such 
+ as concern mining, aspect oriented programming, product-line 
+ engineering, model driven approaches, generative programming, and 
+ domain specific languages.<br />
+ <br />
+ Homepage: <a href="/~charlesz/">http://www.cse.ust.hk/~charlesz/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('charlesz'); //--></script></span><br />
+ Room: <span>3553</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/gibson.jpg" width="90" height="120" alt="Gibson LAM" />
+ </div>
+ <div class="faculty_info">
+ Gibson LAM (林傑遜)<br />
+ MPhil, PhD Hong Kong Univ of Sc &amp; Tech<br />
+ Visiting Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Multimedia Web Services, Internet technologies, IT in education and 
+ computer graphics.<br />
+ <br />
+ Homepage: <a href="/~gibson/">http://www.cse.ust.hk/~gibson/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('gibson'); //--></script></span><br />
+ Room: <span>3512</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/kwtleung.jpg" width="90" height="120" alt="Wai Ting LEUNG" />
+ </div>
+ <div class="faculty_info">
+ Wai Ting LEUNG (梁煒霆)<br />
+ BSc British Columbia; MSc, PhD Hong Kong Univ of Sc &amp; 
+  Tech<br />
+ Visiting Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Information retrieval and mobile computing, in particular 
+ clickthrough clustering, personalized web search, mobile web search, 
+ and collaborative web search.<br />
+ <br />
+ Homepage: <a href="/~kwtleung/">http://www.cse.ust.hk/~kwtleung/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('kwtleung'); //--></script></span><br />
+ Room: <span>3547</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/stavrosp.jpg" width="90" height="120" alt="Stavros PAPADOPOULOS" />
+ </div>
+ <div class="faculty_info">
+ Stavros PAPADOPOULOS<br />
+ BSc Greece; PhD Hong Kong Univ of Sc &amp; 
+  Tech<br />
+ Visiting Assistant Professor<br />
+ <br />
+ Research Interests:<br />
+ Security and privacy; mobile computing; database systems;
+ distributed systems.<br />
+ <br />
+ Homepage: <a href="/~stavrosp/">http://www.cse.ust.hk/~stavrosp/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('stavrosp'); //--></script></span><br />
+ Room: <span>3547</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/rossiter.jpg" width="90" height="120" alt="David Paul ROSSITER" />
+ </div>
+ <div class="faculty_info">
+ David Paul ROSSITER (羅大偉)<br />
+ BSc Univ of Newcastle Upon Tyne; MSc, DPhil Univ of York, England<br />
+ Associate Professor of Engineering Education<br />
+ <br />
+ Research Interests:<br />
+ Internet design and technologies; human-computer interaction; computer
+ sound; computer music; computer graphics and visualization; voice.<br />
+ <br />
+ Homepage: <a href="/~rossiter/">http://www.cse.ust.hk/~rossiter/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('rossiter'); //--></script></span><br />
+ Room: <span>3512</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/lixin.jpg" width="90" height="120" alt="Xin LI" />
+ </div>
+ <div class="faculty_info">
+ Xin LI (李昕)<br />
+ BEng, BA Xian Jiaotong; PhD Hong Kong Univ of Sc &amp; Tech<br />
+ Lecturer<br />
+ <br />
+ Research Interests:<br />
+ Computer networks and data communications, in particular the 
+ development of scheduling algorithms and the architectural design 
+ for scalable and high-performance switches/routers, both electronic 
+ and optical.<br />
+ <br />
+ Homepage: <a href="/~lixin/">http://www.cse.ust.hk/~lixin/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('lixin'); //--></script></span><br />
+ Room: <span>3535</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/roland.jpg" width="90" height="120" alt="Roland T. CHIN" />
+ </div>
+ <div class="faculty_info">
+ Roland T. CHIN (錢大康)<br />
+ BS, PhD Univ of Missouri, Columbia; JP<br />
+ Professor Emeritus<br />
+ <br />
+ Research Interests:<br />
+ Digital signal processing; image processing; machine vision; pattern
+ recognition and related applications.<br />
+ <br />
+ Homepage: <a href="/faculty/roland/">http://www.cse.ust.hk/faculty/roland/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('roland'); //--></script></span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/shen.jpg" width="90" height="120" alt="Vincent Y. S. SHEN" />
+ </div>
+ <div class="faculty_info">
+ Vincent Y. S. SHEN (沈運申)<br />
+ BS National Taiwan; MA, PhD Princeton<br />
+ Professor Emeritus<br />
+ <br />
+ Research Interests:<br />
+ Web technologies; Web-based learning; software engineering.<br />
+ <br />
+ Homepage: <a href="/faculty/shen/">http://www.cse.ust.hk/faculty/shen/</a><br />
+ Email: <span><script type="text/javascript"><!--
+  mmsend('shen'); //--></script></span><br />
+ Room: <span>3538</span><br />
+ </div>
+ <hr />
+</div>
+
+<div class="faculty_profile">
+ <div class="faculty_img">
+ <img src="thumbnails/dwood.jpg" width="90" height="120" alt="Derick WOOD" />
+ </div>
+ <div class="faculty_info">
+ Derick WOOD (伍德瑞)<br />
+ BSc, PhD Leeds<br />
+ Professor Emeritus<br />
+ <br />
+ Research Interests:<br />
+ Document engineering; symbolic manipulation of language-theory 
+ objects; algorithms; data structures; formal language theory.<br />
+ <br />
+ Homepage: <a href="/faculty/dwood/">http://www.cse.ust.hk/faculty/dwood/</a><br />
+ </div>
+ <hr />
+</div>
+
+<script type="text/javascript" src="/scripts/jquery/jquery.quicksearch.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  $('.faculty_profile').quicksearch({
+   position: 'after',
+   attached: 'ul.hnav',
+   labelText: 'Search faculty',
+   loaderText: 'Loading...',
+   delay: 50,
+   onAfter: function() {
+    if ($('.faculty_profile:visible').length == 0) {
+     if ($('span.qs_no-match').length == 0) {
+      $('.faculty_profile').parent().append('<span class="qs_no-match">No results found.<\/span>');
+     }
+    } else {
+     if ($('span.qs_no-match').length > 0) {
+      $('span.qs_no-match').remove();
+     }
+    }
+   }
+  });
+ });
+//]]>
+</script>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>Last updated on 2013-09-24<br />
+ Department of Computer Science and Engineering, HKUST. All rights reserved.</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.082979202270508</div-->

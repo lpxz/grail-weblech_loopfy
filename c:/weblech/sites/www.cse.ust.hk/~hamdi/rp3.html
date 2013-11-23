@@ -1,0 +1,5149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<title>Welcome to Prof.Hamdi's Homepage</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/slidingdoors.css" />
+
+
+
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery-func.js" type="text/javascript"></script>
+
+
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript" src="Scripts/dropdowntabs.js"></script>
+
+
+
+<script type="text/javascript"> 
+
+
+
+var bannerAD=new Array(); 
+
+
+
+var bannerADlink=new Array(); 
+
+
+
+var adNum=0; 
+
+
+
+
+
+
+
+bannerAD[0]="index_images/aerial_view_HKUST-small.jpg"; 
+
+
+
+bannerADlink[0]="#"
+
+
+
+bannerAD[1]="index_images/boats_sailing-small.jpg"; 
+
+
+
+bannerADlink[1]="#"
+
+
+
+bannerAD[2]="index_images/library_at_night-small.jpg"; 
+
+
+
+bannerADlink[2]="#"
+
+
+
+bannerAD[3]="index_images/hkust-dorms.jpg"; 
+
+
+
+bannerADlink[3]="#"
+
+
+
+bannerAD[4]="index_images/swimming_pool-small.jpg"; 
+
+
+
+bannerADlink[4]="#"
+
+
+
+bannerAD[5]="index_images/library-small.jpg"; 
+
+
+
+bannerADlink[5]="#"
+
+
+
+bannerAD[6]="index_images/student_halls-small.jpg"; 
+
+
+
+bannerADlink[6]="#"
+
+
+
+bannerAD[7]="index_images/piazza_aerial-small.jpg"; 
+
+
+
+bannerADlink[7]="#"
+
+
+
+bannerAD[8]="index_images/stadium-small.jpg"; 
+
+
+
+bannerADlink[8]="#"
+
+
+
+bannerAD[9]="index_images/main_building-small.jpg"; 
+
+
+
+bannerADlink[9]="#"
+
+
+
+bannerAD[10]="index_images/sunset-small.jpg"; 
+
+
+
+bannerADlink[10]="#"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Slider -->
+
+
+
+/*图片可以增加*/
+
+
+
+
+
+
+
+var preloadedimages=new Array(); 
+
+
+
+for (i=1;i<bannerAD.length;i++){ 
+
+
+
+preloadedimages[i]=new Image(); 
+
+
+
+preloadedimages[i].src=bannerAD[i]; 
+
+
+
+} 
+
+
+
+
+
+
+
+function setTransition(){ 
+
+
+
+if (document.all){ 
+
+
+
+bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+
+
+
+bannerADrotator.filters.revealTrans.apply(); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+function playTransition(){ 
+
+
+
+if (document.all) 
+
+
+
+bannerADrotator.filters.revealTrans.play() 
+
+
+
+} 
+
+
+
+
+
+
+
+function nextAd(){ 
+
+
+
+if(adNum<bannerAD.length-1)adNum++ ; 
+
+
+
+else adNum=0; 
+
+
+
+setTransition(); 
+
+
+
+document.images.bannerADrotator.src=bannerAD[adNum]; 
+
+
+
+playTransition(); 
+
+
+
+theTimer=setTimeout("nextAd()", 3000); 
+
+
+
+} 
+
+
+
+
+
+
+
+function jump2url(){ 
+
+
+
+jumpUrl=bannerADlink[adNum]; 
+
+
+
+jumpTarget='_blank'; 
+
+
+
+if (jumpUrl != ''){ 
+
+
+
+if (jumpTarget != '')window.open(jumpUrl,jumpTarget); 
+
+
+
+else location.href=jumpUrl; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function displayStatusMsg() { 
+
+
+
+status=bannerADlink[adNum]; 
+
+
+
+document.returnValue = true; 
+
+
+
+} 
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<div class="outershell">
+
+
+
+<!-- Logo -->
+
+
+
+<div id="top">
+
+
+
+<div class="shell">
+
+
+
+    <p>
+
+
+
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="208" id="FlashID" title="test">
+
+
+
+        <param name="movie" value="css/images/top.swf" />
+
+
+
+        <param name="quality" value="high" />
+
+
+
+        <param name="wmode" value="opaque" />
+
+
+
+        <param name="swfversion" value="6.0.65.0" />
+
+
+
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+
+
+
+        </object>
+
+
+
+        </p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Logo -->
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+<div class="shell">
+
+
+
+<!-- Menu -->
+
+
+
+  <div id="slidemenu" class="slidetabsmenu">
+
+
+
+<ul>
+
+
+
+<li><a href="index.html" title="Home"><span>Home</span></a></li>
+
+
+
+<li><a href="#" title="Profile" rel="dropmenu1_c"><span>Profile</span></a></li>
+
+
+
+<li><a href="#" title="Research" rel="dropmenu2_c"><span>Research</span></a></li>
+
+
+
+<li><a href="#" title="University Service" rel="dropmenu3_c"><span>University Service</span></a></li>	
+
+
+
+<li><a href="#" title="International Service" rel="dropmenu4_c"><span>International Service</span></a></li>
+
+
+
+<li><a href="#" title="Teaching" rel="dropmenu5_c"><span>Teaching</span></a></li>
+
+
+
+<li><a href="#" title="Links"><span>Links</span></a></li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br style="clear: left;" />
+
+
+
+<br class="IEonlybr" />
+
+
+
+
+
+
+
+<!--1st drop down menu -->                                                   
+
+
+
+<div id="dropmenu1_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="e.html">Education</a>
+
+
+
+<a href="tre.html">Teaching and Research Experience</a>
+
+
+
+<a href="lpiar.html">Leadership Positions in Administration and Research &nbsp;</a>
+
+
+
+<a href="vhph.html">Visiting and Honorary Positions Held</a>
+
+
+
+<a href="cis.html">Consultancy and Industrial Service</a>
+
+
+
+<a href="ha.html">Honors and Awards</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd drop down menu -->                                                
+
+
+<div id="dropmenu2_c" class="dropmenudiv_c" style="width:auto;">
+<a href="ri.html">Research Interest</a>
+<a href="rp3.html">Research Publications Grouped In Chronological Order &nbsp</a>
+<a href="rp.html">Research Publications Grouped By Type</a>
+<a href="rp2.html">Research Publications Grouped By Research Topic</a>
+<a href="rg.html">Research Group</a>
+<a href="rfc.html">Research Funding and Contracts</a>
+<a href="rss.html">Research Student Supervision</a>
+</div>
+
+<!--3rd drop down menu -->                                                
+
+
+
+<div id="dropmenu3_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ufe.html">University-Founding Experience</a>
+
+
+
+<a href="igb.html">International Governmental Bodies &nbsp;</a>
+
+
+
+<a href="hkwe.html">Hong Kong Wide-Level Experience</a>
+
+
+
+<a href="ule.html">University-Level Experience</a>
+
+
+
+<a href="se.html">School-Level Experience</a>
+
+
+
+<a href="de.html">Department-Level Experience</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--4th drop down menu -->                                                
+
+
+
+<div id="dropmenu4_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="eo.html">Elected Office</a>
+
+
+
+<a href="mpto.html">Membership in Professional and Technical Organization &nbsp;</a>
+
+
+
+<a href="jes.html">Journal's Editorial Service</a>
+
+
+
+<a href="icws.html">International Conferences/Workshops Service</a>
+
+
+
+<a href="ir.html">International Referee</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--5th drop down menu -->                                                
+
+
+
+<div id="dropmenu5_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ta.html">Teaching Awards</a>
+
+
+
+<a href="Class/CSIT560-S13/index.htm">Spring 2013 Teaching</a>
+
+
+
+<a href="ct.html">Courses Taught</a>
+
+
+
+<a href="fyps.html">Final Year Project Supervision &nbsp;</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- End Menu -->
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Main -->
+
+
+
+<div id="main">
+
+
+
+<hr />
+
+
+
+  <div class="innershell">
+
+
+
+  <span id="top"></span>
+
+
+
+  <h2><strong>Research Publications Grouped In Chronological Order</strong></h2>
+
+
+
+  
+
+
+
+  <ul type="disc">
+
+
+
+    <table align="center" width="800" border="0">
+
+
+
+	<tr>
+
+
+
+		<td><li><a href="#Appear"><strong>To Appear</strong></a></li></td>
+
+
+
+		<td><li><a href="#2012"><strong>2012</strong></a></li></td>
+
+
+
+		<td><li><a href="#2011"><strong>2011</strong></a></li></td>
+
+
+
+		<td><li><a href="#2010"><strong>2010</strong></a></li></td>
+
+
+
+		<td><li><a href="#2009"><strong>2009</strong></a></li></td>
+
+
+
+		<td><li><a href="#2008"><strong>2008</strong></a></li></td>
+
+
+
+		<td><li><a href="#2007"><strong>2007</strong></a></li></td>
+
+
+
+		<td><li><a href="#2006"><strong>2006</strong></a></li></td>
+
+
+
+	</tr>
+
+
+
+	<tr>
+
+
+
+		<td><li><a href="#2005"><strong>2005</strong></a></li></td>
+
+
+
+		<td><li><a href="#2004"><strong>2004</strong></a></li></td>
+
+
+
+		<td><li><a href="#2003"><strong>2003</strong></a></li></td>
+
+
+
+		<td><li><a href="#2002"><strong>2002</strong></a></li></td>
+
+
+
+		<td><li><a href="#2001"><strong>2001</strong></a></li></td>
+
+
+
+		<td><li><a href="#2000"><strong>2000</strong></a></li></td>
+
+
+
+		<td><li><a href="#1999"><strong>1999</strong></a></li></td>
+
+
+
+		<td><li><a href="#1998"><strong>1998</strong></a></li></td>
+
+
+
+	</tr>	
+
+
+
+	<tr>	
+
+
+
+		<td><li><a href="#1997"><strong>1997</strong></a></li></td>
+
+
+
+		<td><li><a href="#1996"><strong>1996</strong></a></li></td>
+
+
+
+		<td><li><a href="#1995"><strong>1995</strong></a></li></td>
+
+
+
+		<td><li><a href="#1994"><strong>1994</strong></a></li></td>
+
+
+
+		<td><li><a href="#1993"><strong>1993</strong></a></li></td>
+
+
+
+		<td><li><a href="#1992"><strong>1992</strong></a></li></td>
+
+
+
+		<td><li><a href="#1991"><strong>1991</strong></a></li></td>
+
+
+
+	</tr>
+
+
+
+  </table>
+
+
+
+  </ul>
+
+
+
+  
+
+
+
+  <hr />
+
+
+
+  <span id="Appear"></span>
+
+
+
+  <p><strong><u>To appear</u></strong></p> 
+
+
+
+  <ol>
+
+
+
+	<li>
+
+
+
+	  <p>L. Wang, and <strong>M. Hamdi</strong>, &ldquo; Feedback Considered Beneficial: Exploring Frequency Diversity in Full-duplex Rateless Codes &rdquo;, <em>IEEE International Conference on Communications, ICC'13</em>, 2013.</p>
+
+
+
+	</li>
+
+
+
+        <li>
+
+
+
+		  <p> P. Lin, J. Jian, Q. Zhang and <strong>M. Hamdi</strong>, &ldquo;Resource Bargaining Among Wireless Service Providers: Inter-Network Cooperation &rdquo;, <em>IEEE INFOCOM</em>, 2013.</p>  
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>P. Li, Q. Zhang and <strong>M. Hamdi</strong>, &ldquo; Enabling Femtocells: A Cooperation Framework for Mobile and Fixed-line Operators,&rdquo; <em>IEEE Transactions on Wireless Communications</em>, To Appear, 2013. </p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>L. Wang and <strong>M. Hamdi</strong>, &ldquo; Combating Hidden and Exposed Terminal Problems in Wireless Networks &rdquo;, <em>IEEE Transactions on Wireless Communications</em>, To Appear, 2013.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>L Wang and <strong>M. Hamdi</strong>, &ldquo; Eliminating Hidden and Exposed Terminal Problems in Wireless Networks &rdquo;, <em>IEEE Transactions on Wireless Communications</em>, To Appear, 2013.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>A. Ben Makhlouf and <strong>M. Hamdi</strong>, &ldquo; Practical Rate Adaptation for Very High Throughput WLANs &rdquo;, <em>IEEE Transactions on Wireless Communications</em>, To Appear, 2013. </p>
+
+
+
+		</li>
+
+
+
+  </ol>
+
+
+
+
+
+
+
+  <span id="2012"></span>
+
+
+
+  <p><strong><u>2012</u></strong></p> 
+
+
+
+  <ol>
+
+
+
+		<li>
+
+
+
+		  <p>D. Lin, <strong>M. Hamdi</strong>, and J. Muppala, &ldquo;<a href="Publications_pdf/FlatNet-Towards A Flatter Data Center Network.pdf">FlatNet: Towards a Flatter Data Center Network</a>&rdquo;, <em>IEEE Global Telecommunications Conference, GLOBECOM '12</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+        <li>
+
+
+
+		  <p>L. Wang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/fcm.pdf">FCM: Frequency Domain Cooperative Sensing and Multi-channel Contention for CRAHNs</a>&rdquo;, <em>IEEE Global Telecommunications Conference, GLOBECOM'12</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>L. Wang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/fast.pdf">FAST: Realizing what your neighbors are doing</a>&rdquo, <em>IEEE International Conference on Communications,ICC'12</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>D. Lin, <strong>M. Hamdi</strong>, and J. Muppala, &ldquo;<a href="Publications_pdf/hyper-bcube_a_scalable_data_center_network.pdf">Hyper-BCube: A Scalable Data Center Network</a>&rdquo;, <em>IEEE International Conference on Communications, ICC'12</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>C. Liu and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/gera.pdf">GeRA: Generic Rate Adaptation for Vehicular Networks</a>&rdquo;, <em>IEEE International Conference on Communications, ICC'12</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>L. Wang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Attached-RTS Eliminating Exposed Terminal Problem in Wireless Networks.pdf">Attached-RTS: Eliminating Exposed Terminal Problem in Wireless Networks</a>&rdquo;, <em>IEEE Transactions on Parallel and Distributed Systems</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+
+
+
+
+		<li>
+
+
+
+		  <p>P. Lin, J. Jia, Q. Zhang, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Revenue Improvement for Wireless Service Provider in Hybrid Macrocell.pdf">Revenue Improvement for Wireless Service Provider in Hybrid Macrocell-Femtocell Networks</a>&rdquo;, <em>IEEE Transactions on Vehicular Technology</em>, 2012.</p>
+
+
+
+		</li>
+
+
+
+		<p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  </ol>
+
+
+
+
+
+
+
+  <span id="2011"></span>
+
+
+
+  <p><strong><u>2011</u></strong></p> 
+
+
+
+  <ol>
+
+
+
+        <li>
+
+
+
+	    <p>P. Lin, J. Jia<strong>, </strong>Q. Zhang, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Dynamic Spectrum  Sharing with Multiple Primary and Secondary Users.pdf">Dynamic Spectrum  Sharing with Multiple Primary and Secondary Users</a>&rdquo;, <em>IEEE Transactions  on Vehicular Technology</em>, 2011.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p>Y. Jiancheng and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Priority-based  Rate Adapatation Using Game Theory in Vehicular Networks.pdf">Priority-based  Rate Adapatation Using Game Theory in Vehicular Networks</a>,&rdquo; <em>Journal of Internet  Technology</em>. To appear  2011. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p>W. Li, E. Chan, S. Lu, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Communication Cost Minimization in Wireless Sensor and  Actor Networks for Road Surveillance.pdf">Communication Cost Minimization in Wireless Sensor and  Actor Networks for Road Surveillance</a>&rdquo;, <em>IEEE  Transactions on Vehicular Technology</em>, Vol. 60, No. 2, pp. 618-631, Feb.  2011. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><em>D. Lin</em>, Y. Jiang and <strong>M. Hamdi</strong>,  &ldquo;<a href="Publications_pdf/The  Selective-Request Round-Robin Scheduler for VOQ Packet Switch Architecture.pdf">The  Selective-Request Round-Robin Scheduler for VOQ Packet Switch Architecture</a>&rdquo;, <em>IEEE International  Conference on Communications</em> – <em>ICC </em>&rsquo;10<em>, </em>2011.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p>A. Ben Makhlouf and <strong>M.  Hamdi</strong>, &ldquo;<a href="Publications_pdf/.pdf">Design and Experimentation of Rate Adaptation for IEEE 802.11n</a>&rdquo;, <em>The 7th International Wireless Communications and Mobile Computing Conference </em>(IWCMC), Turkey,  2011 (<strong><em>Invited Paper</em></strong>).</p>
+
+
+
+	</li>
+
+
+
+		<p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  </ol>
+
+
+
+  
+
+
+
+ 
+
+
+
+  <span id="2010"></span>
+
+
+
+  <p><strong><u>2010</u></strong> </p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+	    <p> J. Pu and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Utility-Based Fair Bandwidth Sharing in Vehicular Networks.pdf">Utility-Based Fair Bandwidth Sharing in Vehicular Networks</a>&rdquo;, <em>The   6th International Wireless Communications and Mobile Computing   Conference </em> (IWCMC), France, 2010   (<strong><em>Invited Paper</em></strong>). </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p>P. Lin, J. Jian, Q. Zhang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/.pdf">Cooperation Among Wireless  Service Providers: Opportunities, Challenges, ans Solutions</a>&rdquo;, <em>IEEE Wireless Communications Magazine, </em>Vol..  17, No. 4<em>, </em>August 2010. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><em>D. Lin</em>, <strong>M. Hamdi</strong>, and J. Muppala, &ldquo;<a href="Publications_pdf/Designing Packet  Buffers Using Random Round Robin.pdf">Designing Packet  Buffers Using Random Round Robin</a>&rdquo;, <em>IEEE Global Telecommunications Conference, GLOBECOM '10</em>,2010. </p>
+
+
+
+	</li>
+
+
+
+        <li>
+
+
+
+      <p> J. Pu and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Utility-Based Fair Bandwidth Sharing in Vehicular Networks.pdf">Utility-Based Fair Bandwidth Sharing in Vehicular Networks</a>&rdquo;, <em>The   6th International Wireless Communications and Mobile Computing   Conference </em> (IWCMC), France, 2010   (<strong><em>Invited Paper</em></strong>). </p>
+
+
+
+    </li>
+
+
+
+        <li>
+
+
+
+      <p> D. Lin and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Designing packet buffers in high-bandwidth switches and routers.pdf">Designing packet buffers in high-bandwidth switches and routers</a>&rdquo;, <em>IEEE International Conference on High Performance Switching and Routing</em>,   June 2010. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>D.   Lin and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Two-stage Fair Queuing Using Budget Round Robin.pdf">Two-stage Fair Queuing Using Budget Round Robin</a>&rdquo;, <em>IEEE International Conference on Communications, ICC'10 </em>2010. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>P.   Lin, J. Jian, Q. Zhang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Dynamic Spectrum Sharing With   Multiple Promary and Secondary Users.pdf">Dynamic Spectrum Sharing With   Multiple Promary and Secondary Users</a>&rdquo;, <em>IEEE International Conference on   Communications</em> – <em>ICC </em>&rsquo;10<em>, </em>2010. </p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+     <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <span id="2009"></span>
+
+
+
+  <p><strong><u>2009</u></strong></p>
+
+
+
+<ol>
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">Q. Xia</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Open-loop Link Adaptation for   Next-Generation IEEE 802.11n Wireless Networks.pdf">Open-loop Link Adaptation for   Next-Generation IEEE 802.11n Wireless Networks</a>,&rdquo; <em>IEEE Transactions   on Vehicular Technology</em>, Vol. 57, No. 7, pp. 3713-3725, Sept. 2009. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">B. Wu, X. Li, L. Yeung and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Minimizing Internal Speedup for Performance Guaranteed Switches with Optical Fabrics.pdf">Minimizing Internal   Speedup for Performance Guaranteed Switches with Optical Fabrics</a>,&rdquo; <em>IEEE/ACM   Transactions on Networking</em>, Vol. 17, No. 2, pp. 632-645, April 2009. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	        <p><em>F. Wang</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Memory Subsystems in High End Routers.pdf">Memory Subsystems in High End Routers</a>,&rdquo; <em>IEEE Micro,</em> Vo. 29, No. 3, pp. 52-63, May/June, 2009. </p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><em><span lang="EN-GB" xml:lang="EN-GB">F. Wang, </span></em><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, and J. Muppala, &ldquo;<a href="Publications_pdf/Using Parallel DRAM to Scale Router Buffers.pdf">Using Parallel DRAM to Scale Router Buffers</a>,&rdquo; <em>IEEE Transactions on Parallel and Distributed Systems</em>, Vol. 20, No. 5,   May 2009, pp. 710-724.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"> </span>J. Pu   and <strong>M. Hamdi</strong>, <span lang="EN-GB" xml:lang="EN-GB">&ldquo;</span><a href="Publications_pdf/QFCP a Router-assisted Congestion Control Mechanism for Heterogeneous   Networks.pdf">QFCP: a   Router-Assisted Congestion Control Mechanism for Heterogeneous Networks   (Extended)</a>,&rdquo; <em>Springer Lecture Notes in Computer Science </em>(LNCS),<em> </em>Volume 4879, pp. 115-125, 2009. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"> </span><em>F. Wang, Pu Jian </em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/QoS Based Scheduling of a Downlin of a Multiuser Wireless   Systems.pdf">QoS Based Scheduling of a Downlin of a Multiuser Wireless   Systems</a>,&rdquo; <em>Computer Communications,</em> Feb. 2009. </p>
+
+
+
+	</li>
+
+
+
+   <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">Q. Xia, </span>Pu Jian </em>and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Model-Tree-based Rate Adaptation Scheme for Vehicular Networks.pdf">Model-Tree-based Rate Adaptation Scheme for Vehicular Networks</a>,&rdquo; <em>IEEE   International Conference on Communications</em> – <em>ICC </em>&rsquo;09<em>, </em>2009. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+	    <p><em>D. Lin</em> and <strong>M. Hamdi</strong>,  &ldquo;Compress The Route Table Stored in TCAM Using Memory Filter&rdquo;, <em>IEEE Workshop on High Performance Switching  and Routing</em>, June 2009.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+      <p>Q. Xia, <strong>M. Hamdi</strong>, and K. B.   Letaief, &ldquo;<a href="Publications_pdf/Practical and Efficient Open-Loop Rate Link Adaptation Algorithm for   High-Speed IEEE 802.11n WLANs.pdf">Practical and Efficient Open-Loop Rate/Link Adaptation Algorithm for   High-Speed IEEE 802.11n WLANs</a>,&rdquo; <em>IEEE International Symposium on Computers and   Communications</em> (ISCC '09), 2009. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>L.   Mhamdi and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Distributed Parallel Scheduling Algorithms for High Speed Virtual Output Queuing Switches.pdf">Distributed Parallel Scheduling Algorithms for   High Speed Virtual Output Queuing Switches</a>,&rdquo; <em>IEEE International Symposium on   Computers and Communications</em> (ISCC '09), 2009. </p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+       <p>Tianyin Xu, Jianzhong   Chen, Wenzhong Li, Sanglu Lu, Yang Guo and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Supporting VCR-like   Operations in Derivative Tree-Based P2P Streaming Systems.pdf">Supporting VCR-like   Operations in Derivative Tree-Based P2P Streaming Systems</a>,&rdquo; <em>IEEE   International Conference on Communications</em> – <em>ICC </em>&rsquo;09<em>, </em>2009   (<strong><em>Best Paper Award</em></strong>). </p>
+
+
+
+    </li>	    
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>   
+
+
+
+</ol>
+
+
+
+ 
+
+
+
+  <span id="2008"></span>
+
+
+
+  <p><strong><u>2008</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><em>T.   H. Chan</em>, <em>C. Y. Cheung</em>, <strong>M. Hamdi</strong>, and M.  Ma, &ldquo;<a href="Publications_pdf/Overview of Rate Adaptation Algorithms Based on MIMO Technology in WiMAX Networks.pdf">Overview of Rate Adaptation   Algorithms Based on MIMO Technology in WiMAX Networks</a>,&rdquo; <em>Advances in Mobile   WiMax</em>, Feb. 2008.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">Q. Xia</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Smart Sender  A   Practical Rate Adaptation Algorithm for Multirate IEEE 802.11 WLANs.pdf">Smart Sender: A   Practical Rate Adaptation Algorithm for Multirate IEEE 802.11 WLANs</a>,&rdquo; <em>IEEE   Transactions on Wireless Communications</em>, May 2008, pp. 1764 - 1775. </p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><em><span lang="EN-GB" xml:lang="EN-GB">J. Pu</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Enhancements on   Router-Assisted Congestion Control for Wireless Networks.pdf">Enhancements on   Router-Assisted Congestion Control for Wireless Networks</a>,&rdquo; <em>IEEE Transactions   on Wireless Communications</em>, June 2008, pp. 2253 - 2260. </p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+         <p><em><span lang="EN-GB" xml:lang="EN-GB">Q. Xia</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/AQM with Dual Virtual PI Queues for TCP.pdf">Active Queue Management </span>with Dual Virtual PI   Queues for TCP Uplink/Downlink Fairness in Infrastructure WLANs</a>,&rdquo; <em>IEEE   Transactions on Wireless Communications</em>, June 2008, pp. 2261 - 2271. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	     <p><em>F.   Wang</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Strictly Non-Blocking Conditions for the Central-Stage   Buffered Clos-Network.pdf">Strictly Non-Blocking Conditions for the Central-Stage   Buffered Clos-Network</a>,&rdquo; <em>IEEE Communications Letters,</em> pp. 206-208, May<em> </em>2008. </p>
+
+
+
+     </li>
+
+
+
+     <li>
+
+
+
+        <p>S.   Bakiras, F. Wang, D. Papadias and <strong>M. Hamdi</strong>, &ldquo;<a href="http://dl.acm.org/citation.cfm?id=1405262">Vertical Dimensioning: a   novel DRR implementation for efficient fair queuing</a>,&rdquo; <em>Computer   Communications</em>, Vo. 31, No. 14,   pp.   3476-3484, 2008. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><em>F. Wang</em> and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/A Scheduler for the   Downlink of Multi-User Wireless Systems with Frame   Aggregation.pdf">A Scheduler for the   Downlink of Multi-User Wireless Systems with Frame   Aggregation</a>,&rdquo; <em>IEEE Global Telecommunications   Conference, GLOBECOM '08, </em>pp. 1-5,<em> </em>2008. </p>
+
+
+
+    </li>
+
+
+
+     <li>
+
+
+
+      <p><em>Q. Xia </em>and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Dual Queue Management for Improving TCP Performance in Multi-rate   Infrastructure WLANs.pdf">Dual Queue Management for Improving TCP Performance in Multi-rate   Infrastructure WLANs</a>,&rdquo; <em>IEEE International Conference on Communications</em> – <em>ICC </em>&rsquo;08<em>, </em>pp. 2531-2535,   May<em> </em>2008. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>F.   Wang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Matching the Speed Gap between SRAM and DRAM.pdf">Matching the Speed Gap between SRAM and DRAM</a>&rdquo;, <em>IEEE Workshop on High Performance Switching and Routing</em>, pp. 104-109, May 2008. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>F. Wang and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/QoS Based   Scheduling in the Downlink of Multiuser Wireless Systems.pdf">QoS Based   Scheduling in the Downlink of Multiuser Wireless Systems</a>&rdquo;, <em>International   Conference on Heterogeneous Networking for Quality, Reliability, Security and   Robustness</em> (QShine), 2008   (<strong><U>Invited paper</U></strong>). </p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+  </ol>
+
+
+
+ <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  
+
+
+
+  <span id="2007"></span>
+
+
+
+  <p><strong><u>2007</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+ 	    <p>F. Wang and <strong>M.   Hamdi</strong>, &ldquo;<a href="http://spfind.ust.hk/spfind/Record/999-17332">Interconnection Networks design for MCSoC</a>,&rdquo; Mulicore Systems on   chips Book, Research Signpost Publishers, 2007.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">M. Guizani,<strong> M. Hamdi</strong>, P. Lorenz, and M. Ma &ldquo;<a href="Publications_pdf/Wireless Broadband   Access  WiMax and Beyond.pdf">Wireless Broadband   Access: WiMax and Beyond</a>,&rdquo; <em>IEEE Communications Magazine</em>, pp. 60-61, Vol.   45, No. 12, Dec. 2007.</span></p>
+
+
+
+      </li>
+
+
+
+    <li>
+
+
+
+	   <p>M. Guizani, <strong>M. Hamdi</strong>,  P. Lorenz, and M. Ma (Editorial), &ldquo;<a href="Publications_pdf/Wireless Broadband   Access  WiMax and Beyond.pdf">Wireless Broadband Access - WIMAX and Beyond</a>,&rdquo; <em>IEEE Communications Magazine</em>, pp.  122-123, Vol. 45, No. 5, May 2007. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p>S. Hasnaoui and <strong>M.  Hamdi</strong>, &ldquo;Throughput  Performance Analysis of Wireless Control Area Networks and Its Coupling to the  Latency Time,&rdquo; <em>Journal of Wireless Communications and Mobile Computing</em>, 2007. </p>
+
+
+
+	</li>
+
+
+
+    <li><p><em>T. H.   Chan</em>, <em>C.   Y. Cheung</em>, <strong>M. Hamdi</strong>, and M.  Ma, &ldquo;<a href="Publications_pdf/Link Adaptation Algorithm in   MIMO-based WiMAX systems.pdf">Link Adaptation Algorithm in   MIMO-based WiMAX systems</a>,&rdquo; <em>Journal of Communications</em>, Vol. 2, No. 5,  pp.   16-24, August 2007.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="http://www.connect-world.com/~cwiml/index.php/magazine/africa-and-the-middle-east/item/1843-education-and-universal-broadband-access">Education and Universal Broadband Access</a>,&rdquo; <em>Connect World</em>,   pp. 56-60, 2007.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><em><span lang="EN-GB" xml:lang="EN-GB">Q. Xia</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Cross   Layer Design for IEEE 802.11 WLANs  Joint Rate Control and Packet   Scheduling.pdf">Cross   Layer Design for IEEE 802.11 WLANs: Joint Rate Control and Packet   Scheduling</a>,&rdquo; <em>IEEE Transactions on Wireless Communications</em>, July   2007. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB">C. T. Lea, B. Lin, and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/An Architecture for   TSI-Free Nonblocking Optical TDM Switches.pdf">An Architecture for   TSI-Free Nonblocking Optical TDM Switches</a>,&rdquo; <em>IEEE Journal on Lightwave   Technology</em>, Volume 25,  Issue 3,    pp. 694-702, March 2007. </p>
+
+
+
+	</li>	
+
+
+
+    <li>
+
+
+
+      <p><em>Pu Jian</em> and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Improving Quality of Service for Congestion Control in High-Speed   Wired-cum-Wireless Networks.pdf">Improving Quality of Service for Congestion Control in High-Speed   Wired-cum-Wireless Networks</a>,&rdquo; <em>IEEE Global   Telecommunications Conference, GLOBECOM '07, </em>pp. 1938-1942,<em> </em>2007. </p>
+
+
+
+    </li>
+
+
+
+        <li>
+
+
+
+      <p> G. Nong and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Delay Analysis of Combined Input-Crosspoint Queueing Switches.pdf">Delay   Analysis of Combined Input-Crosspoint Queueing Switches</a>&rdquo;, <em>16th International Conference on Computer Communications   and Networks - ICCCN</em> &rsquo;07, 2007 </p>
+
+
+
+    </li>
+
+
+
+        <li>
+
+
+
+      <p><em>F. Wang </em>and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/iPIFO  a network memory architecture for QoS routers.pdf">iPIFO: a network memory architecture for QoS routers</a>,&rdquo; <em>IEEE Workshop on High   Performance Switching and Routing</em>, pp. 1-5, 2007. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+         <p>Zhen Zhou and <strong>M.   Hamdi,</strong> &ldquo;<a href="Publications_pdf/Randomized Batch Scheduling with Minimum Configurations for Switches and Routers.pdf">Randomized Batch Scheduling with Minimum Configurations for Switches and   Routers</a>,&rdquo; IEEE Workshop on High Performance Switching and Routing, 2007. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+	    <p><em>Pu Jian</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Applying Router-Assisted Congestion Control to Wireless Networks Challenges.pdf">Applying Router-Assisted  Congestion Control to Wireless Networks: Challenges and Solutions</a>,&rdquo; <em>IEEE Workshop on High Performance Switching  and Routing</em>, pp. 1-6, 2007.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+        <p><em>F. Wang </em>and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Next Generation Internet High-Speed Switches and Routers.pdf">Next Generation Internet High-Speed Switches and Routers</a>,&rdquo; <em>4th IEEE International Conference: Sciences of Electronic,   Technologies of Information and Telecommunications</em>, 2007 (<strong><em>Invited   paper</em></strong>). </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+	    <p><em>J. Pu</em> and <strong>M. Hamdi</strong>, &ldquo;Explicit-Feedback-based  Congestion Control for Lossy and Dynamic Wireless Networks,&rdquo; <em>The International Conference  on Wireless and Optical Communications</em> (WOC 2007).</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+        <p><em>F.   Wang </em>and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Scalable Router Memory Architecture based on In-terleaved   DRAM  Analysis and Numerical Studies.pdf">Scalable Router Memory Architecture based on In-terleaved   DRAM: Analysis and Numerical Studies</a>,&rdquo; <em>IEEE International Conference on   Communications</em> – <em>ICC </em>&rsquo;07<em>, </em>2007.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p><em>Q. Xia </em>and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/AQM   with Dual Virtual PI Queues for TCP Uplink Downlink Fairness in Infrastructure   WLANs.pdf">AQM   with Dual Virtual PI Queues for TCP Uplink/Downlink Fairness in Infrastructure   WLANs</a>,&rdquo; <em>IEEE Wireless Communications and Networking Conference</em> (WCNC   &lsquo;2007), pp. 2137-2142<em>, </em>2007. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>T. H. Chan, C. Y. Cheung </em>and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Overview of Rate Adaptation Algorithms Based on MIMO Technology in   WiMAX Networks.pdf">Overview of Rate Adaptation Algorithms Based on MIMO Technology in   WiMAX Networks</a>,&rdquo; <em>IEEE Mobile WiMAX Symposium</em> , pp. 98-103, 2007. </p>
+
+
+
+    </li>	
+
+
+
+    <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  </ol>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  <span id="2006"></span>
+
+
+
+  <p><strong><u>2006</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+      <p><strong>M. Hamdi</strong> and I.   Elhanany (Editors). <a href="http://www.springer.com/west/home/engineering/electronics?SGWID=4-191-22-92732347-0">High   Performance Packet Switching Architectures</a>. Springer Verlag London Limited,   2006. </p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+	    <p>X. Li, K. Pun, L. Mhamdi,   J. Liu, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Architectures of Internet Switches and Routers.pdf"> Architectures of Internet Switches and Routers</a>,&rdquo;   High-Performance Packet Switching Architectures, 2006. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><em>L.   Wang</em>, <strong>M. Hamdi</strong>, R.   Manivasakan,   and D. H.   K. Tsang,   &ldquo;<a href="Publications_pdf/Multimedia - MAC Protocol  Its Performance Analysis and Applications to WDM   Networks.pdf">Multimedia - MAC Protocol: Its Performance Analysis and Applications to WDM   Networks</a>,&rdquo; <em>IEEE Transactions on Communications</em>, pp. 518-531, March   2006. </p>
+
+
+
+	</li>		
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">L. Mhamdi</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span><a href="http://portal.acm.org/citation.cfm?id=1162477">High-Performance Switching   Based on Buffered Crossbar Fabrics</a>,&rdquo; <em>Computer Networks</em>, pp. 2271-2285,   September   2006. </p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"> </span>X. Li and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Non-Violation Set Scheduling for Two-Dimensional Optical MEMS Switches.pdf">Non-Violation Set   Scheduling for Two-Dimensional Optical MEMS Switches</a>,&rdquo; <em>IEEE   Communications Letters,</em> pp. 308-310, April<em> </em>2006. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"> </span>J. Lee, V. Li, and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Turbo-Slice-and-Patch An Algorithm for Metropolitan Scale VBR Video Streaming.pdf">Turbo-Slice-and-Patch: An Algorithm for Metropolitan Scale VBR Video Streaming</a>,&rdquo; <em>IEEE   Transactions on Circuits and Systems for Video Technology</em>, pp. 338-353,   March 2006. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><em>J. Pu</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/QFCP a Router-assisted Congestion Control Mechanism for Heterogeneous   Networks.pdf">QFCP: a Router-assisted   Congestion Control Mechanism for Heterogeneous Networks</a>,&rdquo; <em>The 2006 ACM/ IEEE   International Conference on SIGNAL-IMAGE TECHNOLOGY and INTERNET- BASED   SYSTEMS</em>, 2006. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>Q. Xia </em>and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Practical Rate Adaptation for IEEE 802.11 WLANs.pdf">Practical Rate Adaptation for IEEE 802.11 WLANs</a>,&rdquo; <em>IEEE Global   Telecommunications Conference, GLOBECOM'06, </em>2006. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>F. Wang and <strong>M.   Hamdi,</strong> &ldquo;<a href="Publications_pdf/The Central-stage Buffered Clos-network to emulate an OQ switch.pdf">The Central-stage Buffered Clos-network to emulate an OQ switch</a>,&rdquo;   IEEE Global Telecommunications Conference, GLOBECOM'06, 2006. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>F. Wang</em>, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Scalable Router Memory Architecture based on Interleaved DRAM  Analysis and Numerical Studies.pdf">Scalable  Router Memory Architecture Based on Interleaved DRAM</a>,&rdquo; <em>IEEE Workshop on High Performance Switching  and Routing</em>, 2006.</p></li>
+
+
+
+    <li>
+
+
+
+      <p>F. Wang and <strong>M.   Hamdi,</strong> &ldquo;<a href="Publications_pdf/The Central-stage Buffered Clos-network to emulate an OQ switch.pdf">The Central-stage Buffered Clos-network to emulate an OQ switch</a>,&rdquo;   IEEE Global Telecommunications Conference, GLOBECOM'06, 2006. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>Z. Zhou</em>, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Greedy  Maximal Weighted Scheduling for Optical Packet Switches.pdf">Greedy  Maximal Weighted Scheduling for Optical Packet Switches</a>,&rdquo; <em>IEEE Workshop on High Performance Switching  and Routing</em>, 2006.</p>
+
+
+
+	</li>
+
+
+
+   <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">Q. Xia and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Contention Window   Adjustment for IEEE 802.11 WLANs  A Control-Theoretic Approach.pdf">Contention Window   Adjustment for IEEE 802.11 WLANs: A Control-Theoretic Approach</a>,&rdquo; <em>IEEE International   Conference on Communications</em>, June 2006. </p>
+
+
+
+    </li>
+
+
+
+	    <li>
+
+
+
+      <p>J. Pu and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/New Flow Control Paradigm for Next Generations Networks.pdf">New Flow Control Paradigm for Next Generations Networks</a>,&rdquo; IEEE Sarnoff   Symposium, 2006 (Invited paper). </p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+	    <p><em>Chan Nga Yi</em>  and <strong>M. Hamdi</strong>, &ldquo;Capacity Planning for Voice over IP Applications with  Bandwidth-delay Constrained Routing,&rdquo; <em>International  Journal for Theory and Applications</em> – Special issue on &ldquo;Routing/Signalling  Protocols for Wired/Wireless Communication Networks&rdquo;, 2006 (<strong><em>Invited Paper</em></strong>). </p>
+
+
+
+	</li>	
+
+
+
+ 	
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+  <span id="2005"></span>
+
+
+
+  <p><strong><u>2005</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+        <p><strong>M. Hamdi</strong> and V. O.   K. Li (Editors). <a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10052">Proceedings of the IEEE Workshop on High-Performance Switching   and Routing Computing </a>. IEEE Press, 2005.</p>
+
+
+
+     </li>
+
+
+
+	 <li>
+
+
+
+		<p>C. Frei,   Boi Falting, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Resource Allocation in Communication Networks   Using Abstraction and Constraint Satisfaction.pdf">Resource Allocation in Communication Networks   Using Abstraction and Constraint Satisfaction</a>,&rdquo; <em>IEEE Journal on Selected   Areas in Communications</em>, Feb. 2005. </p>
+
+
+
+	</li>	
+
+
+
+	<li>
+
+
+
+	    <p><em>Y. Chen</em>, <strong>M.  Hamdi</strong>, and D. H. K. Tsang, &ldquo;Differentiated Blocking Probability over WDM Networks,&rdquo; <em>Optical Networks Magazine</em>, 2005. </p>
+
+
+
+	</li>	
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">Q. Xia and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Cross Layer Design for   IEEE 802.11 WLANs.pdf">Cross Layer Design for   IEEE 802.11 WLANs,</a>&rdquo; <em>IEEE International Conference on Local Area Networks</em>,   November 2005. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+	    <p><em>X. Li, Z. Zhen</em>, and <strong>M. Hamdi</strong>,  &ldquo;LCCF: A Scheduling Algorithm for Asynchronous Optical Switches,&rdquo; <em>IEEE Workshop on High Performance Switching  and Routing</em>, 2005.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+      <p>Z. Zhen, X. Li, and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Fast Scheduling for Optical Packet Switches with Minimum Reconfigurations.pdf">Fast Scheduling for Optical Packet Switches with Minimum   Reconfigurations</a>,&rdquo; IEEE Workshop on High Performance Switching and Routing,   2005. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>F. Wang and <strong>M.   Hamdi,</strong> &ldquo;<a href="Publications_pdf/Fast Fair Arbiter Design in Packet Switches.pdf">Fast Fair Arbiter Design in Packet Switches</a>,&rdquo; IEEE Workshop on High   Performance Switching and Routing, 2005. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>C. Y. Chan, Jack Y. B.   Lee, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Gradient-Descent Scheduler - A Network-Aware Transmission Scheduler for Server-less Video Streaming Systems.pdf">Gradient-Descent Scheduler - A Network-Aware   Transmission Scheduler for Server-less Video Streaming Systems</a>,&rdquo; IEEE   International Conference on Communications – ICC &rsquo;05, 2005. </p>
+
+
+
+    </li>
+
+
+
+     <li>
+
+
+
+      <p> <em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/On   the Design of a Protection Provisioning Framework in IP WDM Optical Networks.pdf">On   the Design of a Protection/Provisioning Framework in IP/WDM Optical Networks</a>,&rdquo; <em>IEEE International Conference on Communications</em> - <em>ICC</em>&rsquo;05<em>, </em>2005. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>X. Li, Z. Zhen, and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Space-Memory-Memory Architecture for Clos-Network Packet Switches.pdf">Space-Memory-Memory Architecture for Clos-Network Packet Switches</a>,&rdquo;   IEEE International Conference on Communications - ICC&rsquo;05, 2005. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+    	<p><em>F. Wang</em> and <strong>M. Hamdi</strong>, &ldquo;Analysis of the  Central-stage Buffered Clos-network for packet switching,&rdquo; <em>IEEE International Conference on Communications</em> - <em>ICC</em>&rsquo;05<em>, </em>2005.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+       <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A   Simple Integrated Provisioning and Protection Scheme in GMPLS-based Optical   Networks.pdf">A   Simple Integrated Provisioning and Protection Scheme in GMPLS-based Optical   Networks</a>,&rdquo; <em>9th International Conference on Optical Network Design and   Modelling</em> <em>, </em>2005. </p>
+
+
+
+    </li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+  <span id="2004"></span>
+
+
+
+  <p><strong><u>2004</u></strong></p>
+
+
+
+  <ol> 
+
+
+
+    <li>
+
+
+
+		<p>Maode Ma and <strong>M.   Hamdi</strong>,<em> </em>&ldquo;<a href="Publications_pdf/An Adaptive Scheduling   Algorithm for Differentiated Services on WDM Optical Networks.pdf">An Adaptive Scheduling   Algorithm for Differentiated Services on WDM Optical Networks</a>,&rdquo; <em>Computer   Communications,</em> Vol. 27 Issue 9, June 2004, pp. 857-867. </p>
+
+
+
+	</li>	
+
+
+
+    <li>
+
+
+
+	    <p><em>H. K.   Pun</em> and <strong>M.   Hamdi</strong>, &ldquo;<a href="http://linkinghub.elsevier.com/retrieve/pii/S1389128603004262">Dispatching   Schemes for Clos-Network Switches</a>,&rdquo; <em>Computer Networks</em>, Vol. 44,   No. 5, pp. 667-679, April 2004. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p>R.   Manivasakan, <strong>M. Hamdi</strong>, and D. H. K. Tsang, &ldquo;<a href="Publications_pdf/Performance Analysis of Stochastic Fair Sharing Scheme for Link Sharing.pdf">Performance   Analysis of Stochastic Fair Sharing (SFS) Scheme for Link Sharing</a>,&rdquo; <em>IEEE   Transactions on Communications</em>, Volume: 52 , Issue: 2   , Feb. 2004 pp. 195 – 198. </p>
+
+
+
+	</li>  
+
+
+
+    <li>
+
+
+
+    	<p><em>X. Li </em>and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/>Design of a  Scalable Hybrid Multicast Packet Switch with Optical Fabric.pdf">Design of a  Scalable Hybrid Multicast Packet Switch with Optical Fabric</a>,&rdquo; <em>IEEE International Conference on  Communications</em> - <em>ICC</em>&rsquo;04<em>, </em>2004.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Integrated  Routing and Grooming in GMPLS-Based Optical Networks.pdf">Integrated  Routing and Grooming in GMPLS-Based Optical Networks</a>,&rdquo; <em>IEEE International Conference on Communications</em> - <em>ICC</em>&rsquo;04<em>, </em>2004.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>L. Mhamdi</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Scheduling  Multicast Traffic in Internally Buffered Crossbar Switches.pdf">Scheduling  Multicast Traffic in Internally Buffered Crossbar Switches</a>,&rdquo; <em>IEEE International Conference on  Communications</em> - <em>ICC</em>&rsquo;04<em>, </em>2004.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>J. Lui, </em><strong>M. Hamdi</strong>, Q. Hu, and C. Y. Tsui, &ldquo;<a href="Publications_pdf/Scalable Scheduling Architectures for  High-Performance Crossbar-Based Switches.pdf">Scalable Scheduling Architectures for  High-Performance Crossbar-Based Switches</a>,&rdquo; <em>IEEE  Workshop on High Performance Switching and Routing</em>, 2004.</p>
+
+
+
+	</li>	
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+ 
+
+
+
+
+
+
+
+  <span id="2003"></span>
+
+
+
+  <p><strong><u>2003</u></strong></p>
+
+
+
+  <ol>
+
+
+
+     <li>
+
+
+
+	    <p><em>D. Zhemin</em> and <strong>M.  Hamdi</strong>, &ldquo;Optical Network Resource Management and Allocation,&rdquo; <em>The Handbook of Optical Communications</em>,  2003.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, D. Blumenthal, J. Chao, E. Leonardi, C. Qiao, and K. Yun,   &ldquo;</span><a href="Publications_pdf/High Performance Optical Switches Routers   for High Speed Internet.pdf">High Performance Optical Switches/Routers   for High Speed Internet</a><span lang="EN-GB" xml:lang="EN-GB">,&rdquo; <em>IEEE Journal On Selected Areas in Communications</em>, Sept.   2003.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"><strong>M. Hamdi</strong> and C. Qiao, &ldquo;Engineering   the Next-Generation Optical Internet, <em><span lang="EN-GB" xml:lang="EN-GB">Optical Networks   Magazine</span></em><span lang="EN-GB" xml:lang="EN-GB">, 2003.</span></p>
+
+
+
+      </li>
+
+
+
+	  <li>
+
+
+
+	    <p><em>D. Zhemin</em> and <strong>M.  Hamdi</strong>, &ldquo;On the Application of the Blocking Island  Paradigm in All-Optical Networks,&rdquo; <em>IEEE  Transactions on Communications</em>, Vol. 51, No. 10, Oct. 2003.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><em>L.   Wang, M. Ma</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Efficient Protocols for   Multimedia Streams on WDMA Networks.pdf">Efficient Protocols for   Multimedia Streams on WDMA Networks</a>,&rdquo; <em>IEEE Journal on Lightwave   Technology</em>, 2003.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	 <p> <em>Y.   Chen</em>, <strong>M.   Hamdi</strong>, D. H. K. Tsang, and C. Qiao, &ldquo;<a href="Publications_pdf/Proportional Service Differentiation A Scalable QoS Approach.pdf">Proportional   Service Differentiation: A Scalable QoS Approach</a>,&rdquo; <em>IEEE Communications   Magazine</em>, June 2003. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p><em>X.   Li</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/On Scheduling Optical Switches with Reconfiguration Delay.pdf">On   Scheduling Optical Switches with Reconfiguration Delay</a>,&rdquo; <em>IEEE Journal on   Selected Areas in Communications</em>, Oct. 2003. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p> <em>M. K.   Chan</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/An Active Queue   Management Scheme Based on a Capture-Recapture Model.pdf">An Active Queue   Management Scheme Based on a Capture-Recapture Model</a>,&rdquo; <em>IEEE Journal on   Selected Areas in Communications</em>, May 2003. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p><em>L.   Mhamdi</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/MCBF a high-performance scheduling algorithm for buffered.pdf">MCBF: A   High-Performance Scheduling Algorithm for Buffered Crossbar Switches</a>,&rdquo; <em>IEEE Communications Letters</em>, 2003. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+        <p><em>C. Y.   Choi</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A Scalable Video-On-Demand System Using Multi-Batch Buffering Techniques.pdf">A Scalable   Video-On-Demand System Using Multi-Batch Buffering Techniques</a>,&rdquo; <em>IEEE   Transactions on Broadcasting</em>, June 2003. </p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	        <p><em>Ding   Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Routing and Wavelength Assignment in Multi-segment WDM Optical   Networks using Clustering Techniques.pdf">Routing and Wavelength Assignment in Multi-segment WDM Optical   Networks using Clustering Techniques</a>,&rdquo; <em>Optical Networks Magazine</em>,   2003.</p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><em><span lang="EN-GB" xml:lang="EN-GB">D. Zhemin</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span>Traffic   Grooming in Optical WDM Mesh Networks using the Blocking Island Paradigm,&rdquo; <em>Optical Networks Magazine</em>, 2003.</p>
+
+
+
+	</li>
+
+
+
+    <li>        
+
+
+
+	    <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>K. L. Lee</em>, &ldquo;<a href="Publications_pdf/Providing Deterministic Packet Delays and   Packet Losses in Multimedia Wireless Networks.pdf">Providing Deterministic Packet Delays and   Packet Losses in Multimedia Wireless Networks</a>,&rdquo; <em>Journal of Wireless   Communications and </em></span><em><span lang="EN-GB" xml:lang="EN-GB">Mobile Computing</span></em><span lang="EN-GB" xml:lang="EN-GB">, Vol. 5, No. 1, pp. 3-22, Feb. 2003.</span></p>
+
+
+
+	</li>	
+
+
+
+	<li>
+
+
+
+	    <p><em>X. Li </em>and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Analysis of  Reduced Rate Scheduling for Switches with Reconfiguration Overhead.pdf">Analysis of  Reduced Rate Scheduling for Switches with Reconfiguration Overhead</a>,&rdquo; <em>IEEE Global Telecommunications Conference,  GLOBECOM'03, </em>2003.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/On the  Management of Wavelength Converter Allocation in WDM All-optical Networks.pdf">On the  Management of Wavelength Converter Allocation in WDM All-optical Networks</a>,&rdquo; <em>IEEE Global Telecommunications Conference,  GLOBECOM'03, </em>2003.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>L. Mhamdi</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Output-Queued  Switch Emulation By a One-Cell-Internally Buffered Crossbar Switch.pdf">Output-Queued  Switch Emulation By a One-Cell-Internally Buffered Crossbar Switch</a>,&rdquo; <em>IEEE Global Telecommunications Conference,  GLOBECOM'03, </em>2003.</p>
+
+
+
+	</li>
+
+
+
+        <li>
+
+
+
+      <p>J. Liu and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Stable and Practical Scheduling Algorithms for High Speed Virtual Output Queuing Switches.pdf">Stable and Practical Scheduling Algorithms for High Speed   Virtual Output Queuing Switches</a>,&rdquo; The ACS/IEEE   Conference International Conference on Computer Systems and Applications, 2003.</p>
+
+
+
+    </li>
+
+
+
+	 <li>
+
+
+
+      <p>Ying Jiang and <strong>Mounir   Hamdi</strong>, &ldquo;<a href="Publications_pdf/A Separate-Queue Multicast Architecture For High-Speed Routers.pdf">A Separate-Queue Multicast Architecture For High-Speed Routers</a>,&rdquo; The   ACS/IEEE Conference International Conference on Computer Systems and   Applications, 2003.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>L. Mhamdi and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Practical Scheduling Algorithms for High-Performance Packet  Switches.pdf">Practical Scheduling Algorithms for High-Performance Packet   Switches</a>,&rdquo; IEEE International Conference on Communications - ICC&rsquo;03,   2003.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>M. K. Chan and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Fair Bandwidth Allocation for Responsive and Unresponsive Flows Using A Capture  Recapture Model.pdf">Fair Bandwidth Allocation for Responsive and Unresponsive Flows Using A Capture   Recapture Model</a>,&rdquo; IEEE International Symposium on Circuits and Systems,   ISCAS&rsquo;03, 2003.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>X. Li and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Design and Analysis of Scheduling Algorithms for Switches with Reconfiguration   Overhead.pdf">Design and Analysis of Scheduling Algorithms for Switches with Reconfiguration   Overhead</a>,&rdquo; IEEE Workshop on High Performance Switching and Routing,   2003.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>L. Mhamdi and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A   High-performance Scheduling Algorithm for Internally Buffered Crossbar   Switches.pdf">A   High-performance Scheduling Algorithm for Internally Buffered Crossbar   Switches</a>,&rdquo; IEEE Workshop on High Performance Switching and Routing,   2003.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>Y. Jing and <strong>M. Hamdi</strong>, &ldquo;Self   Adjustable CHOKe: A Buffer Management Algorithm For Congestion Control and Fair   Bandwidth Allocation,&rdquo; IEEE Symposium on Computers and Communications – (ISCC   &rsquo;03), 2003.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>J. Liu and <strong>M. Hamdi, </strong>&ldquo;Randomized Scheduling Algorithms for High-Speed Virtual Output Queuing   Switches,&rdquo; IEEE Symposium on Computers and Communications – (ISCC &rsquo;03),   2003.</p>
+
+
+
+    </li>	
+
+
+
+	<li>
+
+
+
+	     <p><em>X. Li </em>and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/ADJUST  Algorithm for Optical Switches with Reconfiguration Delay.pdf"> &#955-ADJUST  Algorithm for Optical Switches with Reconfiguration Delay</a>,&rdquo; <em>IEEE International Conference on  Communications</em> - <em>ICC</em>&rsquo;03, pp.  1288-1292, 2003.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><em>C. K. Hung</em>, <strong>M. Hamdi</strong>, and C. Y. Tsui,  &ldquo;<a href="Publications_pdf/Design and Implementation of High-Speed Arbiter for Large Scale VOQ Crossbar Switches.pdf">Design and implementation of high-speed arbiter for large scale VOQ crossbar  switches</a>,&rdquo; <em>IEEE International Symposium  on Circuits and Systems</em>, <em>ISCAS&rsquo;03</em>,  pp. 308-311, 2003.</p>
+
+
+
+	</li>	
+
+
+
+    <li>
+
+
+
+      <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Wavelength Converter Management in All-optical Networks With Arbitrary   Topologies Using Abstraction Techniques.pdf">Wavelength Converter Management in All-optical Networks With Arbitrary   Topologies Using Abstraction Techniques</a>,&rdquo; <em>International Conference on   Communications Technology, ICCT&rsquo;03</em>, 2003 (<strong><em><U>Invited   paper</U></em></strong>).</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>D. Zhemin </em>and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Resource Management in Multi-segment Optical Networks Using the Blocking   Islands Paradigm.pdf">Resource Management in Multi-segment Optical Networks Using the Blocking   Islands Paradigm</a>,&rdquo; <em>IEEE Workshop on High Performance Switching and   Routing</em>, 2003.</p>
+
+
+
+    </li>  
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  <span id="2002"></span>
+
+
+
+  <p><strong><u>2002</u></strong></p>
+
+
+
+  <ol>
+
+
+
+     <li>
+
+
+
+	    <p><em>L. Wang</em> and <strong>M.  Hamdi</strong>, &ldquo;Analysis of Multimedia Access Protocols for Shared Medium  Networks,&rdquo; <em>Optical Switching/Networking  and Computing for Multimedia Systems</em>, 2002.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">L. Wang</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Routed Wavelength WDM Networks.pdf">Routed Wavelength WDM Networks</a>,&rdquo; <em>Optical   Switching/Networking and Computing for Multimedia Systems</em>, 2002.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p>M. Ma   and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Scheduling algorithm for differentiated service on   wavelength-division-multiplexed passive optical access networks.pdf">Scheduling algorithm for differentiated service on   wavelength-division-multiplexed passive optical access networks</a>,&rdquo; <em>Journal of   Optical Networking</em>, Vol. 1, No. 11, pp. 386-396, Nov. 2002.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><em>J. Liu</em>,<em>. C. K. Hung</em>, <strong>M. Hamdi</strong>, and C. Y. Tsui, &ldquo;<a href="Publications_pdf/Stable Round-Robin Scheduling Algorithms for High-Performance Input Queued Switches.pdf">Stable Round-Robin Scheduling Algorithms for   High-Performance Input Queued Switches</a><strong>,</strong>&rdquo; <em>10th IEEE Symposium on High Performance Interconnects   (Hot-Interconnects 2002)</em>, pp. 43-51, 2002.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>T. Wu</em>, C. Y. Tsui, and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/hotchips.ppt">CMOS   Crossbar</a>,&rdquo;<em>14th IEEE Symposium on High Performance Chips   (Hot-Chips 2002)</em>, 2002.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>T. Wu</em>, C. Y. Tsui, and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/A 2 Gbs 256256 CMOS crossbar switch fabric core design using pipelined MUX.pdf">A 2Gb/s 256*256 CMOS   Crossbar Switch Fabric Core Design using Pipelined MUX</a>,&rdquo; <em>IEEE   International Symposium on Circuits and Systems</em>, <em>ISCAS 2002</em>, pp.   568-571.</p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+	<li>
+
+
+
+      <p>K. H. Pun and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Distro A Distributed Static Round-Robin Scheduling Algorithm for   Bufferless Clos-Network Switches.pdf">Distro: A Distributed Static Round-Robin Scheduling Algorithm for   Bufferless Clos-Network Switches</a>,&rdquo; IEEE International Global Telecommunications   Conference, GLOBECOM&rsquo;02, 2002.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><strong>M. Hamdi</strong>, J. Ying,   and M. K. Chan, &ldquo;Internet Traffic Management for eBusiness Applications,&rdquo; 5th   Association for Information Management Conference, 2002.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>K. H. Pun and <strong>M. Hamdi</strong>,   &ldquo;<a href="Publications_pdf/Static Round-Robin Dispatching Schemes for Clos-Network Switches.pdf">Static Round-Robin Dispatching Schemes for Clos-Network Switches</a>,&rdquo; IEEE   Workshop on High Performance Switching and Routing, pp. 329-333,   2002.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>R. Manivasakan, <strong>Mounir    Hamdi,</strong> and Danny H. K. Tsang, &ldquo;<a href="Publications_pdf/The Dual Round Robin Pseudo-grant Matching   for high-speed packet Switches.pdf">The Dual Round Robin Pseudo-grant Matching   for high-speed packet Switches</a>,&rdquo; IEEE Workshop on High Performance Switching and   Routing, pp. 64-68, 2002.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>Y.  Jiang and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/A 2-Stage Matching Scheduler for a VOQ Packet Switch Architecture.pdf">A 2-Stage Matching Scheduler for a VOQ Packet Switch Architecture</a>,&rdquo;   IEEE International Conference on Communications, ICC&rsquo;02, pp. 2105-2110,   2002. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>Y. Chen, <strong>Mounir Hamdi</strong>, D.   H. K. Tsang, and C. Qiao, &ldquo;<a href="Publications_pdf/Proportional QoS Provision  A Uniform and Practical   Solution.pdf">Proportional QoS Provision: A Uniform and Practical   Solution</a>,&rdquo; IEEE International Conference on Communications, ICC&rsquo;02, pp.   2363-2367, 2002.</p>
+
+
+
+    </li>
+
+
+
+    
+
+
+
+	<li>
+
+
+
+	    <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Clustering  Techniques for Traffic Grooming in Optical WDM Mesh Networks.pdf">Clustering  Techniques for Traffic Grooming in Optical WDM Mesh Networks</a>,&rdquo; <em>IEEE International Global Telecommunications  Conference, GLOBECOM&rsquo;02</em>, pp. 2711-2715, 2002.</p>
+
+
+
+	</li>	
+
+
+
+    <li>
+
+
+
+        <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A   Simple Routing and Wavelength Assignment Algorithm Using the Blocking Island    technique for All-Optical Networks.pdf">A   Simple Routing and Wavelength Assignment Algorithm Using the Blocking Island    technique for All-Optical Networks</a>,&rdquo; <em>IEEE International Conference on   Communications</em>, ICC&rsquo;02, pp. 2907-2911,   2002. </p>
+
+
+
+    </li>	
+
+
+
+   <li>
+
+
+
+       <p>R. Manivasakan, <strong>M.    Hamdi</strong>, and Danny H. K. Tsang, &ldquo;<a href="Publications_pdf/Performance Analysis of Stochastic Fair   Sharing (SFS) Scheme for Link Sharing.pdf">Performance Analysis of Stochastic Fair   Sharing (SFS) Scheme for Link Sharing</a>,&rdquo; IEEE International Conference on   Communications, ICC&rsquo;02, pp. 1264-1268, 2002. </p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+	
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+  <span id="2001"></span>
+
+
+
+  <p><strong><u>2001</u></strong></p>
+
+
+
+  <ol>
+
+
+
+     <li>
+
+
+
+	    <p><em>M. Maode</em> and <strong>M.  Hamdi</strong>, &ldquo;Multimedia Access Protocols,&rdquo; <em>Encyclopedia  of Telecommunications, </em>Wiley Publishers, 2001.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">G. Nong</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong>M. Hamdi</strong>, and J. K. Muppala, &lsquo;&lsquo;<a href="Publications_pdf/Performance Evaluation of Multiple Input-Queued Switches with PIM Scheduling under Bursty Traffic.pdf">Performance   Evaluation of Multiple Input-Queued Switches with PIM Scheduling under Bursty   Traffic</a>,&rsquo;&rsquo; <em>IEEE Transactions on Communications</em>, </span>Vol.   49, No.8, pp. 1329-1333, Aug. 2001. </p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p>Y. Jiang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A   fully desyncronized round-robin matching scheduler for a VOQ packet switch   architecture.pdf">A   fully desyncronized round-robin matching scheduler for a VOQ packet switch   architecture</a>,&rdquo; IEEE Workshop on High Performance Switching and Routing, 2001,   pp. 407-411. </p>
+
+
+
+    </li>	
+
+
+
+	<li>
+
+
+
+      <p>Y. Jiang and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A   fully desyncronized round-robin matching scheduler for a VOQ packet switch   architecture.pdf">A   fully desyncronized round-robin matching scheduler for a VOQ packet switch   architecture</a>,&rdquo; IEEE Workshop on High Performance Switching and Routing, 2001,   pp. 407-411. </p>
+
+
+
+    </li>
+
+
+
+       <li>
+
+
+
+      <p><em>D. Zhemin</em> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A   Simple and Intelligent Routing and Wavelength Assignment Algorithm for   All-Optical Networks.pdf">A   Simple and Intelligent Routing and Wavelength Assignment Algorithm for   All-Optical Networks</a>,&rdquo; <em>SPIE Optical Networking and Communicationns Conference   (Opticom),</em> Vol. 4599, 2001, pp. 210-226. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>L. Wang</em>, <strong>M. Hamdi</strong>, R.   Manivasakan, and D.H.K. Tsang, &ldquo;<a href="Publications_pdf/Modelling of multimedia MAC protocols on WDM   optical networks.pdf">Modelling of multimedia MAC protocols on WDM   optical networks</a>,&rdquo; <em>IEEE International Conference on Communications (ICC   &rsquo;01)</em>, 2001, pp. 716 -720. </p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em>Y. Chen</em>, <strong>M. Hamdi</strong>, and   D.H.K. Tsang, &ldquo;<a href="Publications_pdf/Proportional QoS over WDM networks  Blocking probability.pdf">Proportional QoS over WDM networks: Blocking probability</a>,&rdquo; <em>IEEE Symposium on Computers and Communications</em>, 2001, pp. 210   -215.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>Y. Chen, <strong>M. Hamdi</strong>, and D.   H. K. Tsang, &ldquo;<a href="Publications_pdf/Proportional QoS over OBS networks.pdf">Proportional QoS over OBS networks</a>,&rdquo; <em>IEEE Global   Telecommunications Conference, GLOBECOM'01, </em>pp.1510-14, 2001. </p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p>C. Y. Choi, and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/A scalable video-on-demand system using multi-batch buffering.pdf">A scalable video-on-demand system using multi-batch buffering</a>,&rdquo; IEEE   Global Telecommunications Conference, GLOBECOM'01, pp. 1989-1993,   2001.</p>
+
+
+
+    </li>  
+
+
+
+    <li>
+
+
+
+	    <p>M. Ma and M. <strong>Hamdi</strong>, &ldquo;<a href="Publications_pdf/An Adaptive Scheduling   Algorithm for Differentiated Services on WDM Optical Networks.pdf">An adaptive  scheduling algorithm for differentiated services on WDM optical networks</a>,&rdquo; <em>IEEE Global Telecommunications Conference,  GLOBECOM'01</em>, pp.1455-1459, 2001.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>Y. Chen</em> and <strong>M.  Hamdi</strong>, &ldquo;Proportional Differentiation over WDM Networks,&rdquo; <em>Proceedings of the International Conference  on Optical Network Design and Modeling - ONDM &lsquo;01, 2001.</em></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+      <p>G. Nong and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/Providing QoS guarantees for unicast multicast traffic with fixed   and variable-length packets in multiple input-queued switches.pdf">Providing QoS guarantees for unicast/multicast traffic with fixed   and variable-length packets in multiple input-queued switches</a>,&rdquo; IEEE Symposium   on Computers and Communications, 2001, pp. 166 -171</p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+	    <p><strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Proportional QoS Provision  A Uniform and Practical   Solution.pdf">Proportional QoS Provision: A Uniform and Practical Solution</a>,&rdquo; <em>IEEE Gigabit Networking Workshop</em>, (held  in conjunction with <em>IEEE INFOCOM&rsquo;01</em>)<em>, </em>2001. </p>
+
+
+
+	</li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  <span id="2000"></span>
+
+
+
+  <p><strong><u>2000</u></strong></p>
+
+
+
+  <ol>
+
+
+
+     <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB">B. Li,<em> M. Maode</em>, <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/MAC Protocols for WDM   Networks  Survey and Summary.pdf">MAC Protocols for WDM   Networks  Survey and Summary</a>&rdquo; <em>Opti­cal WDM Networks: Principles and   Practice, </em>Kluwer Academic Publishers, Boston, MA, 2000.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and N. McKeown, &ldquo;<a href="Publications_pdf/Scalable  High-Speed Switches Routers With QoS Support.pdf">Scalable   High-Speed Switches/Routers With QoS Support</a>,&rdquo; <em>IEEE Communications   Magazine</em>, P. 61, Vol. 38, No. 12, Dec. 2000.</span></p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">G. Nong</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/On the Provision of Quality-of-Service Guarantees for Input-Queued Switches.pdf">On the Provision   of Quality-of-Service Guarantees for Input-Queued Switches</a>,&rdquo; <em>IEEE   Communications Magazine</em>, </span>Vol.   38, No. 12 ,<span lang="EN-GB" xml:lang="EN-GB"> 62-69, Dec. 2000.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>W. K. Fung</em>, <strong>M.  Hamdi</strong>, and R. Murch, &ldquo;Performance Evaluation of Mobile  Radio Slotted Aloha With Fixed Multibeam Antennas,&rdquo; <em>Journal of Communications and Networks</em>, Vol. 2, No 4, pp. 337-343,December 2000.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+  	    <p><em><span lang="EN-GB" xml:lang="EN-GB">M. Ma</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Providing   Deterministic Quality-of-Service Guarantees for WDM Optical Networks.pdf">Providing   Deterministic Quality-of-Service Guarantees for WDM Optical Networks</a>,&rdquo; <em>IEEE Journal on Selected Areas in Communications</em>, Vol. 18, No. 8, pp.   2072-2083, Oct. 2000.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB">B. Li, <strong>M. Hamdi</strong>, D. Jiand, and X. Cao &ldquo;<a href="Publications_pdf/QoS Enabled Voice Support for the Next Generation Internet.pdf">QoS Enabled Voice   Support for the Next Generation Internet: Issues, Existing Approaches and   Challenges</a>,&rdquo; <em>IEEE Communications Magazine</em>, </span>Vol.   38, No. 4, pp. 54-61, <span lang="EN-GB" xml:lang="EN-GB">April 2000.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">G. Nong</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Burst-based Scheduling on ATM Switches with Multiple Input Queues.pdf">Burst-based   Scheduling on ATM Switches with Multiple Input Queues</a>,&rdquo; <em>IEEE   Communications Letters</em>, </span>Vol. 4,   No. 6, pp. 202 –204, <span lang="EN-GB" xml:lang="EN-GB">June 2000.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>L.   Wang</em> and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/A hybrid adaptive wireless channel access protocol for multimedia   personal communication systems.pdf">A hybrid adaptive wireless channel access protocol for multimedia   personal communication systems</a>,&rdquo; <em>Wireless Personal Communications</em>,   vol.13, no.1-2, pp.79-96, May 2000.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p>Y. Pan, <strong>M. Hamdi</strong>,  and K. Li, &ldquo;Euclidean Distance Transform for Binary Images on Reconfigura­ble  Meshes,&rdquo; <em>IEEE Transactions on Systems Man  and Cybernetics</em>, Vol. 30, No. 1, pp. 240-244, Feb. 2000.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">K. M. Tong, </span></em><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, and K. B. Letaief, &ldquo;<a href="Publications_pdf/Achievable QoS Guarantees on a Wireless   Environments.pdf">Achievable QoS Guarantees on a Wireless   Environments</a>,&rdquo; <em>IEEE International Conference on Personal and Wireless   Communica­tions,</em> pp. 320-324, December 2000<em>.</em></span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">L. Wang</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;</span><a href="Publications_pdf/Analysis of multimedia access   protocols for shared medium networks.pdf">Analysis of multimedia access   protocols for shared medium networks</a><span lang="EN-GB" xml:lang="EN-GB">,&rdquo; <em>IEEE International Global Telecommunications Conference -   GLOBECOM &lsquo;00</em>, pp. 1176-1180, 2000</span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">K. F. Lee</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Providing Deterministic Quality of Service   Guarantees in Multimedia Wireless Networks.pdf">Providing Deterministic Quality of Service   Guarantees in Multimedia Wireless Networks</a>,&rdquo; <em>IEEE 51st International   Conference on Vehicular Technology (VTC &lsquo;2000),</em> pp. 460-464, May   2000<em>.</em></span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+	    <p>K. H. Pun and <strong>M. Hamdi</strong>,  &ldquo;Provision of Quality of Service for Virtual Private Networks,&rdquo; <em>Internet performance and Control of Network  Systems</em>, <em>Proceedings of SPIE</em> Vol.  4211, November 2000.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">M. Ma</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A Systematic Scheme for Guaranteed   Deterministic Performance Service on WDM Optical Networks.pdf">A Systematic Scheme for Guaranteed   Deterministic Performance Service on WDM Optical Networks</a>,&rdquo; </span><em>IEEE   International Conference on Communications <span lang="EN-GB" xml:lang="EN-GB">- ICC &lsquo;00, </span></em><span lang="EN-GB" xml:lang="EN-GB">pp. 1277-1281,<em> </em>2000.</span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"> </span><em><span lang="EN-GB" xml:lang="EN-GB">M.   Maode</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &lsquo;&lsquo;On the Provision of QoS on WDM Optical   Networks,&rsquo;&rsquo; <em>Proceedings of the International Global Communications Conference   - GLOBECOM &lsquo;00, 2000.</em></span></p>
+
+
+
+    </li>  
+
+
+
+    <li>
+
+
+
+	    <p><em>K. M. Tong</em> and <strong>M.  Hamdi</strong>, &ldquo;<a href="Publications_pdf/Achievable QoS for multiple delay classes in cellular TDMA  environments.pdf">Achievable QoS for multiple delay classes in cellular TDMA  environments</a>,&rdquo; <em>IEEE Wireless  Communications and Networking Conference</em>, pp.1136-41, 2000.</p>
+
+
+
+	</li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  <span id="1999"></span>
+
+
+
+  <p><strong><u>1999</u></strong></p>
+
+
+
+  <ol>
+
+
+
+	<li>
+
+
+
+    	<p><em>K. Y. Kwok, F. M. Lam</em>, <strong>M.  Hamdi </strong>and Y. Pan, and <em>C. C. Hui</em>,  &ldquo;Application-Specific Load-Balancing on Heterogeneous Systems,&rdquo; <em>High-Performance Cluster Computing, </em>Prentice  Hall, pp. 350-374, 1999.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>L. Wang</em> and<strong> M. Hamdi</strong>, &ldquo;Adaptive Medium Access Control Protocols for Multimedia Streams  on WDMA Networks,&rdquo; <em>Information and  Networking</em>, G&amp;B publisher, USA, 1999.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB">K. Li, Y.   Pan, and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Solving Graph Theory Problems Using   Reconfigurable Pipelined Optical Buses.pdf">Solving Graph Theory Problems Using   Reconfigurable Pipelined Optical Buses</a>,&rdquo; <em>IEEE Workshop on Optics and Computer   Science – held in conjunction with IPPS/SPDP&rsquo;99,</em> pp. 911-923, April   1999.</span></p>
+
+
+
+	</li>
+
+
+
+  
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">G. Nong</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Performance Evaluation of a Scheduling Algorithm for Multiple Input Queued ATM Switches.pdf">Performance   Evaluation of a Scheduling Algorithm for Multiple Input Queued ATM   Switches</a>,&rdquo; <em>INFORMATICA</em>, Vol. 23, No. 3, Sept. 1999, pp.   369-381.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+    	<p><em><span lang="EN-GB" xml:lang="EN-GB">G. Nong</span></em><span lang="EN-GB" xml:lang="EN-GB">, J. K. Muppala, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Analysis of Non-blocking ATM Switches with Multiple Input Queues">Analysis of   Non-blocking ATM Switches with Multiple Input Queues</a>,&rdquo; <em>IEEE/ACM   Transactions on Networking, </em>Vol. 7, No. 1, pp. 60-74, Feb. 1999.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+    	<p>B. Hamidzadeh<em> , M. Ma</em>,  and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Efficient Sequencing  Techniques for Variable-Length Messages in WDM Networks.pdf">Efficient Sequencing  Techniques for Variable-Length Messages in WDM Networks</a>,&rdquo; <em>IEEE</em> <em>Journal of Lightwave  Technology</em>, Vol. 17, No. 8, 1309 –1319, August 1999.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">M. Ma</span></em><span lang="EN-GB" xml:lang="EN-GB">, B. Hamidzadeh, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/An Efficient Message   Scheduling Algorithm for WDM Lightwave Networks.pdf">An Efficient Message   Scheduling Algorithm for WDM Lightwave Networks,&rdquo; <em>Journal of Computer   Networks</a></em>, </span>Vol.   31, No. 20, pp. 2139-2152, Sept. 1999<span lang="EN-GB" xml:lang="EN-GB">.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan, K.   Li, and <strong><strong>M. Hamdi</strong></strong>, &lsquo;&lsquo;<a href="Publications_pdf/.pdf">An Improved Constant-time Algorithm for   Computing the Radon and Hough Transforms on a Reconfigurable Mesh</a>,&rsquo;&rsquo; <em>IEEE   Transactions on Systems Man and Cybernatics, </em></span>Vol.   29, No. 04, July 1999, pp. 417-421<span lang="EN-GB" xml:lang="EN-GB">.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, Y. Pan, B. Hamidzadeh, and <em>F. M. Lim</em>, &ldquo;<a href="Publications_pdf/Parallel Computing on   an Ethernet Cluster of Workstations Opportunities and Constraints.pdf">Parallel Computing on   an Ethernet Cluster of Workstations: Opportunities and Constraints</a>,&rdquo; <em>Journal   of Supercomputing</em>, Vol. 13, No. 2, pp. 111-132, April 1999.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, C. Qiao, Y. Pan, and <em>J. Tong</em>, &ldquo;<a href="Publications_pdf/Communication-Efficient   Sorting Algorithms on Reconfigurable Array of Processors With Slotted Optical   Buses.pdf">Communication-Efficient   Sorting Algorithms on Reconfigurable Array of Processors With Slotted Optical   Buses</a>,&rdquo; <em>Journal of Parallel and Distrib­uted Computing,</em> Vol. 57, No. 2,   pp. 166-187, May 1999.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em><span lang="EN-GB" xml:lang="EN-GB">M. Maode</span></em><span lang="EN-GB" xml:lang="EN-GB">, B. Hamidzadeh and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Efficient Scheduling Algorithms   for Real-time Serv­ice on WDM Optical Networks.pdf">Efficient Scheduling Algorithms   for Real-time Serv­ice on WDM Optical Networks</a>,&rdquo; <em>Photonic Network   Communications,</em> Vol. 1, No. 2, pp. 161-178, Aug. 1999.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p>G. Nong and <strong>M.   Hamdi</strong>, and K. B. Letaief, &ldquo;<a href="Publications_pdf/Efficient Scheduling of Variable-length IP   Packets on High-speed Switches.pdf">Efficient Scheduling of Variable-length IP   Packets on High-speed Switches</a>,&rdquo; High-Speed Networking Symposia - GLOBE­COM &lsquo;99,   pp. 1407-1411, Dec. 1999.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>G. Nong and <strong>M.   Hamdi</strong>, &ldquo;<a href="Publications_pdf/On the provision of integrated QoS guarantees of unicast and   multicast traffic in input-queued switches.pdf">On the provision of integrated QoS guarantees of unicast and   multicast traffic in input-queued switches</a>,&rdquo; GLOBAL INTERNET Symposia - GLOBECOM   &lsquo;99, pp. 1742-1746, 1999.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>G. Nong, <strong>M. Hamdi,</strong> and J. K. Muppala, &ldquo;<a href="Publications_pdf/Analytical Analysis of ATM Switches with Multiple Input   Queues with Bursty Traffic.pdf">Analytical Analysis of ATM Switches with Multiple Input   Queues with Bursty Traffic</a>,&rdquo; High-Speed Networking Symposia - GLOBECOM &lsquo;99, pp.   1222-1226, 1999.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>J. Wang, K. B. Letaief and <strong>M. Hamdi</strong>, &ldquo;Super-Fast Estimation of Cell Loss Rate and Cell Delay   Probablity of ATM Switches,&rdquo; International Conference on Broadband   Com­munications, pp. 667-675, Nov. 1999.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>G. Nong, <strong>M. Hamdi,</strong> and J. K. Muppala, &ldquo;Analytical modelling of a high-speed switching algo­rithm   for multiple input-queued ATM switches,&rdquo; Proceedings of the Third IEEE   International Workshop on Broadband Switching Systems (BSS'99), pp. 124-128,   June 1999.</p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+	<li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">W. K. Fung</span></em><strong><span lang="EN-GB" xml:lang="EN-GB">, M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, and R. D. Murch, &ldquo;<a href="Publications_pdf/Assessment of Contention-based Wireless Medium   Access using Realistic Smart Antennas.pdf">Assessment of Contention-based Wireless Medium   Access using Realistic Smart Antennas</a>,&rdquo; <em>IEEE 50th International Conference on   Vehicular Technology (VTC &lsquo;99),</em> pp. 37-41, Sept. 1999.</span></p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">W. K. Fung</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong>M. Hamdi</strong>, and R. D. Murch, &ldquo;<a href="Publications_pdf/Performance Evaluation of Mobile   Radio Slotted ALOHA with Smart Antennas.pdf">Performance Evaluation of Mobile   Radio Slotted ALOHA with Smart Antennas</a>,&rdquo; <em>IEEE Wireless Communications and   Network­ing Conference (WCNC &lsquo;99),</em> pp. 271-275, Sept. 1999.</span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">F. K. L. Lee</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Providing Deterministic Quality of Service   Guarantee in a Wireless Environment.pdf">Providing Deterministic Quality of Service   Guarantee in a Wireless Environment</a>,&rdquo; <em>IEEE</em> <em>49th International   Conference on Vehicular Technology (VTC &lsquo;99),</em> pp. 1727-1731, May   1999.</span></p>
+
+
+
+    </li>
+
+
+
+    
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">K. Li, Y.   Pan, and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Solving Graph Theory Problems Using   Reconfigurable Pipelined Optical Buses.pdf">Solving Graph Theory Problems Using   Reconfigurable Pipelined Optical Buses</a>,&rdquo; <em>IEEE Workshop on Optics and Computer   Science – held in conjunction with IPPS/SPDP&rsquo;99,</em> pp. 911-923, April   1999.</span></p>
+
+
+
+	  </li>
+
+
+
+	 
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <span id="1998"></span>
+
+
+
+  <p><strong><u>1998</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+	    <p><em>G. Nong</em>, J. Muppala, and<strong> M. Hamdi</strong>, &ldquo;Performance Analysis of Input Queuing ATM Switches with  Parallel Iterative Matching Scheduling,&rdquo; <em>ATM  Networks: Performance Modeling and Analy­sis</em>, IFIP Publishers Chapman and  Hall, London,  1998.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Yi Pan, K.   Li, and <strong>M. Hamdi</strong>, &ldquo;</span>Parallel   Computing with Optical Interconnections,&rdquo; <em>Informatica - An International   Journal</em>, Vol. 22, No. 3, 1998.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><strong>M. Hamdi</strong>, C. Qiao, and Y. Pan, &ldquo;On the Computing Power  of Arrays of Processors with Optical Pipelined Buses,&rdquo; <em>Parallel Processing Letters,</em> Vol. 8, No. 4, pp. 503-513, Dec. 1998.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan   and<strong> <strong>M. Hamdi</strong></strong>, and K. Li, &ldquo;<a href="Publications_pdf/Efficient and Scalable Quicksort on a   Linear Array with a Reconfigurable Pipelined Bus System.pdf">Efficient and Scalable Quicksort on a   Linear Array with a Reconfigurable Pipelined Bus System</a>,&rdquo; <em>Future Generation   Computer Systems, </em>Vol. 13, pp. 501- 513<em>, </em>May 1998.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB"> K. C. Leung</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong><strong>M. Hamdi</strong></strong>, &ldquo;Performance Assessment of Network   Protocols and Parallel Pro­gramming Tools for Distributed Computing Systems,&rdquo; <em>International Journal of Computer Systems</em>, Vol. 13, No. 1, pp. 67-80,   January 1998.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">L. Wang</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/HAMAC  An Adaptive Channel Access Protocol for   Multimedia Wire­less Networks.pdf">HAMAC: An Adaptive Channel Access Protocol for   Multimedia Wire­less Networks</a>,&rdquo; <em>The Seventh International Conference on   Computer Communica­tions and Networks (IC3N &lsquo;98)</em>, pp. 404-411, Oct.   1998.</span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">L. Wang</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong>M. Hamdi</strong>, and K. B. Letaief, &ldquo;<a href="Publications_pdf/Wireless Channel Access for   Multimedia Communica­tion Systems.pdf">Wireless Channel Access for   Multimedia Communication Systems</a>,&rdquo; <em>Proceedings of the</em> <em>48th   International Conference on Vehicular Technology (VTC &lsquo;98),</em></span>pp. 2062-2066, <span lang="EN-GB" xml:lang="EN-GB">May 1998.</span></p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+     <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">M. Maode</span></em><span lang="EN-GB" xml:lang="EN-GB">, B. Hamidzadeh and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Efficient Scheduling Algorithms   for Real-Time Serv­ice on WDM Optical Networks.pdf">Efficient Scheduling Algorithms   for Real-Time Serv­ice on WDM Optical Networks</a>,&rdquo; <em>The Seventh International   Conference on Compu­ter Communications and Networks (IC3N &lsquo;98)</em>, pp. 486-493,   Oct. 1998.</span></p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">M. Maode</span></em><span lang="EN-GB" xml:lang="EN-GB">, B. Hamidzadeh and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A Receiver-Oriented Message   Scheduling Algorithm for WDM Lightwave Networks.pdf">A Receiver-Oriented Message   Scheduling Algorithm for WDM Lightwave Networks</a>,&rdquo; </span><em>IEEE International Global   Telecommunications Conference<span lang="EN-GB" xml:lang="EN-GB"> – GLOBECOM &lsquo;98</span></em><span lang="EN-GB" xml:lang="EN-GB">, pp. 2333-2338, Nov. 1998.</span></p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p><em><span lang="EN-GB" xml:lang="EN-GB">L. Wang</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/.pdf">Efficient Protocols for Multimedia Streams on   WDMA Networks</a>,&rdquo; <em>The 12th International Conference on Information Networking   (ICOIN-12)</em>, Jan. 1998, pp. 241-246. <strong><U>Received <em>Best Paper Award</em> out of 142 accepted papers.</U></strong></span></p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">C. W. Ming</span></em><span lang="EN-GB" xml:lang="EN-GB">, S. Chanson, and <strong><strong>M. Hamdi</strong></strong>, &ldquo;The Design of a Parallel   Programming System for a Network of Workstations: An Object-Oriented Approach,&rdquo; <em>The</em> <em>2nd International Workshop on Network-Based Computing,   Communication, Architecture, and Applications</em>, pp. 59- 73, Feb.   1998.</span></p>
+
+
+
+	</li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  <span id="1997"></span>
+
+
+
+  <p><strong><u>1997</u></strong></p>
+
+
+
+  <ol>
+
+
+
+     <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and S. W. Song, &ldquo;Matrix Transformations: An Efficient Method for   Embedding Net­works Onto the Hypercube,&rdquo; <em>IEEE Transactions on Parallel and   Distributed Systems, </em>Vol. 8, No. 9, pp. 897-902,<em> </em>September   1997.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/ORMA  A High-performance MAC Protocol for Fiber-Optic LANs MANs.pdf">ORMA: A High-performance MAC Protocol for Fiber-Optic LANs/MANs</a>,&rdquo; <em>IEEE Communications Magazine</em>, Vol. 35, no. 3, March 1997, pp. 110-119. </span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>C. M. Woo</em>, &ldquo;<a href="Publications_pdf/Dynamic Pi-Persistent Protocol with Reduced Station Hardware.pdf">Dynamic <em>Pi</em>-Persistent   Protocol with Reduced Station Hardware</a>,&rdquo; <em>Journal of</em> <em>Computer Networks, </em>Vol. 29, no. 6<em>, </em>pp. 717-722, May 1997.</span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and R. W. Hall, &ldquo;<a href="Publications_pdf/RCC-FULL  An Effective Network For Parallel   Computations.pdf">RCC-FULL: An Effective Network For Parallel   Computations</a>,&rdquo; <em>Journal of Parallel and Distributed Computing,</em> Vol. 41,   no. 2, March 1997, pp. 139-155.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>C. K. Lee</em>, &ldquo;<a href="Publications_pdf/Dynamic Load Balancing of Image Processing   Applications on Clus­ters of Workstations.pdf">Dynamic Load Balancing of Image Processing   Applications on Clus­ters of Workstations</a>,&rdquo; <em>Parallel Computing</em>, Vol. 22,   No. 11, pp. 1477-1492, Jan. 1997.</span></p>
+
+
+
+	</li>	
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, Y. Pan, B. Hamidzadeh, and <em>F. M. Lin</em>, &ldquo;<a href="Publications_pdf/Potentials and   Limitations of Parallel Comput­ing on a Cluster of Workstations.pdf">Potentials and   Limitations of Parallel Comput­ing on a Cluster of Workstations</a>,&rdquo; <em>The</em> <em>International Conference on Parallel and Distributed Systems (ICPADS   &lsquo;97)</em>, Nov. 1997, pp. 572-577.</span></p>
+
+
+
+	  	</li>
+
+
+
+		
+
+
+
+    <li>
+
+
+
+      <p>L. Bin, <strong>M. Hamdi</strong>,   and X. Cao, &ldquo;<a href="Publications_pdf/An Efficient Scheduling Algorithm for Input-queuing ATM Switches.pdf">An Efficient Scheduling Algorithm for Input-queuing ATM Switches</a>,&rdquo;   Proceedings of the 1997 2nd IEEE International Workshop on Broadband Switching   Systems (BSS &lsquo;97), pp. 148-154, Dec. 1997.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>J. Wang, K. B. Letaief,   and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Efficient Estimation of Cell Loss and Cell Delay of   Non­blocking ATM Switches.pdf">Efficient Estimation of Cell Loss and Cell Delay of   Non­blocking ATM Switches</a>,&rdquo; The 22nd Annual IEEE Conference on Local Computer   Networks 1997, Nov. 1997, pp. 142-148.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>G. Nong, and J. Muppala,   and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/Analysis of Non-blocking ATM Switches with Multiple Input   Queues.pdf">Analysis of Non-blocking ATM Switches with Multiple Input   Queues</a>,&rdquo; IEEE International Global Telecommunications Conference - GLOBECOM &lsquo;97,   pp. 531-535, Nov. 1997.</p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p>J. Wang, K. Ben Letaief, <strong>M. Hamdi</strong>, and X. Cao, &ldquo;<a href="Publications_pdf/Fast Cell Loss Rate Estimation of ATM Switches   using Importance Sampling.pdf">Fast Cell Loss Rate Estimation of ATM Switches   using Importance Sampling</a>,&rdquo; IEEE International Global Telecommunications   Conference - GLOBECOM &lsquo;97, pp. 1562-1566, Nov. 1997.</p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p>G. Nong, J. Muppala, and <strong>M. Hamdi</strong>, &ldquo;<a href="Publications_pdf/A Performance Model for ATM Switches with Multiple Input   Queues.pdf">A Performance Model for ATM Switches with Multiple Input   Queues</a>,&rdquo; The 6th International Conference on Computer Communications and   Networks (IC3N &lsquo;97), Dec. 1997, pp. 222-227.</p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+     <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">B. Hamidzadeh, <em>M. Maode</em>, and <strong>M. Hamdi</strong>, <strong>&ldquo;</strong></span><strong><a href="Publications_pdf/Message   sequencing techniques for on-line scheduling in WDM   networks.pdf">Message   sequencing techniques for on-line scheduling in WDM   networks</a></strong><strong><span lang="EN-GB" xml:lang="EN-GB">,&rdquo; </span></strong><em>IEEE International Global   Telecommunications Conference<span lang="EN-GB" xml:lang="EN-GB"> - GLOBECOM &lsquo;97</span></em><span lang="EN-GB" xml:lang="EN-GB">, pp. 868-872, Nov. 1997.</span></p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+	    <p>Y. Pan,<strong> M. Hamdi </strong>and  K. Li, &ldquo;Euclidean Distance Transform on Reconfigurable Meshes,&rdquo; <em>Pro­ceedings of the 1997 International  Parallel and Distributed Processing Techniques (PDPTA &lsquo;97)</em>, 1997.</p>
+
+
+
+	</li>
+
+
+
+     
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+
+
+
+
+
+
+
+
+  <span id="1996"></span>
+
+
+
+  <p><strong><u>1996</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+	    <p><strong>M. Hamdi </strong>and S. W. Song, &ldquo;Matrix Representations of  Network Embeddings in a Hypercube,&rdquo; <em>Parallel  Computing: State-of-the Art Perspective</em>, Elsevier Science Publishing, pp.  629-632, 1996.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><strong>M. Hamdi </strong>and J. Muppala, &ldquo;Performance Evaluation of  Non-blocking ATM Switches Under Vari­ous Traffic and Buffering Schemes,&rdquo; <em>International Journal of Communication  Systems</em>, Vol. 9, No. 2, pp. 59-79, 1996.</p>
+
+
+
+	</li>		
+
+
+
+    <li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB"> K. Y. Ng, K. L. Pun, M. C. Ip</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong><strong>M. Hamdi</strong></strong>, and I. Ahmad, &ldquo;<a href="Publications_pdf/Embedding Pyramids into 3-D   Meshes.pdf">Embedding Pyramids into 3-D   Meshes</a>,&rdquo; <em>Journal of Parallel and Distributed Computing</em>, Vol. 36, No. 2,   pp. 173-184, Aug. 1996.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan and <strong><strong>M. Hamdi</strong></strong>, and G. Singh &ldquo;<a href="Publications_pdf/Selection on K-Dimensional Meshes With Multiple Broadcasting.pdf">Selection on <em>K</em>-Dimensional Meshes   With Multiple Broadcasting</a>,&rdquo; <em>The Computer Journal</em>, Vol. 39, No. 2, pp.   140-144, 1996.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Singular Value Decomposition on Processor Arrays With a   Pipelined Bus.pdf">Singular Value Decomposition on Processor Arrays With a   Pipelined Bus</a>,&rdquo; <em>Journal of Networks and Computer Applications</em>, Vol. 19,   no. 3, pp. 235-248, July 1996. </span></p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	 <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB"> C. C. Hui</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong><strong>M. Hamdi</strong></strong>, and I. Ahmad, &ldquo;SPEED: A Parallel Platform   for Solving and Predicting the Performance of PDEs on Distributed Systems,&rdquo; <em>Concurrency: Practice And Experience</em>, Vol. 8, No. 7, pp. 537-568, Sept.   1996.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi </span></strong><span lang="EN-GB" xml:lang="EN-GB">and S. W. Song, &ldquo;<a href="Publications_pdf/On Embedding Various Networks Into the Hypercube   Using Matrix Transformations.pdf">On Embedding Various Networks Into the Hypercube   Using Matrix Transformations</a>,&rdquo; <em>Proceedings of the International Parallel   Processing Symposium</em>, pp. 650-654, 1996.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>L. Wang</em>, &ldquo;All Optical MAC Protocol for Gbits/sec Fiber   Optic LANs/MANs,&rdquo; <em>Pro­ceedings of the SPIE&rsquo;s Photonics Symposium</em>, Vol.   2919, pp. 297-305, 1996.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, <em>J. Tong</em>, and C. W. Kin, &ldquo;<a href="Publications_pdf/Fast Sorting Algorithms on   Reconfigurable Array of Processors With Optical Buses.pdf">Fast Sorting Algorithms on   Reconfigurable Array of Processors With Optical Buses</a>,&rdquo; <em>Proceedings of the   International Conference on Parallel and Distributed Systems</em>, pp. 183-188,   1996.</span></p>
+
+
+
+	</li>
+
+
+
+		
+
+
+
+    <li>
+
+
+
+	    <p><em>L. Wang</em> and <strong>M.  Hamdi</strong>, &ldquo;ORMA: A New MAC Protocol For Gbits/sec Fiber-Optic LANs/ MANs,&rdquo; <em>Proceedings of the 8th IEEE Workshop on  Local and Metropolitan Area Networks, 1996</em>.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+	    <p><em>J. Wang</em>, K. B. Letaief and <strong>M. Hamdi</strong>, &ldquo;Cell Loss Analysis of Nonblocking ATM Switches Using  Importance Sampling,&rdquo; <em>Proceedings of the  European Conference on Networks and Optical Communications</em>, pp. 318-322,  1996.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Quicksort on a Linear Array With a Reconfigurable   Pipelined Bus Sys­tem.pdf">Quicksort on a Linear Array With a Reconfigurable   Pipelined Bus Sys­tem</a>,&rdquo; <em>Proceedings of the International Symposium on   Parallel Architectures, Algorithms, and Net­works, </em>pp. 313-319,   1996.</span></p>
+
+
+
+	  	</li>
+
+
+
+		
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and Y. Pan, &ldquo;<a href="Publications_pdf/.pdf">Communications-Efficient Algorithms on Reconfigurable   Array of Proc­essors With Spanning Optical Buses</a>,&rdquo; <em>Proceedings of the   International Symposium on Parallel Architectures, Algorithms, and Networks, </em>pp. 440-446, 1996.</span></p>
+
+
+
+	 </li>
+
+
+
+	<li>
+
+
+
+	    <p><strong>M. Hamdi</strong>, &lsquo;&lsquo;A Hierarchical Sparing Technique for Fault Tolerance in ATM Switches,&rsquo;&rsquo; <em>2nd Inter­national Workshop on High-Speed  Network Computing</em>, 1996.</p>
+
+
+
+	</li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  <span id="1995"></span>
+
+
+
+  <p><strong><u>1995</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+      <p><strong>M. Hamdi</strong> and H. M.   Alnuweiri (Editors). Proceedings of the First International Workshop on   High-Speed Network Computing. IEEE Computer Society Press,   1995.</p>
+
+
+
+    </li>
+
+
+
+	<li>
+
+
+
+	    <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Communications in Optically Interconnected Parallel Computer   Systems.pdf">Communications in Optically Interconnected Parallel Computer   Systems</a>,&rdquo; <em>DIMACS Series in Discrete Mathematics and Theoretical Computer   Science</em>, Vol. 21, pp. 181-200, 1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>	
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and H. M. Alnuweiri. <em>Proceedings of the First International   Workshop on High-Speed Network Computing</em>. IEEE Computer Society Press,   1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, Y. Pan, and <em>K. W. Tong</em>, &ldquo;Efficient Image Processing   Applications on the MasPar Mas­sively Parallel Computers,&rdquo; <em>International   Journal of High Speed Computing</em>, Vol. 7, No. 4, pp. 489-514, Dec.   1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Topological Properties of the Directional Hypercube.pdf">Topological Properties of the Directional Hypercube</a>,&rdquo; <em>Information Processing Let­ters</em>, Vol. 53, No. 5, pp. 277-286,   1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB"> C. K. Lee</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Parallel Image Processing Applications   on a Network of Workstations.pdf">Parallel Image Processing Applications   on a Network of Workstations</a>,&rdquo; <em>Parallel Computing</em>, Vol. 21, No. 1, pp.   137-160, Jan. 1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and Y. Pan, &ldquo;<a href="Publications_pdf/Efficient Parallel Algorithms on Optically   Interconnected Arrays of Processors.pdf">Efficient Parallel Algorithms on Optically   Interconnected Arrays of Processors</a>,&rdquo; <em>IEE Proceedings: Computers and Digital   Techniques, </em>Vol. 142, No. 2, pp. 87-92, 1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><strong>M. Hamdi</strong> and J.   Muppala, &ldquo;<a href="Publications_pdf/Performance Evaluation of ATM Switches Under Various Traffic and   Buffering Schemes.pdf">Performance Evaluation of ATM Switches Under Various Traffic and   Buffering Schemes</a>,&rdquo; IEEE International Global Telecommunications Conference -   GLOBECOM&rsquo;95, pp. 828-832, Nov. 1995.</p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+     <li>
+
+
+
+      <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, K. B. Letaief, and J. Gu, &ldquo;<a href="Publications_pdf/An Efficient Medium Access Control   Protocol for High-speed Networks.pdf">An Efficient Medium Access Control   Protocol for High-speed Networks</a>,&rdquo; </span><em>IEEE International Global   Telecommunications Conference<span lang="EN-GB" xml:lang="EN-GB"> - GLOBECOM &lsquo;95</span></em><span lang="EN-GB" xml:lang="EN-GB">, pp. 685-689, Nov. 1995.</span></p>
+
+
+
+    </li>
+
+
+
+    <li>
+
+
+
+      <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>L. Wang</em>, &ldquo;<a href="Publications_pdf/FRMA  A New High-Speed Metropolitan and Local   Area Network Pro­tocol.pdf">FRMA: A New High-Speed Metropolitan and Local   Area Network Pro­tocol</a>,&rdquo; <em>Proceedings of the</em> <em>IEEE Symposium on   Computers and Communica­tions</em>, pp. 213-219, 1995.</span></p>
+
+
+
+    </li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+	    <p>K. B. Letaief and <strong>M.  Hamdi</strong>, &ldquo;<a href="Publications_pdf/Efficient Simulation of CDMA Systems in Wireless Mobile  Com­munications.pdf">Efficient Simulation of CDMA Systems in Wireless Mobile  Com­munications</a>,&rdquo; <em>IEEE International  Global Telecommunications Conference - GLOBECOM&rsquo;95</em>, pp. 1799-1803, Nov.  1995.</p>
+
+
+
+	</li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and S. W. Song, &ldquo;<a href="Publications_pdf/Efficient Embeddings into the Hypercube Using   Matrix Transforma­tions.pdf">Efficient Embeddings into the Hypercube Using   Matrix Transforma­tions</a>,&rdquo; <em>Proceedings of the</em> <em>9th ACM International   Conference on Supercomputing</em>, pp. 280-288, 1995.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>C. K. Lee</em>, &ldquo;<a href="Publications_pdf/Dynamic Load Balancing of Data Parallel   Applications on a Distrib­uted Network.pdf">Dynamic Load Balancing of Data Parallel   Applications on a Distrib­uted Network</a>,&rdquo; <em>Proceedings of the</em> <em>9th ACM   International Conference on Supercomputing</em>, pp. 170-179,1995.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">C. C. Hui</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong><strong>M. Hamdi</strong></strong>, and I. Ahmad, &ldquo;<a href="Publications_pdf/A Software Platform for   Solving PDEs.pdf">A Software Platform for   Solving PDEs on Distributed Sys­tems: Implementation Issues and Performance   Prediction</a>,&rdquo; <em>Proceedings of the</em> <em>1995 IEEE Compu­ter Software and   Applications Conference (COMPSAC&rsquo;95)</em>, pp. 383-388, 1995.</span></p>
+
+
+
+	</li>
+
+
+
+		
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Enhanced Mesh-Connected Computers For Image Processing   Applications.pdf">Enhanced Mesh-Connected Computers For Image Processing   Applications</a>,&rdquo; <em>Pro­ceedings of the</em> <em>International Workshop on Computer   Architectures for Machine Perception</em>, pp. 375- 382, 1995.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">K. C. Leung</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong><strong>M. Hamdi</strong></strong>, &ldquo;Evaluating PVM and Express on Various   Network Clusters,&rdquo; <em>Pro­ceedings of the</em> <em>First International Workshop on   High-Speed Network Computing</em>, pp. 57-66, 1995.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">K. C. Leung</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Assessment of Network Protocols and   Software Tools for Distrib­uted Computing.pdf">Assessment of Network Protocols and   Software Tools for Distrib­uted Computing</a>,&rdquo; <em>Proceedings of the</em> <em>IEEE   Symposium on Computers and Communications, </em>pp. 414-420, 1995. </span></p>
+
+
+
+	</li>
+
+
+
+	
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>F. M. Lim</em>, &ldquo;Efficient Graphical Applications on a   Distributed Computing Environ­ment,&rdquo; <em>Proceedings of the</em> <em>High   Performance Computing Symposium &lsquo;95</em>, 1995.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and <em>C. K. Lee</em>, &ldquo;<a href="Publications_pdf/Efficient Image Processing Applications on a   Network of Worksta­tions.pdf">Efficient Image Processing Applications on a   Network of Worksta­tions</a>,&rdquo; <em>Proceedings of the. International Workshop on   Computer Architecture For Machine Per­ception</em>, pp. 155-160, 1995.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Selection on K-Dimensional Meshes With Multiple Broadcasting.pdf">Selection on <em>K</em>-Dimensional Meshes With Multiple   Broadcasting</a>,&rdquo; <em>Pro­ceedings of the International Conference on Parallel and   Distributed Processing Techniques and Applications</em>, pp. 787-794,   1995.</span></p>
+
+
+
+	</li>
+
+
+
+	
+
+
+
+	 <li>
+
+
+
+	     <p><strong>M. Hamdi</strong>, &ldquo;Architectural Characteristics and Hardware  Cost of a Class of Interconnection Net­works,&rdquo; <em>Proceedings of the</em> <em>IEEE  International Conference on Algorithms and Architectures for Parallel  Processing</em>, pp. 121-130, 1995.</p>
+
+
+
+	 </li>
+
+
+
+	 <li>
+
+
+
+	    <p><strong>M. Hamdi</strong>, &ldquo;Information Industry: Past, Present, and  Future,&rdquo; <em>TSS/ASTA Workshop on Technology Parks and Transfer of Knowledge, 1995</em>.</p>
+
+
+
+	</li>
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Communications in Optically Interconnected Parallel Computer   Systems.pdf">Communications in Optically Interconnected Parallel Computer   Systems</a>,&rdquo; <em>DIMACS Series in Discrete Mathematics and Theoretical Computer   Science</em>, Vol. 21, pp. 181-200, 1995.</span></p>
+
+
+
+	  </li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+  <span id="1994"></span>
+
+
+
+  <p><strong><u>1994</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+	    <p><strong> M.  Hamdi</strong>, &ldquo;High Speed Bridges  For Fiber Optic Local Area Networks,&rdquo;<em> Journal of Optics and Lasers in Engineering</em>, Vol. 20, No. 1, pp. 43-52,  1994.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;Recursive Interconnection Networks: Architectural Characteristics   and Hardware Cost,&rdquo;<em> IEEE Transactions on Circuits and Systems</em>, Vol. 41,   No. 12, pp. 805-816, Dec. 1994.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and R. W. Hall, &ldquo;<a href="Publications_pdf/An Efficient Class of Interconnection Networks For   Parallel Compu­tations.pdf">An Efficient Class of Interconnection Networks For   Parallel Compu­tations</a>,&rdquo; <em>The Computer Journal</em>, Vol. 37, No. 2, pp.   206-218, 1994.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and R. W. Hall, &ldquo;Image Processing on Augmented Mesh-Connected   Parallel Comput­ers,&rdquo; <em>Journal of Computer and Software Engineering</em>, Vol.   2, No. 3, pp. 329-348, 1994.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Efficient CRCW PRAM Emulation On Practical Networks.pdf">Efficient CRCW PRAM Emulation On Practical Networks</a>,&rdquo; <em>Proceedings of the</em> <em>International Conference on Parallel   Processing</em>, pp. 147-150, 1994.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;A Logarithmic Deterministic PRAM Emulation on Optically   Interconnected Parallel Computers,&rdquo; <em>Proceedings of the</em> <em>International   Conference on Parallel and Distributed Computing and Systems</em>, pp. 105-108,   1994.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Embedding Hierarchical Networks Into The Hypercube.pdf">Embedding Hierarchical Networks Into The Hypercube</a>,&rdquo; <em>Proceedings of the</em> <em>37th </em></span><em><span lang="EN-GB" xml:lang="EN-GB">Midwest Symposium on Circuits and Systems</span></em><span lang="EN-GB" xml:lang="EN-GB">, pp. 302-305, 1994.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">C. K. Lee</span></em><span lang="EN-GB" xml:lang="EN-GB"> and <strong><strong>M. Hamdi</strong></strong>, &ldquo;Efficient Parallel Image Processing on   a Network of Distributed Work­stations,&rdquo; <em>Proceedings of the</em> <em>8th   International Parallel Processing Symposium</em> (Parallel Systems Fair), pp.   52-59, 1994.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">C. C. Hui</span></em><span lang="EN-GB" xml:lang="EN-GB">, K. K. Chan, M. S. Yuen, <strong><strong>M. Hamdi</strong></strong>, and I. Ahmad,   &ldquo;<a href="Publications_pdf/.pdf">Solving Partial Differential Equations on a Network of Workstations</a>,&rdquo; <em>Proceedings of the</em> <em>Third International Symposium on High-Performance   Distrib­uted Computing</em>, pp. 194-201, 1994.</span></p>
+
+
+
+	</li>
+
+
+
+	
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <span id="1993"></span>
+
+
+
+  <p><strong><u>1993</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Parallel Architectures For Wavelet Transforms.pdf">Parallel Architectures For Wavelet Transforms</a>,&rdquo; <em>Proceedings of   the International Workshop on Computer Architecture For Machine Perception</em>,   pp. 376-384, 1993.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and R. W. Hall, &ldquo;Embedding Wavelet Transforms Onto Parallel   Architectures,&rdquo; <em>Pro­ceedings of the</em> <em>International Conference On Image   Processing</em>: <em>Theory and Applications</em>, pp. 243- 246, 1993.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">Y. Pan and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Computation of the Singular Value Decomposition on   Arrays With Pipe­lined Optical Buses.pdf">Computation of the Singular Value Decomposition on   Arrays With Pipe­lined Optical Buses</a>,&rdquo; <em>Proceedings of the</em> <em>1993   Symposium on Applied</em> <em>Computing</em>, pp. 525-532, 1993.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB">R. W. Hall,   S. Kuck, and <strong><strong>M. Hamdi</strong></strong>, &ldquo;<a href="Publications_pdf/Wavelet Transform Embeddings in Mesh   Architectures.pdf">Wavelet Transform Embeddings in Mesh   Architectures</a>,&rdquo; <em>Proceedings of the</em> <em>IEEE International Conference on   Computer Vision and Pattern Recognition</em>, pp. 596-597, 1993.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><em><span lang="EN-GB" xml:lang="EN-GB">M. C. Ip, K. Y. Ng, K. L. Pun</span></em><span lang="EN-GB" xml:lang="EN-GB">, <strong><strong>M. Hamdi</strong></strong>, and I. Ahmad, &ldquo;Embedding Pyramids Into 3D   Meshes,&rdquo; <em>Proceedings of the</em> <em>International Conference on Parallel and   Distributed Systems</em>, pp. 348-352, 1993.</span></p>
+
+
+
+	  	</li>
+
+
+
+		
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+
+
+
+
+  
+
+
+
+  <span id="1992"></span>
+
+
+
+  <p><strong><u>1992</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB"> M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;Design Methodology of Multiprocessor Systems for Real-time   Applications,&rdquo; <em>Inter­national Journal of Mini and Microcomputers</em>, Vol.   14, No. 2, pp. 77-81, 1992.</span></p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;Architectural Characteristics of the Directional Hypercube,&rdquo; <em>Proceedings of the</em> <em>1992 International Conf. on Parallel and   Distributed Systems</em>, pp. 111-117, 1992.</span></p>
+
+
+
+	  	</li>
+
+
+
+	<li>
+
+
+
+      <p><span lang="EN-GB" xml:lang="EN-GB"></span><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB"> and Y. Pan, &ldquo;Efficient Parallel Algorithms for Some Numerical   Problems on Arrays with Pipelined Buses,&rdquo; <em>Proceedings of the</em> <em>5th   Australian Supercomputing Conference</em>, pp. 205- 214, 1992.</span></p>
+
+
+
+	  	</li>
+
+
+
+		
+
+
+
+	<li>
+
+
+
+      <p><strong><span lang="EN-GB" xml:lang="EN-GB">M. Hamdi</span></strong><span lang="EN-GB" xml:lang="EN-GB">, &ldquo;<a href="Publications_pdf/Optical Bridges for Fiber Optic Local Area Networks.pdf">Optical Bridges for Fiber Optic Local Area Networks</a>,&rdquo; <em>Proceedings of the IEEE Int. Conf. on Computer Systems and Software   Engineering</em>, pp. 592-597, 1992.</span></p>
+
+
+
+    </li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  <p> </p>
+
+
+
+  <p align="center"><a href="#top"><strong>Go Top</strong></a></p>  
+
+
+
+
+
+
+
+
+
+
+
+  <span id="1991"></span>
+
+
+
+  <p><strong><u>1991</u></strong></p>
+
+
+
+  <ol>
+
+
+
+    <li>
+
+
+
+	    <p><strong>M. Hamdi</strong> and R. W. Hall, &ldquo;Compound Graph Networks for  Parallel Image Processing,&rdquo; <em>Proceed­ings  of the International Workshop on Computer Architecture for Machine Perception</em>,  pp. 365- 377, Paris, France 1991.</p>
+
+
+
+	</li>
+
+
+
+	<li>
+
+
+
+	    <p><strong> M.  Hamdi</strong>, &ldquo;Optical Shift Registers for Fiber Optic Ring Networks,&rdquo; <em>Journal of Data and Compu­ter Communications</em>,  Vol. 4, No. 2, pp. 50-55, 1991.</p>
+
+
+
+	</li>
+
+
+
+    
+
+
+
+  </ol>
+
+
+
+  
+
+
+
+ 
+
+
+
+<p>&nbsp;</p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Main -->
+
+
+
+<hr />
+
+
+
+<!-- Footer -->
+
+
+
+<div id="footer">
+
+
+
+    <h1><a href="#top">Top of Page</a></h1>
+
+
+
+ </div>
+
+
+
+<!-- End Footer -->
+
+
+
+ </div>
+
+
+
+<script type="text/javascript">
+
+
+
+swfobject.registerObject("FlashID");
+
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+
+
+
+tabdropdown.init("slidemenu")
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+

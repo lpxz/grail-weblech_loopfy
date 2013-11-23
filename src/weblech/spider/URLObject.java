@@ -114,7 +114,8 @@ public class URLObject {
             out.flush();
             out.close();
         } catch (IOException ioe) {
-            _logClass.warn("IO Exception writing to " + fileName, ioe);
+            _logClass.warn("IO Exception" );
+            
         }
     }
 
@@ -131,9 +132,7 @@ public class URLObject {
 
     private String textReplace(String find, String replace, String input) {
         int startPos = 0;
-        edu.hkust.clap.monitor.Monitor.loopBegin(4);
 while (true) { 
-edu.hkust.clap.monitor.Monitor.loopInc(4);
 {
             int textPos = input.indexOf(find, startPos);
             if (textPos < 0) {
@@ -142,7 +141,6 @@ edu.hkust.clap.monitor.Monitor.loopInc(4);
             input = input.substring(0, textPos) + replace + input.substring(textPos + find.length());
             startPos = textPos + replace.length();
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(4);
 
         return input;
     }

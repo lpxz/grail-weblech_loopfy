@@ -49,7 +49,7 @@ public class SpiderConfig extends Logger implements Serializable {
      * Create a default config.
      */
     public SpiderConfig() {
-        _logClass.debug("SpiderConfig()");
+//        _logClass.debug("SpiderConfig()");
         saveRootDirectory = new File(".");
         mailtoLogFile = new File("mailto.txt");
         refreshHTMLs = true;
@@ -79,25 +79,25 @@ public class SpiderConfig extends Logger implements Serializable {
      * Create a config from a java.util.Properties object.
      */
     public SpiderConfig(Properties props) {
-        _logClass.debug("SpiderConfig(props)");
+//        _logClass.debug("SpiderConfig(props)");
         saveRootDirectory = new File(props.getProperty("saveRootDirectory", "."));
         if (!saveRootDirectory.exists()) {
             if (!saveRootDirectory.mkdirs()) {
-                _logClass.error("Couldn't create root directory: " + saveRootDirectory);
-                _logClass.info("Defaulting to . instead");
+//                _logClass.error("Couldn't create root directory: " + saveRootDirectory);
+//                _logClass.info("Defaulting to . instead");
                 saveRootDirectory = new File(".");
             }
         } else if (!saveRootDirectory.isDirectory()) {
-            _logClass.error("Save root is not a directory: " + saveRootDirectory);
-            _logClass.info("Defaulting to . instead");
+//            _logClass.error("Save root is not a directory: " + saveRootDirectory);
+//            _logClass.info("Defaulting to . instead");
             saveRootDirectory = new File(".");
         }
         String mailtoFileStr = props.getProperty("mailtoLogFile", "mailto.txt");
         if (mailtoFileStr.indexOf(":") != -1 || mailtoFileStr.startsWith("/") || mailtoFileStr.startsWith("\\")) {
-            _logClass.debug("Using absolute file name " + mailtoFileStr);
+//            _logClass.debug("Using absolute file name " + mailtoFileStr);
             mailtoLogFile = new File(mailtoFileStr);
         } else {
-            _logClass.debug("Constructing relative file name " + saveRootDirectory.getPath() + "/" + mailtoFileStr);
+//            _logClass.debug("Constructing relative file name " + saveRootDirectory.getPath() + "/" + mailtoFileStr);
             mailtoLogFile = new File(saveRootDirectory.getPath() + "/" + mailtoFileStr);
         }
         refreshHTMLs = Boolean.valueOf(props.getProperty("refreshHTMLs", "true")).booleanValue();
@@ -110,10 +110,10 @@ public class SpiderConfig extends Logger implements Serializable {
             try {
                 startLocation = new URL(startLocStr);
             } catch (MalformedURLException murle) {
-                _logClass.error("Caught MalformedURLException parsing start URL '" + startLocStr + "' : " + murle.getMessage(), murle);
+//                _logClass.error("Caught MalformedURLException parsing start URL '" + startLocStr + "' : " + murle.getMessage(), murle);
             }
         } else {
-            _logClass.warn("startLocation not found in properties");
+//            _logClass.warn("startLocation not found in properties");
         }
         urlMatch = props.getProperty("urlMatch");
         interestingURLSubstrings = parsePropCommaSeparated(props.getProperty("interestingURLs"));
@@ -123,7 +123,7 @@ public class SpiderConfig extends Logger implements Serializable {
             String maxDepthStr = props.getProperty("maxDepth", "0");
             maxDepth = Integer.parseInt(maxDepthStr);
         } catch (NumberFormatException nfe) {
-            _logClass.error("Caught number format exception parsing max depth, defaulting to 1", nfe);
+//            _logClass.error("Caught number format exception parsing max depth, defaulting to 1", nfe);
             maxDepth = 1;
         }
         userAgent = props.getProperty("userAgent", "WebLech Spider 0.01alpha");
@@ -133,14 +133,14 @@ public class SpiderConfig extends Logger implements Serializable {
             String threadsStr = props.getProperty("spiderThreads", "1");
             spiderThreads = Integer.parseInt(threadsStr);
         } catch (NumberFormatException nfe) {
-            _logClass.error("Caught number format exception parsing number of threads, defaulting to 1", nfe);
+//            _logClass.error("Caught number format exception parsing number of threads, defaulting to 1", nfe);
             spiderThreads = 1;
         }
         try {
             String intervalStr = props.getProperty("checkpointInterval", "0");
             checkpointInterval = Long.parseLong(intervalStr);
         } catch (NumberFormatException nfe) {
-            _logClass.error("Caught number format exception parsing checkpoint interval, defaulting to 0", nfe);
+//            _logClass.error("Caught number format exception parsing checkpoint interval, defaulting to 0", nfe);
             spiderThreads = 1;
         }
     }
@@ -149,13 +149,10 @@ public class SpiderConfig extends Logger implements Serializable {
         ArrayList result = new ArrayList();
         if (str != null && str.length() > 0) {
             StringTokenizer tok = new StringTokenizer(str, ",");
-            edu.hkust.clap.monitor.Monitor.loopBegin(6);
 while (tok.hasMoreTokens()) { 
-edu.hkust.clap.monitor.Monitor.loopInc(6);
 {
                 result.add(tok.nextToken());
             }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(6);
 
         }
         return result;
@@ -243,16 +240,13 @@ edu.hkust.clap.monitor.Monitor.loopEnd(6);
 
     private boolean matchURL(URL u, List substrings) {
         String str = u.toExternalForm();
-        edu.hkust.clap.monitor.Monitor.loopBegin(7);
 for (Iterator i = substrings.iterator(); i.hasNext(); ) { 
-edu.hkust.clap.monitor.Monitor.loopInc(7);
 {
             String substr = (String) i.next();
             if (str.indexOf(substr) != -1) {
                 return true;
             }
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(7);
 
         return false;
     }
@@ -318,27 +312,23 @@ edu.hkust.clap.monitor.Monitor.loopEnd(7);
     }
 
     private Set parseSet(String str) {
-        _logClass.debug("parseSet(" + str + ")");
+//        _logClass.debug("parseSet(" + str + ")");
         HashSet result = new HashSet();
         StringTokenizer sTok = new StringTokenizer(str, ",");
-        edu.hkust.clap.monitor.Monitor.loopBegin(8);
 while (sTok.hasMoreTokens()) { 
-edu.hkust.clap.monitor.Monitor.loopInc(8);
 {
             String tok = sTok.nextToken().trim();
             result.add(tok);
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(8);
 
         return result;
     }
 
+    
     private String fromSet(Set s) {
         StringBuffer sb = new StringBuffer();
         boolean first = true;
-        edu.hkust.clap.monitor.Monitor.loopBegin(9);
 for (Iterator i = s.iterator(); i.hasNext(); ) { 
-edu.hkust.clap.monitor.Monitor.loopInc(9);
 {
             String str = (String) i.next();
             if (first) {
@@ -348,7 +338,6 @@ edu.hkust.clap.monitor.Monitor.loopInc(9);
             }
             sb.append(str);
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(9);
 
         return sb.toString();
     }

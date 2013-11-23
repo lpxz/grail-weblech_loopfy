@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!-- saved from url=(0107)file:///D:/Dropbox/research/on%20going%20research%20projects/AFChecker/website/business-2c-lr-sn/index.html -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBegin template="/Templates/base-2c-lr-sn.dwt" codeOutsideHTMLIsLocked="false" -->
+<link rel="stylesheet" href="./afchecker_files/template-2c-lr-sn.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./afchecker_files/vertical-menu.css" /><title>Tutorial</title>
+
+<meta name="Keywords" content="2 column,left rail,side navigation,standards compliant,free template" />
+<meta name="Description" content="This 2 column left rail side navigation standards compliant template is free to use and is released under the Creative Commons Attribution Licence." />
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<meta name="robots" content="index, follow" />
+<meta name="robots" content="all" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="no" />
+</head>
+<body>
+<div id="supercontainer">
+<div id="topcontainer">
+<div id="logo"><a href="http://www.ust.hk"><img src="./images/hkust-logo.gif" alt="hkust logo" border="0" height="57" width="311" /></a></div>
+<div id="contact"><strong>AFChecker Research Project
+Home</strong><br />
+<a href="mailto:andrewust@cse.ust.hk">Contact:
+andrewust@cse.ust.hk</a></div>
+</div>
+<div id="middlecontainer">
+<div id="columncontainer">
+<div id="sidenav"><!-- #BeginLibraryItem "/Library/nav.lbi" -->
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+<li><a href="index.html" title="AFChecker Homepage" target="_self">Project Home</a></li>
+<li><a href="tool.html" title="AFChecker Download page" target="_self">Tool
+Download</a></li>
+<li><a href="tutorial.html" title="tool tutorial" target="_self">Tutorial</a>
+</li>
+<li><a href="./javadoc/index.html" title="java doc" target="_self">Documentation</a></li>
+<li><a href="relatedprojects.html" title="related projects" target="_self">Related
+Projects</a>
+</li>
+</ul>
+</div>
+<!-- #EndLibraryItem --></div>
+<div id="column"><!-- InstanceBeginEditable name="column" -->
+<h2>&nbsp; &nbsp;Researchers&nbsp;</h2>
+<ul>
+<li><a href="http://www.cse.ust.hk/%7Eandrewust">Yepang
+Liu</a></li>
+<li><a href="http://cs.nju.edu.cn/changxu">Chang
+Xu</a></li>
+<li><a href="http://www.cse.ust.hk/%7Escc">S.C.
+Cheung</a></li>
+</ul>
+</div>
+</div>
+<div id="middle">
+<h1>How to user AFChecker to detect adaptation faults?</h1>
+<div style="text-align: justify;">AFChecker takes as input
+a collection of adaptation rules configured by users and outputs a list
+of detected adaptation faults. AFChecker can work in two mode: (1)
+Non-interactive mode and (2) interactive mode. In non-interactive mode,
+AFChecker prioritizes a list of possible faults and presents them to
+users. In interactive mode, AFChecker allows users to check the faults
+one by one, and dynamically prioritize the remaining faults based on
+users' feedbacks. We use a simple example to demonstrate how to use
+AFChecker in this page. More information is covered in the <a href="./javadoc/index.html">documentation</a> page.<br />
+<h3>1. Example Adaptation Rules</h3>
+<img style="width: 720px; height: 192px;" alt="rules" src="images/rules.gif" /><br />
+<br />
+We use the adaptation rules shown in the above table as an example. To
+use AFChecker, one needs to create a new instance of the <span style="font-style: italic;">Verifier</span>
+class and feed the adaptation rules' corresponding state machine to the
+Verifier instance. In our tool, there are two ways to input such a
+state machine. <br />
+<h4>1.1 Constructing State Machine from Atomic Propositions</h4>
+In
+our AFChecker, rules are recursively constructed from atomic
+propositions. Rules are the main skeleton of the state machine. So the
+first way is to use the APIs in AFChecker to construct the state
+machine from atomic propositions as shown in <a href="./code/Example.java">the code snippet</a>.<br />
+<h4>1.2 Constructing State Machine from XML Files</h4>
+We also provide a easy-to-use parser to construct a state machine from
+an XML file. Check <a href="./code/rule.xml">the file</a>
+for desribing the rules in the above table. Then we can construct a
+state machine by calling StateMachineParser.parse(String path) API.<br />
+<br />
+The
+above two methods provide easy ways for context-aware application
+developers to integrate AFChecker to their applications. After
+constructing the state machine, to use AFChecker for adaptation fault
+detection is very easy.<br />
+<h3>2. Model Checking using AFChecker</h3>
+AFChecker
+can work in two modes depending on whether the environment data is
+provided. If the environemnt data is not provided, AFChecker can only
+prune false alarms by deriving deterministic constraints (internal
+correlations between atomic propositions), and works in a
+non-interactive mode. If the environemnt data is provided, AFCheker
+will derive probabilistic constraints from the environment data and can
+work in the interactive mode. <br />
+<h4>2.1 Non-interactive Working Mode</h4>
+By
+default, AFChecker works in the non-interactive working mode. After
+constructing the state machine and verifer, one can simply call the
+Verifier.verify() API to start checking the state machine model.
+AFChecker would outputs all detected faults. For example, it will
+output a fault as shown below (left). The fault report
+describes&nbsp;the adaptation cycle between the <span style="font-style: italic;">Home</span> state and <span style="font-style: italic;">Outdoor</span> state.
+<table style="text-align: left; width: 734px; height: 127px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><img src="images/fault.png" alt="fault" style="width: 436px; height: 83px;" /></td>
+<td><img style="width: 244px; height: 115px;" alt="fault illustration" src="images/faultIllustration.gif" /></td>
+</tr>
+</tbody>
+</table>
+<h4>2.2 Interactive Working Mode</h4>
+To
+enable the interactive working mode. One&nbsp;needs to (1) provide
+a
+set of environment data for AFChecker to infer an environment model,
+and (2) set the last boolean flag of the Verifier.verifier() API's
+parameters to true. The environment data can be feeded into AFChecker
+using Verifier.setEnvironmentData() API. We also provide a parser for
+retrieving a list of environment data specified in an XML file. Please
+check our documentation for more details. In interactive working mode,
+AFChecker outputs fault reports one by one. Users can confirm the
+validity of each fault (as shown in the figure below). Based on this
+feedback, AFChecker would update the environment model (probabilistic
+constraints) and re-prioritize the remaning faults.<br />
+<br />
+<img style="width: 692px; height: 128px;" alt="interactive" src="images/interactiveMode.png" /><br />
+<br />
+For more enquiries about how to use AFChecker, please read the
+documentation or contact us.</div>
+</div>
+<br class="clearfloat" />
+</div>
+<div id="footercontainer">
+<div id="footer">
+<div align="center"><a href="http://www.cse.ust.hk">CSE
+Department</a> | <a href="http://www.ust.hk">HKUST</a>
+|<a href="http://www.e-crm.co.uk/free-templates/free-templates.html" target="_blank"> Template design by E-CRM</a><a href="#">&nbsp;|
+Page
+Last Update on April 26, 2013.</a>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,1425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<title>Welcome to Prof.Hamdi's Homepage</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/slidingdoors.css" />
+
+
+
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery-func.js" type="text/javascript"></script><script type="text/javascript" src="Scripts/dropdowntabs.js"></script>
+
+
+
+
+
+
+
+<script type="text/javascript"> 
+
+
+
+var bannerAD1=new Array(); 
+
+
+
+var bannerADlink1=new Array(); 
+
+
+
+var adNum1=0; 
+
+
+
+
+
+
+
+bannerAD1[0]="Mounir-1.jpg"; 
+
+
+
+bannerADlink1[0]="Mounir-1.jpg"
+
+
+
+bannerAD1[1]="Mounir-2.jpg"; 
+
+
+
+bannerADlink1[1]="Mounir-3.jpg"
+
+
+
+bannerAD1[2]="index_images/mounir-hamdi_hong-kong-univ.jpg";
+
+
+
+bannerADlink1[2]="index_images/mounir-hamdi_hong-kong-univ.jpg";
+
+
+
+bannerAD1[3]="Mounir-4.jpg"; 
+
+
+
+bannerADlink1[3]="Mounir-4.jpg"
+
+
+
+
+
+
+
+
+
+
+
+var preloadedimages1=new Array(); 
+
+
+
+for (i=1;i<bannerAD1.length;i++){ 
+
+
+
+preloadedimages1[i]=new Image(); 
+
+
+
+preloadedimages1[i].src=bannerAD1[i]; 
+
+
+
+} 
+
+
+
+
+
+
+
+function setTransition1(){ 
+
+
+
+if (document.all){ 
+
+
+
+bannerADrotator1.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+
+
+
+bannerADrotator1.filters.revealTrans.apply(); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+function playTransition1(){ 
+
+
+
+if (document.all) 
+
+
+
+bannerADrotator1.filters.revealTrans.play() 
+
+
+
+} 
+
+
+
+
+
+
+
+function nextAd1(){ 
+
+
+
+if(adNum1<bannerAD1.length-1)adNum1++ ; 
+
+
+
+else adNum1=0; 
+
+
+
+setTransition1(); 
+
+
+
+document.images.bannerADrotator1.src=bannerAD1[adNum1]; 
+
+
+
+playTransition1(); 
+
+
+
+theTimer1=setTimeout("nextAd1()", 10000); 
+
+
+
+} 
+
+
+
+
+
+
+
+function jump2url1(){ 
+
+
+
+jumpUrl1=bannerADlink1[adNum1]; 
+
+
+
+jumpTarget1='_blank'; 
+
+
+
+if (jumpUrl1 != ''){ 
+
+
+
+if (jumpTarget1 != '')window.open(jumpUrl1,jumpTarget1); 
+
+
+
+else location.href=jumpUrl1; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function displayStatusMsg1() { 
+
+
+
+status1=bannerADlink1[adNum1]; 
+
+
+
+document.returnValue = true; 
+
+
+
+} 
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript"> 
+
+
+
+var bannerAD=new Array(); 
+
+
+
+var bannerADlink=new Array(); 
+
+
+
+var adNum=0; 
+
+
+
+
+
+
+
+bannerAD[0]="index_images/2.jpg"; 
+
+
+
+bannerADlink[0]="index_images/2.jpg"
+
+
+
+bannerAD[1]="index_images/2.jpg"; 
+
+
+
+bannerADlink[1]="index_images/2.jpg"
+
+
+
+bannerAD[2]="index_images/4.jpg"; 
+
+
+
+bannerADlink[2]="index_images/4.jpg"
+
+
+
+bannerAD[3]="index_images/6.jpg"; 
+
+
+
+bannerADlink[3]="index_images/6.jpg"
+
+
+
+bannerAD[4]="index_images/8.jpg"; 
+
+
+
+bannerADlink[4]="index_images/8.jpg"
+
+
+
+bannerAD[5]="index_images/10.jpg"; 
+
+
+
+bannerADlink[5]="index_images/10.jpg"
+
+
+
+bannerAD[6]="index_images/12.jpg"; 
+
+
+
+bannerADlink[6]="index_images/12.jpg"
+
+
+
+bannerAD[7]="index_images/13.jpg";
+
+
+
+bannerADlink[7]="index_images/13.jpg"
+
+
+
+bannerAD[8]="index_images/14.jpg"; 
+
+
+
+bannerADlink[8]="index_images/14.jpg"
+
+
+
+bannerAD[9]="index_images/16.jpg"; 
+
+
+
+bannerADlink[9]="index_images/16.jpg"
+
+
+
+bannerAD[10]="index_images/17.jpg"; 
+
+
+
+bannerADlink[10]="index_images/17.jpg"
+
+
+
+bannerAD[11]="index_images/18.jpg"; 
+
+
+
+bannerADlink[11]="index_images/18.jpg"
+
+
+
+bannerAD[12]="index_images/20.jpg"; 
+
+
+
+bannerADlink[12]="index_images/20.jpg"
+
+
+
+bannerAD[13]="index_images/22.jpg"; 
+
+
+
+bannerADlink[13]="index_images/22.jpg"
+
+
+
+bannerAD[14]="index_images/24.jpg"; 
+
+
+
+bannerADlink[14]="index_images/24.jpg"
+
+
+
+bannerAD[15]="index_images/26.jpg"; 
+
+
+
+bannerADlink[15]="index_images/26.jpg"
+
+
+
+bannerAD[16]="index_images/28.jpg"; 
+
+
+
+bannerADlink[16]="index_images/28.jpg"
+
+
+
+bannerAD[17]="index_images/30.jpg"; 
+
+
+
+bannerADlink[17]="index_images/30.jpg"
+
+
+
+bannerAD[18]="index_images/31.jpg"; 
+
+
+
+bannerADlink[18]="index_images/31.jpg"
+
+
+
+bannerAD[19]="index_images/32.jpg"; 
+
+
+
+bannerADlink[19]="index_images/32.jpg"
+
+
+
+bannerAD[20]="index_images/34.jpg"; 
+
+
+
+bannerADlink[20]="index_images/34.jpg"
+
+
+
+bannerAD[21]="index_images/36.jpg"; 
+
+
+
+bannerADlink[21]="index_images/36.jpg"
+
+
+
+bannerAD[22]="index_images/37.jpg"; 
+
+
+
+bannerADlink[22]="index_images/37.jpg"
+
+
+
+bannerAD[23]="index_images/38.jpg"; 
+
+
+
+bannerADlink[23]="index_images/38.jpg"
+
+
+
+bannerAD[24]="index_images/40.jpg"; 
+
+
+
+bannerADlink[24]="index_images/40.jpg"
+
+
+
+bannerAD[25]="index_images/42.jpg"; 
+
+
+
+bannerADlink[25]="index_images/42.jpg"
+
+
+
+/*图片可以增加*/
+
+
+
+
+
+
+
+var preloadedimages=new Array(); 
+
+
+
+for (i=1;i<bannerAD.length;i++){ 
+
+
+
+preloadedimages[i]=new Image(); 
+
+
+
+preloadedimages[i].src=bannerAD[i]; 
+
+
+
+} 
+
+
+
+
+
+
+
+/*图片可以增加*/
+
+
+
+
+
+
+
+function setTransition(){ 
+
+
+
+if (document.all){ 
+
+
+
+bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+
+
+
+bannerADrotator.filters.revealTrans.apply(); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+function playTransition(){ 
+
+
+
+if (document.all) 
+
+
+
+bannerADrotator.filters.revealTrans.play() 
+
+
+
+} 
+
+
+
+
+
+
+
+function nextAd(){ 
+
+
+
+if(adNum<bannerAD.length-1)adNum++ ; 
+
+
+
+else adNum=0; 
+
+
+
+setTransition(); 
+
+
+
+document.images.bannerADrotator.src=bannerAD[adNum]; 
+
+
+
+playTransition(); 
+
+
+
+theTimer=setTimeout("nextAd()", 5000); 
+
+
+
+} 
+
+
+
+
+
+
+
+function jump2url(){ 
+
+
+
+jumpUrl=bannerADlink[adNum]; 
+
+
+
+jumpTarget='_blank'; 
+
+
+
+if (jumpUrl != ''){ 
+
+
+
+if (jumpTarget != '')window.open(jumpUrl,jumpTarget); 
+
+
+
+else location.href=jumpUrl; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function displayStatusMsg() { 
+
+
+
+status=bannerADlink[adNum]; 
+
+
+
+document.returnValue = true; 
+
+
+
+} 
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<div class="outershell">
+
+
+
+<p>&nbsp;</p>
+
+
+
+<div class="shell">
+
+
+
+<!-- Menu -->
+
+
+
+  <div id="slidemenu" class="slidetabsmenu">
+
+
+
+<ul>
+
+
+
+<li><a href="index.html" title="Home"><span>Home</span></a></li>
+
+
+
+<li><a href="#" title="Profile" rel="dropmenu1_c"><span>Profile</span></a></li>
+
+
+
+<li><a href="#" title="Research" rel="dropmenu2_c"><span>Research</span></a></li>
+
+
+
+<li><a href="#" title="University Service" rel="dropmenu3_c"><span>University Service</span></a></li>	
+
+
+
+<li><a href="#" title="International Service" rel="dropmenu4_c"><span>International Service</span></a></li>
+
+
+
+<li><a href="#" title="Teaching" rel="dropmenu5_c"><span>Teaching</span></a></li>
+
+
+
+<li><a href="#" title="Links"><span>Links</span></a></li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br style="clear: left;" />
+
+
+
+<br class="IEonlybr" />
+
+
+
+
+
+
+
+<!--1st drop down menu -->                                                   
+
+
+
+<div id="dropmenu1_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="e.html">Education</a>
+
+
+
+<a href="tre.html">Teaching and Research Experience</a>
+
+
+
+<a href="lpiar.html">Leadership Positions in Administration and Research &nbsp;</a>
+
+
+
+<a href="vhph.html">Visiting and Honorary Positions Held</a>
+
+
+
+<a href="cis.html">Consultancy and Industrial Service</a>
+
+
+
+<a href="ha.html">Honors and Awards</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd drop down menu -->                                                
+
+
+<div id="dropmenu2_c" class="dropmenudiv_c" style="width:auto;">
+<a href="ri.html">Research Interest</a>
+<a href="rp3.html">Research Publications Grouped In Chronological Order &nbsp</a>
+<a href="rp.html">Research Publications Grouped By Type</a>
+<a href="rp2.html">Research Publications Grouped By Research Topic</a>
+<a href="rg.html">Research Group</a>
+<a href="rfc.html">Research Funding and Contracts</a>
+<a href="rss.html">Research Student Supervision</a>
+</div>
+
+<!--3rd drop down menu -->                                                
+
+
+
+<div id="dropmenu3_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ufe.html">University-Founding Experience</a>
+
+
+
+<a href="igb.html">International Governmental Bodies &nbsp;</a>
+
+
+
+<a href="hkwe.html">Hong Kong Wide-Level Experience</a>
+
+
+
+<a href="ule.html">University-Level Experience</a>
+
+
+
+<a href="se.html">School-Level Experience</a>
+
+
+
+<a href="de.html">Department-Level Experience</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--4th drop down menu -->                                                
+
+
+
+<div id="dropmenu4_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="eo.html">Elected Office</a>
+
+
+
+<a href="mpto.html">Membership in Professional and Technical Organization &nbsp;</a>
+
+
+
+<a href="jes.html">Journal's Editorial Service</a>
+
+
+
+<a href="icws.html">International Conferences/Workshops Service</a>
+
+
+
+<a href="ir.html">International Referee</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--5th drop down menu -->                                                
+
+
+
+<div id="dropmenu5_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ta.html">Teaching Awards</a>
+
+
+
+<a href="Class/CSIT560-S13/index.htm">Spring 2013 Teaching</a>
+
+
+
+<a href="ct.html">Courses Taught</a>
+
+
+
+<a href="fyps.html">Final Year Project Supervision &nbsp;</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- End Menu -->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Header -->
+
+
+
+<div id="header">
+
+
+
+<div class="shell1">
+
+
+
+<div class="shellleft">
+
+
+
+<table border="10" bordercolor=#000>
+
+
+
+  <tr>
+
+
+
+    <td> 
+
+
+
+    <a onmouseover="displayStatusMsg1();return document.returnValue" href="javascript:jump2url1()"><img src="Mounir-1.jpg" name="bannerADrotator1" width="445" height="300" border="0" align="middle" id="bannerADrotator1" 
+
+
+
+style="FILTER: revealTrans(duration=2,transition=40)" /></a>
+
+
+
+   <script type="text/javascript">nextAd1()</script>   
+
+
+
+    
+
+
+
+    </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="shellright">
+
+
+
+<table border="10" bordercolor="#000">
+
+
+
+  <tr>
+
+
+
+    <td> 
+
+
+
+    
+
+
+
+    <a onmouseover="displayStatusMsg();return document.returnValue" href="javascript:jump2url()"><img src="index_images/2.jpg" name="bannerADrotator" width="445" height="300" border="0" align="middle" id="bannerADrotator" 
+
+
+
+style="FILTER: revealTrans(duration=2,transition=40)" /></a>
+
+
+
+   <script type="text/javascript">nextAd()</script>   
+
+
+
+
+
+
+
+    </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<!-- End Header -->
+
+
+
+
+
+
+
+<!-- 2nd  Header -->
+
+
+
+<div id="header2">
+
+
+
+<div class="shell">
+
+
+
+<div class="shellleft2">
+
+
+
+<table width="472" border="10" height="230px" align="middle"bordercolor=#000>
+
+
+
+  <tr>
+
+
+
+    <td> 
+
+
+
+    <h2><em>Mounir HAMDI</em></h2>
+
+
+
+<h3>Head & Chair Professor, IEEE Fellow</h3>
+
+
+
+<h5><a href="http://www.cse.ust.hk">Department of Computer Science and Engineering</a></h5>
+
+
+
+<h5><a href="http://www.ust.hk">Hong Kong University of Science and Technology</a></h5>
+
+
+
+<h5>Email: <a href="hamdi@cse.ust.hk">hamdi@cse.ust.hk</a></h5>
+
+
+
+<h5>Tel:(+852) 2358 6988/6984 (direct line) </h5>
+
+
+
+<h5>(+852) 2358 7009 (secretary)</h5>
+
+
+
+<h5>Fax: (+852) 2358 2679</h5>
+
+
+
+    </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="shellright2">
+
+
+
+<table width="472" border="10" height="230px" align="middle"bordercolor=#000>
+
+
+
+  <tr>
+
+
+
+    <td> 
+
+
+
+    <h2>News</h2>
+
+
+
+    <h5><a href="http://www.cse.ust.hk/~hamdi/cse.pdf">Brief information about our Department</a></h5>
+
+
+
+    <h5><a href="http://www.cse.ust.hk/News/">News about our Department</a></h5>
+
+
+
+    <h5>Our Department Ranking:</h5>
+
+
+
+<h5><a href="http://www.arwu.org/SubjectCS2010.jsp">Academic Ranking of World Universities</a></h5>
+
+
+
+<h5><a href="http://www.topuniversities.com/university-rankings/world-university-rankings/2011/subject-rankings/engineering/computer-science">QS World University Rankings</a></h5>
+
+
+
+<h5>Our Department Information Video:</h5>
+
+
+
+<h5><a href="http://www.youtube.com/watch?v=KdLKn2DDbLg">CSE@Youtube</a></h5>
+
+
+
+    </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<!-- End 2nd Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Main -->
+
+
+
+<div class="main">
+
+
+
+  <div class="innershell">
+
+
+
+  <h2>&nbsp;</h2>
+
+
+
+  <hr />
+
+
+
+  <h2>Brief Biography</h2>
+
+
+
+  <p><strong>Mounir  Hamdi</strong> is a Chair Professor at the Hong Kong University of  Science and Technology, and the Head of the Department of Computer Science and  Engineering. He is an <a href="http://www.ieee.org/membership_services/membership/fellows/index.html">IEEE Fellow</a> <em>for  contributions to design and analysis of high-speed packet switching</em>. </p>
+
+
+
+  <p>
+
+
+
+    He received the B.S. degree in Electrical Engineering -  Computer Engineering minor (with distinction) from the <a href="http://www.louisiana.edu/">University  of Louisiana</a> in 1985, and the MS and  the PhD degrees in Electrical Engineering from the <a href="http://www.pitt.edu/">University of Pittsburgh</a> in 1987 and 1991, respectively. </p>
+
+
+
+  <p>
+
+
+
+    He has been  a faculty member in the Department of Computer Science and Engineering at the  Hong Kong University of Science and Technology since 1991, where he was a  founding member of the University and the Department. He is now the <a href="http://www.cse.ust.hk/admin/welcome/">Head</a> and Chair  Professor of the Department that has around 800 undergraduate and graduate  students. He was the Director of the Computer Engineering Program (for 10  years) that has around 330 undergraduate students, Director of the Master of  Science in Information Technology (for 3 years) which has more than 150  graduate students, and Director of the Computer Engineering research Lab. He is/was  a member of the University Senate and University Council. In 1999 to 2000 he  held visiting professor positions at <a href="http://www.stanford.edu/">Stanford University</a>,  USA, and the <a href="http://www.epfl.ch/">Swiss Federal  Institute of Technology</a>, Lausanne, Switzerland.  His general area of research is in high-speed wired/wireless networking in  which he has published around 300 research publications, received numerous  research grants, and graduated more 30 graduate students. In addition, he has  frequently consulted for companies and governmental organizations in the USA, Europe and Asia  on <a href="http://www.eetimes.com/story/OEG20020820S0054">high-performance Internet routers and switches</a> as well as high-speed  wireless LANs. He is a frequent keynote speaker in International Conferences  and Forums.</p>
+
+
+
+  <p>
+
+
+
+    Prof. Hamdi  is/was on the Editorial Board of various prestigious journals and magazines  including IEEE Transactions on Communications, IEEE Communication Magazine,  Computer Networks, Wireless Communications and Mobile Computing, and Parallel  Computing as well as a guest editor of IEEE Communications Magazine, guest  editor-in-chief of two special issues of IEEE Journal on Selected Areas of  Communications, and a guest editor of Optical Networks Magazine. He has chaired  more than 20 international conferences and workshops including The IEEE  International High Performance Switching and Routing Conference, the IEEE  GLOBECOM/ICC Optical networking workshop, the IEEE ICC High-speed Access  Workshop, and the IEEE IPPS HiNets Workshop, and has been on the program  committees of more than 200 international conferences and workshops. He was the  Chair of IEEE Communications Society Technical Committee on Transmissions,  Access and Optical Systems, and Vice-Chair of the Optical Networking Technical  Committee, as well as member of the ComSoc technical activities council. He  received the best paper award at the IEEE International Conference on  Communications in 2009 and the IEEE International Conference on Information and  Networking in 1998. He also supervised the best PhD paper award amongst all  universities in Hong Kong.</p>
+
+
+
+<p>In addition to his commitment  to research and professional service, he is also a dedicated teacher and  renowned quality-assurance educator. He received the best 10 lecturers award  (through university-wide student voting for all university faculty held once a  year), the distinguished engineering teaching appreciation award from the Hong  Kong University of Science and Technology, and various grants targeted towards  the improvement of teaching methodologies, delivery and technology. He is  frequently involved in higher education quality assurance activities as well as  engineering programs accreditation.
+
+
+
+</p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Main -->
+
+
+
+<hr />
+
+
+
+<!-- Footer -->
+
+
+
+<div id="footer">
+
+
+
+   <h6> More than <img src="http://home-cgi.ust.hk/cgi-bin/Count.cgi?md=6&dd=A&df=cshamdi.dat" width="100" height="30">   visited since April 7, 2002.  <img src="css/images/USTlogo.gif" width="30" height="30" />&copy; 2011 </h6>
+
+
+
+
+
+
+
+ </div>
+
+
+
+<!-- End Footer -->
+
+
+
+ </div>
+
+
+
+<script type="text/javascript">
+
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+
+
+
+tabdropdown.init("slidemenu")
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+

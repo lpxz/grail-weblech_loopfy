@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<title>Welcome to Prof.Hamdi's Homepage</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/slidingdoors.css" />
+
+
+
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery-func.js" type="text/javascript"></script>
+
+
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript" src="Scripts/dropdowntabs.js"></script>
+
+
+
+<script type="text/javascript"> 
+
+
+
+var bannerAD=new Array(); 
+
+
+
+var bannerADlink=new Array(); 
+
+
+
+var adNum=0; 
+
+
+
+
+
+
+
+bannerAD[0]="index_images/aerial_view_HKUST-small.jpg"; 
+
+
+
+bannerADlink[0]="#"
+
+
+
+bannerAD[1]="index_images/boats_sailing-small.jpg"; 
+
+
+
+bannerADlink[1]="#"
+
+
+
+bannerAD[2]="index_images/library_at_night-small.jpg"; 
+
+
+
+bannerADlink[2]="#"
+
+
+
+bannerAD[3]="index_images/hkust-dorms.jpg"; 
+
+
+
+bannerADlink[3]="#"
+
+
+
+bannerAD[4]="index_images/swimming_pool-small.jpg"; 
+
+
+
+bannerADlink[4]="#"
+
+
+
+bannerAD[5]="index_images/library-small.jpg"; 
+
+
+
+bannerADlink[5]="#"
+
+
+
+bannerAD[6]="index_images/student_halls-small.jpg"; 
+
+
+
+bannerADlink[6]="#"
+
+
+
+bannerAD[7]="index_images/piazza_aerial-small.jpg"; 
+
+
+
+bannerADlink[7]="#"
+
+
+
+bannerAD[8]="index_images/stadium-small.jpg"; 
+
+
+
+bannerADlink[8]="#"
+
+
+
+bannerAD[9]="index_images/main_building-small.jpg"; 
+
+
+
+bannerADlink[9]="#"
+
+
+
+bannerAD[10]="index_images/sunset-small.jpg"; 
+
+
+
+bannerADlink[10]="#"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Slider -->
+
+
+
+/*图片可以增加*/
+
+
+
+
+
+
+
+var preloadedimages=new Array(); 
+
+
+
+for (i=1;i<bannerAD.length;i++){ 
+
+
+
+preloadedimages[i]=new Image(); 
+
+
+
+preloadedimages[i].src=bannerAD[i]; 
+
+
+
+} 
+
+
+
+
+
+
+
+function setTransition(){ 
+
+
+
+if (document.all){ 
+
+
+
+bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+
+
+
+bannerADrotator.filters.revealTrans.apply(); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+function playTransition(){ 
+
+
+
+if (document.all) 
+
+
+
+bannerADrotator.filters.revealTrans.play() 
+
+
+
+} 
+
+
+
+
+
+
+
+function nextAd(){ 
+
+
+
+if(adNum<bannerAD.length-1)adNum++ ; 
+
+
+
+else adNum=0; 
+
+
+
+setTransition(); 
+
+
+
+document.images.bannerADrotator.src=bannerAD[adNum]; 
+
+
+
+playTransition(); 
+
+
+
+theTimer=setTimeout("nextAd()", 3000); 
+
+
+
+} 
+
+
+
+
+
+
+
+function jump2url(){ 
+
+
+
+jumpUrl=bannerADlink[adNum]; 
+
+
+
+jumpTarget='_blank'; 
+
+
+
+if (jumpUrl != ''){ 
+
+
+
+if (jumpTarget != '')window.open(jumpUrl,jumpTarget); 
+
+
+
+else location.href=jumpUrl; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function displayStatusMsg() { 
+
+
+
+status=bannerADlink[adNum]; 
+
+
+
+document.returnValue = true; 
+
+
+
+} 
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<div class="outershell">
+
+
+
+<!-- Logo -->
+
+
+
+<div id="top">
+
+
+
+<div class="shell">
+
+
+
+    <p>
+
+
+
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="208" id="FlashID" title="test">
+
+
+
+        <param name="movie" value="css/images/top.swf" />
+
+
+
+        <param name="quality" value="high" />
+
+
+
+        <param name="wmode" value="opaque" />
+
+
+
+        <param name="swfversion" value="6.0.65.0" />
+
+
+
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+
+
+
+        </object>
+
+
+
+        </p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Logo -->
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+<div class="shell">
+
+
+
+<!-- Menu -->
+
+
+
+  <div id="slidemenu" class="slidetabsmenu">
+
+
+
+<ul>
+
+
+
+<li><a href="index.html" title="Home"><span>Home</span></a></li>
+
+
+
+<li><a href="#" title="Profile" rel="dropmenu1_c"><span>Profile</span></a></li>
+
+
+
+<li><a href="#" title="Research" rel="dropmenu2_c"><span>Research</span></a></li>
+
+
+
+<li><a href="#" title="University Service" rel="dropmenu3_c"><span>University Service</span></a></li>	
+
+
+
+<li><a href="#" title="International Service" rel="dropmenu4_c"><span>International Service</span></a></li>
+
+
+
+<li><a href="#" title="Teaching" rel="dropmenu5_c"><span>Teaching</span></a></li>
+
+
+
+<li><a href="#" title="Links"><span>Links</span></a></li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br style="clear: left;" />
+
+
+
+<br class="IEonlybr" />
+
+
+
+
+
+
+
+<!--1st drop down menu -->                                                   
+
+
+
+<div id="dropmenu1_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="e.html">Education</a>
+
+
+
+<a href="tre.html">Teaching and Research Experience</a>
+
+
+
+<a href="lpiar.html">Leadership Positions in Administration and Research &nbsp;</a>
+
+
+
+<a href="vhph.html">Visiting and Honorary Positions Held</a>
+
+
+
+<a href="cis.html">Consultancy and Industrial Service</a>
+
+
+
+<a href="ha.html">Honors and Awards</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd drop down menu -->                                                
+
+
+<div id="dropmenu2_c" class="dropmenudiv_c" style="width:auto;">
+<a href="ri.html">Research Interest</a>
+<a href="rp3.html">Research Publications Grouped In Chronological Order &nbsp</a>
+<a href="rp.html">Research Publications Grouped By Type</a>
+<a href="rp2.html">Research Publications Grouped By Research Topic</a>
+<a href="rg.html">Research Group</a>
+<a href="rfc.html">Research Funding and Contracts</a>
+<a href="rss.html">Research Student Supervision</a>
+</div>
+
+<!--3rd drop down menu -->                                                
+
+
+
+<div id="dropmenu3_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ufe.html">University-Founding Experience</a>
+
+
+
+<a href="igb.html">International Governmental Bodies &nbsp;</a>
+
+
+
+<a href="hkwe.html">Hong Kong Wide-Level Experience</a>
+
+
+
+<a href="ule.html">University-Level Experience</a>
+
+
+
+<a href="se.html">School-Level Experience</a>
+
+
+
+<a href="de.html">Department-Level Experience</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--4th drop down menu -->                                                
+
+
+
+<div id="dropmenu4_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="eo.html">Elected Office</a>
+
+
+
+<a href="mpto.html">Membership in Professional and Technical Organization &nbsp;</a>
+
+
+
+<a href="jes.html">Journal's Editorial Service</a>
+
+
+
+<a href="icws.html">International Conferences/Workshops Service</a>
+
+
+
+<a href="ir.html">International Referee</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--5th drop down menu -->                                                
+
+
+
+<div id="dropmenu5_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ta.html">Teaching Awards</a>
+
+
+
+<a href="Class/CSIT560-S13/index.htm">Spring 2013 Teaching</a>
+
+
+
+<a href="ct.html">Courses Taught</a>
+
+
+
+<a href="fyps.html">Final Year Project Supervision &nbsp;</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- End Menu -->
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Main -->
+
+
+
+<div id="main">
+
+
+
+<hr />
+
+
+
+  <div class="innershell"><h2><strong>School-Level Service</strong></h2>
+
+
+
+    <ul>
+
+
+
+      <li><strong><em><u>Director</u></em></strong>,  Computer Engineering Program                                    1998–  2006
+
+
+
+         </li><ul>
+
+
+
+          <li>The Computer Engineering (CPEG) Program at HKUST is one of the  largest undergraduate programs in the School of Engineering.  This Program has almost 330 undergraduate students. It attracts high-school  graduates from Hong Kong as well as from China, and other parts of the  world. I had been with CPEG since it was founded in 1993. At that time I was  appointed as Associate Director of the Program. Then, since 1998, I was  appointed as the Director of this Program until 2006. Normally, the  Directorship of this Program is for a two-year period. However, the Dean invites  me to remain as Director every time my appointment expires. As a result, I was  director for 8 years.</li>
+
+
+
+          <li>Some of the administrative duties as Director of the Computer  Engineering Program includes:</li>
+
+
+
+          <li><strong>Budgeting:</strong> Management of the budget, which is allocated by the Dean, to the  development and activities of the program.</li>
+
+
+
+          <li><strong>Team Leader:</strong> Heading a 15-member team which includes faculty from the Computer Science  Department, Electrical and Electronic Engineering Department, clerical staff,  and technical staff. As director, I manage and distribute the duties and  responsibilities to the various team members.</li>
+
+
+
+          <li><strong>Curriculum Planning and Development:</strong> Continuous review of the curriculum using a clear and sound  vision that takes into consideration the evolvement of the discipline,  accreditation requirements, and industry needs. To achieve this goal, we use  the notion of streams inside our curriculum that allow students to specialize  in various concentrated tracks that include: VLSI, Bio-medical, Multimedia, and  Information Systems.</li>
+
+
+
+          <li><strong>Curriculum Accreditation:</strong> I have lead all the activities of the Computer Engineering  Accreditations by the &ldquo;Hong Kong Institute of Engineers (HKIE)&rdquo; since the  creation of the Program in 1993. Through the &ldquo;Washington Accord&rdquo;, being  accredited the HKIE, you get an automatic accreditation from (ABET-United States,  CCPE-Canada, EngC-United   Kingdom,  IEAust-Australia, IEI-Ireland, and IPENZ-New Zealand).</li>
+
+
+
+          <li>The Computer Engineering Program has gone three times through  the accreditation procedure, each time successfully getting a maximum of 5-year  full accreditation period.</li>
+
+
+
+          <li><strong>Students Recruitment, Admission, and Outreach Activities</strong></li>
+
+
+
+          <li><strong>Students Development Activities</strong></li>
+
+
+
+          <li><strong>Student Liaison Activities</strong></li>
+
+
+
+         
+
+
+
+          </ul>
+
+
+
+      </li>
+
+
+
+      <s2>&nbsp;</s2>
+
+
+
+      <li>  <strong><em><u>Director</u></em></strong>, Master of Science in  Information Technology </a>   for  Executive Students       2005 - 2008
+
+
+
+       </li> <ul>
+
+
+
+          <li>The School of Engineering offers various &ldquo;Master&rdquo;  programs for full-time/part-time students as part of its continuing and  professional education philosophy. These programs attract a large number of students  who are holding full-time jobs, but are interested in enhancing their technical  as well as managerial skills in new areas of high technologies at the  postgraduate level. This program also attracts full-time students from all over  the world, and in particular from China. The Master of Science in  Information Technology is attracting the largest number of graduate students  within the School   of Engineering. Each  academic year we accept around 100 students. </li>
+
+
+
+          <li>As Director of  this Program, with the help of a Committee, I was mandated with overseeing all  activities and issues related to the administration, teaching and budgeting of  this Program. This includes curriculum development, project supervision, students  admission and recruitment, and staffing.</li>
+
+
+
+          </ul>
+
+
+
+      </li>
+
+
+
+      <s2>&nbsp;</s2>
+
+
+
+      <li>Chair,  Chemical and Bimolecular  Engineering Department  Head Search Committee   2011– Present</li>
+
+
+
+      <p>&nbsp;</p>
+
+
+
+      <li>Member,  School of Engineering Undergraduate                                 1997 – 2001
+
+
+
+        </li><ul>
+
+
+
+          <li>Studies Committee (EUSC)</li>
+
+
+
+          <li>The <em>EUSC</em> monitors  all matters relating to undergraduate studies at the School level and is  responsible to the Engineering School Board which is in turn responsible to the  University Committee on Undergraduate Studies, a Standing Committee of the  Senate. The EUSC also advises and makes recommendations to the School Board on  policies and regulations, and monitors and reviews procedures, quality and  performance relating to all matters of Engineering undergraduate studies  including student admission.</li>
+
+
+
+          </ul>
+
+
+
+      </li>
+
+
+
+      <s2>&nbsp;</s2>
+
+
+
+      <li>Member,  School of Engineering Promotion,  Recruitment and Substantiation Committee (EASC)                         2005–2007
+
+
+
+        </li><ul>
+
+
+
+          <li>The <em>EASC</em> Committee is elected by the School   of Engineering Board. It  is the ultimate committee of the School   of Engineering regarding  academic appointments, promotions, and tenureship.  It conducts reviews and makes recommendations  on the appointment, promotion, and tenure of all ranks of academic staff  following receipt of recommendations from the departmental committees and  heads. </li>
+
+
+
+        </ul>
+
+
+
+      </li>
+
+
+
+      <s2>&nbsp;</s2>
+
+
+
+      <li>Member,  School of Engineering Awards  Committee                                                     2002–2005
+
+
+
+        </li><ul>
+
+
+
+          <li>This Committee advises the Dean and the  School Board on the allocation of awards and scholarships for faculty and  students. The awards could be teaching, service, or research related. In  addition, certain awards are given to members from outside the School for  various contributions that may have been rendered to the engineering  profession.</li>
+
+
+
+        </ul>
+
+
+
+      </li>
+
+
+
+      <s1>&nbsp;</s1>
+
+
+
+      <li>Member,  School of Engineering Equipment Fund Committee        2006</li>
+
+
+
+     <s1>&nbsp;</s1>
+
+
+
+      <li>Member,  School of Engineering Students/industry         2002–2003</li>
+
+
+
+      <s1>&nbsp;</s1>
+
+
+
+      <li>Member, Projects liaison Committee, School   of Engineering Summer  Camp Committee  1995 – 1996  </li>
+
+
+
+    </ul>
+
+
+
+    <h2>&nbsp;</h2>
+
+
+
+  
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Main -->
+
+
+
+<hr />
+
+
+
+<!-- Footer -->
+
+
+
+<div id="footer">
+
+
+
+    <h1><a href="#top">Top of Page</a></h1>
+
+
+
+ </div>
+
+
+
+<!-- End Footer -->
+
+
+
+ </div>
+
+
+
+<script type="text/javascript">
+
+
+
+swfobject.registerObject("FlashID");
+
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+
+
+
+tabdropdown.init("slidemenu")
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+

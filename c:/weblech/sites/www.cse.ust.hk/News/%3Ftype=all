@@ -1,0 +1,526 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="All Entries" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, All Entries" /-->
+<title>All Entries</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk&amp;type=all">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn&amp;type=all">中文简体</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">Search for Head of Computer Science &amp; Engineering</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="About Us" href="/admin/sitemap/?map=About">About</a>
+<ul>
+<li class="x2"><a title="Welcome Message" href="/admin/welcome/">Welcome</a></li>
+<li class="x2"><a href="/admin/about/">About Us</a></li>
+<li class="x2"><a href="/admin/factsheet/">Fact Sheet</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">News &amp; Achievements</a></li>
+<li class="x2"><a href="/News/?type=event">Events</a></li>
+<li class="x2"><a title="Safety Management" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">Safety</a></li>
+<li class="x2"><a href="/admin/contact/">Contact Us</a></li>
+<li class="x2"><a href="http://www.ust.hk/eng/about/campus_gethere.htm">Directions to HKUST</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="People" href="/admin/sitemap/?map=People">People</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">Faculty</a></li>
+<li class="x2"><a href="/admin/people/staff/">Staff</a></li>
+<li class="x2"><a title="Communication Tutors" href="/ct/">Communication Tutors</a></li>
+<li class="x2"><a href="/admin/people/pg/">Postgraduate Students</a></li>
+<li class="x2"><a href="/admin/recruitment/">Recruitment</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="Undergraduate Programs" href="/admin/sitemap/?map=Undergraduate">Undergraduate</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">3-Year UG Programs</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">3-Year UG Intranet</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">4-Year UG Programs</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">4-Year UG Intranet</a></li>
+<li class="x2"><a href="/ug/admissions/">UG Admissions</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="Postgraduate Programs" href="/admin/sitemap/?map=Postgraduate">Postgraduate</a>
+<ul>
+<li class="x2"><a href="/pg/">PG Programs</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">PG Intranet</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">PG Admissions</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">Student Destinations</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="Research Groups &amp; Areas" href="/pg/research/">Research</a></li>
+<li class="x1"><a accesskey="C" title="Career Corner" href="/admin/sitemap/?map=Career">Career</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">Internship Opportunities</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">Info for Employers</a></li>
+<li class="x2"><a href="/ug/internship/links/">Useful Links</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="Computing Facilities" href="/admin/facilities/">Facilities</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">Facility Committee &amp; Policies</a></li>
+<li class="x2"><a href="/admin/lab/">Lab Schedules</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">User Guides</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">CS System</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="Links" href="/admin/sitemap/?map=Links">Links</a>
+<ul>
+<li class="x2"><a title="CSE Webmail" href="https://imail.cse.ust.hk/sqmail/">WebMail</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">Faculty Intranet</a></li>
+<li class="x2"><a title="UST MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="HKUST Programming Team" href="/acm/">Programming Team</a></li>
+<li class="x2"><a title="CSE Students' Society" href="http://ihome.ust.hk/~su_csess/">Students' Society</a></li>
+<!---->
+<li class="x2"><a title="CS Alumni Association" href="https://www.facebook.com/cseaa.hkust">Alumni Association</a></li>
+<li class="x2"><a href="/admin/sitemap/">Site Map</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk&amp;type=all">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn&amp;type=all">中文简体</a></span>
+-->
+<h1>All Entries</h1>
+
+<ul class="hnav">
+<li id="selected"><a href="?type=all">All Entries</a></li>
+<li><a href="?type=news|achievement">News &amp; Achievements</a></li>
+<li><a href="?type=news">News</a></li>
+<li><a href="?type=achievement">Achievements</a></li>
+<li><a href="?type=event">Events</a></li>
+</ul>
+
+<h2>2013</h2>
+<ul class=''>
+<li class=""><a href="/News/EPFL2013/">The 1st EPFL-HKUST Workshop on Computer and Communication Sciences</a></li>
+<li class=""><a href="/AADC/2013/">Android Application Design Contest 2013</a></li>
+<li class=""><a href="/News/BigDataWorkshop2013/">The 1st HKUST-USC Joint Workshop on Big Data Applications</a></li>
+<li class=""><a href="http://symlab.ust.hk/conf/epfl13.htm">The 1st EPFL-HKUST Workshop on Computer and Communication Sciences</a></li>
+<li class=""><a href="/News/GoogleTalk2013/registration/">Google Recruitment Talk 2013</a></li>
+<li class=""><a href="/News/GCCPC2013/">Tsinghua-HKUST Programming Contest 2013</a></li>
+<li class=""><a href="/bigdataworkshop/">Workshop on Big Data Applications</a></li>
+<li class=""><a href="/ug/ambassadors/2013/">Student Ambassadors Program 2013</a></li>
+<li class=""><a href="/News/Congregation2013/">Three CSE UGs Bestowed the 2013 Academic Achievement Medal</a></li>
+<li class=""><a href="/News/ARWU2013/">HKUST Continuously Ranked No. 1 in Computer Science in Greater China Region in the ARWU 2013</a></li>
+<li class=""><a href="/News/NSRE2013/">Prof Qian ZHANG Awarded the 1st Class Award in Natural Sciences for Research Excellence by the Hubei Province, China</a></li>
+<li class=""><a href="http://www.seng.ust.hk/web/eng/news_detail.php?id=768">HKUST Received €500,000 from Deutsche Telekom to Set Up HKUST-DT System and Media Lab</a></li>
+<li class=""><a href="/News/Pan_PRD2013/China/">CSE FYP Team Won a Silver Award at the China Pan-Pearl River Delta University IT Project Competition</a></li>
+<li class=""><a href="/News/ACMHK2013/">CSE Programming Team Won the Championship in ACM-HK Programming Contest 2013</a></li>
+<li class=""><a href="/News/Google_Fellowship2013">PhD Students Wei BI and Yanjiao CHEN Awarded Prestigious Google Fellowship</a></li>
+<li class=""><a href="http://www.sigmaxi.org/about/news/MYFC/junfengpan.shtml">PhD Graduate Junfeng PAN being Featured by Sigma Xi</a></li>
+<li class=""><a href="/News/ACM_SIGPLAN_PLDI2013/">PhD Student Jeff HUANG Won SIGPLAN PLDI Distinguished Paper Award 2013</a></li>
+<li class=""><a href="/News/SPRAward2013/">PhD Graduate Dr Nan CAO Awarded SENG PhD Research Excellence Award 2012/13</a></li>
+<li class=""><a href="/News/Pan_PRD2013/">UG Students Won the 1st Runner-up in Pan-Pearl River Delta Region Hong Kong IT FYP Competition 2013</a></li>
+<li class=""><a href="/News/SIGSOFT2013/dissertation/">2013 SIGSOFT Outstanding Doctoral Dissertation Award</a></li>
+<li class=""><a href="/News/AAAI_Fellowship2013/">Prof Qiang YANG Honoured the 1st AAAI Fellowship in Greater China</a></li>
+<li class=""><a href="/News/AADW2013/">Android Application Development Hands-On Workshop 2013 Held by Dr. Muppala</a></li>
+<li class=""><a href="/News/QSWUR2013/">HKUST Maintains Excelling in Computer Science in the QS World University Ranking 2013</a></li>
+<li class=""><a href="/News/ComputingReviews2012/">CSE Graphics paper selected as Notable Paper by ACM Computing Reviews 2012</a></li>
+<li class=""><a href="/News/SIGSOFT2013/">CSE Won ACM SIGSOFT Distinguished Paper Award at ICSE 2013</a></li>
+<li class=""><a href="/News/AADW2013/registration/">Android Hands-on Workshop 2013</a></li>
+<li class=""><a href="http://www.seng.ust.hk/web/eng/news_detail.php?id=749">CSE Students Received Four Accolades in HKICT Awards 2013</a></li>
+<li class=""><a href="/News/TeachingAward2012/">Prof David ROSSITER Honored School of Engineering Teaching Excellence Appreciation Award 2011-12</a></li>
+<li class=""><a href="/News/ICPADS2012/">CSE PG Students and Alumnus Won Best Paper Award in ICPADS 2012</a></li>
+<li class=""><a href="/News/UGRAward2013/">2013 Mr Armin and Mrs Lillian Kitchell Undergraduate Research Awards</a></li>
+<li class=""><a href="/News/IBM_DB2Contest2013/">CSE Programming Team Won 3rd Prize at IBM DB2 DB Contest 2013</a></li>
+<li class=""><a href="/News/DASFAA2013/">PhD Student Di JIANG, Prof Kenneth LEUNG, and Prof Wilfred NG Won the Best Student Paper Runner-up in DASFAA 2013</a></li>
+<li class=""><a href="/News/SS_Scholarship2013/">Solomon Systech Scholarships 2012/13</a></li>
+<li class=""><a href="/News/SREAward2013/">Prof Dimitris Papadias Awarded HKUST School of Engineering Research Excellence Award</a></li>
+<li class=""><a href="http://www.sengpp.ust.hk/programs/it/en/">MSc(IT) Information Session</a></li>
+<li class=""><a href="/News/Best10Lecturers2012/">The Best 10 Lecturers Election 2012</a></li>
+<li class=""><a href="/News/AADC2012/final/">Final Competition of Android Application Design Competition (AADC) 2012</a></li>
+<li class=""><a href="/News/CPCS2013/registration/">Cathay Pacific Catering Services (HK) Ltd Career Talk</a></li>
+<li class=""><a href="/News/Levis2013/registration/">Levi's Career Talk -- IT Leadership Program</a></li>
+<li class=""><a href="/News/RIPSHK2013/">HKUST-UCLA Joint Summer UG Research Program -- Research in Industrial Projects for Students-Hong Kong 2013</a></li>
+<li class=""><a href="/News/SSTA2013/">Prof Qian ZHANG Won China's State Science and Technology Awards</a></li>
+<li class=""><a href="http://www.sengpp.ust.hk/programs/it/images/news_201301.jpg">SCMP Article on the Master of Science in Information Technology (MSc-IT) Program</a></li>
+<li class=""><a href="/News/ISCSLP2012/">PhD Candidate Guoli YE Awarded the Best Student Paper Award in ISCSLP-2012</a></li>
+<li class=""><a href="/News/MS_Fellowship2012/">Microsoft Research Asia Fellowship 2012</a></li>
+<li class=""><a href="/News/IWSLT2012/">The 9th International Workshop on Spoken Language Translation</a></li>
+</ul>
+
+<h2>2012</h2>
+<ul class=''>
+<li class=""><a href="/News/AAAS_Fellowship2012/">Prof Qiang YANG Honoured with AAAS Fellowship</a></li>
+<li class=""><a href="/News/UTV2012/">Hong Kong First mobile TV Channels Powered by Streamphony Technology</a></li>
+<li class=""><a href="/News/APICTA2012/">Lavinet Recognized in APICTA 2012</a></li>
+<li class=""><a href="/News/IEEEGlobecom2012/">Two Best Paper Awards in IEEE Globecom 2012</a></li>
+<li class=""><a href="/News/IEEEIUCC2012/">CSE Graduate Dr Fangming LIU and Prof Bo LI Awarded Best Paper Award at the 11th IEEE International Conference on Ubiquitous Computing and Communications</a></li>
+<li class=""><a href="/News/TPAMI2012/">TPAMI-12 Paper Highlighted by A*Star Research, Singapore</a></li>
+<li class=""><a href="http://ias.ust.hk/eng/events_detail.html?id=207">Blended Program Analysis for Improving Reliability of Real-world Applications</a></li>
+<li class=""><a href="/News/IAPR_Fellow2012/">Prof Qiang YANG Elected as Fellow of the International Association of Pattern Recognition</a></li>
+<li class=""><a href="/News/HKIS_YoungScientist2012/">Graduate Dr Kaishun WU Selected as the Winner of 2012 Young Scientist Award</a></li>
+<li class=""><a href="/News/HLHL2012/">Prof Qian ZHANG Honoured the 2012 Ho Leung Ho Lee Foundation Award</a></li>
+<li class=""><a href="/~csclchan/AADC/">Android Application Design Contest (AADC) 2012</a></li>
+<li class=""><a href="/News/AADC2012/">Android Application Design Contest (AADC) 2012</a></li>
+<li class=""><a href="/News/Frenzoo2012/registration/">Frenzoo Career Talk -- How to Build a HIT Mobile Game + Tips for Building up Your Career</a></li>
+<li class=""><a href="/News/JaneStreet2012/registration/">Jane Street Asia Ltd - Technology Talk: OCaml</a></li>
+<li class=""><a href="/ug/pcs/">CSE Programming Commons</a></li>
+<li class=""><a href="/News/SIGSOFT2012/">PhD Student Hyunmin SEO and Prof Sunghun KIM Awarded the ACM SIGSOFT Distinguished Paper Award at the 27th IEEE/ACM International Conference on ASE</a></li>
+<li class=""><a href="/News/SCSA2012/">Professor Samuel Chanson Scholarship and Awards (Academic Year 2011-12)</a></li>
+<li class=""><a href="/News/GoogleCodeJam2012/final">UG Graduate CHEN Qifeng Broke Hong Kong Record in Google Code Jam World Final 2012</a></li>
+<li class=""><a href="/ug/ambassadors/2012/">Student Ambassadors Program 2012</a></li>
+<li class=""><a href="/News/ARWU2012/">HKUST Continuously Ranked No. 1 in Computer Science in Greater China Region in the Ranking of ARWU 2012</a></li>
+<li class=""><a href="/News/QSWUR2012/">HKUST Maintains the Top Position in Computer Science in Greater China in the QS World University Ranking 2012</a></li>
+<li class=""><a href="/News/NokiaMDC2012">Two Championships in Nokia Mobile Data Challenge 2012</a></li>
+<li class=""><a href="/News/Google_Fellowship2012">PhD Student ZHU Yin Awarded Prestigious Google Fellowship</a></li>
+<li class=""><a href="/News/ACM_SIGPLAN_PLDI2012/">PhD Candidate Shaoming HUANG won the 1st Place in the Student Research Competition of the ACM SIGPLAN PLDI Conference</a></li>
+<li class=""><a href="/News/GoogleCodeJam2012/">UG Student CHEN Qifeng Entered the Final of Google Code Jam 2012</a></li>
+<li class=""><a href="/News/CIE_Award2012/">Prof Qian ZHANG Awarded Electronics Information Science and Technology Award, 1st Class by Chinese Institute of Electronics</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20120329-949.html">Prof Qian ZHANG Awarded Research Excellence Award in Natural Sciences by the Ministry of Education</a></li>
+<li class=""><a href="/News/MSF2012/">Three CSE Student Volunteers and Dr. Muppala Implement an Android App for Médecins Sans Frontières (MSF)</a></li>
+<li class=""><a href="/News/AADW2012/">Android Application Development Hands-On Workshop Held by Dr. Muppala</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20120504-957.html">HP and HKUST Achieve Breakthrough in Advanced Networking and Information Analytics Research</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20120505-958.html">HKUST School of Engineering Research Excellence Awards: Prof Ke YI, Young Investigator Research Award</a></li>
+<li class=""><a href="/News/UGRAward2012/">2012 Mr Armin and Mrs Lillian Kitchell Undergraduate Research Award</a></li>
+<li class=""><a href="/News/ICT2012/special/">CSE UG Graduates Awarded the Social Responsibility Award in the HKICT Awards 2012: Best Innovation and Research Award</a></li>
+<li class=""><a href="/News/ICT2012/">The HKUST LAviNET Team Awarded the Hong Kong ICT Awards 2012: Best Innovation &amp; Research Award</a></li>
+<li class=""><a href="/News/RIPSHK2012/">HKUST-UCLA Joint Summer UG Research Program -- Research in Industrial Projects for Students-Hong Kong (RIPS-HK)</a></li>
+<li class=""><a href="/News/ROSAEC2012/">ROSAEC-HKUST CSE Joint Workshop on Software Analysis for Error-free Computing</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20120214-939.html">HKUST the Big Winner among Institutions in Hong Kong in China's State Science and Technology Awards</a></li>
+<li class=""><a href="/News/ACM_ICPC_Final2012/">CSE Programming Team Entered the ACM-ICPC World Finals 2012</a></li>
+</ul>
+
+<h2>2011</h2>
+<ul class=''>
+<li class=""><a href="/News/HKGTUG2011/">Dr. Muppala Presents an Invited Talk at HK GTUG Day 2011</a></li>
+<li class=""><a href="/News/IEEEGlobecom2011/">CSE PhD Student Jie DAI and Prof. Bo LI Awarded the Best Paper Award at IEEE GLOBECOM 2011</a></li>
+<li class=""><a href="/News/SIGGRAPH2011/">CSE Vision and Graphics Group Joined SIGGRAPH Asia 2011</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20111219-933.html">Prof Dekai Wu Honored by World's Leading Authority on Computational Linguistics</a></li>
+<li class=""><a href="/News/IEEE_Fellow2011/">Professor Qian ZHANG Elected as IEEE Fellow</a></li>
+<li class=""><a href="/News/SPRAward2011/">CSE PhD Dr Yu Zhang Awarded SENG PhD Research Excellence Award</a></li>
+<li class=""><a href="/News/Chinese_YoungScientist2011/">Prof Qian ZHANG Awarded the Chinese Young Scientist Award</a></li>
+<li class=""><a href="/News/LITE2011/award/">CSE Graduates CHEUNG Ka Chun, WONG Chun Yim, and YUEN Siu Hung Awarded Prize for Innovative Spirit in the Lenovo Innovative Design Competition 2011</a></li>
+<li class=""><a href="/News/LAviNet2011/">Prof Gary Chan Develops Smarter Multi-hop Wi-Fi Network Software Greatly Improved in Signal Strength and Coverage</a></li>
+<li class=""><a href="/News/ACM_CIKM2011/">CSE PhD Candidate Nathan LIU and Prof Qiang YANG Awarded Best Paper Award in the 20th ACM Conference on Information and Knowledge Management</a></li>
+<li class=""><a href="/News/ACM_KDDCUP2011/">CSE PG Candidates Nathan LIU, Bin CAO, Luheng HE, and Prof. Qiang YANG Won 3rd Place in 2011 ACM KDDCUP Challenge</a></li>
+<li class=""><a href="/News/NSFC_RGC2011/">Prof Bo LI and Prof Long QUAN Awarded Grants in the National Natural Science Foundation of China / Research Grants Council Joint Research Scheme Competition 2011</a></li>
+<li class=""><a href="/News/ICT2011/">Undergraduates CHEUNG Ka Chun, WONG Chun Tim, and YUEN Siu Hung Awarded Hong Kong ITF ICT Final Year Scholarship 2010-2011</a></li>
+<li class=""><a href="http://www.cse.ust.hk/News/CATalk2011/">Talks by Chinese Academicians</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20110919-900.html">HKUST Students Shines for Hong Kong with Two International Awards in ABU Asia-Pacific Robot Contest</a></li>
+<li class=""><a href="/News/NASTP2011/">Prof. S. C. CHEUNG Received the 2nd Prize of National Award for Science and Technology Progress 2011</a></li>
+<li class=""><a href="/News/ACMHK2011/">CSE Programming Team Won the Championship in the ACM-HK Programming Contest 2011</a></li>
+<li class=""><a href="/News/HOWiPhone2011/">Hands-On Workshop for iPhone Application Development Held by Dr. Muppala and Dr. Chan for Computer Science and Engineering Students</a></li>
+<li class=""><a href="/News/SCSA2011/">Professor Samuel Chanson Scholarship and Awards (Academic Year 2010-11)</a></li>
+<li class=""><a href="/News/LITE2011/">Call for Submission: Lenovo Innovative Design Competition (LITE 2011)</a></li>
+<li class=""><a href="/News/ARWU2011/">HKUST Maintains the Top Position in Computer Science in Greater China Region in the Ranking of ARWU 2011</a></li>
+<li class=""><a href="/News/ROV2011/">Computer Science Students LEUNG Chun Yin and LEUNG Lok Ping Won the Design Elegance Award in the International ROV Competition</a></li>
+<li class=""><a href="/News/SEPA2011/">Undergraduate FONG Fu Shing Selected for Student Enrichment Program Award 2010-2011</a></li>
+<li class=""><a href="/News/AADW2011/">Android Application Development Hands-On Workshop Held by Dr. Muppala for Computer Science and Engineering Students</a></li>
+<li class=""><a href="/News/UGRAward2011/">Computer Science Student CHAN Yun-Kwan Emprise Won the 2011 Mr Armin and Mrs Lillian Kitchell Undergraduate Research Award</a></li>
+<li class=""><a href="/News/DASFAA2011/">Computer Science Postgraduate Student YAN Da Won the Best Paper Award from DASFAA 2011</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20110320-857.html">HKUST Professor Coaches High School Students on Creating Multi-image Panoramas of HKUST Campus</a></li>
+<li class=""><a href="http://ias.ust.hk/eng/events_detail.html?id=72">New Wave of Computing</a></li>
+<li class=""><a href="/News/IBM_DB2Contest2011/">Twin Wins for Computer Science Students at IBM DB2 UDB Inter-University Programming Contest 2011</a></li>
+<li class=""><a href="http://ias.ust.hk/eng/events_detail.html?id=56">Bing Dialog Model: Intent, Knowledge and User Interaction</a></li>
+<li class=""><a href="/ug/ambassadors/2011/">Student Ambassadors Program 2011</a></li>
+</ul>
+
+<h2>2010</h2>
+<ul class=''>
+<li class=""><a href="/News/ACM_ICPC_Final2010/">HKUST Programming Team Advancing to ACM-ICPC World Finals</a></li>
+<li class=""><a href="/News/GoogleResearchAward2010/">3 CSE faculty members received Google Research Awards</a></li>
+<li class=""><a href="/News/HKIS_YoungScientist2010/">CSE Graduate James Cheng Received Hong Kong Young Scientist Award 2010</a></li>
+<li class=""><a href="/News/Best10Lecturers2010/">Dr. Albert Chung and Dr. Sung Kim Received the Best Ten Lecturers Awards 2010</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20101213-829.html">Prof Lionel Ni, Prof Yunhao Liu and Mr Mo Li of CSE Department Awarded First Class Award in Natural Sciences</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20101208-828.html">Dr. Pedro Sander and his Research Team Develop World's Largest Digital Photograph</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20101202-826.html">Two HKUST Computer Science Academics Elected IEEE Fellows</a></li>
+<li class=""><a href="http://ias.ust.hk/eng/events_detail.html?id=46">IAS Distinguished Lecture "The Laplacian Paradigm: Emerging Algorithms for Massive Graphs" by Prof Shanghua Teng, 24 November 2010</a></li>
+<li class=""><a href="/News/MS_Fellowship2010/">Microsoft Research Asia Fellowship Program 2010</a></li>
+<li class=""><a href="/derickwood/">In Memory of Professor Derick Wood</a></li>
+<li class=""><a href="/News/Pi2010/">CSE Alumnus Made a Record-breaking Calculation of the Digits of Pi</a></li>
+<li class=""><a href="http://cacm.acm.org/magazines/2010/9/98026-acm-china-nearing-launch/fulltext">ACM China Nearing Launch</a></li>
+<li class=""><a href="/News/UAI2010/">PhD Student Yu ZHANG and Prof. Dit-Yan YEUNG Received Best Paper Award</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20100818-797.html">Dr. Qian Zhang's Team Achieved Breakthroughs in the Development of Cognitive Radio and Dynamic Radio Spectrum Access</a></li>
+<li class=""><a href="/News/GCCPC2010/">HKUST Hosts Greater China Collegiate Programming Contest</a></li>
+<li class=""><a href="/News/Ranking2010/">HKUST Ranked No.1 in Greater China in Computer Science</a></li>
+<li class=""><a href="/News/SIGART2010/">Professor Qiang Yang Elected Vice Chair of ACM SIGART</a></li>
+<li class=""><a href="/News/CPC2010/">HKUST CSE Students Led the Team Winning Silver Award at the 1st Shenzhen-Hong Kong University Students Creative Plan Championship</a></li>
+<li class=""><a href="/News/SCSA2010/">Professor Samuel Chanson Scholarship and Awards (Academic Year 2009-10)</a></li>
+<li class=""><a href="/News/IEEEICC2010/">PhD Student Gabriel KEUNG Received Best Paper Award</a></li>
+<li class=""><a href="/News/IBM_Fellowship2010/">IBM Ph.D. Fellowship Program 2010/2011</a></li>
+<li class=""><a href="/News/Wclipper2010/">Wclipper Launched on May 2010</a></li>
+<li class=""><a href="/News/SPPF2010/">MPhil Student won the 2nd place at the 4th Signal Processing Postgraduate Forum</a></li>
+<li class=""><a href="/ug/ambassadors/2010/">Student Ambassadors Program 2010</a></li>
+<li class=""><a href="/News/MS_SEIF2010/">Dr. Sunghun KIM received Software Engineering Innovation Foundation (SEIF) Award</a></li>
+<li class=""><a href="/News/HKIEC2010/">Undergraduate WANG Bo won First Prize at International English Contest</a></li>
+<li class=""><a href="/News/ComSocDL2010/">Dr. Qian Zhang being selected as Distinguished Lecturer</a></li>
+<li class=""><a href="/News/CKSP2010/">Prof. Bo Li received Cheung Kong Scholar Award</a></li>
+</ul>
+
+<h2>2009</h2>
+<ul class=''>
+<li class=""><a href="/News/CIKM2009/">Dr. Raymond Wong received CIKM 2009 Outstanding Service Award</a></li>
+<li class=""><a href="/News/MMC_Award2009/">Prof. Bo LI received the Best Paper Award from IEEE Communications Society, MMC (2009)</a></li>
+<li class=""><a href="/News/ICPADS2009/">Dr. Yunhao Liu received Best Paper Award</a></li>
+<li class=""><a href="/News/Best10Lecturers2009/">The Best 10 Lecturers Election 2009</a></li>
+<li class=""><a href="/News/IEEE_Fellow2009/">Professor Long QUAN Elevated to IEEE Fellow</a></li>
+<li class=""><a href="/News/ACM_ICPC_Asia2009/">Programming Team Wins First Prize in 2009 ACM Asia Contest</a></li>
+<li class=""><a href="/News/CCF_Award2009/">Prof. Lionel Ni received China Computer Federation Overseas Outstanding Contributions Award 2009</a></li>
+<li class=""><a href="/News/Ranking2009/">School of Engineering Shines Again in International Ranking</a></li>
+<li class=""><a href="/News/MS_Fellowship2009/">Microsoft Research Asia Fellowship Program 2009</a></li>
+<li class=""><a href="/News/IEEE_FYP2009/">Computer Science Student Won IEEE Final Year Project Competition</a></li>
+<li class=""><a href="/News/YER2009/">CSE Postgraduate Won the HKIE Outstanding Paper Award for Young Engineers/Researchers 2009</a></li>
+<li class=""><a href="/News/SRCDay2009/">Postgraduate Student Won Best Research Award at ACM Hong Kong Research and Career Day 2009</a></li>
+<li class=""><a href="/News/IBM_Award2009/">CSE Faculty received IBM Faculty Award 2009</a></li>
+<li class=""><a href="/News/HKTIIT_Scholarship2009/">CSE Postgraduate awarded the HKTIIT Post-Graduate Excellence Scholarship</a></li>
+<li class=""><a href="/News/Pan_PRD2009/">Amway Pan-Pearl River Delta Region Universities IT Project Competition 2009</a></li>
+<li class=""><a href="/News/BestPaper2009/">Best Paper Award: 2009 IEEE International Conference on Communications</a></li>
+<li class=""><a href="/News/SCSA2009/presentation/">Award Presentation of Professor Samuel Chanson Scholarship and Awards</a></li>
+<li class=""><a href="/News/SCSA2009/">Professor Samuel Chanson Scholarship and Awards (Academic Year 2008-09)</a></li>
+<li class=""><a href="/News/ACM_ICPC_HK2009/">ACM Collegiate Programming Contest (Hong Kong) 2009</a></li>
+<li class=""><a href="http://www.teacher.org.hk/itcamp2009/">Youth I.T. Summer Camp 2009</a></li>
+<li class=""><a href="/News/RCJ2009/">RoboCupJunior Hong Kong 2009</a></li>
+<li class=""><a href="/News/HuaweiLab2009/">Opening Ceremony of the Huawei - HKUST Innovation Laboratory</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20090501-687.html">Twin Wins for CSE Faculty for Search Engine and Database Research</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20090403-680.html">HKUST Joins Hands with Boeing to Develop Wireless System for Higher Maintenance Efficiency</a></li>
+<li class=""><a href="/ug/ambassadors/2009/">Student Ambassadors Program 2009</a></li>
+<li class=""><a href="/News/IBM_DB2Contest2009/">Programming Teams Won HKUST the Champion University Award at the IBM DB2 UDB Inter-University Programming Contest 2009</a></li>
+</ul>
+
+<h2>2008</h2>
+<ul class=''>
+<li class=""><a href="/News/RFIDLab2008/RFID.pdf">Establishment of RFID Joint Laboratory</a></li>
+<li class=""><a href="/News/ACM_ICPC_Asia2008/">Programming Team Wins First Prize in ACM Asia Contest</a></li>
+<li class=""><a href="/News/TeachingAward2008/">Professor Mordecai Golin awarded the Michael G Gale Medal for Distinguished Teaching (2008)</a></li>
+<li class=""><a href="/News/IEEE_Fellow2008/">Professor Qiang Yang Elected IEEE Fellow</a></li>
+<li class=""><a href="/News/IBM_EXITE2008/">IBM EXITE Camp 2008</a></li>
+<li class=""><a href="/News/OutreachDay2008/">Outreach Day 2008</a></li>
+<li class=""><a href="/News/SIGGRAPH2008/">Vision and Graphics Group Published a Total of 10 SIGGRAPH Papers in 2008</a></li>
+<li class=""><a href="/News/Pan_PRD2008/">2008 Amway Pan-Pearl River Delta Region Universities IT Project Competition: 3rd Runner-up</a></li>
+<li class=""><a href="/News/RFIDAward2008/">CSE Faculty Wins RFID Award with αGate Portal</a></li>
+<li class=""><a href="/News/ICDCS2008/">Research Papers Win Awards at Prestigious Conferences</a></li>
+<li class=""><a href="http://www.teacher.org.hk/itcamp2008/">Youth I.T. Summer Camp 2008</a></li>
+<li class=""><a href="/News/Headship2008/">Appointment of Head of Department of Computer Science and Engineering</a></li>
+<li class=""><a href="http://www.rcj-hk.org/index/2008suzhou.php">RoboCup Junior (Hong Kong) 2008</a></li>
+<li class=""><a href="/News/SCSA2008/presentation/">Award Presentation of Professor Samuel Chanson Scholarship and Awards</a></li>
+<li class=""><a href="/News/SCSA2008/">Professor Samuel Chanson Scholarship and Awards (Academic Year 2007-08)</a></li>
+<li class=""><a href="/ug/ambassadors/2008/">Student Ambassadors Program 2008</a></li>
+<li class=""><a href="/News/ITEPC2008/">Information Technology Enrichment Project Course for Gifted Students 2008</a></li>
+<li class=""><a href="http://www2.seng.ust.hk/WebNews/Sites/SENGNews/ShowNews.aspx?AdminId=9&amp;NewsId=555">MPhil Student Michael Chan Gains PhD Place at Stanford and Prestigious Overseas Fellowship</a></li>
+<li class=""><a href="/News/RFID2008/">1st China RFID Benchmarking Test Forum &amp; MOU Signing Ceremony</a></li>
+<li class=""><a href="/News/ICT2007/">HKUST Faculty and Students Won 6 Prizes of Hong Kong ICT Awards 2007</a></li>
+<li class=""><a href="/News/ACM_ICPC_Final2008/">ACM International Collegiate Programming Contest 2008: World Finals</a></li>
+</ul>
+
+<h2>2007</h2>
+<ul class=''>
+<li class=""><a href="/News/NSFC_RGC2007/">3 Research Projects from CSE Department got the support from NSFC/RGC Joint Research Scheme 2007/08</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20071211-563.html">Dr. Jogesh Muppala and Dr. David Rossiter from CSE Department got Teaching Innovation Awards</a></li>
+<li class=""><a href="/News/IEEEGlobecom2007/">IEEE Globecom 2007 Best Paper Award (ASNA Symposium)</a></li>
+<li class=""><a href="/News/ACM_ICPC_Asia2007/">ACM International Collegiate Programming Contest 2008</a></li>
+<li class=""><a href="/News/CSDF10/">The 10th Computer Science Deans Forum</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20071017-542.html">HKUST to Develop Wireless Communication Technologies for Boeing</a></li>
+<li class=""><a href="/News/MS_Fellowship2007/">Microsoft Research Asia Fellowship Program 2007</a></li>
+<li class=""><a href="/News/OutreachDay2007/">Outreach Day 2007</a></li>
+<li class=""><a href="/News/HKCIC2007/">IEEE (HK) Computational Intelligence Chapter PG Student Research Paper Competition</a></li>
+<li class=""><a href="/News/Boeing2007/">HKUST, Tsinghua University and Southeast University work with Boeing Phantom Works on wireless communications R&amp;D projects</a></li>
+<li class=""><a href="/News/Pan_PRD2007/">2007 Amway Pan-Pearl River Delta Region Universities IT Project Competition: Third-grade Award</a></li>
+<li class=""><a href="/News/ACM_SIGMOD2007/">ACM SIGMOD 2007 Undergraduate Scholarship</a></li>
+<li class=""><a href="http://www.seng.ust.hk/web/eng/news_detail.php?id=605">Tsinghua-HKUST Programming Contest 2007</a></li>
+<li class=""><a href="/News/SCSA2007/">Professor Samuel Chanson Scholarship and Awards (Academic Year 2006 - 2007)</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/press_20070628.htm">Newly launched Student Computer Subsidy Program</a></li>
+<li class=""><a href="/News/Scholarships2007/">CSE Undergraduates Jialiu Lin and Kevin Keliang Zhao Got Full Scholarships to World's Top Universities</a></li>
+<li class=""><a href="/News/SIGGRAPH2007/">SIGGRAPH 2007: The 34th International Conference on Computer Graphics and Interactive Techniques</a></li>
+<li class=""><a href="/News/GRFLA2007/">Global RF Lab Alliance (GRFLA)</a></li>
+<li class=""><a href="http://ias.ust.hk/bcm/">Distinguished Lecture Series: The Beauty of Computing and Mathematics</a></li>
+<li class="">Youth I.T. Summer Camp 2007</li>
+<li class=""><a href="http://www.rcj-hk.org/index/2007_timetable.php">RoboCup Junior (Hong Kong) 2007</a></li>
+<li class=""><a href="/News/ITEPC2007/">Information Technology Enrichment Project Course 2007</a></li>
+<li class=""><a href="/News/IBM_Fellowship2007/">IBM PhD Fellowship Program 2007/2008</a></li>
+<li class=""><a href="/ug/ambassadors/2007/">Student Ambassadors Program 2007</a></li>
+</ul>
+
+<h2>2006</h2>
+<ul class=''>
+<li class=""><a href="/News/OOYSA2006/">Overseas Outstanding Young Scholar Award 2006</a></li>
+<li class=""><a href="/News/ICT2006/">Hong Kong ICT Awards 2006: eYouth Certificate of Merit</a></li>
+<li class=""><a href="/News/TCCC2006/">The Top 48 in Algorithm Competition: Topcoder Collegiate Challenge (TCCC) 2006</a></li>
+<li class=""><a href="/News/TeachingAward2006/">The School of Engineering Teaching Excellence Appreciation Award 2005-06</a></li>
+<li class=""><a href="/News/Podcasting2006/">Podcasting in Education</a></li>
+<li class=""><a href="/News/MS_Fellowship2006/">Microsoft Fellowship 2006</a></li>
+<li class=""><a href="/News/IEEECIS2006/">IEEE Transactions on Neural Networks Outstanding 2004 Paper Award (bestowed in 2006)</a></li>
+<li class=""><a href="/ug/scholarships/?year=2006">List of Scholarship Awardees for 2005/2006 Academic Year</a></li>
+<li class=""><a href="http://genesis.ust.hk/apr_2006/en/infocus/infocus2.html">Career Experiences Shared by New Grads</a></li>
+<li class=""><a href="/acm/contest/">HKUST Programming Contest</a></li>
+<li class=""><a href="/News/QShine2006/">The Best Paper Award: The Third International Conference on Quality of Service in Heterogeneous Wired/Wireless Networks</a></li>
+<li class=""><a href="/News/KR2006/">The Ray Reiter Best Paper Prize</a></li>
+<li class=""><a href="/News/DeptName2006/">Department Name Changed to Computer Science and Engineering</a></li>
+<li class=""><a href="/News/BestPaper2006/">The Best Paper Award: The 2nd IEEE HK Chapter of Signal Processing PG Forum</a></li>
+<li class=""><a href="http://www.few.hk/itcamp06s/">Youth I.T. Summer Camp 2006</a></li>
+<li class=""><a href="/News/ServerChamp2006/">Microsoft Server Championships 2006</a></li>
+<li class=""><a href="/News/ITEPC2006/">Information Technology Enrichment Project Course 2006</a></li>
+<li class=""><a href="/News/BestPhDPresent2006/">The Best Presentation Award: The 7th ACM Postgraduate Research Day</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa060328-1574.pdf">AI Expert Awarded Croucher Fellowship</a></li>
+<li class=""><a href="http://www.rcj-hk.org/index/2006_timetable.php">RoboCup Junior (Hong Kong) 2006</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa060224-1567.pdf">HKUST Launches Nansha Science &amp; Technology Forum</a></li>
+<li class=""><a href="/News/SS_Scholarship2006/">Solomon Systech Scholarships 2006</a></li>
+<li class=""><a href="/ug/ambassadors/2006/">Computer Science Student Ambassador Program 2006</a></li>
+<li class=""><a href="/News/SEYM_Fellowship2006/">Sir Edward Youde Memorial Fellowships 2005/06</a></li>
+<li class=""><a href="/News/ImagineCup2006/">Microsoft Imagine Cup 2006</a></li>
+<li class=""><a href="/News/YDC2006/">Briefing on YDC E-Challenge 2006 Business Plan Competition</a></li>
+</ul>
+
+<h2>2005</h2>
+<ul class=''>
+<li class=""><a href="/News/BestPaper2005/">The Best Paper Award: IEEE International Conference on e-Business Engineering</a></li>
+<li class=""><a href="/News/GoldenPenguin2005/">2005 The Golden Penguin Greater China Open Source Software Competition</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa051105-1556.pdf">HKUST, Microsoft Launch PhD Joint Scheme</a></li>
+<li class=""><a href="http://www.msra.cn/labevents/21stcomputing/2005/hk.htm">Computing in the 21st Century: Data Centric Computing</a></li>
+<li class=""><a href="http://www.cgvisual.com/headlines/Moxi/CGVheadlines_Moxi_p1.htm">MoXi: Real-Time Ink Simulation: Nelson Chu's interview by Cgvisual.com</a></li>
+<li class=""><a href="/News/IBM_Fellowship2005/">IBM PhD Fellowship Program 2005/06</a></li>
+<li class=""><a href="/News/ACM_KDDCUP2005/">ACM KDD-CUP 2005 Data Mining Contest: Champion</a></li>
+<li class=""><a href="/chanson/">In memory of Professor Samuel Chanson</a></li>
+<li class=""><a href="/ug/scholarships/?year=2005">List of Scholarship Awardees for 2004/2005 Academic Year</a></li>
+<li class=""><a href="/News/ACM_ICPC_HK2005/">Continue Success in the ACM HK Collegiate Programming Contest</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa050402-1534.pdf">Information Technology Enhancement Program: Fun Learning for IT Talent</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa050310-1531.pdf">HKUST-WebEx IT Institute: Enhancement of online collaboration across the world</a></li>
+<li class=""><a href="/luhongjun/">In Memory of Professor Hongjun Lu</a></li>
+<li class=""><a href="http://www.seng.ust.hk/news/news-seng_rank_globalleader.html">SENG Ranked Among Global Leaders in Engineering and IT</a></li>
+</ul>
+
+<h2>2004</h2>
+<ul class=''>
+<li class=""><a href="http://genesis.ust.hk/news/news_15Dec04.html">HKUST among World's Best for Engineering/IT and Science</a></li>
+<li class=""><a href="/News/BestPaper2004/">The Best Paper Award: IEEE Signal Processing Society</a></li>
+<li class=""><a href="/News/ACM_ICPC_SH2004/">ACM ICPC 2004: Regional Contest, Shanghai: Bronze Prize</a></li>
+<li class=""><a href="/News/ACM_ICPC_MA2004/">ACM ICPC 2004: Regional Contest, Manila: 4th Place</a></li>
+<li class=""><a href="/News/WEC2004/">World Engineer Congress 2004: Second Prize</a></li>
+<li class=""><a href="http://www.ust.hk/eng/news/archive/e_pa041123-1513.pdf">The First MOE IT Key Lab at HKUST</a></li>
+<li class=""><a href="/News/MS_Fellowship2004/">Microsoft Fellowship 2004</a></li>
+<li class=""><a href="/News/ACM_KDDCUP2004/">ACM KDD-CUP 2004 Data Mining Contest: Champion</a></li>
+<li class=""><a href="/News/YDC2004/">YDC Entrepreneurs Challenge 2004: 2nd Runner-up</a></li>
+<li class=""><a href="/News/IiTEC2004/">IiTEC 2004: The Best Project Idea Award</a></li>
+<li class=""><a href="/News/ACM_ICPC_HK2004/">ACM(HK) Local Programming Contest 2004: Champion</a></li>
+<li class=""><a href="/News/HSIDC2004/">Hang Seng Innovative Design Competition 2004: Champion</a></li>
+<li class=""><a href="/News/ImagineCup2004/">Microsoft Imagine Cup 2004: 4th Runner-up</a></li>
+<li class=""><a href="/News/CSAA_Guangzhou_Tour2004/">CSAA: Guangzhou Observation Tour</a></li>
+<li class=""><a href="/News/SIGGRAPH2004/">SIGGRAPH 2004: HKUST Makes Her Debut</a></li>
+<li class=""><a href="/News/Best10Lecturers2003/">The Best 10 Lecturers Election 2003</a></li>
+<li class=""><a href="/News/BestPhDPaper2004/">The Best PhD Paper Award: The 5th ACM Postgraduate Research Day</a></li>
+</ul>
+
+<h2>2003</h2>
+<ul class=''>
+<li class=""><a href="/News/MS_Fellowship2003/">Microsoft Fellowship Program 2003</a></li>
+<li class=""><a href="/News/HKIS_YoungScientist2003/">Hong Kong Young Scientist Award 2003</a></li>
+<li class=""><a href="/News/ACM_ICPC_GM2003/">ACM International Collegiate Programming Contest 2004</a></li>
+<li class=""><a href="/News/Congregation2003/">Academic Achievement Award 2003</a></li>
+<li class=""><a href="/News/MMCSC2003/">MMCDC 2003: Gold Award</a></li>
+<li class=""><a href="/News/IDEAS2003/">IDEAS: The First Time to Meet in HK</a></li>
+<li class=""><a href="/News/IiTEC2003/">IiTEC 2003: Best Internet Application Award</a></li>
+<li class=""><a href="/News/BestPhDPaper2003/">The Best PhD Paper Award: The 4th ACM Postgraduate Research Day</a></li>
+<li class=""><a href="/News/Best10Lecturers2002/">The Best 10 Lecturers Election 2002</a></li>
+</ul>
+
+<h2>2002</h2>
+<ul class=''>
+<li class=""><a href="/News/HKIS_YoungScientist2002/">HKIS Young Scientist Award 2002</a></li>
+<li class=""><a href="/News/EnggTeachingAward2002/">Michael Brown Receives Engineering Teaching Appreciation Award</a></li>
+<li class=""><a href="/News/MS_Fellowship2002/">HKUST Students Won Microsoft Fellowship</a></li>
+<li class=""><a href="http://www.sengpp.ust.hk/programs/it/en/">New MSc Program in Information Technology</a></li>
+<li class=""><a href="/News/EETimes2002/">EEE/CS Faculty on News</a></li>
+<li class=""><a href="/News/BMVA2002/">BMVA Sullivan Thesis Award</a></li>
+<li class=""><a href="/News/RGC2002/">RGC Awards</a></li>
+<li class=""><a href="/News/Headship2002/">New Head Announcement</a></li>
+</ul>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>Last updated on 2013-10-29<br />
+ Department of Computer Science and Engineering, HKUST. All rights reserved.</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.060236930847168</div-->

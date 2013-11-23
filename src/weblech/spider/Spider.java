@@ -7,7 +7,7 @@ import java.io.*;
 import java.net.URL;
 import org.apache.log4j.Category;
 
-public class Spider extends Logger implements Runnable, Constants {
+public class Spider extends  Thread implements Constants {
 
     /** Config for the spider */
     private SpiderConfig config;
@@ -47,6 +47,8 @@ public class Spider extends Logger implements Runnable, Constants {
     /** Time we last checkpointed. */
     private long lastCheckpoint;
 
+//	private Category _logClass =Logger._logClass;
+
     public Spider(SpiderConfig config) {
         this.config = config;
         queue = new DownloadQueue(config);
@@ -57,25 +59,20 @@ public class Spider extends Logger implements Runnable, Constants {
         lastCheckpoint = 0;
     }
 
-    public void start() {
+    public void start0() {
         quit = false;
         running = 0;
-        edu.hkust.clap.monitor.Monitor.loopBegin(0);
 for (int i = 0; i < config.getSpiderThreads(); i++) { 
-edu.hkust.clap.monitor.Monitor.loopInc(0);
 {
-            _logClass.info("Starting Spider thread");
+//            _logClass .info("Starting Spider thread");
             Thread t = new Thread(this, "Spider-Thread-" + (i + 1));
             t.start();
             running++;
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(0);
 
     }
 
-    public void stop() {
-        quit = true;
-    }
+
 
     public boolean isRunning() {
         return running == 0;
@@ -96,7 +93,7 @@ edu.hkust.clap.monitor.Monitor.loopEnd(0);
     }
 
     private void writeCheckpoint() {
-        _logClass.debug("writeCheckpoint()");
+//        _logClass.debug("writeCheckpoint()");
         try {
             FileOutputStream fos = new FileOutputStream("spider.checkpoint", false);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -104,7 +101,7 @@ edu.hkust.clap.monitor.Monitor.loopEnd(0);
             oos.writeObject(urlsDownloading);
             oos.close();
         } catch (IOException ioe) {
-            _logClass.warn("IO Exception attempting checkpoint: " + ioe.getMessage(), ioe);
+//            _logClass.warn("IO Exception attempting checkpoint: " + ioe.getMessage(), ioe);
         }
     }
 
@@ -117,18 +114,21 @@ edu.hkust.clap.monitor.Monitor.loopEnd(0);
             queue.queueURLs(urlsDownloading);
             urlsDownloading.clear();
         } catch (Exception e) {
-            _logClass.error("Caught exception reading checkpoint: " + e.getMessage(), e);
+//            _logClass.error("Caught exception reading checkpoint: " + e.getMessage(), e);
         }
     }
 
     public void run() {
         HTMLParser htmlParser = new HTMLParser(config);
         URLGetter urlGetter = new URLGetter(config);
-        edu.hkust.clap.monitor.Monitor.loopBegin(1);
 while ((queueSize() > 0 || downloadsInProgress > 0) && quit == false) { 
-edu.hkust.clap.monitor.Monitor.loopInc(1);
 {
             checkpointIfNeeded();
+            URLToDownload nextURL;
+           synchronized (queue) //added by lpxz. our: queue, their: Spider.class
+            {
+				
+			
             if (queueSize() == 0 && downloadsInProgress > 0) {
                 try {
                     Thread.sleep(QUEUE_CHECK_INTERVAL);
@@ -138,11 +138,14 @@ edu.hkust.clap.monitor.Monitor.loopInc(1);
             } else if (queueSize() == 0) {
                 break;
             }
-            URLToDownload nextURL;
+         
             synchronized (queue) {
                 nextURL = queue.getNextInQueue();
                 downloadsInProgress++;
             }
+            
+            }
+            
             synchronized (urlsDownloading) {
                 urlsDownloading.add(nextURL);
             }
@@ -154,9 +157,7 @@ edu.hkust.clap.monitor.Monitor.loopInc(1);
             List newURLs = downloadURL(nextURL, urlGetter, htmlParser);
             newURLs = filterURLs(newURLs);
             ArrayList u2dsToQueue = new ArrayList();
-            edu.hkust.clap.monitor.Monitor.loopBegin(2);
 for (Iterator i = newURLs.iterator(); i.hasNext(); ) { 
-edu.hkust.clap.monitor.Monitor.loopInc(2);
 {
                 URL u = (URL) i.next();
                 synchronized (urlsDownloadedOrScheduled) {
@@ -166,16 +167,14 @@ edu.hkust.clap.monitor.Monitor.loopInc(2);
                     }
                 }
             }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(2);
 
             synchronized (queue) {
                 queue.queueURLs(u2dsToQueue);
                 downloadsInProgress--;
             }
         }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(1);
 
-        _logClass.info("Spider thread stopping");
+//        _logClass.info("Spider thread stopping");
         running--;
     }
 
@@ -194,18 +193,18 @@ edu.hkust.clap.monitor.Monitor.loopEnd(1);
      * @return A List of URL objects.
      */
     private List downloadURL(URLToDownload url, URLGetter urlGetter, HTMLParser htmlParser) {
-        _logClass.debug("downloadURL(" + url + ")");
+//        _logClass.debug("downloadURL(" + url + ")");
         URLObject obj = new URLObject(url.getURL(), config);
         if (obj.existsOnDisk()) {
             if (config.refreshHTMLs() && (obj.isHTML() || obj.isXML())) {
-                _logClass.info("Q: [" + queue + "] " + url);
+//                _logClass.info("Q: [" + queue + "] " + url);
                 obj = urlGetter.getURL(url);
             } else if (config.refreshImages() && obj.isImage()) {
-                _logClass.info("Q: [" + queue + "] " + url);
+//                _logClass.info("Q: [" + queue + "] " + url);
                 obj = urlGetter.getURL(url);
             }
         } else {
-            _logClass.info("Q: [" + queue + "] " + url);
+//            _logClass.info("Q: [" + queue + "] " + url);
             obj = urlGetter.getURL(url);
         }
         if (obj == null) {
@@ -219,8 +218,8 @@ edu.hkust.clap.monitor.Monitor.loopEnd(1);
         } else if (obj.isImage()) {
             return new ArrayList();
         } else {
-            _logClass.warn("Unsupported content type received: " + obj.getContentType());
-            _logClass.info("URL was " + url);
+//            _logClass.warn("Unsupported content type received: " + obj.getContentType());
+//            _logClass.info("URL was " + url);
             return new ArrayList();
         }
     }
@@ -229,9 +228,7 @@ edu.hkust.clap.monitor.Monitor.loopEnd(1);
         String match = config.getURLMatch();
         ArrayList retVal = new ArrayList();
         synchronized (urlsDownloadedOrScheduled) {
-            edu.hkust.clap.monitor.Monitor.loopBegin(3);
 for (Iterator i = URLs.iterator(); i.hasNext(); ) { 
-edu.hkust.clap.monitor.Monitor.loopInc(3);
 {
                 URL u = (URL) i.next();
                 if (urlsDownloadedOrScheduled.contains(u)) {
@@ -242,7 +239,6 @@ edu.hkust.clap.monitor.Monitor.loopInc(3);
                     retVal.add(u);
                 }
             }} 
-edu.hkust.clap.monitor.Monitor.loopEnd(3);
 
         }
         return retVal;

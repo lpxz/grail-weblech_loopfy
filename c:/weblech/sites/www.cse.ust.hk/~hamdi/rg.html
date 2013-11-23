@@ -1,0 +1,1349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<title>Welcome to Prof.Hamdi's Homepage</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/slidingdoors.css" />
+
+
+
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+
+
+
+<script src="js/jquery-func.js" type="text/javascript"></script>
+
+
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript" src="Scripts/dropdowntabs.js"></script>
+
+
+
+<script type="text/javascript"> 
+
+
+
+var bannerAD=new Array(); 
+
+
+
+var bannerADlink=new Array(); 
+
+
+
+var adNum=0; 
+
+
+
+
+
+
+
+bannerAD[0]="index_images/aerial_view_HKUST-small.jpg"; 
+
+
+
+bannerADlink[0]="#"
+
+
+
+bannerAD[1]="index_images/boats_sailing-small.jpg"; 
+
+
+
+bannerADlink[1]="#"
+
+
+
+bannerAD[2]="index_images/library_at_night-small.jpg"; 
+
+
+
+bannerADlink[2]="#"
+
+
+
+bannerAD[3]="index_images/hkust-dorms.jpg"; 
+
+
+
+bannerADlink[3]="#"
+
+
+
+bannerAD[4]="index_images/swimming_pool-small.jpg"; 
+
+
+
+bannerADlink[4]="#"
+
+
+
+bannerAD[5]="index_images/library-small.jpg"; 
+
+
+
+bannerADlink[5]="#"
+
+
+
+bannerAD[6]="index_images/student_halls-small.jpg"; 
+
+
+
+bannerADlink[6]="#"
+
+
+
+bannerAD[7]="index_images/piazza_aerial-small.jpg"; 
+
+
+
+bannerADlink[7]="#"
+
+
+
+bannerAD[8]="index_images/stadium-small.jpg"; 
+
+
+
+bannerADlink[8]="#"
+
+
+
+bannerAD[9]="index_images/main_building-small.jpg"; 
+
+
+
+bannerADlink[9]="#"
+
+
+
+bannerAD[10]="index_images/sunset-small.jpg"; 
+
+
+
+bannerADlink[10]="#"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Slider -->
+
+
+
+/*图片可以增加*/
+
+
+
+
+
+
+
+var preloadedimages=new Array(); 
+
+
+
+for (i=1;i<bannerAD.length;i++){ 
+
+
+
+preloadedimages[i]=new Image(); 
+
+
+
+preloadedimages[i].src=bannerAD[i]; 
+
+
+
+} 
+
+
+
+
+
+
+
+function setTransition(){ 
+
+
+
+if (document.all){ 
+
+
+
+bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+
+
+
+bannerADrotator.filters.revealTrans.apply(); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+function playTransition(){ 
+
+
+
+if (document.all) 
+
+
+
+bannerADrotator.filters.revealTrans.play() 
+
+
+
+} 
+
+
+
+
+
+
+
+function nextAd(){ 
+
+
+
+if(adNum<bannerAD.length-1)adNum++ ; 
+
+
+
+else adNum=0; 
+
+
+
+setTransition(); 
+
+
+
+document.images.bannerADrotator.src=bannerAD[adNum]; 
+
+
+
+playTransition(); 
+
+
+
+theTimer=setTimeout("nextAd()", 3000); 
+
+
+
+} 
+
+
+
+
+
+
+
+function jump2url(){ 
+
+
+
+jumpUrl=bannerADlink[adNum]; 
+
+
+
+jumpTarget='_blank'; 
+
+
+
+if (jumpUrl != ''){ 
+
+
+
+if (jumpTarget != '')window.open(jumpUrl,jumpTarget); 
+
+
+
+else location.href=jumpUrl; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function displayStatusMsg() { 
+
+
+
+status=bannerADlink[adNum]; 
+
+
+
+document.returnValue = true; 
+
+
+
+} 
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<div class="outershell">
+
+
+
+<!-- Logo -->
+
+
+
+<div id="top">
+
+
+
+<div class="shell">
+
+
+
+    <p>
+
+
+
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="208" id="FlashID" title="test">
+
+
+
+        <param name="movie" value="css/images/top.swf" />
+
+
+
+        <param name="quality" value="high" />
+
+
+
+        <param name="wmode" value="opaque" />
+
+
+
+        <param name="swfversion" value="6.0.65.0" />
+
+
+
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+
+
+
+        </object>
+
+
+
+        </p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Logo -->
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+<div class="shell">
+
+
+
+<!-- Menu -->
+
+
+
+  <div id="slidemenu" class="slidetabsmenu">
+
+
+
+<ul>
+
+
+
+<li><a href="index.html" title="Home"><span>Home</span></a></li>
+
+
+
+<li><a href="#" title="Profile" rel="dropmenu1_c"><span>Profile</span></a></li>
+
+
+
+<li><a href="#" title="Research" rel="dropmenu2_c"><span>Research</span></a></li>
+
+
+
+<li><a href="#" title="University Service" rel="dropmenu3_c"><span>University Service</span></a></li>	
+
+
+
+<li><a href="#" title="International Service" rel="dropmenu4_c"><span>International Service</span></a></li>
+
+
+
+<li><a href="#" title="Teaching" rel="dropmenu5_c"><span>Teaching</span></a></li>
+
+
+
+<li><a href="#" title="Links"><span>Links</span></a></li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br style="clear: left;" />
+
+
+
+<br class="IEonlybr" />
+
+
+
+
+
+
+
+<!--1st drop down menu -->                                                   
+
+
+
+<div id="dropmenu1_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="e.html">Education</a>
+
+
+
+<a href="tre.html">Teaching and Research Experience</a>
+
+
+
+<a href="lpiar.html">Leadership Positions in Administration and Research &nbsp;</a>
+
+
+
+<a href="vhph.html">Visiting and Honorary Positions Held</a>
+
+
+
+<a href="cis.html">Consultancy and Industrial Service</a>
+
+
+
+<a href="ha.html">Honors and Awards</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd drop down menu -->                                                
+
+
+<div id="dropmenu2_c" class="dropmenudiv_c" style="width:auto;">
+<a href="ri.html">Research Interest</a>
+<a href="rp3.html">Research Publications Grouped In Chronological Order &nbsp</a>
+<a href="rp.html">Research Publications Grouped By Type</a>
+<a href="rp2.html">Research Publications Grouped By Research Topic</a>
+<a href="rg.html">Research Group</a>
+<a href="rfc.html">Research Funding and Contracts</a>
+<a href="rss.html">Research Student Supervision</a>
+</div>
+
+<!--3rd drop down menu -->                                                
+
+
+
+<div id="dropmenu3_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ufe.html">University-Founding Experience</a>
+
+
+
+<a href="igb.html">International Governmental Bodies &nbsp;</a>
+
+
+
+<a href="hkwe.html">Hong Kong Wide-Level Experience</a>
+
+
+
+<a href="ule.html">University-Level Experience</a>
+
+
+
+<a href="se.html">School-Level Experience</a>
+
+
+
+<a href="de.html">Department-Level Experience</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--4th drop down menu -->                                                
+
+
+
+<div id="dropmenu4_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="eo.html">Elected Office</a>
+
+
+
+<a href="mpto.html">Membership in Professional and Technical Organization &nbsp;</a>
+
+
+
+<a href="jes.html">Journal's Editorial Service</a>
+
+
+
+<a href="icws.html">International Conferences/Workshops Service</a>
+
+
+
+<a href="ir.html">International Referee</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--5th drop down menu -->                                                
+
+
+
+<div id="dropmenu5_c" class="dropmenudiv_c" style="width:auto;">
+
+
+
+<a href="ta.html">Teaching Awards</a>
+
+
+
+<a href="Class/CSIT560-S13/index.htm">Spring 2013 Teaching</a>
+
+
+
+<a href="ct.html">Courses Taught</a>
+
+
+
+<a href="fyps.html">Final Year Project Supervision &nbsp;</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- End Menu -->
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Main -->
+
+
+
+<div id="main">
+
+
+
+<hr />
+
+
+
+  <div class="innershell">
+
+
+
+  <span id="top"></span>
+
+
+
+  <h2>Research Group</h2>
+
+
+
+  <center>
+
+
+
+    <h1><img src="index_images/maingraph.gif" alt="" width="732" height="244" nosave="NOSAVE" /></h1>
+
+
+
+  </center>
+
+
+
+
+
+
+
+  <blockquote>
+
+
+
+  The High-speed Networking Research Group, led   by <a href="http://www.cs.ust.hk/%7Ehamdi">Prof. Mounir Hamdi</a>, conducts   cutting-edge research in the following areas:
+
+
+
+</blockquote>  
+
+
+
+  <ul>
+
+
+
+      <li><p><strong><em>Scalable Data Centers</em></strong><strong>:  </strong>Interconnection Networks, performance evaluation, protocol design, and cloud computing.</p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><strong><em>Wireless / Vehicular / Sensor Networking</em>:</strong>Design and analysis of protocols, rate adaptation schemes, QoS provisioning, and power management techniques.</p>
+
+
+
+      </li>
+
+
+
+      <li><p><strong><em>High-Performance Switches and Routers</em></strong><strong>:   </strong>Architecture, analysis and   design of high performance switches and Internet routers, scheduling algorithms, traffic management, and quality of service guarantees. </p></li>
+
+
+
+      <li><p><strong><em>Optical Networks</em></strong><strong>: </strong>Management and resource allocation in multi-hop wavelength division   multiplexing networks, MAC protocols for single-hop WDM networks, admission   control, quality of service guarantees, and modelling.</p>
+
+
+
+      </li></ul>
+
+
+
+      
+
+
+
+      <p></p>
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  <hr />
+
+
+
+  <h2>Current Students</h2>
+
+
+
+  <blockquote>
+
+
+
+    <p><U><strong>PhD   Students</strong></U></p>
+
+
+
+    <ol>
+
+
+
+      <li>
+
+
+
+        <p>Dong Lin</p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+      <p>Lu Wang</p>
+
+
+
+      </li>
+
+
+
+      <li><p>Lisa Ye </p></li>
+
+
+
+      <li><p>Ben Makhlouf Arafat</p></li>
+
+
+
+    </ol>
+
+
+
+    <p> </p>
+
+
+
+    <p><strong> <U>MPhil   Students</U></strong></p>
+
+
+
+    <ol>
+
+
+
+      <li>
+
+
+
+        <p>Jiancheng Ye</p>
+
+
+
+      </li>
+
+
+
+    </ol>
+
+
+
+    <p></p>
+
+
+
+  </blockquote>
+
+
+
+<hr color="#000000" size="3" />
+
+
+
+  <h2>Graduated Students   (Alumni)</h2>
+
+
+
+    <blockquote>
+
+
+
+      <p><U><strong>PhD   Students</strong></U></p>
+
+
+
+    <ol>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Nong Ge, &ldquo;</span>Design   and Analysis of Scalable High-Speed Switches/Routers<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Depart­ment of Computer Science, Hong Kong University of Science   and Technology, August 1999. Currently, </span><span lang="EN-GB" xml:lang="EN-GB">he is an   Associate Prof. at Jun Sun University.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"><a href="http://www.ntu.edu.sg/eee/eee5/cv/emdma.htm">Ma Maode</a>,   &ldquo;</span>Scheduling   and managing variable-length message transmission in WDM optical   networks<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, August 1999. Currently, </span><span lang="EN-GB" xml:lang="EN-GB"> he is an   Assistant Professor in the Department of Electrical and Electronic Engineering   at the Nanyang Technological University, Singapore.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"><a href="http://www.trumptech.com.hk/">Lixin Wang</a>, &ldquo;</span>Multimedia   Access Protocols for Shared Medium Networks<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, August 2001. Currently, he is the Co-Founder and Chief Technology Officer of   Trumptek – a Software company.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Ding Zhemin, &ldquo;</span>Management   and Resource Allocation in Wavelength-routed Optical Networks<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, June 2004.Currently, he is a senior researcher at   Alcatel.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"><a href="http://www.cs.ust.hk/~lixin/">Xin Li</a>, &ldquo;</span>Scheduling   Algorithms for Optical Switches with Reconfigurable Delay<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, August 2005. Currently, she is a Visiting Assistant Professor at Hong   Kong University of Science and Technology.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"><a href="http://www.cs.ust.hk/~cszz/">Zhen Zhou</a>, &ldquo;</span>Design and Analysis of   Scheduling and Queue Management Schemes for High Performance Switches and   Routers<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, August 2007 (Co-Supervised with Prof. Golin).Currently, he  is a researcher in   Australia.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Feng Wang, &ldquo;</span>Clos-Network   Architectures for High-Speed Switches and Internet Routers<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, 2008. Currently an Associate with China International Capital   Corporation.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB"> Xia Qiu Yan,   &ldquo;</span>Novel   Algorithms for WLANs<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, 2008. Currently an IT Specialist in Deutsche Bank.</span></em></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Jian Pu,   &ldquo;</span>Router Assisted Congestion Control for Wireless and Wired Networks<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of Computer Science, Hong Kong University of Science   and Technology, 2010. Currently an IT Specialist in Shengda, Shanghai.</span></em></p>
+
+
+
+      </li>
+
+
+
+    </ol>
+
+
+
+    <p> </p>
+
+
+
+    <p><strong> <U>MPhil   Students</U></strong></p>
+
+
+
+    <ol>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Liu Ce, &ldquo;Congestion Control and Active Queue Management in Vehicular   Wireless Networks,&rdquo; Department of Com­puter Science, Hong Kong University of   Science and Technology, August 2010.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p>Chan   Tsz Ho,   &ldquo;Link Adaptation Algorithms for MIMO-based WiMAX systems,&rdquo; Department of   Computer Science, Hong Kong University of Science and Technology, August   2007.</p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p>Liu   Jing, &ldquo;Stable and Scalable Arbitration Algorithms for Crossbar-Based   Switches/Routers,&rdquo; Department of Computer Science, Hong Kong University of   Science and Technology, August 2003.</p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="EN-GB" xml:lang="EN-GB">Chan Ming Kit, &ldquo;</span>Active   Queue Management Schemes Using A Capture-Recapture Model<span lang="EN-GB" xml:lang="EN-GB">,&rdquo; Department of   Computer Science, Hong Kong University of Science   and Technology, August 2002.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Pun Kong Hong, &ldquo;Static Round-Robin Scheduling Algorithms   for Scalable Switches,&rdquo; Department of Computer Science, Hong Kong University of   Science and Technology, August 2002.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb"><a href="http://ce.et.tudelft.nl/~lotfi/">Lotfi   Mhamdi,</a> &ldquo;High-Performance Scheduling Algorithms for Buffered Crossbar   Switches,&rdquo; Department of Computer Science, Hong Kong University of Science and   Technology, August 2002.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Chun Kit Hung, &ldquo;VLSI Design of High-Speed and Scalable   Schedulers for Input-Queued Crossbar Switches,&rdquo; Department of Electrical and   Electronic Engineering, Hong Kong University of Science and Technology, December   2002 (Co-supervised with Prof. Tsui).</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Ting Wu, &ldquo;Design of Terabits/s CMOS Crossbar Switch   Chip,&rdquo; Department of Electrical and Electronic Engineering, Hong Kong University   of Science and Technology, December 2002 (Co-supervised with Prof.   Tsui).</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Ying Jiang, &ldquo;Packet Scheduling Algorithms for Virtual   Output Queued Switches,&rdquo; Department of Computer Science, Hong Kong University of   Science and Technology, August 2001.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Chen Yang, &ldquo;Proportional QoS Provisioning in   Communication Networks,&rdquo; Department of Electrical and Electronic Engineering,   Hong Kong University of Science and Technology, August 2001 (Co-supervised with   Prof. Tsang).</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Leung Ching Hong, &ldquo;Scalable Packet Switch with   Differentiated Services Support,&rdquo; Department of Computer Science, Hong Kong   University of Science and Technology, September 2000.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Choi Chi Yin, &ldquo;A Scalable Video-on-Demand System,&rdquo;   Department of Computer Science, Hong Kong University of Science and Technology,   December 2000.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Ka Lung Lee, &ldquo;Performance evaluation of contention based   wireless access scheme with smart antennas,&rdquo; Department of Computer Science,   Hong Kong University of Science and Technology, May 1999.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Fung Wai Kit, &ldquo;Wireless Channel Assignment with Diversity   and Smart Antennas,&rdquo; Department of Computer Science, Hong Kong University of   Science and Technology, August 1999.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Tong Ka Man, &ldquo;Achievable QOS for multiple delay classes   in cellular TDMA environment,&rdquo; Department of Computer Science, Hong Kong   University of Science and Technology, September 1999.</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Wai Ming Chan, &ldquo;Object-Oriented Parallel Programming   System on Network of Workstations with Load Balancing,&rdquo; Department of Computer   Science, Hong Kong University of Science and Tech­nology, October 1996   (Co-supervised with Prof. Chanson).</span></p>
+
+
+
+      </li>
+
+
+
+      <li>
+
+
+
+        <p><span lang="en-gb" xml:lang="en-gb">Chi-Kin Lee, &ldquo;Distributed Image Processing on a Network   of Workstations,&rdquo; Department of Com­puter Science, Hong Kong University of   Science and Technology, August 1994.<br />
+
+
+
+        </span></p>
+
+
+
+      </li>
+
+
+
+    </ol>
+
+
+
+    
+
+
+
+    <p><U><strong>Research MSc Students</strong></U></p>
+
+
+
+    <ol><li>
+
+
+
+    <p><span lang="en-gb" xml:lang="en-gb">Chan   Nga Yi, &ldquo;Capacity planning for Voice over IP applications with bandwidth-delay   constrained routing,&rdquo; Department of Com­puter Science, Hong Kong University of Science and   Technology, August 2002.</span></p></li>
+
+
+
+    <li><p><span lang="en-gb" xml:lang="en-gb">Pun    Kong Hong, &ldquo;Provision of Quality of Service for Virtual Private   Networks,&rdquo;Department of Com­puter Science, Hong Kong University of Science and   Technology, August 2000.</span></p>
+
+
+
+    </li>
+
+
+
+    </ol>
+
+
+
+</blockquote>
+
+
+
+  <p>&nbsp;</p>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- End Main -->
+
+
+
+<hr />
+
+
+
+<!-- Footer -->
+
+
+
+<div id="footer">
+
+
+
+    <h1><a href="#top">Top of Page</a></h1>
+
+
+
+ </div>
+
+
+
+<!-- End Footer -->
+
+
+
+ </div>
+
+
+
+<script type="text/javascript">
+
+
+
+swfobject.registerObject("FlashID");
+
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+
+
+
+tabdropdown.init("slidemenu")
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+

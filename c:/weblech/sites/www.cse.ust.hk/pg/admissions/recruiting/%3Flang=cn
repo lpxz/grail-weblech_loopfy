@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Department of Computer Science and Engineering, HKUST" />
+<!--meta name="description" content="香港科技大学计算机科学及工程学系研究生招生资讯" /-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, 香港科技大学计算机科学及工程学系研究生招生资讯" /-->
+<title>香港科技大学计算机科学及工程学系研究生招生资讯</title>
+<link rel="stylesheet" type="text/css" href="/styles/afix.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+<!--style type="text/css" media="all">@import url(/styles/uni-form.css);</style-->
+<!--style type="text/css" media="screen">@import url(/styles/style.css);</style-->
+<link rel="stylesheet" type="text/css" media="all" href="/styles/uni-form.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css?=t1376472329" />
+<!--style type="text/css" media="screen">@import url(/styles/common.css);</style-->
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/common.css" />
+
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/onload.js"></script>
+<!--script type="text/javascript"
+ src="http://www.google.com/jsapi?key=ABQIAAAAUwxONOjoqxfqILPmb_MysRT0ougVue-A3_PYUorwdnfouPjdbhRue6yfeG-MloO9SeqxJ62GNBTNDQ"></script-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//<![CDATA[
+  //google.load("chrome-frame", "1.0.2");
+  //google.load("dojo", "1.6.1");
+  //google.load("ext-core", "3.1.0");
+  google.load("jquery", "1");
+  //google.load("jquery", "1.6.4");
+  google.load("jqueryui", "1.8.16");
+  //google.load("mootools", "1.4.1");
+  //google.load("prototype", "1.7.0.0");
+  //google.load("scriptaculous", "1.9.0");
+  //google.load("swfobject", "2.2");
+  //google.load("yui", "3.3.0");
+  //google.load("webfont", "1.0.22");
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+//]]>
+</script>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script type="text/javascript">
+//<![CDATA[
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+//]]>
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo" /></a>
+<span class="mlang"><a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo" /></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo" /></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+<!--
+<p id="headsearch">
+<a class="button" href="/admin/recruitment/head/">招聘计算机科学及工程学系系主任</a>
+</p>
+-->
+
+<div id="navBar">
+<ul id="topNav">
+<li class="x1"><a accesskey="A" title="关於我们" href="/admin/sitemap/?map=About">简介</a>
+<ul>
+<li class="x2"><a title="系主任欢迎词" href="/admin/welcome/">欢迎词</a></li>
+<li class="x2"><a href="/admin/about/">关於我们</a></li>
+<li class="x2"><a href="/admin/factsheet/">学系资料</a></li>
+<li class="x2"><a href="/News/?type=news|achievement">新闻及成就</a></li>
+<li class="x2"><a href="/News/?type=event">活动</a></li>
+<li class="x2"><a title="安全管理" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">安全</a></li>
+<li class="x2"><a href="/admin/contact/">联络我们</a></li>
+<li class="x2"><a href="http://www.ust.hk/gb/about/campus_gethere.htm">如何到达科大</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="学系成员" href="/admin/sitemap/?map=People">学系成员</a>
+<ul>
+<li class="x2"><a href="/admin/people/faculty/">教员</a></li>
+<li class="x2"><a href="/admin/people/staff/">职员</a></li>
+<li class="x2"><a title="语言指导" href="/ct/">语言指导</a></li>
+<li class="x2"><a href="/admin/people/pg/">研究生</a></li>
+<li class="x2"><a href="/admin/recruitment/">招聘</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="U" title="本科生课程" href="/admin/sitemap/?map=Undergraduate">本科生</a>
+<ul>
+<li class="x2"><a href="/ug/admissions/comp/">三年制本科生课程</a></li>
+<li class="x2"><a href="/ug/hkust_only/" rel="nofollow">三年制本科生内联网</a></li>
+<li class="x2"><a href="/ug/admissions/comp/4yr/">四年制本科生课程</a></li>
+<li class="x2"><a href="/ug/hkust_only/4yr/" rel="nofollow">四年制本科生内联网</a></li>
+<li class="x2"><a href="/ug/admissions/">本科生招生</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="P" title="研究生课程" href="/admin/sitemap/?map=Postgraduate">研究生</a>
+<ul>
+<li class="x2"><a href="/pg/">研究生课程</a></li>
+<li class="x2"><a href="/pg/hkust_only/" rel="nofollow">研究生内联网</a></li>
+<!---->
+<!---->
+<li class="x2"><a href="http://pg.ust.hk/admissions">研究生招生</a></li>
+<li class="x2"><a href="/pg/ourgraduates/">研究生去向</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="R" title="研究领域及范畴" href="/pg/research/">研究领域</a></li>
+<li class="x1"><a accesskey="C" title="学系就业中心" href="/admin/sitemap/?map=Career">就业</a>
+<ul>
+<li class="x2"><a href="/ug/internship/">学生实习计划</a></li>
+<!---->
+<li class="x2"><a href="/ug/internship/forEmployer/">雇主资讯</a></li>
+<li class="x2"><a href="/ug/internship/links/">相关连结</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="F" title="电脑设备" href="/admin/facilities/">设备</a>
+<ul>
+<li class="x2"><a href="/admin/facilities/committee/" rel="nofollow">设施委员会及政策</a></li>
+<li class="x2"><a href="/admin/lab/">实验室时间表</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/UGuides/index.html">用户指南</a></li>
+<li class="x2"><a href="http://cssystem.cse.ust.hk/">学系系统部</a></li>
+</ul>
+</li>
+<li class="x1"><a accesskey="L" title="连结" href="/admin/sitemap/?map=Links">连结</a>
+<ul>
+<li class="x2"><a title="学系电邮系统" href="https://imail.cse.ust.hk/sqmail/">电邮系统</a></li>
+<li class="x2"><a href="/Restricted/" rel="nofollow">教职员内联网</a></li>
+<li class="x2"><a title="科大 MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li class="x2"><a title="科大程式设计队" href="/acm/">程式设计队</a></li>
+<li class="x2"><a title="计算机科学及工程学学生会" href="http://ihome.ust.hk/~su_csess/">学生会</a></li>
+<!---->
+<li class="x2"><a title="计算机科学校友会" href="https://www.facebook.com/cseaa.hkust">校友会</a></li>
+<li class="x2"><a href="/admin/sitemap/">网站索引</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="en" lang="en" href="?lang=en">English</a> |
+<a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a></span>
+-->
+<h1>香港科技大学计算机科学及工程学系研究生招生资讯</h1>
+
+<p>香港科技大学计算机科学及工程学系 2014 
+年秋季入学的研究生招生工作现已启动。热诚欢迎各高校计算机或相关领域的本科生和硕士生申请！</p>
+
+<p>根据国际著名的 QS University Rankings 
+最新排名，香港科技大学目前居亚洲第一，全球第三十三位。香港科技大学计算机科学及工程学系则在电脑和资讯系统学科上全球排名第十二。我系在各个方向都有开创性工作，包括电脑理论和演算法，图形和视觉，网路和分散式系统，软体工程，人工智慧和机器学习，资料挖掘，大资料和云计算，资料库等。我系有四十多位教授，四十名左右研究型硕士生和近一百六十名博士生。硕士学位的学习时间一般是 
+1-2 年，博士学位需要4-5年。研究生毕业去向涵盖业界的各大公司，如 
+Facebook，Google，IBM，Microsoft，百度，华为，腾讯等。博士毕业生多就职世界各地的大学和研究机构。有兴趣的同学可以浏 
+览我们的<a href="/pg/ourgraduates/">毕业生去向网页</a>。</p>
+
+<p>研究生在校学习期间享受优厚的奖学金，每人每年约十六万港币。学院对学业优秀的博士生提供额外的奖学金以支付学费。研究生学费一年大约四万港币。</p>
+
+<p>从 2010 年开始，香港政府每年在全港高校新招的博士生中甄选 Hong Kong PhD 
+Fellowship (HKPFS) 获得者。获得 HKPFS 
+入学的学生每月的奖学金额度约两万港币。此外，在前三年，每年会享受一万港币的旅行补贴。2012 
+和 2013 年度，我系分别有 9 位和 12 位同学获得
+HKPFS，是全香港高校计算机科学系中获奖人数最多的。</p>
+
+<p>我系研究生招生要求入学时具有大学本科学位，专业成绩优良。此外入学时应有以下至少一项英语考试成绩：<tt>TOEFL(CBT) 
+>= 580</tt> 或 <tt>IELTS >= 7</tt> (各子项分数 <tt>>= 5.5</tt>) 或 
+<tt>TOEFL(IBT) >= 92</tt>。</p>
+
+<p>我们的招生分两阶段。第一阶段是提前招生，诚邀条件较为突出的博士生申请者，通过电话或者现场面试。请有意者於<a 
+href="/pg/admissions/registration/">我系网站提交相关资讯</a>。我们将对收到的网上申请进行初选，然后邀请通过初选的同学参加提前招生面试。面试将於 
+2013 年 9 月 7 日在北京和 14 
+日在上海举行。面试结果会在一到两周内通知。</p>
+
+<p>在提前招生阶段过后，申请者也可以在 2014 年 3 月中旬之前提交申请材料到港<a 
+href="http://www.ust.hk/admissions/">科大研究生招生网站</a>。</p>
+
+<p>最后，我们鼓励特别优秀(成绩排名前百分之十，平均分高於 85 
+分，英语水准优秀) 且旨在攻读博士学位的同学与我们联系 
+(<script type="text/javascript"><!--
+  mmsend('pgrecruit'); //--></script>)，以谘询关於申请 HKPFS 
+2014/2015的事宜。请大家及时关注<a 
+href="http://www.ust.hk/hkpfs/">港科大的 HKPFS 网站</a> 获取相关资讯。</p>
+
+<p>如果你有任何关於申请我系的问题，欢迎联系 
+<script type="text/javascript"><!--
+  mmsend('pgrecruit'); //--></script>，我们会竭诚解答。</p>
+</div><!-- End maincontent -->
+
+<div id="footer">
+ <p>最后更新日期：2013-08-18<br />
+ 香港科技大学计算机科学及工程学系，保留所有版权。</p>
+</div>
+
+<!-- google analytics start -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2771148-1";
+urchinTracker();
+</script>
+<!-- google analytics end -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.021519899368286</div-->

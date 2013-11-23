@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Azure Labs</TITLE>
+<META http-equiv=Content-Type content="text/html;">
+
+<p align=center>
+<b>
+<SPAN style="FONT-SIZE: 18pt; COLOR: #000066">
+A Calendar for Understanding Windows Azure<br/>
+Lab #3
+</SPAN>
+<br/><br/>
+<SPAN style="FONT-SIZE: 18pt; COLOR: red">
+Due Nov. 10, 2011 
+</SPAN></B></P>
+
+<h2>Objective</h2>
+<p> From this lab, you will
+<UL style="MARGIN-BOTTOM: 0in" type=disc>
+	<li>learn how to deploy Windows Azure applications to the cloud.</li>
+	<li>get familiar with the Windows Azure management portal.
+</UL>
+</p>
+
+<h2>Pre-requisite</h2>
+Before continuing this lab, you need to obtain an Azure account and create an Azure pass.
+Microsoft provides several types of trial and educational accounts but they may have limited availability at one particular time, region, or the number of concurrent users.
+A few options are listed below.
+
+<ul>
+<li>
+Obtain a <a href="http://www.microsoft.com/windowsazure/free-trial/">Free Trial</a> account for Azure. (Recommended)
+</li><li>
+Use the Azure account we created for the class.
+</li><li>
+Visit the <a href="https://windows.azure.com/" target="_blank">Windows Azure management portal</a> and obtain a 30-day free trial from the <a href="http://windowsazurepass.com/?campid=5F4AE961-F342-E011-B3BB-001F29C6FB82" target="_blank">Windows Azure Pass ISV Campaign</a> with promotion code "<b>AZUREISV</b>".
+</li>
+</ul>
+
+<h2>Overview</h2>
+In lab #1 and lab #2, you have created your first Windows Azure application and deployed it on your local emulator.
+In this lab, you will deploy them on the actual Azure platform.
+
+<H2>Details</H2>
+<h3>Task 1 - Creating a Storage Account and a Hosted Service Component</h3>
+The Windows Azure application you created in the previous labs requires both compute and storage services for deployment. In this task, you create a new Windows Azure storage account to allow the application to persist its data. In addition, you define a hosted service component to execute the application code.
+<p>
+1. Sign in the Azure manage portal with your Azure pass.
+<p>
+2. Click the <b>New Storage Account</b> icon to create a storage account for your application to store its data.
+<p>
+3. In the <b>Create a New Storage Account</b> dialog, enter a URL for your application and choose a region. 
+In this lab, we use <b>myazurecalendarXXXXXXXX</b> as the URL, where XXXXXXX is your student number.
+<p>
+4. Back in the <b>Create a New Storage Account</b> dialog, click <b>Create</b> to register your new storage account. Wait until the account provisioning process completes and updates the <b>Storage Accounts</b> tree view. Notice that the <b>Properties</b> pane shows the URL assigned to each service in the storage account. Record the public storage account name—this is the first segment of the URL assigned to your endpoints. 
+<br>
+<center><img src="3-1.jpg"></center>
+<p>
+5. Now, click the <b>View</b> button next to <b>Primary access key</b> in the <b>Properties</b> pane. In the <b>View Storage Access Keys</b> dialog, click <b>Copy to Clipboard</b> next to the <b>Primary Access Key</b>. You will use this value later on to configure the application.
+<br>
+<center><img src="3-2.jpg"></center>
+<p>
+6. Then, you can create the compute component for executing the application code by clicking <b> Hosted Service | New Hosted Service </b> icon.
+<p>
+7. Enter a service name in the textbox labeled <b>Enter a name for your service</b> and choose its URL by entering a prefix in the textbox labeled <b>Enter a URL prefix for your service</b>, for example, azurecalendarXXXXXXXX, which should be a unique name. Windows Azure uses this value to generate the endpoint URLs for the hosted service.
+In the <b>Deployment options</b>, choose <b>Do not deploy</b>.
+You will deploy your application after creating the compute component.
+<br>
+<center><img src="3-3.jpg"></center>
+<p>
+Click OK. 
+You have created the storage account and a hosted service component for your application.
+<p>
+<h3>Task 2 - Deploying the Application</h3>
+1. To deploy your application, you need to set up the storage account for you application. 
+Recall that you set the <b>Storage Connection String</b> to <b>Use the Windows Azure storage emulator</b> in step 2, task 3, lab 2.
+Now, as you are deploying the application on the cloud, you need to modify this connection string to use the online Azure storage service.
+You choose the <b>Enter storage account credentials</b> option and type in the <b>Account name</b> (for example, myazurecalendar in this tutorial) and storage key you obtained in step 5, task 1.
+<br>
+<center><img src="3-4.jpg"></center>
+<p>
+2. Generate the package to deploy to the cloud. To do this, right-click the <b>calendar</b> cloud project and select <b>Publish</b>. In the <b>Deploy Windows Azure</b> project dialog, select the option labeled <b>Create Service Package Only</b> and then click <b>OK</b>.
+The deploy package is now available in the <b>bin/Debug/Publish</b> directory under your project directory.
+<p>
+3. In the Windows Azure manage portal, choose the hosted service you created in task 1 and click the <b>New Production Deployment</b>. 
+<p>
+In the <b>Create a new Deployment</b> dialog, set a deployment name and choose the location of the package and the configuration file.
+<p>
+You have successfully deployed your calendar application to Windows Azure. You can try it from http://&lt;yourhostedservicename&gt;.cloudapp.net/
+<p>
+
+<h2>Deliverables</h2>
+<p>
+Modify the Azure calendar application to show the student IDs of your group.
+</p><p>
+After deploying your Azure calendar application, email the instructor the URL for your application.
+Make sure you obtain an acknowledgment from the instructor, then shut down the application.
+</p><p>
+Each group needs to only deploy one application.
+</p>
+
+<!--h2>Assessment</h2>
+<p>
+To be completed
+</p>
+<h2>Questions and contact</h2>
+<p>
+To be completed
+</p>
+<h2>Reference</h2>
+<p>
+[1] Windows Azure Storage Team, Windows Azure Storage Architecture Overview, http://blogs.msdn.com/b/windowsazurestorage/archive/2010/12/30/windows-azure-storage-architecture-overview.aspx
+<br>
+[2] Jason Baker, Chris Bond, James C. Corbett, JJ Furman, Andrey Khorlin, James Larson, Jean-Michel Leon, Yawei Li, Alexander Lloyd, Vadim Yushprakh, Megastore: Providing Scalable, Highly Available Storage for Interactive Services, Proceedings of the Conference on Innovative Data system Research (CIDR), 2011, pp. 223-234. 
+-->
+<hr>
+<p>
+This lab series is developed by Zhonghua Sheng and the ESCA group at HKUST. 
+It is supported in part by Microsoft Research Asia grant R1215-5104.
+We would like to thank Mr. Yau Lam Yiu and other system staff at the CSE department for their technical support in ths construction of the development platform.
+</p>
+</BODY></HTML>

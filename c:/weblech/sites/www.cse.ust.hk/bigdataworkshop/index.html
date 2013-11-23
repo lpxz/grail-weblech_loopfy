@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org"  id="ng-app" ng-app="BDW">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The 1st HKUST-USC Joint Workshop on Big Data Applications</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bdw.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .heads_table{
+    position:relative;
+    //left:-50px;
+}
+
+.program li{
+margin-bottom:5px;
+}
+    </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+  <script src="bdw.js"></script>
+</head>
+
+<body  ng-controller="BDWCtrl">
+<div class="container">
+      <div class="header">
+          <ul class="nav nav-pills pull-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+          </ul>
+          <h3 class="text-muted" > <a href="./index.html">
+              Workshop on <span style="font-style: italic">Big Data Applications</span>
+          </a> </h3>
+      </div>
+
+
+
+      <div class="jumbotron">
+        <h3> The 1st HKUST-USC Joint Workshop on Big Data Applications </h3>
+          <h4> Sept 27th, 2013 </h4>
+          <h4> The Hong Kong University of Science and Technology</h4>
+          <br/>
+          <table style="text-align: left;margin: auto;">
+              <tr><td>
+          <h4> <span class="name">Venue:</span>IAS Lecture Theater, IAS Building, HKUST <a class="traffic" href="./about.html#traffic">(How to get there?)</a> </h4>
+                  </td></tr>
+              <tr><td>
+<h4> <span class="name">&nbsp;&nbsp;Time: </span> 9:30am to 6:00pm </h4>
+              </td></tr>
+              </table>
+      </div>
+
+<!-- <p class="label label-warning" style="font-size:17px">Due to the high possibility that the <a href="http://en.wikipedia.org/wiki/Typhoon_Usagi_(2013)" >Typhoon Usagi</a> will come, we have re-scheduled the event to 27 Sept (Fri).</p>
+-->
+
+
+    <!--<img src="./images/bigdata.jpg" class="img-rounded">-->
+
+          Recently, due to the advance of pervasive sensing and computing, heterogeneous data are generated at
+    unexpected scale and complexity. Data originates from any different domains, such as sensor networks,
+    medical images, scientific measurements, financial transactions, web-interactions and social media.
+    These data are everywhere and exist along the time with different types of representations.
+    Thus, the “BIG Data” concept is introduced to describe these enormous data. So far, there is no clear definition
+    about BIG Data, according to wiki, “Big data are datasets that grow so large that they become awkward to
+    work with using on-hand database management tools. Difficulties include capture, storage, search, sharing,
+    analytics and visualizing. “Clearly, managing and analyzing BIG data have many challenges.
+    In this workshop, we mainly focus on discussing some killer applications (opportunities) brought by the Big Data,
+    such as Geo-Crowdsourcing, Product Recommendation, and Human Motion Tracking, etc.
+    The workshop will be featured with six talks and a panel discussion.
+
+    <br/>
+      <h4> How to reach IAS building in HKUST, check <a href="./aboutpage.html#traffic">here</a>.</h4>
+
+
+    <br/>
+
+      <div class="well">
+          <h3>Program:</h3>
+
+      <ul class="program">
+          <li><span class="time">Open Speech</span>&nbsp;  Chair: Prof. Siu-Wing Cheng, Head of Department of Computer Science and Engineering, HKUST <br/>
+9:30am - 9:40am<br/>
+  Open Speech, Prof. Tony F. Chan, President of HKUST</li>
+
+<li>   <span class="time">Session 1: Crowdsourcing on Big Data (I)</span> &nbsp;  Chair: Dr. Lei Chen, HKUST <br/>
+9:40am - 10:30am  <br/>
+<a href="#topic1"><span class="talk">“GeoCrowd: Harnessing the Power of Crowd for On-Demand Geographical Data Collection”</span></a>
+Prof. Cyrus Shahabi, University of South California</li>
+
+<li><span class="time">Coffee Break </span><br/>
+10:30am - 10:50am  </li>
+
+<li><span class="time">Session 2: Big Data Applications</span> &nbsp; Chair: Prof. Cyrus Shahabi, USC <br/>
+10:50am - 12:30pm  <br/>
+    <a href="#topic2"><span class="talk">“SAP HANA and its Extreme Applications”</span></a>
+    Dr. Wen-Syan Li, VP, SAP
+<br/>
+    <a href="#topic3"><span class="talk">“Big Data for an More Intelligent World”</span></a>
+    Dr. Ying Huang, VP, Lenovo Corporate Research
+</li>
+
+<li><span class="time">Lunch Break</span><br/>
+12:30pm - 2:00pm  
+</li>
+
+<li> <span class="time">Session 3: User Understanding in Big Data</span> &nbsp; Chair: Dr. Lei Chen, HKUST <br/>
+ 2:00pm - 3:40pm  <br/>
+    <a href="#topic4"><span class="talk">“User Modeling in Social Networks and Social Media”</span></a>
+    Prof. Qiang Yang, Head, Huawei Noah’s Ark Lab
+<br/>
+    <a href="#topic5"><span class="talk">“User understanding from large scale human behavioral data.”</span></a>
+    Dr. Xing Xie, Leader Researcher, Microsoft Research Asia</li>
+
+<li><span class="time">Coffee break</span><br/>
+ 3:40pm - 4:00pm  
+</li>
+
+<li><span class="time">Session 4: Crowdsourcing on Big Data (II)</span> &nbsp; Chair: Prof. Cyrus Shahabi, USC <br/>
+4:00pm - 4:50pm  <br/>
+    <a href="#topic6"><span class="talk">“Crowdsourcing over Big Data, a new human computing challenging?”</span></a>
+    Dr. Lei Chen, HKUST</li>
+
+<li><span class="time">Panel Discussion, “Big Data, the most important new technology trend?”</span> <br/>
+4:50pm - 6:00pm  <br/>
+
+Panel Member: Dr. Ying Huang (Lenovo), Prof. Qiang Yang(Huawei), Dr. Wen-Syan Li(SAP), Dr. Xing Xie (MSRA), Prof. Nikos Mamoulis(HKU), Prof. Jeffrey Xu Yu (CUHK), Prof. Dimitris Papadias(HKUST).<br/>
+          Moderator: Prof. Cyrus Shahabi (USC)
+          </li>
+
+      </ul>
+
+      </div>
+
+      <br/>
+      <br/>
+
+              <table class="heads_table">
+                  <tr><td>
+                      <div class="head_box">
+                          <img class="head" src="./images/cyrus.jpg" />
+                      </div>
+                      <h4><a href="http://infolab.usc.edu/Shahabi/">Cyrus Shahabi</a></h4>
+                      <h5>Professor, University of Southern California</h5>
+
+                  </td><td>
+                      <div class="head_box">
+                          <img class="head" src="./images/yangqiang.jpg" />
+                      </div>
+                      <h4><a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a></h4>
+                      <h5>Head, Huawei Noah’s Ark Lab</h5>
+
+                  </td><td>
+                      <div class="head_box">
+                          <img class="head" src="./new_images/li.jpg" />
+                      </div>
+                      <h4>Wen-Syan Li</h4>
+                      <h5>VP, SAP</h5>
+
+                  </td>  <td>
+
+                      <div class="head_box">
+                          <img class="head" src="./images/yinghuang.jpg" />
+                      </div>
+                      <h4>Ying Huang</h4>
+                      <h5>VP, Lenovo Corporate Research</h5>
+                  </td><td>
+                      <div class="head_box">
+                          <img class="head" src="./images/xingxie.jpg" />
+                      </div>
+                      <h4><a href="http://research.microsoft.com/en-us/people/xingx/">Xie Xing</a></h4>
+                      <h5>Lead Researcher, Microsoft Research Asia</h5>
+                  </td><td>
+<!--
+                      <div class="head_box">
+                          <img class="head" src="./new_images/king.png" />
+                      </div>
+                      <h4><a href="https://www.cse.cuhk.edu.hk/irwin.king/home"> Irwin King</a></h4>
+                      <h5>Associate Dean, Engineering Faculty, Professor, CUHK</h5>
+                  </td><td>
+-->
+                      <div class="head_box">
+                          <img class="head" src="./images/nikos.png" />
+                      </div>
+                      <h4><a href="http://i.cs.hku.hk/~nikos/">Nikos Mamoulis</a></h4>
+                      <h5>Professor, University of Hong Kong</h5>
+                  </td><td>
+                      <div class="head_box">
+                          <img class="head" src="./images/yuxu.png" />
+                      </div>
+                      <h4><a href="http://www.se.cuhk.edu.hk/people/yu.html">Jeffrey Xu Yu</a></h4>
+                      <h5>Professor, Chinese University of Hong Kong</h5>
+                  </td><td>
+                      <div class="head_box">
+                          <img class="head" src="./images/dimitris.png" />
+                      </div>
+                      <h4><a href="http://www.cse.ust.hk/~dimitris/"> Dimitris Papadias</a></h4>
+                      <h5>Professor, Hong Kong University of Science and Technology</h5>
+                  </td><td>
+                      <div class="head_box">
+                          <img class="head" src="./images/chenlei.jpg" />
+                      </div>
+                      <h4><a href="http://www.cs.ust.hk/~leichen/">Lei Chen</a></h4>
+                      <h5>Associate Professor, Hong Kong University of Science and Technology</h5>
+                  </td><td>
+                  </tr>
+
+              </table>
+
+    <div>
+
+          <table class="table table-striped">
+              <tr><td id="topic1">
+              <h4>Topic 1:</h4>
+              </td></tr><tr><td>
+              <h5>Title</h5>
+              GeoCrowd: Harnessing the Power of Crowd for On-Demand Geographical Data Collection
+              <h5>Abstract</h5>
+              GeoCrowd is a web-based crowd-sourcing platform (similar to Amazon’s Mechanical Turk) that matches geo tasks (i.e., tasks associated with a specific location and time such as “Take pictures of Tommy Trojan during 2012 USC-UCLA game”) to human workers.  Every person with mobile devices can now act as a multi-modal sensor collecting various types of data instantaneously (e.g., picture, video). With GeoCrowd, subscribers can publish tasks with specific space and time attributes.  Subsequently, the workers (with GeoCrowd mobile app) can perform the tasks if they are at the right time and at the right place and upload the results to the GeoCrowd server(s). In this talk, I first introduce our generic framework for GeoCrowd and discuss various techniques for optimal assignment of spatiotemporal tasks to human workers. Next, I show how we can extend this framework to incorporate trust in GeoCrowd in order to ensure workers satisfy a confidence value given by the task requester.  Finally, I will show an application of the GeoCrowd framework in a commercial domain.
+              <h5>Bio</h5>
+              <span class="prof">Cyrus Shahabi</span> is a Professor of Computer Science and Electrical Engineering and the Director of the Information Laboratory (InfoLAB) at the Computer Science Department and also the Director of the NSF's Integrated Media Systems Center (IMSC) at the University of Southern California. He was also the CTO and co-founder of a USC spin-off and an In-Q-Tel portfolio company, Geosemble Technologies, which was acquired in July 2012. He received his B.S. in Computer Engineering from Sharif University of Technology in 1989 and then his M.S. and Ph.D. Degrees in Computer Science from the University of Southern California in May 1993 and August 1996, respectively. He authored two books and more than two hundred research papers in the areas of databases, GIS and multimedia. Dr. Shahabi has received funding from several agencies such as NSF, NIJ, NASA, NIH, DARPA, AFRL, and DHS as well as several industries such as Chevron, Google, HP, Intel, Microsoft, NCR, NGC and Oracle. He was an Associate Editor of IEEE Transactions on Parallel and Distributed Systems (TPDS) from 2004 to 2009. He is currently on the editorial board of the VLDB Journal, IEEE Transactions on Knowledge and Data Engineering (TKDE), ACM Computers in Entertainment and Journal of Spatial Information Science. He is the founding chair of IEEE NetDB workshop and also the general co-chair of ACM GIS 2007, 2008 and 2009. He chaired the nomination committee of ACM SIGSPATIAL for the 2011-2014 terms. He is a PC co-Chair of IEEE MDM 2013 and IEEE BigData 2012, and regularly serves on the program committee of major conferences such as VLDB, ACM SIGMOD, IEEE ICDE, ACM SIGKDD, and ACM Multimedia. Dr. Shahabi is a recipient of the ACM Distinguished Scientist award in 2009, the 2003 U.S. Presidential Early Career Awards for Scientists and Engineers (PECASE), the NSF CAREER award in 2002, and the 2001 Okawa Foundation Research Grant for Information and Telecommunications. He was the recipient of US Vietnam Education Foundation (VEF) faculty fellowship award in 2011 and 2012, an organizer of the 2011 National Academy of Engineering “Japan-America Frontiers of Engineering” program, an invited speaker in the 2010 National Research Council (of the National Academies) Committee on New Research Directions for the National Geospatial-Intelligence Agency, and a participant in the 2005 National Academy of Engineering “Frontiers of Engineering” program.
+              </td></tr>
+
+              <tr><td id="topic2">
+                  <h4>Topic 2:</h4>
+              </td></tr><tr><td>
+              <h5>Title</h5>
+                SAP HANA and its Extreme Applications
+              <h5>Abstract</h5>
+
+              SAP HANA is an in-memory data platform that is deployable as an appliance, or in the cloud. At its core is an innovative in-memory relational database management system which makes full use of the capabilities of current hardware (RAM and multi-core CPUs) to increase application performance, to reduce cost of ownership and to enable new scenarios and applications that were not possible before. This speed-up processing capability from HANA could help existing applications to achieve the goals that would be considered impossible in the past , and also help to re-design and improve current business process flow in enterprise; especially on top of big data. In this talk, I describe the architectural design of SAP HANA and its solutions for big data. Finally, I will present some “extreme applications” on HANA, which are designed to deal extremely large data set or extremely complex problems (i.e. search space).
+
+
+
+              <h5 id="wensyan">Bio</h5>
+              <!--<span class="prof">Prof. Cha</span> worked on three generations of in-memory database (IMDB) systems since he joined Seoul National University(SNU) in 1992. All these technologies were commercialized.   In 2000, he founded Transact In Memory, Inc. on campus for funding R&D of his second-generation in-memory database called P*TIME, and in 2002, he established its parent company in Silicon Valley.  In late 2005, Transact In Memory, Inc. was quietly acquired by SAP AG, and later transformed to SAP Labs Korea after a period of stealth operation. With SAP’s funding, by early 2006, Prof Cha’s team completed the world-first implementation of innovative in-memory OLTP database features in P*TIME: in-memory MVCC, compressed prefix B+-tree with optimistic latch-free index concurrency control [VLDB01, Cha et al], and tight integration with SAP’s application server. By SAP’s request, Prof. Cha continues to lead SAP Labs Korea team and has been playing a critical role in the birth and maturing of SAP HANA in tight collaboration with German colleagues. Prof. Cha received his PhD in Database Systems at Stanford, and MS and BS from SNU, respectively.  He worked for DACOM, Texas Instruments, and HP Labs. From time to time, he serves university duties with roles like SNU Foundation Finance Committee member and the social duty of an external board member of KT. <br/> Prof. Cha is the general co-chair of IEEE ICDE 2015 Conference to be held in Gangnam, Seoul, Korea in the beautiful cherry blossom time of mid-April, and currently serves on the editorial board of VLDB Journal and on Industrial PC of VLDB 2014 Conference.-->
+              <span class="prof"> Wen-Syan Li</span> is a Vice President of SAP and the head of SAP Design & New Applications in China. He is responsible for building predictive analytics capability and its applications on SAP HANA in-memory computation platform and strategic projects as well as supporting HANA’s eco-system, startup program, customer adoption, and cloud infrastructures in China. He received his Ph.D. in Computer Science from Northwestern University (USA). He also holds an MBA degree in Finance. His interests include databases, in-memory computing, data mining, optimization/scheduling, and developing novel extreme applications. Before joining SAP, he was with IBM Almaden Research Center (USA). Dr. Li has published more than 100 journal articles and conference papers in various areas as well as holds 70+ granted/pending US patents.
+              </td></tr>
+
+              <tr><td id="topic3">
+                  <h4>Topic 3:</h4>
+              </td></tr><tr><td>
+              <h5>Title</h5>
+              Big Data for an More Intelligent World
+              <h5>Abstract</h5>
+              Big Data has become a popular phenomenon as more data being generated from the activities online, and some successful early attempts to derive useful insights out of the data by various businesses. We believe at present, Big Data is in its infancy and more exciting time will come when better analytical methods are being developed and more varieties of data become available. In this talk, we will try to understand the Big Data analytics applications and explore ways where the Big Data can be used to enable more intelligent services for enhancing people's life.
+              <h5>Bio</h5>
+              <span class="prof" id="yinghuang">Dr. Ying Huang</span> is VP of Cloud and Intelligent Computing Lab at Lenovo Corporate Research leading researches on Cloud, Big Data analytics, NLP and Machine Intelligence. He was previously Associate Director of IBM Research - China and Senior Manager at IBM T.J. Watson Research Center, New York. Ying is also serving as a professor and Chair of Department of Service Science and Engineering at Peking University. He received the Ph.D. degree in Operation Research from Stanford University. He has been working extensively in the areas of Big Data analytics, Enterprise IT Transformation, Cloud-delivered application services platform technology, and business integration solution models, methods and tools. He has received various research accomplishment and quality awards from both IBM Research and Philips Research. He has published papers and filed patents in the above areas. He has also served as conference program commit chairs, session chairs, keynote speakers, panelists, and program committee members for relevant conferences.
+              </td></tr>
+
+              <tr><td id="topic4">
+                  <h4>Topic 4:</h4>
+              </td></tr><tr><td>
+              <h5>Title</h5>
+              User Modeling in Social Networks and Social Media
+              <h5>Abstract</h5>
+              The ever-growing social networks and social media provide invaluable sources of information for modeling the behavior of users. High-quality user models enable superior services and functions for end users.  In this talk, I will present several examples of user modeling based on social networks and social media.  I will first describe our research in modeling users' information preferences on Microblogs using a novel user message model.  I will then discuss our work on extracting users' daily activities, such as dining and shopping, that inherently reflect their habits, intents and preferences. I explain our novel transfer learning solution via a collaborative boosting framework comprising a text-to-activity classifier for socially connected users.  I will also describe our research on user modeling in multiple, overlapping social networks in a “composite social network”  setting.  I will show the benefits of modeling the dynamics of composite networks, where the evolution processes of different networks are jointly considered. Finally, I will explain our research on finding social spammers in large social networks.
+              <h5>Bio</h5>
+              <span class="prof" id="yangqiang"> Qiang Yang</span> is the head of Huawei Noah's Ark Research Lab and a professor in the Department of Computer Science and Engineering, Hong Kong University of Science and Technology. His research interests are data mining and artificial intelligence including machine learning, planning and activity recognition. He is a fellow of AAAI, IEEE, IAPR and AAAS. He received his PhD from Computer Science Department of the University of Maryland, College Park in 1989. He had been an assistant/associate professor at the University of Waterloo between 1989 and 1995, and a professor and NSERC Industrial Research Chair at Simon Fraser University in Canada from 1995 to 2001. He was an invited speaker at IJCAI 2009, ACL 2009, ACML 2009 and ADMA 2008 and 2012, SDM 2012, WSDM 2013, etc. He was elected as a vice chair of ACM SIGART in July 2010. He is the founding Editor in Chief of the ACM Transactions on Intelligent Systems and Technology (ACM TIST), and is on the editorial board of IEEE Intelligent Systems and several other international journalsï¼IEEE, TKDE (2005-2009), AI Magazine, etc.). He has served as a PC co-chair and general co-chair of several international conferences, including ACM KDD 2010 and 2012, ACM RecSys 2013, ACM IUI 2010, etc. He serves as an IJCAI trustee and will be the PC chair for IJCAI 2015.
+              </td></tr>
+
+
+              <tr><td id="topic5">
+                  <h4>Topic 5:</h4>
+              </td></tr><tr><td>
+              <h5>Title</h5>
+              User understanding from large scale human behavioral data.
+              <h5>Abstract</h5>
+              With the rapid development of ubiquitous computing technologies, especially positioning, device and sensor technologies, a large scale of human behavioral data have become available. They reflect various aspects of human activities in the physical world, thus, connect users' digital lives and their physical lives. Here, human behavioral data fall into several different domains, such as mobility data, interest data, and social media data. The growing availability of these behavioral data provides us an unprecedented opportunity to acquire individuals' personal information as well as their digitalized behaviors. In this talk, I will present a number of our recent research works on this direction : 1) Influence of social behaviors on user mobility 2) user activity recommendation and prediction; 3) social graph de-anonymization; 4) human lifestyle analysis.
+              <h5>Bio</h5>
+              <span class="prof" id="xingxie">Dr. Xing Xie</span> is currently a lead researcher in Microsoft Research Asia, and a guest Ph.D. advisor for the University of Science and Technology of China. He received his B.S. and Ph.D. degrees in Computer Science from the University of Science and Technology of China in 1996 and 2001, respectively. He joined Microsoft Research Asia in July 2001, working on spatial data mining, location based services, social networks and ubiquitous computing. During the past years, he has published over 140 referred journal and conference papers. He currently serves on the editorial boards of ACM Transactions on Intelligent Systems and Technology (TIST), Springer GeoInformatica, Journal of Location Based Services, and Communications of the China Computer Federation (CCCF). In recent years, he was involved in the program or organizing committees of over 70 conferences and workshops. He is a senior member of ACM, the IEEE, and China Computer Federation (CCF).
+              </td></tr>
+
+              <tr><td id="topic6">
+                  <h4>Topic 6:</h4>
+              </td></tr><tr><td>
+              <h5>Title</h5>
+              Crowdsourcing over Big Data, a new human computing challenging?
+              <h5>Abstract</h5>
+              Recently, the popularity of crowdsourcing has brought a new opportunity to engage human intelligence into the process of various data analysis tasks. Compared with computer systems, crowds are good at handling items with human-intrinsic values or features. Existing work develop sophisticated methods by utilizing the crowd as a new kind of processors, a.k.a HPU (Human Processing Unit). As a consequence, tasks executed on HPU are called HPU-based tasks. Meanwhile, huge volume of data are generated every day, we are in the era of Big Data. Thus, a nature question arises: is crowdsouring over Big Data a new human computing challenging? In this talk, I will discuss the answer to the above question and explain the key issues related to effective crowdsouring.
+              <h5>Bio</h5>
+              <span class="prof">Lei Chen</span> received the BS degree in computer science and engineering from Tianjin University, Tianjin, China, in 1994, the MA degree from Asian Institute of Technology, Bangkok, Thailand, in 1997, and the PhD degree in computer science from the University of Waterloo, Waterloo, Ontario, Canada, in 2005. He is currently an associate professor in the Department of Computer Science and Engineering, Hong Kong University of Science and Technology. His research interests include crowdsourcing on social media, social media analysis, probabilistic and uncertain databases, and privacy-preserved data publishing. So far, he published nearly 200 conference and journal papers. He got the best paper awards in DASFAA 2009 and 2010. He is PC Track chairs for VLDB 2014, ICDE 2012, CIKM 2012, SIGMM 2011. He has served as PC members for SIGMOD, VLDB, ICDE, SIGMM, and WWW. Currently, he serves as an associate editor for IEEE Transaction on Data and Knowledge Engineering and Distribute and Parallel Databases. He is a member of the ACM and the chairmans of ACM Hong Kong Chapter and ACM SIGMOD Hong Kong Chapter.
+              </td></tr>
+
+              <tr><td id="panels">
+                  <h4> Panel Members </h4>
+              </td></tr><tr><td>
+              <table><tr><td>
+                  <h5><a href="#yinghuang">Dr. Ying Huang </a> </h5>
+              </td></tr><tr><td>
+                  <h5><a href="#yangqiang">Prof. Qiang Yang</a></h5>
+              </td></tr><tr><td>
+                  <h5><a href="#wensyan">Dr. Wen-Syan Li</a></h5>
+              </td></tr><tr><td>
+
+                  <h5> <a href="#xingxie">Dr. Xing Xie</a></h5>
+              </td></tr><tr><td>
+
+<!--
+                  <h5>  Prof. Irwin King </h5>
+              </td></tr><tr><td>
+
+                <span class="prof">  Prof. Irwin King</span> is Associate Dean (Education), Faculty of Engineering and Professor at the Department of Computer Science and Engineering, The Chinese University of Hong Kong. He received his B.Sc. degree in Engineering and Applied Science from California Institute of Technology, Pasadena and his M.Sc. and Ph.D. degree in Computer Science from the University of Southern California, Los Angeles.
+                  Prof. King's research interests include machine learning, social computing, web intelligence, data mining, and multimedia information processing. In these research areas, he has over 210 technical publications in journals (JMLR, ACM TOIS, IEEE TNN, Neurocomputing, NN, IEEE BME, PR, IEEE SMC, JAMC, JASIST, IJPRAI, DSS, etc.) and conferences (NIPS, IJCAI, CIKM, SIGIR, KDD, PAKDD, ICDM, WWW, WI/IAT, WCCI, IJCNN, ICONIP, ICDAR, etc.). In addition, he has contributed over 30 book chapters and edited volumes. Moreover, Prof. King has over 30 research and applied grants. One notable patented system he has developed is the VeriGuide System, previously known as the CUPIDE (Chinese University Plagiarism IDentification Engine) system, which detects similar sentences and performs readability analysis of text-based documents in both English and in Chinese to promote academic integrity and honesty.
+
+              </td></tr><tr><td>
+-->
+
+              <h5>Prof. Nikos Mamoulis</h5>
+              </td></tr><tr><td>
+              <span class="prof">Nikos Mamoulis</span> is a professor at the Department of Computer Science, University of Hong Kong, which he joined in 2001. His research focuses on the management and mining of complex data types, including spa- tial, spatio-temporal, object-relational, multi- media, text and semi-structured data. He has served on the program committees of over 90 international conferences and workshops on data management and data mining. He was the general chair of SSDBM 2008 and the PC chair of SSTD 2009. He is an associate editor for IEEE TKDE and the VLDB Journal.
+              </td></tr><tr><td>
+              <h5>Prof. Jeffrey Xu Yu</h5>
+              </td></tr><tr><td>
+                <span class="prof">Dr Jeffrey Xu Yu</span> is a Professor in the Department of Systems Engineering and Engineering Management, the Chinese University of Hong Kong.  His current main research interests include graph mining, graph query processing, graph pattern matching, and keywords search in relational databases. Dr. Yu served as an Information Director and a member in ACM SIGMOD executive committee (2007-2011), an associate editor of IEEE Transactions on Knowledge and Data Engineering (2004-2008), and an associate of editor VLDB Journal (2007-2013). Currently he servers as an associate editor of WWW Journal, the International Journal of Cooperative Information Systems, and the journal on Health Information Science and Systems (HISS). Dr. Yu served/serves in over 280 organization committees and program committees in international conferences/workshops including PC Co-chair of APWeb'04, WAIM'06, APWeb/WAIM'07, WISE'09, PAKDD'10, DASFAA'11, ICDM'12, and NDBC'13, and Conference Co-Chair of APWeb'13. He has papers published in reputed journals and major international conferences including ACM TODS, VLDB J, IEEE TKDE, ACM SIGMOD, ACM SIGKDD, VLDB, IEEE ICDE, and IEEE ICDM.
+              </td></tr><tr><td>
+                  <h5>Prof. Dimitris Papadias</h5>
+              </td></tr><tr><td>
+                  <span class="prof">Dimitris Papadias</span> is a Professor of Computer Science and Engineering, Hong Kong University of Science and Technology. Before joining HKUST in 1997, he worked and studied at the German National Research Center for Information Technology (GMD), the National Center for Geographic Information and Analysis (NCGIA, Maine), the University of California at San Diego, the Technical University of Vienna, the National Technical University of Athens, Queen's University (Canada), and University of Patras (Greece). He serves or has served in the editorial boards of the VLDB Journal, IEEE Transactions on Knowledge and Data Engineering, and Information Systems. He was the Program Chair of SIGMOD 2013.
+              </td></tr></table>
+
+          </td></tr>
+
+          </table>
+
+    </div>
+
+      <div class="footer">
+        <p>&copy; Department of Computer Science and Engineering, HKUST 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+    <div ng-include src="'left_pan.html'" ng-controller="LeftPanCtrl"> </div>
+
+</body>
+</html>

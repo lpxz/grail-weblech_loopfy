@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CS System</title>
+	<script src="/Scripts/jquery-1.8.1.min.js"></script>
+	<script src="/Scripts/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		var is_csd = 0;
+		var is_hkust = 1;
+	</script>
+	<script src="/Scripts/main.js"></script>
+	<script src="/Scripts/json2.js"></script>
+	<link rel="stylesheet" href="/Styles/main.css" />
+	<link rel="stylesheet" href="/Styles/common.css" />
+	<link rel="stylesheet" href="/Styles/jquery-ui-1.8.23.custom.css" />
+</head>
+<body>
+<div id="bodyContainer">
+	<header>
+		<div class="logo">
+			<img id="homeLogo" src="/images/cssystem.png" alt="CS SYSTEM HOMEPAGE" />
+		</div>
+		<div class="linksContainer">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Computing Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+			</nav>
+			<nav>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="searchBar">
+			<form action="#">
+				<div>
+					<span id="keywordClose">x</span>
+					<input id="keyword" size="20" type="text" autocomplete="off" placeholder="Search" />
+					<select id="searchCat">
+						<option>All</option>
+						<option>Faculty/Staff</option>
+						<option>Postgraduate</option>
+						<option>Undergraduate</option>
+						<option>Guest</option>
+					</select>
+				</div>
+				<div id="matches" class="floating">
+				</div>
+			</form>
+		</div>
+	</header>
+	<article class="main-content">
+<!--[][143.89.166.147][1][0]-->
+<style type="text/css">
+    .name {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .email {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .extn {
+        display: inline-block;
+        width: 50px;
+    }
+
+    .cert {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+</style>
+<h2>Who Are We?</h2>
+<div>
+    <div>
+        <span class="name">Name</span>
+        <span class="email">[E-mail]</span>
+        <span class="extn">Extn</span>
+        <span class="cert">X.509 Certificate</span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/zina/" target="_top">Zina Yung</a></span>
+        <span class="email"><a 
+            href="javascript:msend('zina');">[zina]</a></span>
+        <span class="extn">x7026</span>
+        <span class="cert"><a href="HOME/certs/zina.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/henry/" target="_top">Henry Wong</a></span>
+        <span class="email"><a 
+            href="javascript:msend('henry');">[henry]</a></span>
+        <span class="extn">x7025</span>
+        <span class="cert"><a href="HOME/certs/henry.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/dominic/" target="_top">Dominic Lai</a></span>
+        <span class="email"><a 
+            href="javascript:msend('dominic');">[dominic]</a></span>
+        <span class="extn">x7005</span>
+        <span class="cert"><a href="HOME/certs/dominic.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/yiu/" target="_top">Lam-Yiu Yau</a></span>
+        <span class="email"><a 
+            href="javascript:msend('yiu');">[yiu]</a></span>
+        <span class="extn">x7023</span>
+        <span class="cert"><a href="HOME/certs/yiu.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/winnie/" target="_top">Winnie Tse</a></span>
+        <span class="email"><a 
+            href="javascript:msend('winnie');">[winnie]</a></span>
+        <span class="extn">x7022</span>
+        <span class="cert"><a href="HOME/certs/winnie.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/wwkwong/" target="_top">Renfrew Kwong</a></span>
+        <span class="email"><a 
+            href="javascript:msend('wwkwong');">[wwkwong]</a></span>
+        <span class="extn">x7022</span>
+        <span class="cert"><a href="HOME/certs/wwkwong.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/cstak/" target="_top">Kin-Tak Lam</a></span>
+        <span class="email"><a 
+            href="javascript:msend('cstak');">[cstak]</a></span>
+        <span class="extn">x7004</span>
+        <span class="cert"><a href="HOME/certs/wwkwong.cer">Digital ID</a></span>
+    </div>
+    <div>
+        <span class="name"><a href="http://www.cse.ust.hk/cssystem/vincentchoi/" target="_top">Vincent Choi</a></span>
+        <span class="email"><a 
+            href="javascript:msend('vincentchoi');">[vincentchoi]</a></span>
+        <span class="extn">x7004</span>
+        <span class="cert"><a href="HOME/certs/vincentchoi.cer">Digital ID</a></span>
+    </div>
+</div>
+<h3>Office Hours:</h3>
+<div style="float: left;">
+    <div style="display: inline-block;">
+        Mon-Fri:<br>
+        Sat:<br>
+        Lunch hours:
+    </div>
+    <div style="display: inline-block;">
+        8:45am - 5:33pm<br>
+        9am - 12noon(skeleton service)<br>
+        12:45pm - 2:00pm
+    </div>
+</div>
+<div style="text-align: right;">
+    <address>
+        <a class="mail"
+            href="javascript:msend('cssystem');">cssystem</a><br />
+        Rm 4202 (near Lift 20)<br />
+        Department of Computer Science and Engineering<br />
+        The Hong Kong University of Science and Technology<br />
+        Clear Water Bay, Kowloon<br />
+        HONG KONG
+    </address>
+</div>
+<br />
+	</article>
+	<footer>
+		<div class="bottom-links">
+			<nav>
+				<a href="/UGuides/index.html">User Guides</a>
+				<a href="/Facilities/index.html">Facilities</a>
+				<a href="/UGuides/RemoteAccess/index.html">Remote Access</a>
+				<a href="/FAQ/index.html">FAQ</a>
+				<a href="/Forms/index.html">Useful Forms</a>
+				<a href="/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="contact">
+			<p class="red bold">Your browser is too old, please use Internet Explorer 9+, Firefox, Chrome, Safari or Opera to visit our site.</p>
+			<address>
+				<div>Please send comments and suggestions to <a class="mail"
+					href="javascript:msend('cssystem');">cssystem</a></div>
+				<div><a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering</a></div>
+				<div><a href="http://www.ust.hk/">The Hong Kong University of Science and Technology</a></div>
+				<div>All rights reserved</div>
+			</address>
+			<img id="officialLogo" src="/images/logo.gif" alt="logo" />
+		</div>
+	</footer>
+</div>
+</body>
+</html>
